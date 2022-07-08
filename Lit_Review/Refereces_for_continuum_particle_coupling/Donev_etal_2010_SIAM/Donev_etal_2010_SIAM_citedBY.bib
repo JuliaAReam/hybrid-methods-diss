@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% INTERESTING PAPERS THAT CITE
+%% A HYBRID PARTICL-CONTINUUM METHOD FOR HYDRODYNAMICS OF COMPLEX FLUIDS
+%% BY: DONEV, BELL, GARCIA, AND ALDER
+%% SIAM MULTISCALE MODEL. SIMUL. VOL. 8 NO. 3 PP 871-911 2010
+%% DOI: 10.1137/090774501
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@article{donev_vanden-eijnden_garcia_bell_2010, 
+title={On the accuracy of finite-volume schemes for fluctuating hydrodynamics}, 
+volume={5}, 
+url={https://msp.org/camcos/2010/5-2/p01.xhtml}, 
+DOI={10.2140/camcos.2010.5.149}, 
+number={2}, 
+journal={Communications in Applied Mathematics and Computational Science}, 
+author={Donev, Aleksandar and Vanden-Eijnden, Eric and Garcia, Alejandro and Bell, John},
+year={2010}, 
+month={Jun}, 
+pages={149?197}
+} 
+% 
+
+%@article{LATORRE2011312,
+%title = {Hybrid simulations of rarefied supersonic gas flows in micro-nozzles},
+%journal = {Computers & Fluids},
+%volume = {49},
+%number = {1},
+%pages = {312-322},
+%year = {2011},
+%issn = {0045-7930},
+%doi = {https://doi.org/10.1016/j.compfluid.2011.06.008},
+%url = {https://www.sciencedirect.com/science/article/pii/S0045793011001964},
+%author = {F. {La Torre} and S. Kenjereš and J.-L. Moerel and C.R. Kleijn},
+%keywords = {Micro-thruster, Micro-nozzle, DSMC, Hybrid methods, Rarefied flow, Supersonic flow},
+%abstract = {We show that accurate predictions of gas flow and pressure in axisymmetric micro-thruster nozzles with throat diameters in the μm range, and thrusts in the μN range, cannot be performed using continuum based Computational Fluid Dynamics with slip flow boundary conditions, but can be performed by applying a static, one-way, state-based coupling between a CFD solver applied upstream from a properly chosen cross sectional (perpendicular to the nozzle axis) interface, and a Direct Simulation Monte Carlo solver applied downstream from that interface. These hybrid CFD/DSMC simulations can be performed in 5–25\% of the CPU time required for a full DSMC simulation, with an accuracy better than 1–2\%. A non-optimal choice of the interface location may increase the errors up to several tens of percents, when the interface is located too far downstream, or increase the CPU time by up to several tens of percents, when the interface is located too far upstream. The proper interface location does not generally coincide with the throat plane, but lies upstream or downstream from the throat, depending on the flow conditions. We provide a quantitative criterion, based on Knudsen numbers as estimated from full CFD simulations of the entire nozzle, to determine the proper interface location a priori. Due to frictional losses and rarefaction effects, the total thrust of micro-nozzles in the μN range is found to be several tens of percents lower than the thrust predicted from one-dimensional isentropic theory.}
+%}
+
+
+%@article{doi:10.1063/1.4769610,
+%author = {Balakrishnan,Kaushik  and Bell,John B.  and Donev,Aleksandar  and Garcia,Alejandro L. },
+%title = {Fluctuating hydrodynamics and direct simulation Monte Carlo},
+%journal = {AIP Conference Proceedings},
+%volume = {1501},
+%number = {1},
+%pages = {695-704},
+%year = {2012},
+%doi = {10.1063/1.4769610},
+%
+%URL = { 
+%        https://aip.scitation.org/doi/abs/10.1063/1.4769610
+%    
+%},
+%eprint = { 
+%        https://aip.scitation.org/doi/pdf/10.1063/1.4769610
+%    
+%}
+%
+%}
+
+
+%@article{doi:10.1137/120864520,
+%author = {BalboaUsabiaga, Florencio and Bell, John B. and Delgado-Buscalioni, Rafael and Donev, Aleksandar and Fai, Thomas G. and Griffith, Boyce E. and Peskin, Charles S.},
+%title = {Staggered Schemes for Fluctuating Hydrodynamics},
+%journal = {Multiscale Modeling \& Simulation},
+%volume = {10},
+%number = {4},
+%pages = {1369-1408},
+%year = {2012},
+%doi = {10.1137/120864520},
+%
+%URL = { 
+%        https://doi.org/10.1137/120864520},
+%eprint = { 
+%        https://doi.org/10.1137/120864520},
+%abstract = { We develop numerical schemes for solving the isothermal compressible and incompressible equations of fluctuating hydrodynamics on a grid with staggered momenta. We develop a second-order accurate spatial discretization of the diffusive, advective, and stochastic fluxes that satisfies a discrete fluctuation-dissipation balance and construct temporal discretizations that are at least second-order accurate in time deterministically and in a weak sense. Specifically, the methods reproduce the correct equilibrium covariances of the fluctuating fields to the third (compressible) and second (incompressible) orders in the time step, as we verify numerically. We apply our techniques to model recent experimental measurements of giant fluctuations in diffusively mixing fluids in a microgravity environment [A. Vailati et al., Nat. Comm., 2 (2011), 290]. Numerical results for the static spectrum of nonequilibrium concentration fluctuations are in excellent agreement between the compressible and incompressible simulations and in good agreement with experimental results for all measured wavenumbers. } 
+%}
+
+%@article{doi:10.1137/110853169,
+%author = {Rizzi, F. and Najm, H. N. and Debusschere, B. J. and Sargsyan, K. and Salloum, M. and Adalsteinsson, H. and Knio, O. M.},
+%title = {Uncertainty Quantification in MD Simulations. Part I: Forward Propagation},
+%journal = {Multiscale Modeling \& Simulation},
+%volume = {10},
+%number = {4},
+%pages = {1428-1459},
+%year = {2012},
+%doi = {10.1137/110853169},
+%
+%URL = { 
+%        https://doi.org/10.1137/110853169
+%    
+%},
+%eprint = { 
+%        https://doi.org/10.1137/110853169
+%    
+%}
+%,
+%    abstract = { This work focuses on quantifying the effect of intrinsic (thermal) noise and parametric uncertainty in molecular dynamics (MD) simulations. We consider isothermal, isobaric MD simulations of TIP4P (or four-site) water at ambient conditions, \$T=298\$ K and \$P=1\$ atm. Parametric uncertainty is assumed to originate from three force-field parameters that are parametrized in terms of standard uniform random variables. The thermal fluctuations inherent in MD simulations combine with parametric uncertainty to yield nondeterministic, noisy MD predictions of bulk water properties. Relying on polynomial chaos (PC) expansions, we develop a framework that enables us to isolate the impact of parametric uncertainty on the MD predictions and control the effect of the intrinsic noise. We construct the PC representations of quantities of interest (QoIs) using two different approaches: nonintrusive spectral projection (NISP) and Bayesian inference. We verify a priori the legitimacy of the NISP approach by verifying that the MD data satisfy regularity and smoothness conditions in the parameter space. The Bayesian inference approach relies on adaptively sampling the parameter space, based on analyzing the convergence of the PC expansions at different approximation levels. We show that for the present case, the effect of the thermal noise in the atomistic system can be controlled, and the MD predictions for the QoIs can be suitably represented using low-order PC models. }
+%}
+
+%@article{doi:10.1137/110844404,
+%author = {Salloum, Maher and Sargsyan, Khachik and Jones, Reese and Debusschere, Bert and Najm, Habib N. and Adalsteinsson, Helgi},
+%title = {A Stochastic Multiscale Coupling Scheme to Account for Sampling Noise in Atomistic-to-Continuum Simulations},
+%journal = {Multiscale Modeling \& Simulation},
+%volume = {10},
+%number = {2},
+%pages = {550-584},
+%year = {2012},
+%doi = {10.1137/110844404},
+%
+%URL = { 
+%        https://doi.org/10.1137/110844404
+%    
+%},
+%eprint = { 
+%        https://doi.org/10.1137/110844404
+%    
+%}
+%,
+%    abstract = { We present a methodology to assess the predictive fidelity of multiscale simulations by incorporating uncertainty in the information exchanged between the atomistic and continuum simulation components. Focusing on uncertainty due to finite sampling in molecular dynamics (MD) simulations, we present an iterative stochastic coupling algorithm that relies on Bayesian inference to build polynomial chaos expansions for the variables exchanged across the atomistic-continuum interface. We consider a simple Couette flow model where velocities are exchanged between the atomistic and continuum components. To alleviate the burden of running expensive MD simulations at every iteration, a surrogate model is constructed from which samples can be efficiently drawn as data for the Bayesian inference. Results show convergence of the coupling algorithm at a reasonable number of iterations. The uncertainty associated with the exchanged variables significantly depends on the amount of data sampled from the MD simulations and on the width of the time averaging window used in the MD simulations. Sequential Bayesian updating is also implemented in order to enhance the accuracy of the stochastic algorithm predictions. }
+%}
+
+
+
+%@article{doi:10.1063/1.4738763,
+%author = {Shang,Barry Z.  and Voulgarakis,Nikolaos K.  and Chu,Jhih-Wei },
+%title = {Fluctuating hydrodynamics for multiscale modeling and simulation: Energy and heat transfer in molecular fluids},
+%journal = {The Journal of Chemical Physics},
+%volume = {137},
+%number = {4},
+%pages = {044117},
+%year = {2012},
+%doi = {10.1063/1.4738763},
+%
+%URL = { 
+%        https://doi.org/10.1063/1.4738763
+%    
+%},
+%eprint = { 
+%        https://doi.org/10.1063/1.4738763
+%    
+%}
+%
+%}
+
+
+%@article{PhysRevE.90.033014,
+%  title = {Modeling multiphase flow using fluctuating hydrodynamics},
+%  author = {Chaudhri, Anuj and Bell, John B. and Garcia, Alejandro L. and Donev, Aleksandar},
+%  journal = {Phys. Rev. E},
+%  volume = {90},
+%  issue = {3},
+%  pages = {033014},
+%  numpages = {18},
+%  year = {2014},
+%  month = {Sep},
+%  publisher = {American Physical Society},
+%  doi = {10.1103/PhysRevE.90.033014},
+%  url = {https://link.aps.org/doi/10.1103/PhysRevE.90.033014}
+%}
+
+
+
+%@ARTICLE{6507221,
+%  author={Groen, Derek and Zasada, Stefan J. and Coveney, Peter V.},
+%  journal={Computing in Science & Engineering}, 
+%  title={Survey of Multiscale and Multiphysics Applications and Communities}, 
+%  year={2014},
+%  volume={16},
+%  number={2},
+%  pages={34-43},
+%  abstract={Multiscale and multiphysics applications are now commonplace, and many researchers focus on combining existing models to construct new multiscale models. This concise review of multiscale applications and their source communities in the EU and US outlines differences and commonalities among approaches and identifies areas in which collaboration between disciplines could be particularly beneficial. Because different communities adopt very different approaches to constructing multiscale simulations, and simulations on a length scale of a few meters and a time scale of a few hours can be found in many multiscale research domains, communities might receive additional benefit from sharing methods that are geared towards these scales. The Web extra is the full literature list mentioned in the article.},
+%  keywords={},
+%  doi={10.1109/MCSE.2013.47},
+%  ISSN={1558-366X},
+%  month={Mar},}
+
+
+%@article{SUN2015142,
+%title = {Diffusion-based coarse graining in hybrid continuum–discrete solvers: Theoretical formulation and a priori tests},
+%journal = {International Journal of Multiphase Flow},
+%volume = {77},
+%pages = {142-157},
+%year = {2015},
+%issn = {0301-9322},
+%doi = {https://doi.org/10.1016/j.ijmultiphaseflow.2015.08.014},
+%url = {https://www.sciencedirect.com/science/article/pii/S030193221500186X},
+%author = {Rui Sun and Heng Xiao},
+%keywords = {CFD–DEM, Coarse graining, Multi-scale modeling},
+%abstract = {Coarse graining is an important ingredient in many multi-scale continuum–discrete solvers such as CFD–DEM (computational fluid dynamics–discrete element method) solvers for dense particle-laden flows. Although CFD–DEM solvers have become a mature technique that is widely used in multiphase flow research and industrial flow simulations, a flexible and easy-to-implement coarse graining algorithm that can work with CFD solvers of arbitrary meshes is still lacking. In this work, we proposed a new coarse graining algorithm for continuum–discrete solvers for dense particle-laden flows based on solving a transient diffusion equation. Via theoretical analysis we demonstrated that the proposed method is equivalent to the statistical kernel method with a Gaussian kernel, but the current method is much more straightforward to implement in CFD–DEM solvers. A priori numerical tests were performed to obtain the solid volume fraction fields based on given particle distributions, the results obtained by using the proposed algorithm were compared with those from other coarse graining methods in the literature (e.g., the particle centroid method, the divided particle volume method, and the two-grid formulation). The numerical tests demonstrated that the proposed coarse graining procedure based on solving diffusion equations is theoretically sound, easy to implement and parallelize in general CFD solvers, and has improved mesh-convergence characteristics compared with existing coarse graining methods. The diffusion-based coarse graining method has been implemented into a CFD–DEM solver, the results of which are presented in a separate work.}
+%}
+
+%@article{doi:10.1098/rsif.2016.0335,
+%author = {Harrison, Jonathan U.  and Yates, Christian A. },
+%title = {A hybrid algorithm for coupling partial differential equation and compartment-based dynamics},
+%journal = {Journal of The Royal Society Interface},
+%volume = {13},
+%number = {122},
+%pages = {20160335},
+%year = {2016},
+%doi = {10.1098/rsif.2016.0335},
+%
+%URL = {https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2016.0335},
+%eprint = {https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2016.0335}
+%,
+%    abstract = { Stochastic simulation methods can be applied successfully to model exact spatio-temporally resolved reaction–diffusion systems. However, in many cases, these methods can quickly become extremely computationally intensive with increasing particle numbers. An alternative description of many of these systems can be derived in the diffusive limit as a deterministic, continuum system of partial differential equations (PDEs). Although the numerical solution of such PDEs is, in general, much more efficient than the full stochastic simulation, the deterministic continuum description is generally not valid when copy numbers are low and stochastic effects dominate. Therefore, to take advantage of the benefits of both of these types of models, each of which may be appropriate in different parts of a spatial domain, we have developed an algorithm that can be used to couple these two types of model together. This hybrid coupling algorithm uses an overlap region between the two modelling regimes. By coupling fluxes at one end of the interface and using a concentration-matching condition at the other end, we ensure that mass is appropriately transferred between PDE- and compartment-based regimes. Our methodology gives notable reductions in simulation time in comparison with using a fully stochastic model, while maintaining the important stochastic features of the system and providing detail in appropriate areas of the domain. We test our hybrid methodology robustly by applying it to several biologically motivated problems including diffusion and morphogen gradient formation. Our analysis shows that the resulting error is small, unbiased and does not grow over time. }
+%}
+
+
+%@article{STALTER2018198,
+%title = {Molecular dynamics simulations in hybrid particle-continuum schemes: Pitfalls and caveats},
+%journal = {Computer Physics Communications},
+%volume = {224},
+%pages = {198-208},
+%year = {2018},
+%issn = {0010-4655},
+%doi = {https://doi.org/10.1016/j.cpc.2017.10.016},
+%url = {https://www.sciencedirect.com/science/article/pii/S0010465517303569},
+%author = {S. Stalter and L. Yelash and N. Emamy and A. Statt and M. Hanke and M. Lukáčová-Medvid’ová and P. Virnau},
+%keywords = {Shear flow, Heterogeneous multiscale methods, Molecular dynamics, Discontinuous Galerkin method, Soft matters},
+%abstract = {Heterogeneous multiscale methods (HMM) combine molecular accuracy of particle-based simulations with the computational efficiency of continuum descriptions to model flow in soft matter liquids. In these schemes, molecular simulations typically pose a computational bottleneck, which we investigate in detail in this study. We find that it is preferable to simulate many small systems as opposed to a few large systems, and that a choice of a simple isokinetic thermostat is typically sufficient while thermostats such as Lowe–Andersen allow for simulations at elevated viscosity. We discuss suitable choices for time steps and finite-size effects which arise in the limit of very small simulation boxes. We also argue that if colloidal systems are considered as opposed to atomistic systems, the gap between microscopic and macroscopic simulations regarding time and length scales is significantly smaller. We propose a novel reduced-order technique for the coupling to the macroscopic solver, which allows us to approximate a non-linear stress–strain relation efficiently and thus further reduce computational effort of microscopic simulations.}
+%}
+
+%@article{RUSSO2021109796,
+%title = {A finite-volume method for fluctuating dynamical density functional theory},
+%journal = {Journal of Computational Physics},
+%volume = {428},
+%pages = {109796},
+%year = {2021},
+%issn = {0021-9991},
+%doi = {https://doi.org/10.1016/j.jcp.2020.109796},
+%url = {https://www.sciencedirect.com/science/article/pii/S0021999120305702},
+%author = {Antonio Russo and Sergio P. Perez and Miguel A. Durán-Olivencia and Peter Yatsyshin and José A. Carrillo and Serafim Kalliadasis},
+%keywords = {Stochastic partial differential equation, Finite-volume, Fluctuating dynamical density functional theory},
+%abstract = {We introduce a finite-volume numerical scheme for solving stochastic gradient flow equations. Such equations are of crucial importance within the framework of fluctuating hydrodynamics and dynamic density functional theory. Our proposed scheme deals with general free-energy functionals, including, for instance, external fields or interaction potentials. This allows us to simulate a range of physical phenomena where thermal fluctuations play a crucial role, such as nucleation and other energy-barrier crossing transitions. A positivity-preserving algorithm for the density is derived based on a hybrid space discretization of the deterministic and the stochastic terms and different implicit and explicit time integrators. We show through numerous applications that not only our scheme is able to accurately reproduce the statistical properties (structure factor and correlations) of physical systems, but also allows us to simulate energy barrier crossing dynamics, which cannot be captured by mean-field approaches.}
+%}
+
+
