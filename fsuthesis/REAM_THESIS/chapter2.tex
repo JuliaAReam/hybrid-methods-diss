@@ -1,12 +1,34 @@
-\chapter{Model Description}
-
-
+\chapter{Model Overview}
 \section{Introduction}
-\section{Formulation of the Problem}
-\subsection{Governing Equations}
-\subsection{Equation of State}
-\subsection{Transport Properties}
+Chapter 1 introduced the general mathematical framework needed for modeling fluid flow. 
+\section{Governing Equations}
 
-\section{Boundary and Initial Conditions}
+We consider the three-dimensional compressible Navier-Stokes equations:
+\begin{equation} \label{NSE}
+\begin{split}
+  \frac{\partial\rho}{\partial t} + \frac{\partial }{\partial x_j} \left( \rho u_j \right) = 0,  \\
+  \frac{\partial}{\partial t} \left( \rho u_i \right) + \frac{\partial}{\partial x_j} \left(\rho u_i u_j + p \delta_{ij} -\sigma_{ij} \right) = 0,  \\
+  \frac{\partial}{\partial t} \left( \rho E \right) + \frac{\partial}{\partial x_j} \big(\left( \rho E+p \right) u_j + q_j - \sigma_{ij} u_i\big) = 0 
+\end{split}
+\end{equation}
+where $\rho$ is the density, $u_j$ is the velocity for the $x_j$ direction, $p$ is the pressure, $E = e + \frac{u_i u_i}{2}$ is the total energy, $e = c_v T$ is the internal energy, $T$ is the temperature, and $c_v$ is the heat capacity at constant volume. Additionally, the diffusive fluxes are
+\begin{equation}
+  \sigma_{ij} = 2\mu S_{ij} - \frac{2}{3}\mu \delta_{ij} S_{kk}\\
+  q_j = -k \frac{\partial T}{\partial x_j}
+\end{equation}
+where
+$S_{ij} = \frac{1}{2}\left(\frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right)$ is the strain-rate tensor, $\mu$ is the dynamic viscosity, and $k$ is the thermal conductivity. External forces such as gravity are not included in this study. Chung's high pressure correction for viscosity and thermal conductivity are included for the transport variables $\mu$ and $k$ \cite{chung:1988}. The system is closed using the \gls{srk} \cite{SOAVE1972} to relate pressure, density, and temperature as follows:
+\begin{align} 
+	p &= \dfrac{RT}{V_m - b} - \dfrac{a \alpha}{V_m(V_m + b)} \label{SRK eq} \\
+	a &= \dfrac{0.42747R^2T_c^2}{P_c} \label{SRKa} \\
+	b &= \dfrac{0.08664RT_c}{P_c} \label{SRKb} \\
+	\alpha &= \left( 1 + \left( 0.48508 + 1.55171 \omega - 0.15613 \omega^2 \right)\left( 1 - T_r^{0.5} \right) \right)^2 \label{SRKalpha} \\
+	T_r &= \dfrac{T}{T_c} \label{Treduced}
+\end{align}
+where $R$ is the ideal gas constant, $T$ is the absolute temperature, $V_m$ is the molar volume of the species, $T_c$ and $P_c$ are the critical temperature and pressure of the species, respectively, and $\omega$ is the acentric factor of the species. Additionally, $a$, $b$, and $\alpha$ are all species-specific parameters calculated via equations \ref{SRKa}, \ref{SRKb}, and \ref{SRKalpha}. All cases are run with a single species, that being \gls{co2}.
+
+\subsection{Importance of Equation of State}
+\subsection{Transport Properties in High Pressure Conditions}
+
 
 

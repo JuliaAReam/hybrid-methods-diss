@@ -1,0 +1,126 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{chung:1988}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7502c5a0b27debdc53d271125207b043}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={T.H.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=769180a475319185146953514a90b392}{%
+           family={Ajlan},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9d08f60f2768fcba336a6957328ce082}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={L.L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=479c9dd8dcb134423d4b280efb28e392}{%
+           family={Starling},
+           familyi={S\bibinitperiod},
+           given={K.E.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9bb5c10d36bc9c7d2cb25005d0bafaf}
+      \strng{fullhash}{861b248a63ec54ddfa68ffb804a6104b}
+      \strng{authornamehash}{b9bb5c10d36bc9c7d2cb25005d0bafaf}
+      \strng{authorfullhash}{861b248a63ec54ddfa68ffb804a6104b}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ind. Eng. Chem. Res.}
+      \field{title}{Generalized multiparameter correlation for nonpolar and polar fluid transport properties}
+      \field{volume}{27}
+      \field{year}{1988}
+      \field{pages}{671\bibrangedash 679}
+      \range{pages}{9}
+    \endentry
+    \entry{SOAVE1972}{article}{}
+      \name{author}{1}{}{%
+        {{hash=30da4b0db6a139c160bdeb111bd64e85}{%
+           family={Soave},
+           familyi={S\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{30da4b0db6a139c160bdeb111bd64e85}
+      \strng{fullhash}{30da4b0db6a139c160bdeb111bd64e85}
+      \strng{authornamehash}{30da4b0db6a139c160bdeb111bd64e85}
+      \strng{authorfullhash}{30da4b0db6a139c160bdeb111bd64e85}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0009-2509}
+      \field{journaltitle}{Chemical Engineering Science}
+      \field{number}{6}
+      \field{title}{Equilibrium constants from a modified Redlich-Kwong equation of state}
+      \field{volume}{27}
+      \field{year}{1972}
+      \field{pages}{1197\bibrangedash 1203}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0009-2509(72)80096-4
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/0009250972800964
+      \endverb
+    \endentry
+    \entry{US_elec_gen_stat}{online}{}
+      \name{author}{2}{}{%
+        {{hash=65bc8104a47796b4803c7040c086427d}{%
+           family={statistics},
+           familyi={s\bibinitperiod},
+           given={U.S.\bibnamedelimi Energy\bibnamedelimb Information\bibnamedelimb Administration\bibnamedelimb -\bibnamedelimb EIA\bibnamedelima -},
+           giveni={U\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim \bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim \bibinitperiod},
+           prefix={independent},
+           prefixi={i\bibinitperiod}}}%
+        {{hash=3b671c883959a8ef434b85a104c293d4}{%
+           family={analysis},
+           familyi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f1b889616ead24ecc2b822f8c2ec658}
+      \strng{fullhash}{9f1b889616ead24ecc2b822f8c2ec658}
+      \strng{authornamehash}{9f1b889616ead24ecc2b822f8c2ec658}
+      \strng{authorfullhash}{9f1b889616ead24ecc2b822f8c2ec658}
+      \field{sortinit}{s}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Electricity Explained: How electricity is generated}
+      \field{urlday}{19}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://www.eia.gov/energyexplained/electricity/how-electricity-is-generated.php
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
