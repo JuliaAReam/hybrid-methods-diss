@@ -1,0 +1,153 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\preamble{%
+\ifx \manfnt \undefined \font\manfnt=logo10 \fi\ifx \METAFONT \undefined \def \METAFONT {{\manfnt META}\-{\manfnt FONT}\spacefactor1000 } \fi\ifx \MF \undefined \let \MF=\METAFONT \fi\ifx \POSTSCRIPT \undefined \def \POSTSCRIPT {{\scshape Post}\-{\scshape Script}\spacefactor1000 } \fi\ifx \MP \undefined \def \MP {{\manfnt META}\-{\manfnt POST}\spacefactor1000 } \fi\ifx \noopsort \undefined \def \noopsort#1{} \fi\ifx \emdash \undefined \def \emdash{---} \fi%
+}
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{Anonymous:2009:PMA}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7079c72c21415131774625ba1d64f4b0}{%
+           family={Anonymous},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{fullhash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authornamehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authorfullhash}{7079c72c21415131774625ba1d64f4b0}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{The book contains style guidelines known as the APA style. This ranges from spelling conventions to table formatting. The guidelines assume that papers are produced using a typewriter. The book itself shows a very unpleasant design making reading are hard task.}
+      \field{edition}{sixth}
+      \field{isbn}{1433805618}
+      \field{title}{Publication Manual of the {American Psychological Association}}
+      \field{year}{2009}
+      \field{pages}{272}
+      \range{pages}{1}
+      \keyw{document preparation guidelines,style guidelines,communications in psychology,psychology authorship,American Psychological Association,publication manual,writing}
+    \endentry
+    \entry{Anonymous:1993:CMS}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7079c72c21415131774625ba1d64f4b0}{%
+           family={Anonymous},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chicago, IL, USA}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{fullhash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authornamehash}{7079c72c21415131774625ba1d64f4b0}
+      \strng{authorfullhash}{7079c72c21415131774625ba1d64f4b0}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{The standard American work on typesetting style etc. (CHe)}
+      \field{edition}{14th}
+      \field{isbn}{0-226-10389-7}
+      \field{subtitle}{The Essential Guide for Writers, Editors and Publishers}
+      \field{title}{The {Chicago} Manual of Style}
+      \field{year}{1993}
+      \field{pages}{ix + 921}
+      \range{pages}{-1}
+      \keyw{authorship handbooks; authorship manuals; practical style manuals; printing}
+    \endentry
+    \entry{Kopka:2004:GLT}{book}{}
+      \name{author}{2}{}{%
+        {{hash=7ad513520366785f926861843001ed4e}{%
+           family={Kopka},
+           familyi={K\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=02ead3a9630b74661d52be004235dc87}{%
+           family={Daly},
+           familyi={D\bibinitperiod},
+           given={Patrick\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Reading, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Ad{\-d}i{\-s}on-Wes{\-l}ey}%
+      }
+      \strng{namehash}{fc4b6a294b7aff12b1c68fb3aa59426d}
+      \strng{fullhash}{fc4b6a294b7aff12b1c68fb3aa59426d}
+      \strng{authornamehash}{fc4b6a294b7aff12b1c68fb3aa59426d}
+      \strng{authorfullhash}{fc4b6a294b7aff12b1c68fb3aa59426d}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Fourth}
+      \field{isbn}{0-321-17385-6}
+      \field{note}{Includes CD-ROM.}
+      \field{title}{Guide to {\LaTeX}: Tools and Techniques for Computer Typesetting}
+      \field{year}{2004}
+      \field{pages}{xii + 597}
+      \range{pages}{-1}
+    \endentry
+    \entry{Lamport:1994:LDP}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Reading, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Ad{\-d}i{\-s}on-Wes{\-l}ey}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second}
+      \field{isbn}{0-201-52983-1}
+      \field{note}{Reprinted with corrections in 1996.}
+      \field{title}{{\LaTeX}: {A} Document Preparation System: User's Guide and Reference Manual}
+      \field{year}{1994}
+      \field{pages}{xvi + 272}
+      \range{pages}{-1}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
