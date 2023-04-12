@@ -1,4 +1,4 @@
-% !TEX TS?program = pdflatexmk
+%!TEX TS?program = pdflatexmk
 
 % This is a "bare-bones" thesis template file.  For examples of how to
 % use a few more LaTeX features, look in the 'sample' folder.  Read
@@ -12,31 +12,31 @@
 
 \usepackage{amsmath}
 
+
 \usepackage[acronyms]{glossaries}
 \newacronym{co2}{CO2}{Carbon Dioxide}
-%\newacronym{sco2}{sCO2}{supercritical Carbon Dioxide}
-%\newacronym{les}{LES}{large eddy simulation}
-%\newacronym{fda}{FDA}{Food and Drug Administration}
-%\newacronym{dns}{DNS}{direct numerical simulation}
-%\newacronym{egs}{EGS}{Enhanced Geothermal Systems}
-%\newacronym{cfd}{CFD}{computational fluid dynamics}
-%\newacronym{rans}{RANS}{Reynolds-averaged Navier-Stokes}
-%\newacronym{sgs}{SGS}{subgrid scale}
+\newacronym{sco2}{sCO2}{supercritical Carbon Dioxide}
+\newacronym{les}{LES}{large eddy simulation}
+\newacronym{fda}{FDA}{Food and Drug Administration}
+\newacronym{dns}{DNS}{direct numerical simulation}
+\newacronym{egs}{EGS}{Enhanced Geothermal Systems}
+\newacronym{cfd}{CFD}{computational fluid dynamics}
+\newacronym{rans}{RANS}{Reynolds-averaged Navier-Stokes}
+\newacronym{sgs}{SGS}{subgrid scale}
 \newacronym{srk}{SRK EoS}{Soave-Redlich-Kwong Equation of State}
-%\newacronym{eos}{EoS}{Equation of State}
-%\newacronym{nist}{NIST}{National Institute of Standards and Technology}
-%\newacronym{hpc}{HPC}{high-performance computing}
-%\newacronym{smd}{SMD}{dynamic Smagorinsky}
-%\newacronym{ppm}{PPM}{piecewise parabolic method}
-%\newacronym{nrel}{NREL}{National Renewable Energy Laboratory}
-%\newacronym{rms}{rms}{root mean square}
-%\newacronym{amr}{AMR}{adaptive mesh refinement}
-%\newacronym{ecp}{ECP}{Exascale Computing Project}
-%\newacronym{doe}{DOE}{Department of Energy}
+\newacronym{pr}{PR EoS}{Peng-Robinson Equation of State}
+\newacronym{eos}{EoS}{Equation of State}
+\newacronym{nist}{NIST}{National Institute of Standards and Technology}
+\newacronym{hpc}{HPC}{high-performance computing}
+\newacronym{smd}{SMD}{dynamic Smagorinsky}
+\newacronym{ppm}{PPM}{piecewise parabolic method}
+\newacronym{nrel}{NREL}{National Renewable Energy Laboratory}
+\newacronym{rms}{rms}{root mean square}
+\newacronym{amr}{AMR}{adaptive mesh refinement}
+\newacronym{ecp}{ECP}{Exascale Computing Project}
+\newacronym{doe}{DOE}{Department of Energy}
 
 \makeglossaries
-
-
 
 \ifpdf   % We execute this part (up to \else) if we are in PDF mode.
   \usepackage[pdftex]{graphicx}
@@ -61,6 +61,11 @@
 \else    % Otherwise we'll run this part if we are not in PDF mode.
   \usepackage[dvips]{graphicx}
 \fi
+
+\usepackage{tikz}
+\usetikzlibrary{hobby,calc,decorations.markings,arrows.meta,patterns}
+
+
 
 % Do NOT use 'geometry', 'setspace', or 'tocloft' packages! They will
 % mess up the spacing provided by 'fsuthesis'.
@@ -121,11 +126,13 @@
 \maketitle
 \makecommitteepage
 
-%\begin{dedication}
-%\end{dedication}
+\begin{dedication}
+To my parents, Jeff and Maria. 
+\end{dedication}
 
-%\begin{acknowledgments}
-%\end{acknowledgments}
+\begin{acknowledgments}
+I'd like to thank the academy...
+\end{acknowledgments}
 
 \tableofcontents
 %\listoftables
@@ -152,6 +159,7 @@ LES& Large Eddy Simulation \\
 NIST& National Institute of Standards and Technology \\
 NREL& National Renewable Energy Laboratory \\
 PPM& piecewise parabolic method \\
+PR EoS& Peng-Robinson equation of state \\
 RANS& Reynolds-Averaged Navier-Stokes \\
 rms& root mean square \\
 sCO2& Supercritical Carbon Dioxide \\
@@ -173,12 +181,12 @@ This is my abstract.
 
 \mainmatter
 
-\input chapter1
-\input chapter2
-\input chapter3
-\input chapter4
-\input chapter5
-\input chapter6
+\input Introduction
+\input Model
+\input Simulations
+\input Results
+\input Conclusion
+
 
 %\appendix
 %\input appendix1

@@ -19,6 +19,69 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{Aggarwal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=778a5b235aff8d3748f5978206ae5cb0}{%
+           family={Aggarwal},
+           familyi={A\bibinitperiod},
+           given={Salonika},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ad77cf29ad1f6a6170f7f1c67341954b}{%
+           family={Hakovirta},
+           familyi={H\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a19b2499831a3213e872035a19b6fcc}
+      \strng{fullhash}{3a19b2499831a3213e872035a19b6fcc}
+      \strng{authornamehash}{3a19b2499831a3213e872035a19b6fcc}
+      \strng{authorfullhash}{3a19b2499831a3213e872035a19b6fcc}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Engineering, Science and Technology}
+      \field{title}{Supercritical Carbon dioxide: Adequately Sole Solvent}
+      \field{volume}{10}
+      \field{year}{2021}
+      \field{pages}{46\bibrangedash 61}
+      \range{pages}{16}
+      \verb{url}
+      \verb https://journalsonline.org/american-journal-of-engineering-science-and-technology/pdfs/volume-10/4.pdf
+      \endverb
+    \endentry
+    \entry{BANUTI201512}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e69f598abfcc0e06f4fb0d1d26cc61b0}{%
+           family={Banuti},
+           familyi={B\bibinitperiod},
+           given={D.T.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e69f598abfcc0e06f4fb0d1d26cc61b0}
+      \strng{fullhash}{e69f598abfcc0e06f4fb0d1d26cc61b0}
+      \strng{authornamehash}{e69f598abfcc0e06f4fb0d1d26cc61b0}
+      \strng{authorfullhash}{e69f598abfcc0e06f4fb0d1d26cc61b0}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent publications in the open literature have shown that supercritical fluid states are not homogeneously distributed but, in fact, can be differentiated into two distinct regions with gas-like and liquid-like properties, respectively. These regions are divided by an extension of the coexistence line, commonly called Widom line. This paper shows that a supercritical analog to subcritical phase change, pseudoboiling, does exist when crossing this demarcation. The supercritical state transition does not occur in a phase equilibrium but takes place over a finite temperature interval. While subcritical vaporization requires energy to overcome intermolecular attraction, supercritical state transitions additionally require energy to increase the temperature. It could be shown that the attractive potential is the dominant energy sink up to a reduced pressure of 1.5 for argon, nitrogen, oxygen, and water. The effect reduces with growing pressure and becomes negligible for p/pcr>3. Furthermore, a new equation for this Widom- or pseudoboiling-line is given. It exhibits improved accuracy over previously published equations; performing a limit analysis of the Clapeyron equation allows to express its sole parameter purely in terms of thermodynamic variables. This parameter can then be evaluated from an equation of state or from fluid data - no nonphysical fitting is required.}
+      \field{issn}{0896-8446}
+      \field{journaltitle}{The Journal of Supercritical Fluids}
+      \field{title}{Crossing the Widom-line - Supercritical pseudo-boiling}
+      \field{volume}{98}
+      \field{year}{2015}
+      \field{pages}{12\bibrangedash 16}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.supflu.2014.12.019
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0896844614004306
+      \endverb
+      \keyw{Pseudoboiling,Widom-line,Vaporization,Clapeyron,Transcritical}
+    \endentry
     \entry{chung:1988}{article}{}
       \name{author}{4}{}{%
         {{hash=7502c5a0b27debdc53d271125207b043}{%
@@ -56,6 +119,481 @@
       \field{year}{1988}
       \field{pages}{671\bibrangedash 679}
       \range{pages}{9}
+    \endentry
+    \entry{SCF2}{misc}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.supercriticalfluid.org/Supercritical-fluids.146.0.html}}
+      \field{note}{Accessed: 2019-08-08}
+      \field{title}{Explore, use, make the most of supercritical fluids}
+      \field{year}{2009}
+    \endentry
+    \entry{GHANBARI201713}{article}{}
+      \name{author}{3}{}{%
+        {{hash=684950b82e35390baa5a646de44722d3}{%
+           family={Ghanbari},
+           familyi={G\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=70a9f17c72f563ec1108247ecd1da732}{%
+           family={Ahmadi},
+           familyi={A\bibinitperiod},
+           given={Mahdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=12679d16f3b944ce0eb4f55ad65b9c7f}{%
+           family={Lashanizadegan},
+           familyi={L\bibinitperiod},
+           given={Asghar},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0cef97ccab783dfb0ae2c667e2e90be4}
+      \strng{fullhash}{0cef97ccab783dfb0ae2c667e2e90be4}
+      \strng{authornamehash}{0cef97ccab783dfb0ae2c667e2e90be4}
+      \strng{authorfullhash}{0cef97ccab783dfb0ae2c667e2e90be4}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Cubic Equations of State (CEOSs) are the most important tools in PVT calculations due to their simplicity in use and their extrapolative abilities to condition well outside their correlation ranges. Peng-Robinson (PR) and Soave-Redlich-Kwong (SRK) are most successful in the CEOSs which have repeatedly been modified in order to improve their accuracy in wider ranges of temperature and pressure. Unfortunately, most of modifications carried out on these EOSs have no adequate justification for selecting either of these as the basic starting point for the modifications. In this paper, PR and SRK EOSs were critically compared with each other using some new features of their subcritical and supercritical results. For this purpose, the CEOSs were assessed using comprehensive tests of the PVT calculations in the vapor-liquid equilibrium (for pure hydrocarbons over a wide range of acentric factor values: Methane, Ethane Propane, Butane, Heptane and Nonane) and Joule?Thomson Inversion Curves' (JTICs) predictions (for compounds which have reliable JTICs data: Methane, Ethane, Ethylene, Nitrogen, Oxygen, Argon and Carbon dioxide) in subcritical and supercritical regions, respectively. The results indicated that the PR EOS by using any of realistic ?-function forms will never be able to accurately predict the JTICs in full span. On the other hand, the subcritical results revealed that the great success of the PR CEOS in predicting liquid phase density is only due to its function in shifting the results of the SRK CEOS to the lower values with the same curve trend. In addition, the Patel and Teja's (PT) EOS, has been reevaluated and the results showed that most of the defects of PR EOS still remain. This article suggests that in order to develop CEOSs, the original SRK EOS is a better candidate than original and alternative forms of PR EOS.}
+      \field{issn}{0011-2275}
+      \field{journaltitle}{Cryogenics}
+      \field{title}{A comparison between Peng-Robinson and Soave-Redlich-Kwong cubic equations of state from modification perspective}
+      \field{volume}{84}
+      \field{year}{2017}
+      \field{pages}{13\bibrangedash 19}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.cryogenics.2017.04.001
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0011227516303538
+      \endverb
+      \keyw{Equation of state,Modification,Soave-Redlich-Kwong,Peng and Robinson,Subcritical,Supercritical}
+    \endentry
+    \entry{Gordon}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b48413097ad997215c268fb99af23ed4}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={R.\bibnamedelimi P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b48413097ad997215c268fb99af23ed4}
+      \strng{fullhash}{b48413097ad997215c268fb99af23ed4}
+      \strng{authornamehash}{b48413097ad997215c268fb99af23ed4}
+      \strng{authorfullhash}{b48413097ad997215c268fb99af23ed4}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Education}
+      \field{number}{4}
+      \field{title}{A supercritical phase separation: The gas-gas equilibrium}
+      \field{volume}{49}
+      \field{year}{1972}
+      \field{pages}{249}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1021/ed049p249
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/ed049p249
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/ed049p249
+      \endverb
+    \endentry
+    \entry{cont}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=88442f005f67bf2b5d4aecc306900e6c}{%
+           family={Katopodes},
+           familyi={K\bibinitperiod},
+           given={Nikolaos\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=88442f005f67bf2b5d4aecc306900e6c}{%
+           family={Katopodes},
+           familyi={K\bibinitperiod},
+           given={Nikolaos\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Butterworth-Heinemann}%
+      }
+      \strng{namehash}{88442f005f67bf2b5d4aecc306900e6c}
+      \strng{fullhash}{88442f005f67bf2b5d4aecc306900e6c}
+      \strng{authornamehash}{88442f005f67bf2b5d4aecc306900e6c}
+      \strng{authorfullhash}{88442f005f67bf2b5d4aecc306900e6c}
+      \strng{editornamehash}{88442f005f67bf2b5d4aecc306900e6c}
+      \strng{editorfullhash}{88442f005f67bf2b5d4aecc306900e6c}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Chapter 1 deals with basic concepts of mechanics and analysis that are needed for the description of environmental flows. Some basic properties of fluids are reviewed and discussed in the context of free-surface flow. Reductionism is introduced as the underlying philosophy for the differential models of fluid flow. Newton's laws of motion and gravitation are reviewed. Asymptotic approximation and the Taylor series expansion are used for prediction in time and space. Simple harmonic motion is described and connected to wave motion and the Fourier transform. A review of spectral analysis is presented, and basic concepts of Cartesian vectors are outlined. Flux and the scalar product are defined in the context of fluid mechanics. An introduction to tensor analysis is given with emphasis to stress in fluids. Uniform shear flow is examined, and Newton's law of viscosity is derived. The no-slip condition on solid boundaries is described and the conditions of its applicability are discussed. A generalization to other flux-gradient methods links viscous fluid flow to heat conduction and similar macroscopic laws of physics.}
+      \field{booktitle}{Free-Surface Flow}
+      \field{isbn}{978-0-12-815489-2}
+      \field{title}{Chapter 1 - Basic Concepts}
+      \field{year}{2019}
+      \field{pages}{2\bibrangedash 98}
+      \range{pages}{97}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-12-815489-2.00001-0
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780128154892000010
+      \endverb
+      \keyw{Continuum concept,Coordinate systems,Harmonic motion,Vectors,Tensors,Stress,Viscosity}
+    \endentry
+    \entry{Li2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f6108882a14a8f69264c202bdc4ee246}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hua-Guang},
+           giveni={H\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=bcf16276705fd26668297fcf9edae207}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Xi-Yun},
+           giveni={X\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=0228ebba3c5519fc8ae26bd247dd52e6}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Vigor},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6209c956a3ca06c783410ffd6ae0b4c}
+      \strng{fullhash}{d6209c956a3ca06c783410ffd6ae0b4c}
+      \strng{authornamehash}{d6209c956a3ca06c783410ffd6ae0b4c}
+      \strng{authorfullhash}{d6209c956a3ca06c783410ffd6ae0b4c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nitrogen injection under conditions close vicinity of the liquid-gas critical point is studied numerically. The fluid thermodynamic and transport properties vary drastically and exhibit anomalies in the near-critical regime. These anomalies can cause distinctive effects on heat-transfer and fluid-flow characteristics. To focus on the influence of thermodynamics on the flow field, a relatively low injection Reynolds number of 1 750 is adopted. For comparisons, a reference case with the same configuration and Reynolds number is simulated in the ideal gas regime. The model accommodates full conservation laws, real-fluid thermodynamic and transport phenomena. Results reveal that the flow features of the near-critical fluid jet are significantly different from their counterpart. The near-critical fluid jet spreads faster and mixes more efficiently with the ambient fluid along with a more rapidly development of the vortex pairing process. Detailed analysis at different streamwise locations including both the flat shear-layer region and fully developed vortex region reveals the important effect of volume dilatation and baroclinic torque in the near-critical fluid case. The former disturbs the shear layer and makes it more unstable. The volume dilatation and baroclinic effects strengthen the vorticity and stimulate the vortex rolling up and pairing process.}
+      \field{issn}{1614-3116}
+      \field{journaltitle}{Acta Mechanica Sinica}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{A numerical study of fluid injection and mixing under near-critical conditions}
+      \field{volume}{28}
+      \field{year}{2012}
+      \field{pages}{559\bibrangedash 571}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s10409-012-0035-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10409-012-0035-5
+      \endverb
+    \endentry
+    \entry{RANS}{article}{}
+      \name{author}{5}{}{%
+        {{hash=adb827db1c1143b2bdbb21a41d35efa8}{%
+           family={Lv},
+           familyi={L\bibinitperiod},
+           given={Q},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=65f18553bf289305e3ab19fc27fe1cb1}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={X\bibnamedelima P},
+           giveni={X\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=7893be1b3a157ba4a0ab698cf2b2f5e2}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=59a2681584ae24c0e88a26267c28a562}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={L\bibnamedelima Z},
+           giveni={L\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=6b1da9f8985789afeb993c58dfa1c05b}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{49488dba65a6d02315ba3659410fdd63}
+      \strng{fullhash}{d9d2ae0ad8154d93b8aced307fc2ad8d}
+      \strng{authornamehash}{49488dba65a6d02315ba3659410fdd63}
+      \strng{authorfullhash}{d9d2ae0ad8154d93b8aced307fc2ad8d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supercritical carbon dioxide (SC-CO2) fluid is characterized by low rock breaking threshold pressure and high rock breaking rate. Meanwhile, SC-CO2 fluid has relatively low viscosity near to gas and high density near to liquid. So, it has great advantages in drilling and rock breaking over water. In this paper, numerical study of SC-CO2 flowing through a nozzle is presented. The purpose of this simulation is to ascertain why the SC-CO2 jet flow has better ability in drilling and rock breaking than the water jet flow. The simulation model was controlled by the RANS equations together with the continuity equation as well as the energy equation. The realizable k-epsilon turbulence model was adopted to govern the turbulent characteristics. Pressure boundary conditions were applied to the inlet and outlet boundary. The properties of carbon dioxide and water were described by UDF. It is found that: (1) under the same boundary conditions, the decay of dimensionless central axial velocity and dynamic pressure of water is quicker than that of the SC-CO2, and the core length of SC-CO2 jet is about 4.5 times of the nozzle diameter, which is 1 times longer than that of the water; (2) With the increase of inlet pressure or the decrease of outlet pressure, the dimensionless central axial velocity and dynamic pressure attenuation of water keeps the same, while the decay of central axial velocity of SC-CO2 turns gentle; (3) the change of central axial temperature of SC-CO2 is more complex than that of the water.}
+      \field{journaltitle}{{IOP} Conference Series: Materials Science and Engineering}
+      \field{month}{12}
+      \field{number}{7}
+      \field{title}{Numerical investigation on the expansion of supercritical carbon dioxide jet}
+      \field{volume}{52}
+      \field{year}{2013}
+      \field{pages}{072011}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1757-899x/52/7/072011
+      \endverb
+      \verb{url}
+      \verb ttps://doi.org/10.1088%5C%2F1757-899x%5C%2F52%5C%2F7%5C%2F072011
+      \endverb
+    \endentry
+    \entry{doi:10.1063/1.4937948}{article}{}
+      \name{author}{5}{}{%
+        {{hash=31c6dc5f54538327c9d20502881cd17f}{%
+           family={M\"{u}ller},
+           familyi={M\bibinitperiod},
+           given={Hagen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b3384c011c7ffee82314098bba1d5997}{%
+           family={Niedermeier},
+           familyi={N\bibinitperiod},
+           given={Christoph\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e05bf55d25df40119e06db379e79dfa3}{%
+           family={Matheis},
+           familyi={M\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=35c98910b56c2a0ff8a18a7bd4b475d6}{%
+           family={Pfitzner},
+           familyi={P\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dd49e0c1a5ff9fe985225621e227bfa7}{%
+           family={Hickel},
+           familyi={H\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{97eafee003975ec1acca93b172938d4a}
+      \strng{fullhash}{57cc9f443227288c9a57844119ba9eea}
+      \strng{authornamehash}{97eafee003975ec1acca93b172938d4a}
+      \strng{authorfullhash}{57cc9f443227288c9a57844119ba9eea}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Fluids}
+      \field{number}{1}
+      \field{title}{Large-eddy simulation of nitrogen injection at trans- and supercritical conditions}
+      \field{volume}{28}
+      \field{year}{2016}
+      \field{pages}{015102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4937948
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1063/1.4937948
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.4937948
+      \endverb
+    \endentry
+    \entry{PETIT201361}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7e4b8a7f2a02a9b81a0cf40e613bf6d2}{%
+           family={Petit},
+           familyi={P\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0d6e2894164dd492a39ee8266d033637}{%
+           family={Ribert},
+           familyi={R\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=276574ef84971aaf938617a69784602d}{%
+           family={Lartigue},
+           familyi={L\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=12263ba0ae8793d50b4bedd81d0eefb7}{%
+           family={Domingo},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{64ce803e2ad01b0b488383c69e3e7616}
+      \strng{fullhash}{19841c4a8b7ab41b858fcffa9f39041c}
+      \strng{authornamehash}{64ce803e2ad01b0b488383c69e3e7616}
+      \strng{authorfullhash}{19841c4a8b7ab41b858fcffa9f39041c}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Mixing is a key point for thrust and efficiency of combustion systems. It becomes crucial in the case Liquid Rocket Engines as large investments are involved. Besides, the pressure in liquid rocket combustion chamber often exceeding the critical point of loaded propellants, mixing becomes an important scientific issue as fluid properties differ from classical ideal gas assumption. In this study, two configurations are studied to evaluate the impact of subgrid models on mixing. Firstly, Mayer's experiments of trans- and super-critical nitrogen jet injection into a warm nitrogen atmosphere have been numerically investigated with a structured numerical code called SiTCom-B. SiTCom-B solves Direct Numerical Simulations and Large Eddy Simulations equations for perfect or real gas equation of states. In this study, Soave\x{fffd}\x{fffd}\x{fffd}Redlich\x{fffd}\x{fffd}\x{fffd}Kwong (SRK) and Peng\x{fffd}\x{fffd}\x{fffd}Robinson equation of state are used with appropriated thermodynamics relations and validated against NIST data. Three-dimensional LES are conducted for two cases (cases 3 and 4 in Mayer et al.'s reference [1]) with real-gas NSCBC treatment. Several sub-grid scale models are tested and the results are compared to experimental data for density on jet axis: a very good agreement is obtained on a light mesh (11.6 million of points) with the SRK equation of state and standard Smagorinsky model. Flow structures are evidenced with Schlieren snapshots. Secondly, the Mascotte test-bench from ONERA is simulated with SiTCom-B based on Soave\x{fffd}\x{fffd}\x{fffd}Redlich\x{fffd}\x{fffd}\x{fffd}Kwong equation of state and Smagorinsky models. The simulated non-reacting case is characterized by a very short liquid oxygen dense core because of the strong density and velocity gradients boosting mixing efficiency.}
+      \field{issn}{0896-8446}
+      \field{journaltitle}{The Journal of Supercritical Fluids}
+      \field{title}{Large-eddy simulation of supercritical fluid injection}
+      \field{volume}{84}
+      \field{year}{2013}
+      \field{pages}{61\bibrangedash 73}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.supflu.2013.09.011
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0896844613003239
+      \endverb
+      \keyw{Supercritical,LES,Mixing,3D-NSCBC}
+    \endentry
+    \entry{DNS_N}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2cf7b30d16e4031fff4abd4fa71021e4}{%
+           family={Ries},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f84e4bb246d7f3fdd46b98ccfdbce9b8}{%
+           family={Obando},
+           familyi={O\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0fa1f105cdaf09d693e09e3637cc5228}{%
+           family={I.},
+           familyi={I\bibinitperiod},
+           given={Shevchuck},
+           giveni={S\bibinitperiod}}}%
+        {{hash=294a3bf2a7757a13114d88ff75df0ac4}{%
+           family={J.},
+           familyi={J\bibinitperiod},
+           given={Janicka},
+           giveni={J\bibinitperiod}}}%
+        {{hash=041ecc5f9505fbb09a8b1f6a99c8a57a}{%
+           family={Sadiki},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{096417168da428d0ab09835d293f12fe}
+      \strng{fullhash}{67cd10d781e3df010b7008aa1eb76ca6}
+      \strng{authornamehash}{096417168da428d0ab09835d293f12fe}
+      \strng{authorfullhash}{67cd10d781e3df010b7008aa1eb76ca6}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Heat and Fluid Flow}
+      \field{month}{08}
+      \field{title}{Numerical analysis of turbulent flow dynamics and heat transport in a round jet at supercritical conditions}
+      \field{volume}{66}
+      \field{year}{2017}
+      \field{pages}{172\bibrangedash 184}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.ijheatfluidflow.2017.06.007
+      \endverb
+    \endentry
+    \entry{article}{article}{}
+      \name{author}{7}{}{%
+        {{hash=ad8243360a5afbf34839a1e4a981143d}{%
+           family={Ruiz},
+           familyi={R\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ddfc9e275e6d8416ac4457e6fa306e9e}{%
+           family={Lacaze},
+           familyi={L\bibinitperiod},
+           given={Guilhem},
+           giveni={G\bibinitperiod}}}%
+        {{hash=92f347dcd23fed7bd54fbdd104cfa3b5}{%
+           family={Oefelein},
+           familyi={O\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=790154beda861a303ba87e2b77a5127f}{%
+           family={Mari},
+           familyi={M\bibinitperiod},
+           given={Raphae\x{fffd}\x{fffd}l},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3b9de869b7b2444ae4e22644fb47e228}{%
+           family={Benedicte},
+           familyi={B\bibinitperiod},
+           given={Cuenot},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc3706f2cf2060819a8f1fe773acdb5d}{%
+           family={Selle},
+           familyi={S\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4ac19ef6db87e7d185178ec1a4cc775f}{%
+           family={Poinsot},
+           familyi={P\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba5bf0720b8c757cf828fdb9b7c336bb}
+      \strng{fullhash}{9a6dd9bd6180d815944dd7a28d84eec2}
+      \strng{authornamehash}{ba5bf0720b8c757cf828fdb9b7c336bb}
+      \strng{authorfullhash}{9a6dd9bd6180d815944dd7a28d84eec2}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0001-1452}
+      \field{journaltitle}{AIAA Journal}
+      \field{month}{11}
+      \field{title}{Numerical Benchmark for High-Reynolds-Number Supercritical Flows with Large Density Gradients}
+      \field{volume}{54}
+      \field{year}{2015}
+      \field{pages}{1445\bibrangedash 1460}
+      \range{pages}{16}
+    \endentry
+    \entry{LES_N}{article}{}
+      \name{author}{4}{}{%
+        {{hash=13f9fa6d031d515546d90bffb18a0754}{%
+           family={Schmitt},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fc3706f2cf2060819a8f1fe773acdb5d}{%
+           family={Selle},
+           familyi={S\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ad8243360a5afbf34839a1e4a981143d}{%
+           family={Ruiz},
+           familyi={R\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=68509213ad1b0c87b90c7160fe9137de}{%
+           family={Cuenot},
+           familyi={C\bibinitperiod},
+           given={B\x{fffd}\x{fffd}n\x{fffd}\x{fffd}dicte},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{70f3c679ba807ee71f0e422be0606f3e}
+      \strng{fullhash}{9261599aebf4e43697f8d39679b5aa7e}
+      \strng{authornamehash}{70f3c679ba807ee71f0e422be0606f3e}
+      \strng{authorfullhash}{9261599aebf4e43697f8d39679b5aa7e}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA Journal}
+      \field{number}{9}
+      \field{title}{Large-Eddy Simulation of Supercritical-Pressure Round Jets}
+      \field{volume}{48}
+      \field{year}{2010}
+      \field{pages}{2133\bibrangedash 2144}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.2514/1.J050288
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.2514/1.J050288
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2514/1.J050288
+      \endverb
     \endentry
     \entry{SOAVE1972}{article}{}
       \name{author}{1}{}{%
@@ -118,6 +656,160 @@
       \field{urldateera}{ce}
       \verb{url}
       \verb https://www.eia.gov/energyexplained/electricity/how-electricity-is-generated.php
+      \endverb
+    \endentry
+    \entry{SCF1}{article}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The article offers information on supercritical fluids (SCF). It mentions that a SCF is any substance at a temperature and pressure above its critical point, where distinct liquid and gas phases do not exist. It also mentions critical properties of various solvents including carbon dioxide, water and methane.}
+      \field{issn}{09703136}
+      \field{journaltitle}{Chemical Business}
+      \field{number}{6}
+      \field{title}{Supercritical fluid}
+      \field{volume}{28}
+      \field{year}{2014}
+      \field{pages}{39\bibrangedash 44}
+      \range{pages}{6}
+      \verb{url}
+      \verb https://login.proxy.lib.fsu.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=f5h&AN=97302089&site=eds-live&scope=site
+      \endverb
+      \keyw{SUPERCRITICAL fluidsCRITICAL temperatureCARBON dioxideMETHANEFLUIDS}
+    \endentry
+    \entry{Same_LES}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bf79a389e6eb65852fb84a13ec092877}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Wu},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f0b59457dd9dc011b8ddab6c62445b33}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Maozhao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3434ddd7774da7c03c03848e129988fd}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{270c9dabdd51255189252f0af07b0d6d}
+      \strng{fullhash}{270c9dabdd51255189252f0af07b0d6d}
+      \strng{authornamehash}{270c9dabdd51255189252f0af07b0d6d}
+      \strng{authorfullhash}{270c9dabdd51255189252f0af07b0d6d}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{When a cryogenic fluid initially at a subcritical temperature is injected into a supercritical environment, it will experience a process across a pseudo- boiling point, at which the specific heat reaches its maximum value under the corresponding pressure. Large eddy simulation (LES) is conducted to explore the effects of pseudo-vaporization phenomenon around the pseudo-critical temperature on fluid jet evolution. To highlight the pseudo-vaporization effect, a cryogenic nitrogen jet with different injection temperatures, which correspond to transcritical and supercritical conditions, respectively, is injected into a chamber with same supercritical conditions. All of the thermophysical and transport properties are determined directly from fundamental theories combined with a real fluid equation of state. It is found that when the fluid transits through the pseudo-boiling point, the constant-pressure specific heat reaches a local maximum, while the thermal conductivity and viscosity become minimum. The condition-averaged constant-pressure specific heat suggests that the pseudo-boiling point has the effect of increasing the density gradients. Vorticity and Q-criterion analysis reveals that high-temperature injection facilitates the mixing of jet fluid with ambient gas. Also, the high-temperature injection of supercritical fluid can earlier transit into the full developed region.}
+      \field{journaltitle}{Numerical Heat Transfer, Part A: Applications}
+      \field{number}{8}
+      \field{title}{Large eddy simulation of fluid injection under transcritical and supercritical conditions}
+      \field{volume}{70}
+      \field{year}{2016}
+      \field{pages}{870\bibrangedash 886}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1080/10407782.2016.1214485
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/10407782.2016.1214485
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/10407782.2016.1214485
+      \endverb
+    \endentry
+    \entry{doi:10.1080/00102200500287613}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9b56840ac19ad4ff12dc9cf88239df0d}{%
+           family={ZONG},
+           familyi={Z\bibinitperiod},
+           given={NAN},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ed619ecddfe0551ccd035019f0a444a1}{%
+           family={YANG*},
+           familyi={Y\bibinitperiod},
+           given={VIGOR},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{fb5b516b9b38905a5bfb3d97564f1b49}
+      \strng{fullhash}{fb5b516b9b38905a5bfb3d97564f1b49}
+      \strng{authornamehash}{fb5b516b9b38905a5bfb3d97564f1b49}
+      \strng{authorfullhash}{fb5b516b9b38905a5bfb3d97564f1b49}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Combustion Science and Technology}
+      \field{number}{1-3}
+      \field{title}{CRYOGENIC FLUID JETS AND MIXING LAYERS IN TRANSCRITICAL AND SUPERCRITICAL ENVIRONMENTS}
+      \field{volume}{178}
+      \field{year}{2006}
+      \field{pages}{193\bibrangedash 227}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1080/00102200500287613
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/00102200500287613
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/00102200500287613
+      \endverb
+    \endentry
+    \entry{doi:10.1063/1.1795011}{article}{}
+      \name{author}{4}{}{%
+        {{hash=edd6be06716f3e14b7477dbce9ed9246}{%
+           family={Zong},
+           familyi={Z\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9bda5fca6cf612404115788d6dec4d61}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Hua},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cb844fdef0198d315152118c3455f70a}{%
+           family={Hsieh},
+           familyi={H\bibinitperiod},
+           given={Shih-Yang},
+           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=0228ebba3c5519fc8ae26bd247dd52e6}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Vigor},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc112d61733b34c649b892c31a2b3bf6}
+      \strng{fullhash}{c22920a36b94a3cabdcaf981c5cac7b0}
+      \strng{authornamehash}{bc112d61733b34c649b892c31a2b3bf6}
+      \strng{authorfullhash}{c22920a36b94a3cabdcaf981c5cac7b0}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Fluids}
+      \field{number}{12}
+      \field{title}{A numerical study of cryogenic fluid injection and mixing under supercritical conditions}
+      \field{volume}{16}
+      \field{year}{2004}
+      \field{pages}{4248\bibrangedash 4261}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1063/1.1795011
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1063/1.1795011
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.1795011
       \endverb
     \endentry
   \endsortlist
