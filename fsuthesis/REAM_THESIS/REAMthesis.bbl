@@ -50,6 +50,120 @@
       \verb https://journalsonline.org/american-journal-of-engineering-science-and-technology/pdfs/volume-10/4.pdf
       \endverb
     \endentry
+    \entry{allam2013system}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=b5f44424e3ae2f07f149eec224d7fd14}{%
+           family={Allam},
+           familyi={A\bibinitperiod},
+           given={Rodney\bibnamedelima John},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=151f1714a86379c0e7388d86e7027879}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={Miles},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cfcb6787d2d9a072b719f61bb0a92727}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Glenn\bibnamedelima William},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Google Patents}%
+      }
+      \strng{namehash}{c4cc93006d8a38fd9077d8c09977742e}
+      \strng{fullhash}{2d478b8d7fd5c313e78289089337e6c6}
+      \strng{authornamehash}{c4cc93006d8a38fd9077d8c09977742e}
+      \strng{authorfullhash}{2d478b8d7fd5c313e78289089337e6c6}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12~3}
+      \field{note}{US Patent 8,596,075}
+      \field{title}{System and method for high efficiency power generation using a carbon dioxide circulating working fluid}
+      \field{year}{2013}
+    \endentry
+    \entry{ALLAM20175948}{article}{}
+      \name{author}{10}{}{%
+        {{hash=b1be4583186911ff48d1326a0214356c}{%
+           family={Allam},
+           familyi={A\bibinitperiod},
+           given={Rodney},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d6485f264122116d268a090e907064a3}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9fb3b72a5e5daca1f4283e01b66de1f0}{%
+           family={Forrest},
+           familyi={F\bibinitperiod},
+           given={Brock},
+           giveni={B\bibinitperiod}}}%
+        {{hash=260fc5a18cff1abe559ddd893dfc295e}{%
+           family={Fetvedt},
+           familyi={F\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5016eaec65033c9741ad3558a5f690e1}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Xijia},
+           giveni={X\bibinitperiod}}}%
+        {{hash=46177472c44f5a6c94edc76be6abddcf}{%
+           family={Freed},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7bfd2c1bff5e2c374eec0195bcc56b97}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={G.\bibnamedelimi William},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=47271816ef83c651b6a5e71e0bec09fa}{%
+           family={Sasaki},
+           familyi={S\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=277adb0de9b8670edcbfcea9cbe088a1}{%
+           family={Itoh},
+           familyi={I\bibinitperiod},
+           given={Masao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=11db314d2a9d839e26147fc5dd5cedab}{%
+           family={Manning},
+           familyi={M\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{501c8773c7693a7b8fb0bee17980996f}
+      \strng{fullhash}{c58a43779db5e2dd8ccf76656b253c5e}
+      \strng{authornamehash}{501c8773c7693a7b8fb0bee17980996f}
+      \strng{authorfullhash}{c58a43779db5e2dd8ccf76656b253c5e}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Allam cycle is a novel CO2, oxy-fuel power cycle that utilizes hydrocarbon fuels while inherently capturing approximately 100\% of atmospheric emissions, including nearly all CO2 emissions at a cost of electricity that is highly competitive with the best available energy production systems that do not employ CO2 capture. The proprietary system achieves these results through a semi-closed-loop, high-pressure, low-pressure-ratio recuperated Brayton cycle that uses supercritical CO2 as the working fluid, dramatically reducing energy losses compared to steam- and air-based cycles. In conventional cycles, the separation and removal of low concentration combustion derived impurities such as CO2 results in a large additional capital cost and increased parasitic power. As a result, removal in conventional cycles can increase the cost of electricity by 50\% to 70\% [1]. The compelling economics of the Allam Cycle are driven by high target efficiencies, 59\% net for natural gas and 51\% net for coal (LHV basis) while inherently capturing nearly 100\% CO2 at pipeline pressure with low projected capital and O&M costs. Additionally, for a small reduction in performance the cycle can run substantially water free. The system employs only a single turbine, utilizes a small plant footprint, and requires smaller and fewer components than conventional hydrocarbon fueled systems. The Allam Cycle was first presented at GHGT-11 [2]. Since then, significant progress has been made, including detailed system design, component testing and the construction of a 50 MWth demonstration plant commencing in Q1 2016 and now entering commissioning as of Q4 2016. This paper will review the development status of the Allam Cycle; for the demonstration plant, the construction and commissioning status, schedule, key components, layout, and detailed design; turbine design, manufacturing status; development of a novel dynamic control system and control simulator for the demonstration plant; and other key aspects of the cycle. It will provide an update on the progress of the gasified solid fuel Allam Cycle and then address the overall Allam Cycle commercialization program, benefits and applications, and the expected design of the natural gas 300 MWe commercial NET Power plant projected for 2020.}
+      \field{issn}{1876-6102}
+      \field{journaltitle}{Energy Procedia}
+      \field{note}{13th International Conference on Greenhouse Gas Control Technologies, GHGT-13, 14-18 November 2016, Lausanne, Switzerland}
+      \field{title}{Demonstration of the Allam Cycle: An Update on the Development Status of a High Efficiency Supercritical Carbon Dioxide Power Process Employing Full Carbon Capture}
+      \field{volume}{114}
+      \field{year}{2017}
+      \field{pages}{5948\bibrangedash 5966}
+      \range{pages}{19}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.egypro.2017.03.1731
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S187661021731932X
+      \endverb
+      \keyw{natural gas,coal,Allam Cycle,carbon,capture,supercritical,update,demonstration,8 Rivers,Heatric,Toshiba,NET Power,CO,sCO}
+    \endentry
     \entry{BANUTI201512}{article}{}
       \name{author}{1}{}{%
         {{hash=e69f598abfcc0e06f4fb0d1d26cc61b0}{%
@@ -81,6 +195,63 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0896844614004306
       \endverb
       \keyw{Pseudoboiling,Widom-line,Vaporization,Clapeyron,Transcritical}
+    \endentry
+    \entry{CHAN2021113972}{article}{}
+      \name{author}{6}{}{%
+        {{hash=e7cff96edcfd0a25b6f5eedb92240bcb}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c36bb88548405d2c1b2b266e334caf04}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Huixiong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1a1f520c1123587494e9d4c74ae07269}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f09b89f56f06c846a6b9931d4456b8ee}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Fucheng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bfc7c5dca970438d59e2eca4f60e73ad}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lele},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0c6433e434f2a9ab1f57edaf3dd58d0b}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Zemin},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e08857f16e29f04bd23713921d4251d}
+      \strng{fullhash}{ccfddbcc3c7d13cec404b29d678d7b99}
+      \strng{authornamehash}{8e08857f16e29f04bd23713921d4251d}
+      \strng{authorfullhash}{ccfddbcc3c7d13cec404b29d678d7b99}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Allam cycle is a promising oxy-fuel combustion power cycle with high electrical efficiency and near-zero carbon dioxide emissions. In this paper, the thermodynamic and exergoeconomic analyses are performed for a novel combined power and cooling oxy-fuel power cycle, which combines the Allam cycle with liquefied natural gas regasification process. Parametric study is conducted to investigate the effects of key cycle variables on the electrical and exergy efficiencies and total product unit cost of the proposed cycle. Multi-objective optimization is carried out to maximize the exergy efficiency and minimize the total product unit cost. The results show that Condenser 2 has the highest exergy destruction of 22.81\x{fffd}MW, followed by the combustor (22.72\x{fffd}MW). The combustor, Condenser 2 and gas turbine are the three most important components from exergoeconomic aspects. The introduction of adiabatic compression heat of the bypass stream has a positive impact on the system performance, especially when the outlet temperature of the combustor is low. The optimization results indicate that the exergy efficiency and the total product unit cost cannot reach the optimal values at the same time. The highest exergy efficiency of 50.31\% and the lowest total product unit cost of 16.654 \$/GJ are obtained respectively with different sets of cycle variables. In addition, the electrical efficiency of the optimized proposed cycle is up to around 65.7\%, about 11 percentage points higher than that of the Allam cycle.}
+      \field{issn}{0196-8904}
+      \field{journaltitle}{Energy Conversion and Management}
+      \field{title}{Exergoeconomic analysis and optimization of the Allam cycle with liquefied natural gas cold exergy utilization}
+      \field{volume}{235}
+      \field{year}{2021}
+      \field{pages}{113972}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.enconman.2021.113972
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0196890421001485
+      \endverb
+      \keyw{Oxy-fuel combustion,Allam cycle,LNG,Carbon capture,Exergoeconomic,Multi-objective optimization}
     \endentry
     \entry{chung:1988}{article}{}
       \name{author}{4}{}{%
@@ -120,6 +291,248 @@
       \field{pages}{671\bibrangedash 679}
       \range{pages}{9}
     \endentry
+    \entry{1984JCoPPPM}{article}{}
+      \name{author}{2}{}{%
+        {{hash=110f18ae3681f5063c8e375e2faf0855}{%
+           family={{Colella}},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4e6ca0b115c885d5288ef71707567ecf}{%
+           family={{Woodward}},
+           familyi={W\bibinitperiod},
+           given={Paul\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c1230022258c90599e8f1c8d17d71b9}
+      \strng{fullhash}{1c1230022258c90599e8f1c8d17d71b9}
+      \strng{authornamehash}{1c1230022258c90599e8f1c8d17d71b9}
+      \strng{authorfullhash}{1c1230022258c90599e8f1c8d17d71b9}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{month}{9}
+      \field{title}{{The Piecewise Parabolic Method (PPM) for Gas-Dynamical Simulations}}
+      \field{volume}{54}
+      \field{year}{1984}
+      \field{pages}{174\bibrangedash 201}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1016/0021-9991(84)90143-8
+      \endverb
+      \keyw{Fluid Mechanics and Heat Transfer}
+    \endentry
+    \entry{COLELLA20087069}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c41785440d0a194370dd86cca9827c37}{%
+           family={Colella},
+           familyi={C\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c189add02b880d49883eb702e2d892dd}{%
+           family={Sekora},
+           familyi={S\bibinitperiod},
+           given={Michael\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c34b264b778746c72de0a940ff80b6e5}
+      \strng{fullhash}{c34b264b778746c72de0a940ff80b6e5}
+      \strng{authornamehash}{c34b264b778746c72de0a940ff80b6e5}
+      \strng{authorfullhash}{c34b264b778746c72de0a940ff80b6e5}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a new limiter for the PPM method of Colella and Woodward [P. Colella, P.R. Woodward, The Piecewise Parabolic Method (PPM) for gas-dynamical simulations, Journal of Computational Physics 54 (1984) 174\x{fffd}\x{fffd}\x{fffd}201] that preserves accuracy at smooth extrema. It is based on constraining the interpolated values at extrema (and only at extrema) using non-linear combinations of various difference approximations of the second derivatives. Otherwise, we use a standard geometric limiter to preserve monotonicity away from extrema. This leads to a method that has the same accuracy for smooth initial data as the underlying PPM method without limiting, while providing sharp, non-oscillatory representations of discontinuities.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{15}
+      \field{title}{A limiter for PPM that preserves accuracy at smooth extrema}
+      \field{volume}{227}
+      \field{year}{2008}
+      \field{pages}{7069\bibrangedash 7076}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jcp.2008.03.034
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0021999108001435
+      \endverb
+      \keyw{Upwind methods,PPM,Limiters}
+    \endentry
+    \entry{CRESPI2017152}{article}{}
+      \name{author}{4}{}{%
+        {{hash=599286c4df41bd4ed4827cba33225253}{%
+           family={Crespi},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6609ea4a9f2537e9b875c6697d8ceace}{%
+           family={Gavagnin},
+           familyi={G\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=29bf70e2644edaa8bd15f172082bc09a}{%
+           family={S\'{a}nchez},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=754ba7139eae05c6f583287166206904}{%
+           family={Mart\x{fffd}\x{fffd}nez},
+           familyi={M\bibinitperiod},
+           given={Gonzalo\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b0b87b8d42b8350d624318871543509}
+      \strng{fullhash}{84a7d84673652d2613854fd51bf02e73}
+      \strng{authornamehash}{4b0b87b8d42b8350d624318871543509}
+      \strng{authorfullhash}{84a7d84673652d2613854fd51bf02e73}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Power cycles running on carbon dioxide at supercritical pressure and temperature were introduced in the late ninety-sixties but, after a warm welcome to the theoretical performance announced, they were later abandoned in favour of standard combustion gas turbines. Nevertheless, the technology was brought forward about a decade ago and has since captured significant attention from the scientific and industrial community. The number of publications has risen exponentially and there are several experimental projects under development today. The performances of these cycles have been deeply analysed in literature, proving to be theoretically competitive. This paper reviews all the works published in the topic to date. Different cycle concepts (stand-alone and in combination with other cycles using the same or different technologies), layouts, fuels, applications (power only or combined heat and power) and operating conditions are reviewed and categorised according to the configuration of the cycle. This latter feature is thought to be an interesting added value of this paper since, rather than just listing the past work in the area of sCO2 power cycles, it also organises the numerous cycles in different categories and provides a comparison of the claimed performance of each one of them. This comparison between the performances of the various configurations is based on the values declared in the original papers and thus applies to very different boundary conditions. Obviously, this great heterogeneity of the available data (in particular the temperatures and pressures considered) makes it impossible to establish a fair comparison between the configurations reviewed. Therefore, a future study seems to be mandatory where the performances of all cycles should be compared for the same set of operating conditions.}
+      \field{issn}{0306-2619}
+      \field{journaltitle}{Applied Energy}
+      \field{title}{Supercritical carbon dioxide cycles for power generation: A review}
+      \field{volume}{195}
+      \field{year}{2017}
+      \field{pages}{152\bibrangedash 183}
+      \range{pages}{32}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.apenergy.2017.02.048
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0306261917301915
+      \endverb
+      \keyw{Supercritical,Carbon dioxide,sCO,Efficiency,Stand-alone,Combined cycle}
+    \endentry
+    \entry{Dodge}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4141ab70f772343bc8e2b2229175cf93}{%
+           family={Dodge},
+           familyi={D\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4141ab70f772343bc8e2b2229175cf93}
+      \strng{fullhash}{4141ab70f772343bc8e2b2229175cf93}
+      \strng{authornamehash}{4141ab70f772343bc8e2b2229175cf93}
+      \strng{authorfullhash}{4141ab70f772343bc8e2b2229175cf93}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://breakingenergy.com/2014/11/24/supercritical-carbon-dioxide-power-cycles-starting-to-hit-the-market/}}
+      \field{note}{Accessed: 2019-08-08}
+      \field{title}{Supercritical Carbon Dioxide Power Cycles Starting to Hit the Market}
+      \field{year}{2014}
+    \endentry
+    \entry{hitthemarket}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4141ab70f772343bc8e2b2229175cf93}{%
+           family={Dodge},
+           familyi={D\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4141ab70f772343bc8e2b2229175cf93}
+      \strng{fullhash}{4141ab70f772343bc8e2b2229175cf93}
+      \strng{authornamehash}{4141ab70f772343bc8e2b2229175cf93}
+      \strng{authorfullhash}{4141ab70f772343bc8e2b2229175cf93}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Breaking Energy}
+      \field{title}{Supercritical Carbon Dioxide Power Cycles Starting to Hit the Market}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://breakingenergy.com/2014/11/24/supercritical-carbon-dioxide-power-cycles-starting-to-hit-the-market/
+      \endverb
+    \endentry
+    \entry{ALLAMCOMP}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f16c72134f16a98e0262e1bc07a3d179}{%
+           family={Dokhaee},
+           familyi={D\bibinitperiod},
+           given={Emad},
+           giveni={E\bibinitperiod}}}%
+        {{hash=467a69e8e12d1038a2ea888fa8aa20ba}{%
+           family={Saraei},
+           familyi={S\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0768ba7ecd2cd9dd098b8aebda27ac8d}{%
+           family={Jafari\bibnamedelima Mehrabadi},
+           familyi={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Saeed},
+           giveni={S\bibinitperiod}}}%
+        {{hash=612d94889f949f603b3131ea4c31a449}{%
+           family={Yousefi},
+           familyi={Y\bibinitperiod},
+           given={Peyman},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebe6a01f661af9fe1fe9f94d977dad9f}
+      \strng{fullhash}{c4da63efe7fb54b1a8d100c618289bac}
+      \strng{authornamehash}{ebe6a01f661af9fe1fe9f94d977dad9f}
+      \strng{authorfullhash}{c4da63efe7fb54b1a8d100c618289bac}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Allam Cycle takes a novel approach to reducing emissions by employing oxy-combustion that utilizes carbon dioxide (CO2) working fluid, highly recuperated cycle. In this research, the main parts of the Allam cycle, including the combustion chamber, air separation unit, heat exchanger and cooling tower, have been simulated in Thermoflow software. This cycle is based on combustion using pure oxygen instead of ambient air and the working fluid of this cycle is carbon dioxide. According to the results of the validation part of the initial simulation, the efficiency of the supercritical carbon dioxide cycle with three cooling stages in the compression part (in non-optimal and initial state) is 54{\%}, which is approximately 4{\%} of the cycle efficiency. By reducing the inlet fluid pressure to the pump from 75.38 to 73.43 bar, the cycle efficiency increases from 53.9 to 54. According to the second part of the results, which shows the effect of combustion chamber temperature (in the range of 800--1300 $\,^{\circ}$C) on cycle performance, by increasing the combustion chamber temperature from 800 to 1200 $\,^{\circ}$C, the cycle efficiency increases from 44.61 to 61.38. Also, the highest efficiency of the Brayton cycle is obtained in the pressure ratio of 20, which is approximately equal to 38{\%} for the cycle with real specifications, while the highest efficiency is obtained in the Allam cycle with a pressure ratio of 10, which is about 55{\%}. Therefore, in addition to being able to absorb 100{\%} of carbon dioxide, the Allam cycle has a much higher efficiency than the Brayton cycle.}
+      \field{isbn}{2251-6832}
+      \field{journaltitle}{International Journal of Energy and Environmental Engineering}
+      \field{number}{3}
+      \field{title}{Simulation of the Allam cycle with carbon dioxide working fluid and comparison with Brayton cycle}
+      \field{volume}{12}
+      \field{year}{2021}
+      \field{pages}{543\bibrangedash 550}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/s40095-021-00401-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s40095-021-00401-4
+      \endverb
+    \endentry
+    \entry{NextGenNucReac}{thesis}{}
+      \name{author}{3}{}{%
+        {{hash=0768f6d4864f4faddb6695193480ee69}{%
+           family={Dostal},
+           familyi={D\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5a9fce54563947bcbd19aaba7737e343}{%
+           family={Driscoll},
+           familyi={D\bibinitperiod},
+           given={M.J.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c01cf241fedecd55ad3bcda2842bf4c4}{%
+           family={Hejzlar},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {MIT}%
+      }
+      \strng{namehash}{1f73fa27f25333e71d2b4cee53101663}
+      \strng{fullhash}{1f73fa27f25333e71d2b4cee53101663}
+      \strng{authornamehash}{1f73fa27f25333e71d2b4cee53101663}
+      \strng{authorfullhash}{1f73fa27f25333e71d2b4cee53101663}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Supercritical Carbon Dioxide Cycle for Next Generation Nuclear Reactors}
+      \field{type}{phdthesis}
+      \field{year}{2004}
+    \endentry
     \entry{SCF2}{misc}{}
       \field{sortinit}{E}
       \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
@@ -128,6 +541,87 @@
       \field{note}{Accessed: 2019-08-08}
       \field{title}{Explore, use, make the most of supercritical fluids}
       \field{year}{2009}
+    \endentry
+    \entry{cleantechnol1010022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=6b71a22996dbcb5276c8dbd5c26414ec}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7d19e678c72662459bbdb25f3e207dee}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6cacd034725d0431a7b1f3fd4a060c02}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=03ca8a78288d33b782dea55b8dbeaa35}{%
+           family={Buss},
+           familyi={B\bibinitperiod},
+           given={Russel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=34ab39275e71f8a13687a9ff15151e29}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{43aa513920496769ba0adc6eeed9f9a0}
+      \strng{fullhash}{fa313f766ac7b4966789536a0785dd34}
+      \strng{authornamehash}{43aa513920496769ba0adc6eeed9f9a0}
+      \strng{authorfullhash}{fa313f766ac7b4966789536a0785dd34}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Allam cycle is the latest advancement in power generation technologies with a high cycle efficiency, zero NOx emission, and carbon dioxide available at pipeline specification for sequestration and utilization. The Allam cycle plant is a semi-closed, direct-fired, oxy-fuel Brayton cycle that uses high pressure supercritical carbon dioxide as a working fluid with sophisticated heat recuperation. This paper conducted process analyses including exergy analysis, sensitivity analysis, air separation unit (ASU) oxygen pump/compressor option analysis, and carbon footprint analysis for the integrated Allam power plant (natural gas)/ASU complex with a high degree of heat and work integration. Earlier works on exergy analysis were done on the Allam cycle and ASU independently. Exergy analysis on the integrated plants helps identify the equipment with the largest loss of thermodynamic efficiency. Sensitivity analysis investigated the effects of important ASU operational parameters along with equipment constraint limits on the downstream Allam cycle. Energy efficiency and carbon footprint are compared among the state-of-the-art fossil-fuel power generation cycles.}
+      \field{issn}{2571-8797}
+      \field{journaltitle}{Clean Technologies}
+      \field{number}{1}
+      \field{title}{Process and Carbon Footprint Analyses of the Allam Cycle Power Plant Integrated with an Air Separation Unit}
+      \field{volume}{1}
+      \field{year}{2019}
+      \field{pages}{325\bibrangedash 340}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.3390/cleantechnol1010022
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2571-8797/1/1/22
+      \endverb
+    \endentry
+    \entry{germano}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b15f77383f761f206a2be902ee711e85}{%
+           family={Germano},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b15f77383f761f206a2be902ee711e85}
+      \strng{fullhash}{b15f77383f761f206a2be902ee711e85}
+      \strng{authornamehash}{b15f77383f761f206a2be902ee711e85}
+      \strng{authorfullhash}{b15f77383f761f206a2be902ee711e85}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Turbulence: the filtering approach}
+      \field{volume}{238}
+      \field{year}{1992}
+      \field{pages}{325?336}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/S0022112092001733
+      \endverb
     \endentry
     \entry{GHANBARI201713}{article}{}
       \name{author}{3}{}{%
@@ -247,6 +741,66 @@
       \endverb
       \keyw{Continuum concept,Coordinate systems,Harmonic motion,Vectors,Tensors,Stress,Viscosity}
     \endentry
+    \entry{freejet}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=f8144452db5b91619169abdb26778307}{%
+           family={Khalil},
+           familyi={K\bibinitperiod},
+           given={Imane\bibnamedelima Ghaleb},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of California, San Diego}%
+      }
+      \strng{namehash}{f8144452db5b91619169abdb26778307}
+      \strng{fullhash}{f8144452db5b91619169abdb26778307}
+      \strng{authornamehash}{f8144452db5b91619169abdb26778307}
+      \strng{authorfullhash}{f8144452db5b91619169abdb26778307}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Free-Jet Expansion of Supercritical CO2}
+      \field{type}{phdthesis}
+      \field{year}{2003}
+    \endentry
+    \entry{pulse_jet}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9c897d170d58c120bbe1bc2ed53e80c2}{%
+           family={Lazarev},
+           familyi={L\bibinitperiod},
+           given={A.\bibnamedelimi V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=7eb4fb4b2a304fd347ac3ed0ba174c6a}{%
+           family={Tatarenko},
+           familyi={T\bibinitperiod},
+           given={K.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c00ea464df3fc7b76abdea871ffb59b0}
+      \strng{fullhash}{c00ea464df3fc7b76abdea871ffb59b0}
+      \strng{authornamehash}{c00ea464df3fc7b76abdea871ffb59b0}
+      \strng{authorfullhash}{c00ea464df3fc7b76abdea871ffb59b0}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The unsteady-state isentropic expansion of an initially homogeneous spherical cloud of a van der Waals gas into a vacuum is considered as a dynamic part of the problem of modeling a real gas pulse jet. A self-similar solution of the gas dynamic equations is obtained. The parameters of the pulse jet (density and temperature) that simulate the conditions of a real experiment are calculated.}
+      \field{isbn}{1990-7923}
+      \field{journaltitle}{Russian Journal of Physical Chemistry B}
+      \field{number}{8}
+      \field{title}{Gas dynamic model of the expansion of a supercritical carbon dioxide pulse jet: A self-similar solution}
+      \field{volume}{10}
+      \field{year}{2016}
+      \field{pages}{1248\bibrangedash 1255}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1134/S1990793116080145
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1134/S1990793116080145
+      \endverb
+    \endentry
     \entry{Li2012}{article}{}
       \name{author}{3}{}{%
         {{hash=f6108882a14a8f69264c202bdc4ee246}{%
@@ -288,6 +842,105 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/s10409-012-0035-5
+      \endverb
+    \endentry
+    \entry{rb}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f3b76eff854b60e60605a0e6bc092150}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Mukun},
+           giveni={M\bibinitperiod}}}%
+        {{hash=16da8f078291ca462e500c7e7b3f4870}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={Hongjian},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f3969f14d44261ddf041f4eccc586a64}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ruihe},
+           giveni={R\bibinitperiod}}}%
+        {{hash=433e662aeacc379ad915b4ef57445a1a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Caiyun},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{5ce5f6ca70ee0516c22cdddf2f2ff1fa}
+      \strng{fullhash}{c99cb38de0f0422ce3e6483147d6baa7}
+      \strng{authornamehash}{5ce5f6ca70ee0516c22cdddf2f2ff1fa}
+      \strng{authorfullhash}{c99cb38de0f0422ce3e6483147d6baa7}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Engineering Applications of Computational Fluid Mechanics}
+      \field{number}{1}
+      \field{title}{Comparative simulation research on the stress characteristics of supercritical carbon dioxide jets, nitrogen jets and water jets}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{pages}{357\bibrangedash 370}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/19942060.2017.1293565
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/19942060.2017.1293565
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/19942060.2017.1293565
+      \endverb
+    \endentry
+    \entry{very_rock}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f3b76eff854b60e60605a0e6bc092150}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Mukun},
+           giveni={M\bibinitperiod}}}%
+        {{hash=16da8f078291ca462e500c7e7b3f4870}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={Hongjian},
+           giveni={H\bibinitperiod}}}%
+        {{hash=433e662aeacc379ad915b4ef57445a1a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Caiyun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f3969f14d44261ddf041f4eccc586a64}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ruihe},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ce5f6ca70ee0516c22cdddf2f2ff1fa}
+      \strng{fullhash}{f8c432d154f35367a0f2fbcc7c35da40}
+      \strng{authornamehash}{5ce5f6ca70ee0516c22cdddf2f2ff1fa}
+      \strng{authorfullhash}{f8c432d154f35367a0f2fbcc7c35da40}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The supercritical carbon dioxide (SC-{\$}{\$}{\backslash}hbox {\{}CO{\}}{\_}{\{}2{\}}{\$}{\$}CO2) jet is potentially a new type of rock-breaking method that effectively combines pressure impact and thermal shock. Current studies show that carbon dioxide jets produce a larger damaged area and require a lower threshold pressure of breaking rocks compared with that of water jets; however, the generation mechanism of these types of jets has not been clearly explained. This study developed a fluid--solid heat coupling model using ANSYS. The simulation and experimental results show a good agreement, clearly explaining the relationships between the damage shape and thermal stress. The results of the experiment conducted indoors at ambient temperatures were first explained by simulating the stress of the rock. When the thermal effect was considered, both the maximum stress and the area wherein the stress was high increased. The increase in the elastic modulus, Poisson's ratio, and thermal expansion of the rock transformed its damage shape from bowl to linear. The increase in the injection pressure difference increased the broken depth of the rock, while the damage area on the surface of the rock remained the same. The possible damage shapes of the rock at formation temperature were analyzed. The temperature field of the jet increased both the shear stress acting on the surface of the rock and the tensile and shear stresses inside the rock; hence, the rock developed deeper and broader volumes of breaking in the well drilling process.}
+      \field{issn}{2191-4281}
+      \field{journaltitle}{Arabian Journal for Science and Engineering}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Influences of Supercritical Carbon Dioxide Jets on Damage Mechanisms of Rock}
+      \field{volume}{43}
+      \field{year}{2018}
+      \field{pages}{2641\bibrangedash 2658}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s13369-017-2984-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s13369-017-2984-2
       \endverb
     \endentry
     \entry{RANS}{article}{}
@@ -345,6 +998,77 @@
       \verb ttps://doi.org/10.1088%5C%2F1757-899x%5C%2F52%5C%2F7%5C%2F072011
       \endverb
     \endentry
+    \entry{LES_Comp}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dd2b035e898e0d9994c96e0c1493d60e}{%
+           family={Mart\'{\i}n},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c4c50c441e9fd2e9d3cae24eeaa3bcc5}{%
+           family={Piomelli},
+           familyi={P\bibinitperiod},
+           given={Ugo},
+           giveni={U\bibinitperiod}}}%
+        {{hash=69af82e636f7c6ef47e71e033b7d2e3f}{%
+           family={Candler},
+           familyi={C\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4aac3da866dd0b302f84c20e61a83b1}
+      \strng{fullhash}{a4aac3da866dd0b302f84c20e61a83b1}
+      \strng{authornamehash}{a4aac3da866dd0b302f84c20e61a83b1}
+      \strng{authorfullhash}{a4aac3da866dd0b302f84c20e61a83b1}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Computational Fluid Dynamics}
+      \field{month}{02}
+      \field{title}{Subgrid-Scale Models for Compressible Large-Eddy Simulations}
+      \field{volume}{13}
+      \field{year}{2000}
+      \field{pages}{361\bibrangedash 376}
+      \range{pages}{16}
+    \endentry
+    \entry{MILLER200226}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f0429dec0882def3e4a0ec52d9c9f94f}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={G.H.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=110f18ae3681f5063c8e375e2faf0855}{%
+           family={Colella},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{db83fc03097c7f2d04167405277d8246}
+      \strng{fullhash}{db83fc03097c7f2d04167405277d8246}
+      \strng{authornamehash}{db83fc03097c7f2d04167405277d8246}
+      \strng{authorfullhash}{db83fc03097c7f2d04167405277d8246}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A new method is presented for the explicit Eulerian finite difference computation of shock capturing problems involving multiple resolved material phases in three dimensions. We solve separately for each phase the equations of fluid dynamics or solid mechanics, using as interface boundary conditions artificially extended representations of the individual phases. For fluids we use a new 3D spatially unsplit implementation of the piecewise parabolic (PPM) method of Colella and Woodward. For solids we use the 3D spatially unsplit Eulerian solid mechanics method of Miller and Colella. Vacuum and perfectly incompressible obstacles may also be employed as phases. A separate problem is the time evolution of material interfaces, which are represented by planar segments constructed with a volume-of-fluid method. The volume fractions are advanced in time using a second-order 3D spatially unsplit advection routine with a velocity field determined by solution of interface-normal two-phase Riemann problems. From the Riemann problem solutions we also determine cross-interface momentum and energy fluxes. The volume fractions in mixed cells may be arbitrarily small, which would ordinarily make the Courant\x{fffd}\x{fffd}\x{fffd}Friedrichs\x{fffd}\x{fffd}\x{fffd}Lewy time step stability limit arbitrarily small as well. We overcome this limitation using the mass-redistribution formalism to conservatively redistribute generalized mass in the neighborhood of the split cells. We present an application of this method to an explosion contained in a metal can: a reactive fluid (approximating PBX 9404) is encased within an elastic-plastic solid (approximating copper) surrounded by vacuum. Our implementation is in parallel, and with adaptive mesh refinement.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{1}
+      \field{title}{A Conservative Three-Dimensional Eulerian Method for Coupled Solid-Fluid Shock Capturing}
+      \field{volume}{183}
+      \field{year}{2002}
+      \field{pages}{26\bibrangedash 82}
+      \range{pages}{57}
+      \verb{doi}
+      \verb https://doi.org/10.1006/jcph.2002.7158
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0021999102971585
+      \endverb
+    \endentry
     \entry{doi:10.1063/1.4937948}{article}{}
       \name{author}{5}{}{%
         {{hash=31c6dc5f54538327c9d20502881cd17f}{%
@@ -398,6 +1122,41 @@
       \verb https://doi.org/10.1063/1.4937948
       \endverb
     \endentry
+    \entry{commercialization}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=854f04898fce0e4b84514c28c74fafef}{%
+           family={Persichilli},
+           familyi={P\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=60bd6f3beb8a82b1eb58e94f4bd0f848}{%
+           family={Kacludis},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=db6cbab2ce66b4096b97f60055f0c934}{%
+           family={Zdankiewicz},
+           familyi={Z\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=aec052d300cdce4e2f1255d2c7c2a3a2}{%
+           family={Held},
+           familyi={H\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cc3877fe738596febd6f4e53cb419ba}
+      \strng{fullhash}{5fa13b87dc1a25303d26c1c9a7eeaf6f}
+      \strng{authornamehash}{6cc3877fe738596febd6f4e53cb419ba}
+      \strng{authorfullhash}{5fa13b87dc1a25303d26c1c9a7eeaf6f}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Power-Gen India \& Central Asia}
+      \field{title}{Supercritical CO2 Power Cycle Developments and Commercialization: Why sCO2 can Displace Steam}
+      \field{year}{2012}
+    \endentry
     \entry{PETIT201361}{article}{}
       \name{author}{4}{}{%
         {{hash=7e4b8a7f2a02a9b81a0cf40e613bf6d2}{%
@@ -445,6 +1204,54 @@
       \endverb
       \keyw{Supercritical,LES,Mixing,3D-NSCBC}
     \endentry
+    \entry{EGScomp}{report}{}
+      \name{author}{1}{}{%
+        {{hash=b769f63243881f0302342b0ed97a4f04}{%
+           family={Pruess},
+           familyi={P\bibinitperiod},
+           given={Karsten},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Lawrence Berkeley National Laboratory}%
+      }
+      \strng{namehash}{b769f63243881f0302342b0ed97a4f04}
+      \strng{fullhash}{b769f63243881f0302342b0ed97a4f04}
+      \strng{authornamehash}{b769f63243881f0302342b0ed97a4f04}
+      \strng{authorfullhash}{b769f63243881f0302342b0ed97a4f04}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Enhanced Geothermal Systems (EGS) comparing water with CO2 as heat transmission fluids}
+      \field{type}{techreport}
+      \field{year}{2007}
+    \endentry
+    \entry{EGS2}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=b769f63243881f0302342b0ed97a4f04}{%
+           family={Pruess},
+           familyi={P\bibinitperiod},
+           given={Karsten},
+           giveni={K\bibinitperiod}}}%
+        {{hash=91cbd4874716dcffbc1a88a8982e2e2d}{%
+           family={Azaroual},
+           familyi={A\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a03d8bf5c2b27f2f4d3a7d90be310ed}
+      \strng{fullhash}{8a03d8bf5c2b27f2f4d3a7d90be310ed}
+      \strng{authornamehash}{8a03d8bf5c2b27f2f4d3a7d90be310ed}
+      \strng{authorfullhash}{8a03d8bf5c2b27f2f4d3a7d90be310ed}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Thirty-First Workshop on Geothermal Reservoir Engineering}
+      \field{title}{ON THE FEASIBILITY OF USING SUPERCRITICAL CO2 AS HEAT TRANSMISSION FLUID IN AN ENGINEERED HOT DRY ROCK GEOTHERMAL SYSTEM}
+      \field{year}{2006}
+    \endentry
     \entry{DNS_N}{article}{}
       \name{author}{5}{}{%
         {{hash=2cf7b30d16e4031fff4abd4fa71021e4}{%
@@ -491,6 +1298,29 @@
       \verb{doi}
       \verb 10.1016/j.ijheatfluidflow.2017.06.007
       \endverb
+    \endentry
+    \entry{8Rivers}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8336b595874f2e9b4d2a3360e818032b}{%
+           family={Rivers},
+           familyi={R\bibinitperiod},
+           given={8},
+           giveni={8\bibinitperiod}}}%
+      }
+      \strng{namehash}{8336b595874f2e9b4d2a3360e818032b}
+      \strng{fullhash}{8336b595874f2e9b4d2a3360e818032b}
+      \strng{authornamehash}{8336b595874f2e9b4d2a3360e818032b}
+      \strng{authorfullhash}{8336b595874f2e9b4d2a3360e818032b}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{THE ALLAM-FETVEDT CYCLE}
+      \field{year}{2023}
+      \verb{url}
+      \verb https://8rivers.com/portfolio/the-allam-fetvedt-cycle-and-net-power/
+      \endverb
+      \warn{\item Entry '8Rivers' (myrefs.bib): Invalid format '2023-18-04' of date field 'urldate' - ignoring}
     \endentry
     \entry{article}{article}{}
       \name{author}{7}{}{%
@@ -547,6 +1377,40 @@
       \field{pages}{1445\bibrangedash 1460}
       \range{pages}{16}
     \endentry
+    \entry{filter}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e7658d062bd913dd60be09b3caafe963}{%
+           family={Sagaut},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fa2974197f8424187cca886ccf48ac7b}{%
+           family={Grohens},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c67424f43b914ded04f45fce17f83252}
+      \strng{fullhash}{c67424f43b914ded04f45fce17f83252}
+      \strng{authornamehash}{c67424f43b914ded04f45fce17f83252}
+      \strng{authorfullhash}{c67424f43b914ded04f45fce17f83252}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract This paper summarizes several results relative to discrete filters for subgrid-scale (SGS) models based on a multi-level filtering procedure. First, a theoretical study of discrete filters in physical space is performed. The analysis is done in the uniform one-dimensional case, and is then extended to the general multi-dimensional case for arbitrary structured and unstructured meshes. Some equivalence classes for the discrete filters are defined, based either on a differential approximation or the associated transfer function. Methods for the definition of discrete filters are proposed in the general case, including the approximation of continuous convolution filters. Second, the sensitivity of several SGS models with respect to the test filter is investigated. The selected models are: the dynamic Smagorinsky model, the mixed scale model (MSM), the selective MSM and the Liu\x{fffd}\x{fffd}\x{fffd}Meneveau\x{fffd}\x{fffd}\x{fffd}Katz (LMK) similarity model. Improved versions, which explicitly account for the spectral width of the test filter of the MSM and the LMK similarity model are proposed. The analysis, which reveals a significant influence of the test filter, is done through a priori testing on a 1283 field issued from the large eddy simulation (LES) of freely decaying homogeneous isotropic turbulence. Copyright \x{fffd}\x{fffd} 1999 John Wiley \& Sons, Ltd.}
+      \field{journaltitle}{International Journal for Numerical Methods in Fluids}
+      \field{number}{8}
+      \field{title}{Discrete filters for large eddy simulation}
+      \field{volume}{31}
+      \field{year}{1999}
+      \field{pages}{1195\bibrangedash 1220}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1002/(SICI)1097-0363(19991230)31:8<1195::AID-FLD914>3.0.CO;2-H
+      \endverb
+      \keyw{large eddy simulation,subgrid-scale model,filter}
+    \endentry
     \entry{LES_N}{article}{}
       \name{author}{4}{}{%
         {{hash=13f9fa6d031d515546d90bffb18a0754}{%
@@ -593,6 +1457,59 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.2514/1.J050288
+      \endverb
+    \endentry
+    \entry{experiment}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a421d2b107e065c685d49ce059571790}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Huaizhong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=006ce35aa76bdb88904509614db13cd7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Gensheng},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1cd4a15b9aade3862f8393ad90551c56}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Zhenguo},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d6f3fb0435506f8a2c971301955fd1b5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haizhu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=adee827d422f83e250ad82477211f997}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shikun},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c367497e1bc751f87a36a588c8d9cec5}
+      \strng{fullhash}{f2949081fc92bc0ad8d1464fa5e0fad6}
+      \strng{authornamehash}{c367497e1bc751f87a36a588c8d9cec5}
+      \strng{authorfullhash}{f2949081fc92bc0ad8d1464fa5e0fad6}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Scientific Instruments}
+      \field{number}{12}
+      \field{title}{Design of experimental setup for supercritical CO2 jet under high ambient pressure conditions}
+      \field{volume}{87}
+      \field{year}{2016}
+      \field{pages}{125115}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4972885
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1063/1.4972885
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.4972885
       \endverb
     \endentry
     \entry{SOAVE1972}{article}{}
@@ -676,6 +1593,179 @@
       \endverb
       \keyw{SUPERCRITICAL fluidsCRITICAL temperatureCARBON dioxideMETHANEFLUIDS}
     \endentry
+    \entry{WANG201977}{article}{}
+      \name{author}{8}{}{%
+        {{hash=df5a6014aac272e7ee560327486a1111}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Cailin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fdb6ae1e432cf8156253b4447f3b4629}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuxing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bd35f474f4c4ed1de5a8df18e0ce16d0}{%
+           family={Teng},
+           familyi={T\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=319abeeb1afa9528a1069d3c11129682}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Shuaiwei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=45bb7dee22fdd695b795e31fe470bd34}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Qihui},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=e480477225e0b6761680c5fb71876d5f}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Datong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8cc29bcdbe6532d6586c26de6a784e71}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=adc90c337bc23ad83b2cfc3b01ea6735}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jinghan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d60d40adc3553a943f0cc56feb02d075}
+      \strng{fullhash}{4d51a3923f254a491643dcdf36a074a3}
+      \strng{authornamehash}{d60d40adc3553a943f0cc56feb02d075}
+      \strng{authorfullhash}{4d51a3923f254a491643dcdf36a074a3}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Pipeline transportation is considered as the most economical and efficient method for transporting large amounts of CO2. The potential for pipeline leakage, possibly resulting in catastrophic accidents, makes it vitally crucial to predict and assess the consequences of accidental CO2 pipeline releases. To investigate the dispersion behavior of high pressure CO2 leaked from a pipeline, a new laboratory scale experimental setup with a total length of 14.85\x{fffd}\x{fffd}\x{fffd}m and an internal diameter of 15\x{fffd}\x{fffd}\x{fffd}mm was constructed. Upward releases of supercritical, liquid and gaseous CO2 containing 2\%, 4\%, 6\% mol nitrogen were carried out through an orifice of 1\x{fffd}\x{fffd}\x{fffd}mm. Evolutions of temperature and movement of dry ice particles in the far-field were studied. An improved dispersion model was proposed to analyze the abnormal low-temperature area found in pure CO2 leakage. Furthermore, the effects of N2 concentration, initial inner pressure and temperature on the temperature characteristics in the far-field were studied. The results show that the addition of N2 has different effects on the temperature characteristics for CO2 leakage with different initial phase states. The experimental results can be used to determine safety distances and verify outflow and dispersion models.}
+      \field{issn}{0894-1777}
+      \field{journaltitle}{Experimental Thermal and Fluid Science}
+      \field{title}{Experimental study on dispersion behavior during the leakage of high pressure CO2 pipelines}
+      \field{volume}{105}
+      \field{year}{2019}
+      \field{pages}{77\bibrangedash 84}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.expthermflusci.2019.03.014
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0894177719300974
+      \endverb
+      \keyw{CO leakage,High pressure pipeline,Dispersion behavior,Impurity,Temperature evolution}
+    \endentry
+    \entry{WANG2015210}{article}{}
+      \name{author}{6}{}{%
+        {{hash=5eb03de107eb93b99afc7ae1b06d28bf}{%
+           family={WANG},
+           familyi={W\bibinitperiod},
+           given={Hai-zhu},
+           giveni={H\bibinithyphendelim z\bibinitperiod}}}%
+        {{hash=ec2efaa1a908732bb6d91e2f746b498b}{%
+           family={LI},
+           familyi={L\bibinitperiod},
+           given={Gen-sheng},
+           giveni={G\bibinithyphendelim s\bibinitperiod}}}%
+        {{hash=0963cbebf4fe73868775d322a59cf872}{%
+           family={TIAN},
+           familyi={T\bibinitperiod},
+           given={Shou-ceng},
+           giveni={S\bibinithyphendelim c\bibinitperiod}}}%
+        {{hash=8b0abaf4aa1cf03cf6f416bf6c78bf7a}{%
+           family={CHENG},
+           familyi={C\bibinitperiod},
+           given={Yu-xiong},
+           giveni={Y\bibinithyphendelim x\bibinitperiod}}}%
+        {{hash=463cc6e1c405cc0f6e9aafdcf9c89f56}{%
+           family={HE},
+           familyi={H\bibinitperiod},
+           given={Zhen-guo},
+           giveni={Z\bibinithyphendelim g\bibinitperiod}}}%
+        {{hash=f38bb60e3d4416754707625c889ae12d}{%
+           family={YU},
+           familyi={Y\bibinitperiod},
+           given={Shui-jie},
+           giveni={S\bibinithyphendelim j\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f624c2ce53d5a41cebf13db53abe166}
+      \strng{fullhash}{d3c9fd2b558e2b7530b97eb9329a0904}
+      \strng{authornamehash}{9f624c2ce53d5a41cebf13db53abe166}
+      \strng{authorfullhash}{d3c9fd2b558e2b7530b97eb9329a0904}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As a new jet technology developed in recent years, the supercritical carbon dioxide (SC-CO2) jet technology enjoys many advantages when applied in oil and gas explorations. In order to study the properties and parametric influences of the SC-CO2 jet, the flow fields of the SC-CO2 jet are simulated using the computational fluid dynamics method. The flow field of the SC-CO2 is compared with that of the water jet. The influences of several parameters on the flow field of the SC-CO2 jet are studied. It is indicated that like the water jet, the velocity and the pressure of the SC-CO2 jet could be converted to each other, and the SC-CO2 jet can generate a significant impact pressure on the wall, the SC-CO2 jet has a stronger impact pressure and a higher velocity than those of the water jet under the same conditions, the maximum velocity and the impact pressure of the SC-CO2 jet increase with the increase of the nozzle pressure drop, under the stimulation condition of this study, the influence of the SC-CO2 temperature on the impact pressure can be neglected in engineering applications, while the maximum velocity of the SC-CO2 jet increases with the increase of the fluid temperature. This paper theoretically explores the properties of the SC-CO2 jet flow field, and the results might provide a theoretical basis for the application of the SC-CO2 jet in oil and gas well drillings and fracturing stimulations.}
+      \field{issn}{1001-6058}
+      \field{journaltitle}{Journal of Hydrodynamics, Ser. B}
+      \field{number}{2}
+      \field{title}{Flow field simulation of supercritical carbon dioxide jet: Comparison and sensitivity analysis}
+      \field{volume}{27}
+      \field{year}{2015}
+      \field{pages}{210\bibrangedash 215}
+      \range{pages}{6}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S1001-6058(15)60474-7
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1001605815604747
+      \endverb
+      \keyw{supercritical carbon dioxide,water jet,confining pressure,flow field,drilling}
+    \endentry
+    \entry{ALLAMTech1}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7d19e678c72662459bbdb25f3e207dee}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6b71a22996dbcb5276c8dbd5c26414ec}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6cacd034725d0431a7b1f3fd4a060c02}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=34ab39275e71f8a13687a9ff15151e29}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{42aa5fe574d755b774618f63d7ba2758}
+      \strng{fullhash}{c758a4b098a91109f08086b65c456168}
+      \strng{authornamehash}{42aa5fe574d755b774618f63d7ba2758}
+      \strng{authorfullhash}{c758a4b098a91109f08086b65c456168}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Industrial \& Engineering Chemistry Research}
+      \field{number}{49}
+      \field{title}{New Conceptual Design of an Integrated Allam-Cycle Power Complex Coupling Air Separation Unit and Ammonia Plant}
+      \field{volume}{60}
+      \field{year}{2021}
+      \field{pages}{18007\bibrangedash 18017}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/acs.iecr.1c02478
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/acs.iecr.1c02478
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.iecr.1c02478
+      \endverb
+    \endentry
     \entry{Same_LES}{article}{}
       \name{author}{3}{}{%
         {{hash=bf79a389e6eb65852fb84a13ec092877}{%
@@ -721,6 +1811,164 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1080/10407782.2016.1214485
+      \endverb
+    \endentry
+    \entry{WEILAND2017293}{incollection}{}
+      \name{author}{5}{}{%
+        {{hash=e8ea5d9fc6d2643d96376247d91a8b27}{%
+           family={Weiland},
+           familyi={W\bibinitperiod},
+           given={N.T.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=4b09577b6974bc905ef29d6804752851}{%
+           family={Dennis},
+           familyi={D\bibinitperiod},
+           given={R.A.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bfae2a544bff577201a512a6bf1c9241}{%
+           family={Ames},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a886734a6d3c421b99dfbf73b26e125c}{%
+           family={Lawson},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5fafacd91a03353ecf4c0cb3a9aebb91}{%
+           family={Strakey},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=2a2c11ada96727c4bab1610a9cb868d6}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+        {{hash=33dc895786823add97af80b0c343cdc6}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=67532700d7fbc3b59c44a48a2cf82614}{%
+           family={Dennis},
+           familyi={D\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Woodhead Publishing}%
+      }
+      \strng{namehash}{2348c6866d4a411080216f4bf23fd206}
+      \strng{fullhash}{d9cb8ef0087e62a5aaabecca304a831d}
+      \strng{authornamehash}{2348c6866d4a411080216f4bf23fd206}
+      \strng{authorfullhash}{d9cb8ef0087e62a5aaabecca304a831d}
+      \strng{editornamehash}{e2efecc77175165015a68eed5293723c}
+      \strng{editorfullhash}{e2efecc77175165015a68eed5293723c}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Fundamentals and Applications of Supercritical Carbon Dioxide (sCO?) Based Power Cycles}
+      \field{isbn}{978-0-08-100804-1}
+      \field{title}{12 - Fossil energy}
+      \field{year}{2017}
+      \field{pages}{293\bibrangedash 338}
+      \range{pages}{46}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-08-100804-1.00012-8
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780081008041000128
+      \endverb
+      \keyw{Coal,Direct-fired sCO,Fossil fuels,Indirect sCO,Natural gas,Open cycle sCO,Oxycombustion,Syngas}
+    \endentry
+    \entry{WHITE2021116447}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5d8adb9214398392ce8dbfc3f9c07e26}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Martin\bibnamedelima T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=637205d4bd6f73106a93abb10fca2d39}{%
+           family={Bianchi},
+           familyi={B\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4cfaba811c5f6a18df6938d492246beb}{%
+           family={Chai},
+           familyi={C\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=11526be0093470fa7451239f398829a4}{%
+           family={Tassou},
+           familyi={T\bibinitperiod},
+           given={Savvas\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b8b83163229cf618ad3c93c2861a73ed}{%
+           family={Sayma},
+           familyi={S\bibinitperiod},
+           given={Abdulnaser\bibnamedelima I.},
+           giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{70e3a607dbc81350a783f61fa54cbeca}
+      \strng{fullhash}{3164224e09337e3893ce78becf197e22}
+      \strng{authornamehash}{70e3a607dbc81350a783f61fa54cbeca}
+      \strng{authorfullhash}{3164224e09337e3893ce78becf197e22}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Thermal-power cycles operating with supercritical carbon dioxide (sCO2) could have a significant role in future power generation systems with applications including fossil fuel, nuclear power, concentrated-solar power, and waste-heat recovery. The use of sCO2 as a working fluid offers potential benefits including high thermal efficiencies using heat-source temperatures ranging between approximately 350?C and 800?C, a simple and compact physical footprint, and good operational flexibility, which could realise lower levelised costs of electricity compared to existing technologies. However, there remain technical challenges to overcome that relate to the design and operation of the turbomachinery components and heat exchangers, material selection considering the high operating temperatures and pressures, in addition to characterising the behaviour of supercritical CO2. Moreover, the sensitivity of the cycle to the ambient conditions, alongside the variable nature of heat availability in target applications, introduce challenges related to the optimal operation and control. The aim of this paper is to provide a review of the current state-of-the-art of sCO2 power generation systems, with a focus on technical and operational issues. Following an overview of the historical background and thermodynamic aspects, emphasis is placed on discussing the current research and development status in the areas of turbomachinery, heat exchangers, materials and control system design, with priority given to experimental prototypes. Developments and current challenges within the key application areas are summarised and future research trends are identified.}
+      \field{issn}{1359-4311}
+      \field{journaltitle}{Applied Thermal Engineering}
+      \field{title}{Review of supercritical CO2 technologies and systems for power generation}
+      \field{volume}{185}
+      \field{year}{2021}
+      \field{pages}{116447}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.applthermaleng.2020.116447
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1359431120339235
+      \endverb
+      \keyw{Supercritical carbon dioxide,sCO,Power generation,Turbomachinery,Heat exchangers,Control systems,Applications}
+    \endentry
+    \entry{heated_cyl}{article}{}
+      \name{author}{1}{}{%
+        {{hash=85a1ae2443e57ba8811a177a5221bc5a}{%
+           family={Yoo},
+           familyi={Y\bibinitperiod},
+           given={Jung\bibnamedelima Yul},
+           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{85a1ae2443e57ba8811a177a5221bc5a}
+      \strng{fullhash}{85a1ae2443e57ba8811a177a5221bc5a}
+      \strng{authornamehash}{85a1ae2443e57ba8811a177a5221bc5a}
+      \strng{authorfullhash}{85a1ae2443e57ba8811a177a5221bc5a}
+      \field{sortinit}{Y}
+      \field{sortinithash}{f86c10978eb0c0879609ce6a4f43da7b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Serious heat-transfer deterioration may occur in fluids at supercritical pressure owing to the effects of buoyancy, flow acceleration, and significant variations in thermophysical properties. Although there have been numerous experimental studies on this subject, no single heat-transfer correlation has been found to be capable of describing this phenomenon accurately. Relatively few experimental studies have been carried out on the fluid mechanics of supercritical flows because of the technical difficulties of dealing with turbulent flows and high heat fluxes simultaneously. Conversely, many computational fluid dynamics studies have examined a number of low-Reynolds-number turbulence models. However, none have reproduced the buoyancy production of turbulence reasonably well because of limitations with the use of a constant turbulent Prandtl number. Direct numerical simulations may provide more insight into the physics of fluids at supercritical pressure within a limited range of flow and heat-transfer conditions.}
+      \field{journaltitle}{Annual Review of Fluid Mechanics}
+      \field{number}{1}
+      \field{title}{The Turbulent Flows of Supercritical Fluids with Heat Transfer}
+      \field{volume}{45}
+      \field{year}{2013}
+      \field{pages}{495\bibrangedash 525}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1146/annurev-fluid-120710-101234
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1146/annurev-fluid-120710-101234
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1146/annurev-fluid-120710-101234
       \endverb
     \endentry
     \entry{doi:10.1080/00102200500287613}{article}{}

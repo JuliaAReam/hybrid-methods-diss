@@ -25,14 +25,44 @@ $S_{ij} = \frac{1}{2}\left(\frac{\partial u_i}{\partial x_j} + \frac{\partial u_
 	\alpha &= \left( 1 + \left( 0.48508 + 1.55171 \omega - 0.15613 \omega^2 \right)\left( 1 - T_r^{0.5} \right) \right)^2 \label{SRKalpha} \\
 	T_r &= \dfrac{T}{T_c} \label{Treduced}
 \end{align}
-where $R$ is the ideal gas constant, $T$ is the absolute temperature, $V_m$ is the molar volume of the species, $T_c$ and $P_c$ are the critical temperature and pressure of the species, respectively, and $\omega$ is the acentric factor of the species. Additionally, $a$, $b$, and $\alpha$ are all species-specific parameters calculated via equations \ref{SRKa}, \ref{SRKb}, and \ref{SRKalpha}. All cases are run with a single species, that being \gls{co2}.
+where $R$ is the ideal gas constant, $T$ is the absolute temperature, $V_m$ is the molar volume of the species, $T_c$ and $P_c$ are the critical temperature and pressure of the species, respectively, and $\omega$ is the acentric factor of the species. Additionally, $a$, $b$, and $\alpha$ are all species-specific parameters calculated via equations \ref{SRKa}, \ref{SRKb}, and \ref{SRKalpha}. All cases are run with a single species, that being \gls{co2}. 
 
-\subsection{Importance of Equation of State}
-\subsection{Transport Properties in High Pressure Conditions}
+\subsection{High Pressure Corrections for Transport Models}
 
 \section{Numerical Methods}
-\subsection{Piecewise Parabolic Method}
-\subsection{Approximate Riemann Solver}
-\subsection{Large Eddy Simulation}
-\subsection{Time Stepping}
+To discretize and evolve the system of partial differential equations given in \ref{NSE}, including the \gls{les} \gls{sgs} terms, we use \textit{PeleC}, a compressible hydrodynamics code for reacting flows that leverages \textit{AMReX} for \gls{amr} \cite{}. \textit{PeleC} is a highly scalable code for heterogeneous architectures that is being developed as part of the \gls{ecp} through the \gls{doe}. It leverages the \textit{PelePhysics} library for complex physics, including chemical reactions, non-ideal \gls{eos}, and high fidelity transport models. For spatial discretization, \textit{PeleC} contains a few variations of the general \gls{ppm} originally derived by Colella and Woodward \cite{1984JCoPPPM}. We utilize a variation that allows for extrema preservation in the presence of steep gradients \cite{MILLER200226, COLELLA20087069}. For time discretization, a second order Runge-Kutta scheme is used, and the time step is dynamically limited using a Courant number of 0.9. 
+
+\subsection{Subgrid-Scale Modeling for Large Eddy Simulation}
+We use the \gls{smd} \gls{les} model for compressible flow as described by Mart\'{i}n, Piomelli, and Graham \cite{LES_Comp}. In this context, the compressible Navier-Stokes equations \ref{NSE} should be interpreted in their Favre-filtered form, where, in this work, the grid provides the implicit filtering of the equations. The \gls{sgs} stress tensor, $\tau_{ij}$, is included in the diffusive fluxes and is calculated as follows:
+\begin{equation}
+\begin{aligned}
+	\tau_{ij} - \dfrac{\delta_{ij}}{3}\tau_{kk} &= -C_s^22\overline{\Delta}^2 \overline{\rho} |\widetilde{S}| \left( \widetilde{S}_{ij} - \dfrac{\delta_{ij}}{3} \widetilde{S}_{kk} \right) = C_s^2 \alpha_{ij},  \\
+	 \tau_{kk} &= C_I 2\overline{\rho} \overline{\Delta}^2 |\widetilde{S}|^2 = C_I \alpha
+\end{aligned}
+\end{equation}
+where $\overline{\cdot}$ denotes the filtered variables, $\widetilde{\cdot}  = \nicefrac{\overline{\rho~\cdot}}{\overline{\rho}}$ is the Favre-filter operation, with $\overline{\Delta}$ being the filter width associated with the smallest scale retained by the filtering operation ($\overline{\Delta}$ is the grid spacing for our cases). Additionally, $|\widetilde{S}| = (2\widetilde{S}_{ij}\widetilde{S}_{ij})^{1/2}$. The two model coefficients are calculated as follows:
+\begin{equation}
+\begin{aligned}
+	C = C_s^2 = \dfrac{\langle \mathcal{L}_{ij} M_{ij} \rangle}{\langle M_{kl}M_{kl} \rangle}, \quad \quad C_I = \dfrac{ \langle \mathcal{L}_{kk} \rangle}{\langle \beta - \widehat{\alpha} \rangle}
+\end{aligned}
+\end{equation}
+where the Germano identity, $\mathcal{L}_{ij} = T_{ij} - \widehat{\tau}_{ij}$, is used to relate the \gls{sgs} stress tensor to the ``resolved turbulent stresses", $\mathcal{L}_{ij} = \left( \overline{\rho u_i} \widehat{ \hspace{1.5pt} \overline{\rho u_j}}/\overline{\rho} \right) - \widehat{ \overline{\rho u_i}} \hspace{1.5pt} \widehat{\overline{\rho u_j}}/\widehat{\overline{\rho}}$ ,and the subtest stresses, $T_{ij} = \widehat{\overline{\rho}} \breve{\widetilde{u_i u_j}} - \widehat{\overline{\rho}} \breve{\widetilde{u_i}} \breve{\widetilde{u_j}}$ \cite{germano}. In this relationship, a hat denotes quantities associated with a test filter $\widehat{G}$ which has a characteristic length of $\widehat{\Delta}$. The breve denotes filtered quantities using $\widehat{G}$. Additionally, we have $\beta_{ij} = -2\widehat{\Delta}^2 \widehat{\overline{\rho}} |\breve{\widetilde{S}}| \left( \breve{\widetilde{S}}_{ij} - \delta_{ij} \breve{\widetilde{S}}_{kk}/3  \right)$, $M_{ij} = \beta_{ij} - \widehat{\alpha_{ij}}$, and $\beta = 2 \widehat{\Delta}^2  \widehat{\overline{\rho}} |\breve{\widetilde{S}}|^2 $. The turbulent Prandtl number, $Pr_\text{T}$, is also calculated dynamically as noted in \cite{LES_Comp}:
+\begin{equation}
+\begin{aligned}
+	Pr_\text{T} = \dfrac{C \langle T_k T_k  \rangle}{\langle \mathcal{K}_j T_j \rangle}
+\end{aligned}
+\end{equation}
+where 
+\begin{equation}
+\begin{aligned}
+	T_j = - \widehat{\Delta}^2  \widehat{\overline{\rho}} |\breve{\widetilde{S}}| \dfrac{\partial \breve{\widetilde{T}}}{\partial x_j} +  \overline{\Delta}^2  \overline{\rho} \widehat{|\widetilde{S}| \dfrac{\partial \widetilde{T}}{\partial x_j}}, \qquad \qquad \mathcal{K}_j = \left( \dfrac{ \widehat{\overline{\rho u_j} \overline{\rho T}}}{\overline{\rho}} \right) - \dfrac{ \widehat{\overline{\rho u_j}} \widehat{ \overline{\rho T}}}{\widehat{\overline{\rho}}}.
+\end{aligned}
+\end{equation}
+For our simulations, we implement the three point box filter as described in \cite{filter} with a filter-grid, ratio of 2, i.e.\  $\widehat{\Delta}=2\overline{\Delta}$. 
+
+As noted previously, the choice of \gls{sgs} modeling is important in accurately capturing the turbulence statistics of the system. M\"{u}ller et al. found that while the choice in thermodynamic modeling is crucial in capturing first-order moments, the effects \gls{sgs} modeling is limited to second-order moments \cite{doi:10.1063/1.4937948}.  Therefore, our conclusions relating to the turbulence dynamics will be unaffected. That being said, \cite{doi:10.1063/1.4937948} also notes that the choice in \gls{sgs} model and numerical flux discretization had a larger than expected effect on resolved Reynolds stress profiles. Specifically, the constant Smagorinsky model yielded decaying fluctuation magnitudes during early evolution, resulting in the transition to a fully turbulent mixing zone to start from lower turbulence levels. However, this did agree with the jet break-up location inferred from mean density profiles, which were shifted slightly downstream by comparison to other \gls{sgs} models. These relationships will be taken into consideration for this study as well and noted in the discussion of Reynolds stress profiles.
+
+\subsection{Piecewise Parabolic Method Overview}
+\subsection{Approximate Riemann Solver Details}
+\subsection{Time Stepping with RK2}
 

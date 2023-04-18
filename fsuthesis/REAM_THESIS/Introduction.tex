@@ -18,7 +18,7 @@ From a kinetics perspective, particle motion within a fluid can be broken up int
 \begin{equation}\label{Knudsen}
 Kn = \dfrac{\ell}{L}
 \end{equation} 
-Flows with large Knudsen number ($Kn \gg 10$) require modeling from the kinetic or microscopic perspective as particle interactions become sparse enough compared to the scope of the problem to require a statistical mechanics framework. On the other hand, small Knudsen number flows ($Kn \ll 0.01$) have a problem scale that far exceeds the particle-level interactions present, giving way to an average overall motion within the fluid. In these flows, a continuum description of the fluid is appropriate for capturing this macroscopic behavior. 
+Flows with large Knudsen number ($Kn \gg 10$) require modeling from the kinetic or microscopic perspective as particle interactions become sparse enough compared to the scope of the problem to require a statistical mechanics framework. On the other hand, small Knudsen number flows ($Kn \ll 0.01$) have a problem scale that far exceeds the particle-level interactions present, giving way to an average overall motion within the fluid. This scale dichotomy is demonstrated with the graphic in Figure \ref{Knudsen_example.} For small Knudsen flows, a continuum description of the fluid is appropriate for capturing this macroscopic behavior. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -128,7 +128,7 @@ This work uses the \gls{srk} as will be more thoroughly introduced in chapter 2.
 
 
 \section{Turbulence}
-Additionally, fluid flow can be categorized into different types based on certain defining flow characteristics. The main two classifications of note are laminar flow and turbulent flow.
+In addition to the categorizing of fluid type, fluid flow can be distinguished into different types based on certain defining flow characteristics. The main two classifications of note are laminar flow and turbulent flow.
 
 Laminar flow is denoted by fluid particles having well-defined parallel trajectories of motion, or streamlines. Streamlines do not cross, meaning adjacent layers within the fluid flow by one another with little to no mixing. From a more generalized perspective, the flow appears to be smooth. In contrast to this, turbulent flow is characterized by its unpredictable and chaotic trajectories. Streamlines do cross resulting in swirls and eddies of varying length scales which induce mixing. Turbulent flow can be qualitatively described as being rough due to this high degree of fluctuation within the velocity and pressure fields present. This generalized description is depicted in Figure \ref{lam_vs_turb}.
 
@@ -152,15 +152,15 @@ The Reynolds number is a dimensionless value that can be used to distinguish lam
 This work focuses on the turbulent round jet and its associated dynamics in the context of supercritical fluids. The remainder of this section details a brief historical overview of turbulence modeling and numerical methods developed for studying turbulence in order to motivate the modeling and numerical choices made within this work.
 
 \subsection{Historical Perspective}
-
+This is a brief history of turbulence study from a mathematics perspective.
 
 
 \subsection{Numerical Approaches}
-
+These are some of the numerical approaches in use, including what we use and why we use it. 
 
 
 \section{Supercritical Carbon Dioxide}
-As mentioned earlier, supercritical fluids have many qualities that make them desirable as working fluids in a variety of systems. We now shift our focus to one particular fluid of interest: \gls{co2}. As seen in the phase diagram of Fig. \ref{phase_diagram}, the critical temperature, $T_c$, and critical pressure, $p_c$, of \gls{co2} are $304.128 $ K and $73.773$ bar. The critical temperature and pressure of \gls{co2} is fairly easy to attain, making it a strong candidate for systems with hight thermal outputs. Additionally, \gls{sco2} has a relatively low toxicity and environmental impact \cite{}, and is chemically stable, non-flammable, and readily available \cite{}. For these reasons, \gls{sco2} is a highly coveted alternative working fluid in many different applications, and is one of the most widely used supercritical fluids along with water \cite{SCF2}. 
+As mentioned earlier, supercritical fluids have many qualities that make them desirable as working fluids in a variety of systems. We now shift our focus to one particular fluid of interest: \gls{co2}. As seen in the phase diagram of Figure \ref{phase_diagram}, the critical temperature, $T_c$, and critical pressure, $p_c$, of \gls{co2} are $304.128 $ K and $73.773$ bar. The critical temperature and pressure of \gls{co2} is fairly easy to attain, making it a strong candidate for systems with hight thermal outputs. Additionally, \gls{sco2} has a relatively low toxicity and environmental impact \cite{}, and is chemically stable, non-flammable, and readily available \cite{}. For these reasons, \gls{sco2} is a highly coveted alternative working fluid in many different applications, and is one of the most widely used supercritical fluids along with water \cite{SCF2}. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -173,7 +173,19 @@ As mentioned earlier, supercritical fluids have many qualities that make them de
 In the next part of this section, we will explore some applications of \gls{sco2} in which the turbulent round jet configuration is used. Then we will go through a brief review of recent studies involving \gls{sco2}, and more generally supercritical turbulent jets, in order to demonstrate where this work fits in among current research. Finally, we outline the structure of the remainder of the dissertation. 
 
 \subsection{Applications of Interest}
+One of the key applications of interest that motivates this work is the use of \gls{sco2} as the working fluid in advanced cycles for power generation. \gls{sco2} has shown promise as a working fluid for both indirect cycle and direct-firing cycles \cite{WEILAND2017293, WHITE2021116447}. One example of indirect cycle improvement uses \gls{sco2} in place of water for the conventional steam-Rankine cycle. An example of where these types of configurations may prove useful is in managing thermal runoff from existing coal and natural gas combustion processes \cite{WEILAND2017293}. Compared to steam, \gls{sco2} is less corrosive, more thermally stable, and has increased power density. The critical point of \gls{co2} is easily accessible, and once achieved, allows for the use of a single phase fluid design, leading to a simplified and more compact turbine (see Figure \ref{turbine_comp}). Ultimately, this also allows for lower operation and maintenance costs \cite{Dodge}. The benefits of using sCO2 turbines over the traditional steam design has been highly researched and has only seen an increase in momentum for implementation \cite{CRESPI2017152, NextGenNucReac, hitthemarket, commercialization}. 
 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=.5]{figures/steam_vs_sco2_turbine}
+\end{center}
+\caption{Size comparison for steam vs. \gls{sco2} turbine via Echogen Power Systems LLC \cite{commercialization}.}
+\label{turbine_comp}
+\end{figure}
+
+An example of direct-firing cycles that use \gls{sco2} include the Allam cycle \cite{allam2013system}. When compared to the conventional Brayton cycle, studies show that the Allam cycle has much higher efficiency \cite{ALLAMCOMP, ALLAM20175948}. Additionally, the carbon footprint for the Allam cycle is virtually zero, allowing for \gls{co2} produced from the system to be stored underground or used elsewhere, aiding in carbon sequestration efforts \cite{cleantechnol1010022}. This two-for-one benefit of using \gls{sco2}-based cycles such as the Allam cycle has spurned much research \cite{ALLAMTech1, CHAN2021113972} and development \cite{8Rivers} into related technologies.
+
+Of particular importance to these applications is the round turbulent jet, as this is a major component of many injection technologies. The high densities associated with the liquid-like aspect of supercritical fluids coupled with the relatively low gas-like viscosity associated with them typically results in a high Reynolds flow, often resulting in a turbulent system. The turbulence physics of these jets is crucial in developing machinery for these systems. Current experimental research is mainly application oriented. Research into the \gls{sco2} jet's rock breaking ability has been of primary importance to \gls{egs} applications \cite{EGScomp, EGS2, very_rock, experiment, rb}, with additional focus being given to pipeline leakage and flow dynamics upon wall impact \cite{WANG2015210, WANG201977}, which unfortunately does not explore the underlying turbulence statistics of the flow. Chemical engineering design aspects of \gls{sco2} injection are more focused on solubility dynamics as opposed to turbulence \cite{freejet, pulse_jet}. Other experiments focus on similar application specific quantities of interest, such as heat transfer and mixing, which is related in part to the turbulence dynamics \cite{heated_cyl}, but they also note the difficulty in experimental design for investigating these aspects of the flow under the conditions needed to replicate those in real applications \cite{freejet}. Thus, numerical simulations are necessary to further explore the turbulence statistics of these flows.
 
 
 \subsection{Overview of Current Numerical Landscape}
