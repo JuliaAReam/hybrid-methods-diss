@@ -533,6 +533,65 @@
       \field{type}{phdthesis}
       \field{year}{2004}
     \endentry
+    \entry{DNS}{article}{}
+      \name{author}{7}{}{%
+        {{hash=c1ebea090831736a87258b066e0aff97}{%
+           family={Eggels},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi G.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7939d8c8e6efce041aec3a772259a3d0}{%
+           family={Unger},
+           familyi={U\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=66e4df395b5321d4831782b67603b815}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c63d0b2626fa00bb7d13835bbe0d9b5d}{%
+           family={Westerweel},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=53473ebbe2b8982049abe1d291152721}{%
+           family={Adrian},
+           familyi={A\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cfa43c789e16fc6faab5917347992b6d}{%
+           family={Friedrich},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6a634f3b414b8c520120d03780f49e2d}{%
+           family={Nieuwstadt},
+           familyi={N\bibinitperiod},
+           given={F.\bibnamedelimi T.\bibnamedelimi M.},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{55ecd01942daf859f642248ace297594}
+      \strng{fullhash}{b3d8fe746514589bd78dc589c5874ab3}
+      \strng{authornamehash}{55ecd01942daf859f642248ace297594}
+      \strng{authorfullhash}{b3d8fe746514589bd78dc589c5874ab3}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Fully developed turbulent pipe flow: a comparison between direct numerical simulation and experiment}
+      \field{volume}{268}
+      \field{year}{1994}
+      \field{pages}{175?210}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/S002211209400131X
+      \endverb
+    \endentry
     \entry{SCF2}{misc}{}
       \field{sortinit}{E}
       \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
@@ -763,6 +822,30 @@
       \field{title}{Free-Jet Expansion of Supercritical CO2}
       \field{type}{phdthesis}
       \field{year}{2003}
+    \endentry
+    \entry{kolmogorov}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7cdd956af512898d48015dc4db5cd94c}{%
+           family={{Kolmogorov}},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7cdd956af512898d48015dc4db5cd94c}
+      \strng{fullhash}{7cdd956af512898d48015dc4db5cd94c}
+      \strng{authornamehash}{7cdd956af512898d48015dc4db5cd94c}
+      \strng{authorfullhash}{7cdd956af512898d48015dc4db5cd94c}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Akademiia Nauk SSSR Doklady}
+      \field{month}{1}
+      \field{title}{{The Local Structure of Turbulence in Incompressible Viscous Fluid for Very Large Reynolds' Numbers}}
+      \field{volume}{30}
+      \field{year}{1941}
+      \field{pages}{301\bibrangedash 305}
+      \range{pages}{5}
     \endentry
     \entry{pulse_jet}{article}{}
       \name{author}{2}{}{%
@@ -1120,6 +1203,17 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1063/1.4937948
+      \endverb
+    \endentry
+    \entry{osti_1374142}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{PELEC, Version 00}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.osti.gov//servlets/purl/1374142
       \endverb
     \endentry
     \entry{commercialization}{inproceedings}{}
