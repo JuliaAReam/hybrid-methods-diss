@@ -50,6 +50,73 @@
       \verb https://journalsonline.org/american-journal-of-engineering-science-and-technology/pdfs/volume-10/4.pdf
       \endverb
     \endentry
+    \entry{ROGALEV2020}{proceedings}{}
+      \name{author}{1}{}{%
+        {{hash=676295328a94994907899f848ee1bbe3}{%
+           family={al},
+           familyi={a\bibinitperiod},
+           given={A\bibnamedelima N\bibnamedelima Rogalev},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{676295328a94994907899f848ee1bbe3}
+      \strng{fullhash}{676295328a94994907899f848ee1bbe3}
+      \strng{authornamehash}{676295328a94994907899f848ee1bbe3}
+      \strng{authorfullhash}{676295328a94994907899f848ee1bbe3}
+      \field{sortinit}{a}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper discloses computer simulation results of thermos-hydraulic processes in cooling channels of carbon dioxide turbines used in oxy-fuel power production facilities. Stream cooling systems may be modified by the installation of shadowing ribs on the pressure and suction sides of a hollow blade and this intensifies heat transfer and reduces the cooling agent flow. The heat transfer maximal intensity is obtained at the distance between deflector orifice and shadowing fin of 0.25 orifice diameter. Change of the shadowing fin cross-section shape from oval to circular causes increases of the channel hydraulic resistance for 20?28\% and the mean Nusselt number for 8?25\%.}
+      \field{series}{Journal of Physics: Conference Series}
+      \field{title}{Numerical research of the influence of the geometric parameters of shadowing fins on the intensity of jet cooling by supercritical carbon dioxide}
+      \field{volume}{1683}
+      \field{year}{2020}
+      \verb{doi}
+      \verb doi:10.1088/1742-6596/1683/2/022050
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/1742-6596/1683/2/022050/pdf
+      \endverb
+    \endentry
+    \entry{ALKANDARI2022122949}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8a6e4a3cce6bd54e659ec32df67a3ec0}{%
+           family={Alkandari},
+           familyi={A\bibinitperiod},
+           given={Abdulaziz},
+           giveni={A\bibinitperiod}}}%
+        {{hash=01fbe3f29a91657344a50917e6d6c9ab}{%
+           family={Rattner},
+           familyi={R\bibinitperiod},
+           given={Alexander\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f8db7ab043a413ece0c79177d4c9b90}
+      \strng{fullhash}{3f8db7ab043a413ece0c79177d4c9b90}
+      \strng{authornamehash}{3f8db7ab043a413ece0c79177d4c9b90}
+      \strng{authorfullhash}{3f8db7ab043a413ece0c79177d4c9b90}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supercritical carbon dioxide (sCO2) has recently been proposed as a promising alternative to conventional fluids for thermal management because of its unique thermophysical properties near the critical point. Jet impingement is also recognized as one of the most effective configurations for high intensity heat transfer. Therefore, leveraging the favorable thermophysical properties of sCO2 in microscale jet impingement may lead to high performance thermal management solutions. However, the effects of thermophysical property variations in the pseudo-critical temperature range on the flow and heat transfer behavior in such configurations is not well understood. The present investigation seeks to address this need through computational simulations of laminar and turbulent slot sCO2 jet impingement. Large eddy simulations (LES) are validated and employed for turbulent cases. The studied range of conditions span reduced pressures of Pr=1.03?1.10, Reynolds numbers Re=225?11,000, dimensionless jet lengths H/W=2?4, jet inlet temperatures Tin=294?330K, and impingement plate temperatures Tplate=270?370K. The turbulent simulations reveal varying spatial distributions of heat transfer coefficient with different jet and plate temperatures, which can be explained in terms of the temperature-dependent properties of sCO2. Heat transfer deterioration (HTD) is observed for both laminar and turbulent flows. HTD is found to be most significant in the stagnation zone, and its relative magnitude decreases downstream more sharply for turbulent flows than laminar. Heat transfer enhancement (HTE) is observed when both the jet inlet and impingement plate temperatures are at opposite ends of the pseudo-critical temperature range. For cooling applications, HTD and HTE effects can be explained in terms of opposing temperature-dependent variations in boundary layer thermal conductivity and overall thermal boundary layer thickness with Prandtl number. Considering the dependence of thermophysical properties on Pr, a thermal management system control strategy is proposed in which Pr is adjusted depending on Tplate to achieve optimal performance over varying operating conditions.}
+      \field{issn}{0017-9310}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{title}{Characterization of laminar and turbulent supercritical carbon dioxide slot jet impingement heat transfer}
+      \field{volume}{193}
+      \field{year}{2022}
+      \field{pages}{122949}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ijheatmasstransfer.2022.122949
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0017931022004227
+      \endverb
+      \keyw{Supercritical fluid,Supercritical carbon dioxide,Jet impingement heat transfer,Large eddy simulations}
+    \endentry
     \entry{allam2013system}{misc}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -195,6 +262,61 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0896844614004306
       \endverb
       \keyw{Pseudoboiling,Widom-line,Vaporization,Clapeyron,Transcritical}
+    \endentry
+    \entry{en13102627}{article}{}
+      \name{author}{6}{}{%
+        {{hash=160ffc1318e21a1f88a9b69ef23819be}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Can},
+           giveni={C\bibinitperiod}}}%
+        {{hash=74adfbceb47570a60c91883b2304c941}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod}}}%
+        {{hash=999ade834b7db244a76df8517c3a6125}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qingren},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=677b629c06d20e61ecec2791450016c3}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c49a96ea55e8be6277aa31d63ceba619}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=faffde9d67f8df6f47b0bf4724529a6a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Banrun},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a347680c1f3af50c479d3fe48fee6d14}
+      \strng{fullhash}{56b22f6de01b8a206fd0e5ef583c0406}
+      \strng{authornamehash}{a347680c1f3af50c479d3fe48fee6d14}
+      \strng{authorfullhash}{56b22f6de01b8a206fd0e5ef583c0406}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supercritical carbon dioxide (SC-CO2) jet fracturing is a promising alternative for shale gas fracturing instead of water. However, most studies pay more attention to the fracture generation and ignore the flow characteristic of SC-CO2 jet fracturing in limited perforation scenarios. To accurately explore the flow field in a limited perforation tunnel, a numerical model of a SC-CO2 jet in a limited perforation tunnel before fracture initiation is established based on the corresponding engineering background. The comparison between the numerical simulation and experiments has proved that the model is viable for this type of analysis. By using the numerical method, the flow field of the SC-CO2 jet fracturing is analyzed, and influencing factors are discussed later. The verification and validation show that the numerical model is both reliable and accurate. With the dramatic fluctuating of turbulent mixing in a fully developed region, there is an apparent increase in the CO2 density and total pressure during limited perforation. When the z increases from 10 times r0 to 145 times r0, the velocity on the perforation wall surface would decrease below 0 m/s, resulting in backflow in the perforation tunnel. The structure of the nozzle, including the outlet length and outlet diameters, significantly affects the axial velocity and boosting pressure in the perforation tunnel. The highest total pressure exists when the nozzle length-to-radius ratio is 2. The maximum velocity of the jet core drops from 138.7 to 78 m/s, and the ``hydraulic isolating ring"; starts disappearing when the radius changes from 1 to 1.5 mm. It is necessary to increase the aperture ratio as much as possible to ensure pressurization but not over 1. Based on a similar theory high-speed photography results clearly show that the SC-CO2 develops to fully jetting in only 0.07 s and a strong mixing exists in the annular region between the jet core and the surroundings, according with the numerical simulation. This study should be helpful for scholars to comprehensively understand the interaction between the SC-CO2 jet and perforation, which is beneficial for studying SC-CO2 fracturing.}
+      \field{issn}{1996-1073}
+      \field{journaltitle}{Energies}
+      \field{number}{10}
+      \field{title}{The Flow Characteristics of Supercritical Carbon Dioxide (SC-CO2) Jet Fracturing in Limited Perforation Scenarios}
+      \field{volume}{13}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.3390/en13102627
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1996-1073/13/10/2627
+      \endverb
     \endentry
     \entry{CHAN2021113972}{article}{}
       \name{author}{6}{}{%
@@ -429,29 +551,6 @@
       \field{note}{Accessed: 2019-08-08}
       \field{title}{Supercritical Carbon Dioxide Power Cycles Starting to Hit the Market}
       \field{year}{2014}
-    \endentry
-    \entry{hitthemarket}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=4141ab70f772343bc8e2b2229175cf93}{%
-           family={Dodge},
-           familyi={D\bibinitperiod},
-           given={Edward},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{4141ab70f772343bc8e2b2229175cf93}
-      \strng{fullhash}{4141ab70f772343bc8e2b2229175cf93}
-      \strng{authornamehash}{4141ab70f772343bc8e2b2229175cf93}
-      \strng{authorfullhash}{4141ab70f772343bc8e2b2229175cf93}
-      \field{sortinit}{D}
-      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Breaking Energy}
-      \field{title}{Supercritical Carbon Dioxide Power Cycles Starting to Hit the Market}
-      \field{year}{2014}
-      \verb{url}
-      \verb https://breakingenergy.com/2014/11/24/supercritical-carbon-dioxide-power-cycles-starting-to-hit-the-market/
-      \endverb
     \endentry
     \entry{ALLAMCOMP}{article}{}
       \name{author}{4}{}{%
@@ -757,6 +856,109 @@
       \verb https://doi.org/10.1021/ed049p249
       \endverb
     \endentry
+    \entry{HUANG2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b87a214caa9fb5235610af688876d830}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Man},
+           giveni={M\bibinitperiod}}}%
+        {{hash=677b629c06d20e61ecec2791450016c3}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=03efc5a544ed660f4365f87946dcf4eb}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiao-chuan},
+           giveni={X\bibinithyphendelim c\bibinitperiod}}}%
+        {{hash=7150f56689dcf5a744083321653c466d}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=160ffc1318e21a1f88a9b69ef23819be}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Can},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{246c2b83148612d4cdf548da8065d2d0}
+      \strng{fullhash}{9ee13953fb5a81ed41aa6bfbdf760a0e}
+      \strng{authornamehash}{246c2b83148612d4cdf548da8065d2d0}
+      \strng{authorfullhash}{9ee13953fb5a81ed41aa6bfbdf760a0e}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The supercritical carbon dioxide (SC-CO2) jet has a wide application prospect for rock breaking and jet fracturing in the development of the unconventional shale energy, due to its special physicochemical properties. To investigate its jet flow characteristics, the high-speed photography is used in experiments and the simulations through a compressible numerical model are carried out. It is shown that the jet flow field can be divided into three typical regions, the mixing layer possesses the same characteristics as a gas/gas turbulent mixing layer, with the divergent angles evidently smaller than those of the incompressible jets. The predicted results by the numerical model are in a good agreement with those of the experimentations. Through the dimensionless analysis, the potential core shows a length of about 9d and an increasing trend with the increase of the inlet pressure while the decay rate shows a decreasing trend, and the radial profiles consistent well with the ?Ue - ?? normalized method. In addition, a significant temperature drop of the SC-CO2 is observed between the nozzle inlet and the exit. A simple and convenient semi-empirical equation for calculating this temperature variation is deduced. Finally, the flow characteristics suggest that the SC-CO2 jet should be treated as a compressible jet.}
+      \field{journaltitle}{Journal of Hyrdrodynamics}
+      \field{title}{Analysis of the flow characteristics of the high-pressure supercritical carbon dioxide jet}
+      \field{volume}{31}
+      \field{year}{2019}
+      \field{pages}{389\bibrangedash 399}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s42241-018-0165-8
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s42241-018-0165-8#citeas
+      \endverb
+      \keyw{supercritical carbon dioxide jet,flow characteristics,unconventional shale energy,experiment and simulation}
+    \endentry
+    \entry{HUANG2020106735}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b87a214caa9fb5235610af688876d830}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Man},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7150f56689dcf5a744083321653c466d}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f7d350eb00b3034b370012178130c212}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaochuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=677b629c06d20e61ecec2791450016c3}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=160ffc1318e21a1f88a9b69ef23819be}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Can},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{246c2b83148612d4cdf548da8065d2d0}
+      \strng{fullhash}{bd8c754c08e90afe481baf795a5416e9}
+      \strng{authornamehash}{246c2b83148612d4cdf548da8065d2d0}
+      \strng{authorfullhash}{bd8c754c08e90afe481baf795a5416e9}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supercritical carbon dioxide (SC-CO2) jets are of increasing interest in drilling and completion engineering due to their superiority over water jets. To understand the nature of SC-CO2 jets and improve performance, the flow characteristics of SC-CO2 jets were experimentally investigated, followed by rock breaking tests. Flow images of the jet under various operating conditions were captured by a high speed CCD camera. A comparative analysis of an SC-CO2 jet flow with classical theories and other types of jet flows was performed. The results show that the submerged environment can greatly affect the characteristics of SC-CO2 jets. When injecting into a gaseous CO2 environment, the saturation curve is crossed and intense phase transition occurs in the jet flow. The jet appears as a classical single-phase gas/gas turbulent shear layer. Whereas, under an SC-CO2 submerged environment, shock waves can be found in the jet flow. The initial instability and spreading rate reduce with the increase in inlet pressure. The jet behaves as a typical compressible jet. These features are different from water jets and are most likely the reason for the better rock breaking performance of SC-CO2 jets. Further, SC-CO2 jets under a gaseous CO2 submerged environment are prone to result in large and shallow breaking pits, while the jets under an SC-CO2 environment tends to cause small and deep breaking pits.}
+      \field{issn}{0920-4105}
+      \field{journaltitle}{Journal of Petroleum Science and Engineering}
+      \field{title}{Experimental investigation on the flow and rock breaking characteristics of supercritical carbon dioxide jets}
+      \field{volume}{187}
+      \field{year}{2020}
+      \field{pages}{106735}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.petrol.2019.106735
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0920410519311544
+      \endverb
+      \keyw{Supercritical carbon dioxide,Jet flow,Phase transition,Compressibility,Rock breaking}
+    \endentry
     \entry{cont}{incollection}{}
       \name{author}{1}{}{%
         {{hash=88442f005f67bf2b5d4aecc306900e6c}{%
@@ -978,6 +1180,68 @@
       \verb https://doi.org/10.1080/19942060.2017.1293565
       \endverb
     \endentry
+    \entry{LI2020103650}{article}{}
+      \name{author}{7}{}{%
+        {{hash=f3b76eff854b60e60605a0e6bc092150}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Mukun},
+           giveni={M\bibinitperiod}}}%
+        {{hash=16da8f078291ca462e500c7e7b3f4870}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={Hongjian},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7ee75d6745f673036d18bd876c05f229}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yuguang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bc23eb566ce30e1c86e358a959a9d6e7}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bb8843ec3c9133da5055521dbc769ae8}{%
+           family={Lei},
+           familyi={L\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bf6fa1762102c057e1f8763cc2cb7826}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Xian},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f370f8d57c44d8bab18c01246b484107}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Yukun},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ce5f6ca70ee0516c22cdddf2f2ff1fa}
+      \strng{fullhash}{7305a5ea4030416795221782f5f2fe14}
+      \strng{authornamehash}{5ce5f6ca70ee0516c22cdddf2f2ff1fa}
+      \strng{authorfullhash}{7305a5ea4030416795221782f5f2fe14}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supercritical carbon dioxide (SC?CO2) shows many advantages in the exploitation of shale gas and geothermal energy. This condition\x{fffd}is\x{fffd}mainly because\x{fffd}pressure synergizes with temperature in rock-breaking. A computational model was established on the basis of an experimental setup and validated with experimental data to study the energy transformation and dissipation mechanism. The jet fields of water, SC-CO2 and nitrogen were studied. Result shows that the jet center pressure and temperature difference are in the following descending order: SC-CO2\x{fffd}>\x{fffd}nitrogen\x{fffd}>\x{fffd}water, indicating that SC-CO2 jet can produce the maximum broken volume. The SC-CO2 and nitrogen temperature drops are induced by endothermic expansion, and the water temperature increment is caused by viscous heating. The total pressure underestimates the energy of SC-CO2 and nitrogen flows, which is harmful to safety risk control. The dissipation rate of flow energy is in the following ascending order: SC-CO2\x{fffd}<\x{fffd}nitrogen\x{fffd}<\x{fffd}water. This condition is because less large eddy energy transfer is produced in SC-CO2 and nitrogen jets than water jet, and shock wave leads to more energy loss of nitrogen than SC-CO2. The temperature drop in jets shows that SC-CO2 and nitrogen have the potential for enhanced heat transfer. The findings provide a deeper understanding of efficient control and the use of SC-CO2 flow energy.}
+      \field{issn}{1875-5100}
+      \field{journaltitle}{Journal of Natural Gas Science and Engineering}
+      \field{title}{Flow energy transformation and dissipation mechanisms of carbon dioxide, nitrogen, and water jets}
+      \field{volume}{84}
+      \field{year}{2020}
+      \field{pages}{103650}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jngse.2020.103650
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1875510020305047
+      \endverb
+      \keyw{Supercritical carbon dioxide,Energy transformation,Pressure load,Thermal load,Heat transfer,Rock breaking}
+    \endentry
     \entry{very_rock}{article}{}
       \name{author}{4}{}{%
         {{hash=f3b76eff854b60e60605a0e6bc092150}{%
@@ -1025,6 +1289,96 @@
       \verb{url}
       \verb https://doi.org/10.1007/s13369-017-2984-2
       \endverb
+    \endentry
+    \entry{10.1115/FEDSM2022-87029}{proceedings}{}
+      \name{author}{3}{}{%
+        {{hash=cb0400661107e054780a0066050a6562}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Chang\bibnamedelima Hyeon},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=27bceae54189e641bee2d3974de2cce9}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={Stephen\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=58130122db0ad25a82dbeabecc586c47}{%
+           family={Ranjan},
+           familyi={R\bibinitperiod},
+           given={Devesh},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{63858e9aab84b03321f193c8726e22a5}
+      \strng{fullhash}{63858e9aab84b03321f193c8726e22a5}
+      \strng{authornamehash}{63858e9aab84b03321f193c8726e22a5}
+      \strng{authorfullhash}{63858e9aab84b03321f193c8726e22a5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{With limitations of traditional power cycles on their operating temperature ranges and max efficiencies, the research community has shifted the attention to usage of supercritical fluids as the main working fluid of power cycles. Among the supercritical fluids, supercritical carbon dioxide (sCO2) is considered as the most promising candidate for its relatively low critical point, low cost, and availability. The main merit of using sCO2 is its high density near the fluid\x{fffd}\x{fffd}\x{fffd}s critical point, which reduces the required compression power. This leads to decrease in the volume of turbomachinery and increase in the overall cycle efficiency. However, non-linear property variations and mixing of different supercritical regimes in close proximity to the critical point pose great risks for cycles taking the full advantage of these benefits. The non-linear property variations close to the critical point provide a challenge in developing a multiphysics model, which can serve as a backbone for simulating more advanced geometries of sCO2 power cycle processes.To understand the physical phenomena of property variations and mixing of supercritical fluids at differing conditions, a classical shear layer experiment is performed in a high-pressure test chamber with supporting closed-loop cycle facilities. Experiments are conducted under various fluid density and velocity ratios at multiple isobars to understand if classical mixing theories and hydrodynamics follow the same trend in supercritical conditions. Specifically, turbulent flow characteristics and the growth parameters are captured through density gradients between two channels using Schlieren visualization. The qualitative results show that the mixing interfacial features follow the classical mixing growth rate theories despite nonlinear fluid property variations. Dissipative nature of the supercritical fluids contributes to resemblance of gas-gas mixing and presents decrease in mixing intensity as inlet conditions deviate away from the critical point.}}
+      \field{month}{08}
+      \field{note}{V002T04A010}
+      \field{series}{Fluids Engineering Division Summer Meeting}
+      \field{title}{Experimental Investigation in Turbulent Shear Mixing Layer at Supercritical Condition}
+      \field{volume}{Volume 2: Multiphase Flow (MFTC); Computational Fluid Dynamics (CFDTC); Micro and Nano Fluid Dynamics (MNFDTC)}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1115/FEDSM2022-87029
+      \endverb
+      \verb{eprint}
+      \verb https://asmedigitalcollection.asme.org/FEDSM/proceedings-pdf/FEDSM2022/85840/V002T04A010/6923087/v002t04a010-fedsm2022-87029.pdf
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1115/FEDSM2022-87029
+      \endverb
+    \endentry
+    \entry{LIU2021108422}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bc6c6f66f139beef784a50d9f1485019}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0737c4c2a5c25f10dfe54d0cfcc47a7f}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Xinhui},
+           giveni={X\bibinitperiod}}}%
+        {{hash=937d2cc6560211579973ca09c9a90905}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Jianping},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0689de47b91663756e775e759323957a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Huidong},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{412b864aa3b1e9ea4dc53d3c2421cf2c}
+      \strng{fullhash}{2106161d51ff638837be6fe7407caf97}
+      \strng{authornamehash}{412b864aa3b1e9ea4dc53d3c2421cf2c}
+      \strng{authorfullhash}{2106161d51ff638837be6fe7407caf97}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Defining the structure of a supercritical carbon dioxide (SC?CO2) jet flow field is a critical component of establishing a theoretical basis for its application. This study investigates the influence of pressure ratio on the wave features of an SC-CO2 jet flow field using a new numerical simulation model and flow field visualization experiments. To assess the characteristics of the SC-CO2 flow field and predict the distribution of temperature and pressure, a computational model based on constant pressure specific heat capacity and thermal conductivity of SC-CO2 was established, and the user-defined function (UDF) feature available in ANSYS Fluent software was used. The results demonstrated that the temperature and pressure of the SC-CO2 jet flow field could be accurately predicted by the numerical simulation model proposed in this research, and the wave features of the flow field could be visualized by both the numerical simulation contours and the experiments. The wave features, which resulted from different pressure ratios, were found be a function of the structure of the Laval nozzle at a constant inlet pressure. The pressure ratio could be controlled by the nozzle structure and accurately describe the wave features of the SC-CO2 jet flow field. In this study, an optimal pressure ratio of 1.31 was used and the flow field structure corresponding to the maximum jet impact force could be satisfactorily described by the optimal pressure ratio.}
+      \field{issn}{0920-4105}
+      \field{journaltitle}{Journal of Petroleum Science and Engineering}
+      \field{title}{Application of supercritical carbon dioxide jet: A parametric study using numerical simulation model}
+      \field{volume}{201}
+      \field{year}{2021}
+      \field{pages}{108422}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.petrol.2021.108422
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0920410521000814
+      \endverb
+      \keyw{Coal bed methane,Coal breakage,Drilling,Supercritical carbon dioxide jets,Impact pressure}
     \endentry
     \entry{RANS}{article}{}
       \name{author}{5}{}{%
@@ -1115,6 +1469,53 @@
       \field{pages}{361\bibrangedash 376}
       \range{pages}{16}
     \endentry
+    \entry{mayer2003raman}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ec2e8fd6919f70f54256c6099c2318da}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6241093867a7aeb8c96081bd3ef89b98}{%
+           family={Telaar},
+           familyi={T\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=248ec42767c9e6673788dc95ed947c0c}{%
+           family={Branam},
+           familyi={B\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5380785015f45da498fbc6e6a9747316}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=790d21a5eec934c2409cf9846f75f554}{%
+           family={Hussong},
+           familyi={H\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e6b23828be8e14e2d4ff683b8029163e}
+      \strng{fullhash}{c56a3c5c2325a5a9e39cdbe2e08dccf7}
+      \strng{authornamehash}{e6b23828be8e14e2d4ff683b8029163e}
+      \strng{authorfullhash}{c56a3c5c2325a5a9e39cdbe2e08dccf7}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Heat and Mass Transfer}
+      \field{number}{8-9}
+      \field{title}{Raman measurements of cryogenic injection at supercritical pressure}
+      \field{volume}{39}
+      \field{year}{2003}
+      \field{pages}{709\bibrangedash 719}
+      \range{pages}{11}
+    \endentry
     \entry{MILLER200226}{article}{}
       \name{author}{2}{}{%
         {{hash=f0429dec0882def3e4a0ec52d9c9f94f}{%
@@ -1203,6 +1604,32 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1063/1.4937948
+      \endverb
+    \endentry
+    \entry{OVAIS2022}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=42b246802858384a29faefda3ea5fdb4}{%
+           family={Ovais},
+           familyi={O\bibinitperiod},
+           given={Syed\bibnamedelima Mohammad},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Clemson University}%
+      }
+      \strng{namehash}{42b246802858384a29faefda3ea5fdb4}
+      \strng{fullhash}{42b246802858384a29faefda3ea5fdb4}
+      \strng{authornamehash}{42b246802858384a29faefda3ea5fdb4}
+      \strng{authorfullhash}{42b246802858384a29faefda3ea5fdb4}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Direct Numerical Simulation of supercritical CO2 mixing and combustion}
+      \field{type}{phdthesis}
+      \field{year}{2022}
+      \verb{url}
+      \verb https://tigerprints.clemson.edu/all_dissertations/3073
       \endverb
     \endentry
     \entry{osti_1374142}{misc}{}
@@ -1345,6 +1772,78 @@
       \field{booktitle}{Thirty-First Workshop on Geothermal Reservoir Engineering}
       \field{title}{ON THE FEASIBILITY OF USING SUPERCRITICAL CO2 AS HEAT TRANSMISSION FLUID IN AN ENGINEERED HOT DRY ROCK GEOTHERMAL SYSTEM}
       \field{year}{2006}
+    \endentry
+    \entry{RAMAN2018}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=a6656b44995f3b967f475140cd0a382a}{%
+           family={Raman},
+           familyi={R\bibinitperiod},
+           given={Senthil\bibnamedelima Kumar},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=6d6c73a733d4bd9c2201381be454c437}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Kexin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7e5d5ff4d485a08e421ba9fb40c5e9e8}{%
+           family={Suryan},
+           familyi={S\bibinitperiod},
+           given={Abhilash},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6bd1b5badfa3f44caba1c4ea91149b94}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Heuy\bibnamedelima Dong},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=7e5d5ff4d485a08e421ba9fb40c5e9e8}{%
+           family={Suryan},
+           familyi={S\bibinitperiod},
+           given={Abhilash},
+           giveni={A\bibinitperiod}}}%
+        {{hash=edfba7216fd907e725563b48e87b90fa}{%
+           family={Doh},
+           familyi={D\bibinitperiod},
+           given={Deog\bibnamedelima Hee},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e5fd54ef54b3c7f30ff07e5776a44973}{%
+           family={Yaga},
+           familyi={Y\bibinitperiod},
+           given={Minoru},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c218a68c773e155225ecda67652d66a3}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Guang},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Singapore Pte Ltd.}%
+      }
+      \strng{namehash}{f1a683d8814fad65184cd00f8bdb9085}
+      \strng{fullhash}{7965ac419ad158cf2dc2a14106cb691d}
+      \strng{authornamehash}{f1a683d8814fad65184cd00f8bdb9085}
+      \strng{authorfullhash}{7965ac419ad158cf2dc2a14106cb691d}
+      \strng{editornamehash}{a65f7d978f78e3a6a37b87632ced5bf2}
+      \strng{editorfullhash}{9419eb6b67b28c20fd8855eb576c01f5}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Recent Asian Research on Thermal and Fluid Sciences: Proceedings of AJWTF7 2018}
+      \field{isbn}{123}
+      \field{title}{Flow Characteristics of Confined G-CO2 and S-CO2 Jets}
+      \field{year}{2020}
+      \field{pages}{281\bibrangedash 295}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1007/978-981-15-1892-8\_23
+      \endverb
+      \verb{url}
+      \verb www
+      \endverb
+      \keyw{supercritical carbon dioxide,mixing characteristics,jet,phase}
     \endentry
     \entry{DNS_N}{article}{}
       \name{author}{5}{}{%
@@ -1551,6 +2050,35 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.2514/1.J050288
+      \endverb
+    \endentry
+    \entry{SENGUPTA2019}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=77e4c6011d929852b60c565b510f693a}{%
+           family={Sengupta},
+           familyi={S\bibinitperiod},
+           given={Uttiya},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Delft University of Technology}%
+      }
+      \strng{namehash}{77e4c6011d929852b60c565b510f693a}
+      \strng{fullhash}{77e4c6011d929852b60c565b510f693a}
+      \strng{authornamehash}{77e4c6011d929852b60c565b510f693a}
+      \strng{authorfullhash}{77e4c6011d929852b60c565b510f693a}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fully compressible Direct Numerical Simulations of carbon dioxide close to the vapour- liquid critical point}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.4233/uuid:513e5fa7-aef5-47e8-a7f9-d99a06c8981d
+      \endverb
+      \verb{url}
+      \verb https://pure.tudelft.nl/ws/portalfiles/portal/51831002/Thesis.pdf
       \endverb
     \endentry
     \entry{experiment}{article}{}
@@ -2031,6 +2559,56 @@
       \endverb
       \keyw{Supercritical carbon dioxide,sCO,Power generation,Turbomachinery,Heat exchangers,Control systems,Applications}
     \endentry
+    \entry{en14010106}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ad5c8b38395821fe2a6d2864594d5a08}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yulong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1fd24db54860bcc68afc8ed6e58bfa9a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ed9a5a5450b7fcc521e51a43a9789eec}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Weixuan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d2d72d433601ece5820fe8bcf16485e9}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Zhaojie},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d6f3fb0435506f8a2c971301955fd1b5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haizhu},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f8ef43ffe9d13b0a5405c6a8f5c43d6}
+      \strng{fullhash}{fcf8190ec0ad7727d7db726d034c1b3b}
+      \strng{authornamehash}{5f8ef43ffe9d13b0a5405c6a8f5c43d6}
+      \strng{authorfullhash}{fcf8190ec0ad7727d7db726d034c1b3b}
+      \field{sortinit}{Y}
+      \field{sortinithash}{f86c10978eb0c0879609ce6a4f43da7b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supercritical carbon dioxide (SC-CO2) jet is capable of decreasing the threshold pressure of rock breakage and mitigating formation damage, owing to its low viscosity, high diffusivity, and extremely-low surface tension. The swirling-round jet holds the advantages of both a swirling jet and a round jet. Therefore, the comprehensive technique, swirling-round SC-CO2 (SR-SC-CO2) jet, is expected to substantially enhance rock-breaking efficiency. However, theoretical analysis of the flow field characteristics of SR-SC-CO2 has not been reported yet. This work aims to lay a theoretical foundation for employing SR-SC-CO2 in drilling and fracturing. The flow field is simulated using Naiver-Stokes equations and the RNG k-epsilon; turbulence model. Sensitivity analysis, regarding pressure drop of the nozzle, confining pressure, fluid temperature, jetting distance, the diameter of the nozzle's central hole, and grooving area, are performed. We show that the combined swirling-round SC-CO2 jet flow could maintain a relatively larger axial as well as tangential velocity compared to a single approach of swirling jet or round jet, enabling one to acquire a deeper oillet and expand the perforation area effectively. The simulation results substantiate the enormous potential of SR-SC-CO2 in improving rock-breaking efficiency and clarify the influence of relevant parameters on the impact pressure of the jet flow.}
+      \field{issn}{1996-1073}
+      \field{journaltitle}{Energies}
+      \field{number}{1}
+      \field{title}{Study on the Impact Pressure of Swirling-Round Supercritical CO2 Jet Flow and Its Influencing Factors}
+      \field{volume}{14}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/en14010106
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1996-1073/14/1/106
+      \endverb
+    \endentry
     \entry{heated_cyl}{article}{}
       \name{author}{1}{}{%
         {{hash=85a1ae2443e57ba8811a177a5221bc5a}{%
@@ -2064,6 +2642,98 @@
       \verb{url}
       \verb https://doi.org/10.1146/annurev-fluid-120710-101234
       \endverb
+    \endentry
+    \entry{ZHANG2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6f6897fb48d96c342214fde1d2bc9269}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hongyuan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=276ab7eeb0b30c5bcf202231feab4a41}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=269263ba1ce2007d883ef917e64329fd}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Suo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{560196b72cb2faa0c5a902abc318e0fc}
+      \strng{fullhash}{560196b72cb2faa0c5a902abc318e0fc}
+      \strng{authornamehash}{560196b72cb2faa0c5a902abc318e0fc}
+      \strng{authorfullhash}{560196b72cb2faa0c5a902abc318e0fc}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Semi-closed supercritical CO2 (sCO2) gas turbine is a promising candidate for the next generation power cycles with high efficiency and almost 100\% carbon capture. In this study, the multicomponent effects on the sCO2 systems are investigated. A real-fluid modeling framework based on the vapor-liquid equilibrium (VLE) theory is implemented to predict the phase boundary and real mixture critical point, and to capture the phase separation in computational fluid dynamics (CFD) simulations. A novel VLE-based tabulation method is developed to make the CFD solver computationally more affordable. VLE-based thermodynamic analyses show that a small amount of combustion-relevant impurities (e.g., H2O, CH4, and O2) can significantly elevate the mixture critical point of the sCO2 systems. As a result, the so-called ?supercritical? CO2 systems might be in the subcritical two-phase zone where phase separation occurs. At the relevant conditions in this study (100?300 bar), phase separation only has a small influence on the CO2/H2O/CH4/O2 mixture density, but has a considerable influence on the heat capacity of the mixture. VLE-based CFD simulation of a laminar premixed sCO2 shock tube shows that expansion waves can trigger significant condensation in the systems and the latent heat of the condensation can change the temperature and density fields in the systems. To understand the phase separation during mixing, VLE-based large-eddy simulations (LES) of turbulent jet-in-crossflows in the sCO2 systems are conducted, and the results show that when two subcritical gas or supercritical gas-like streams mix, the mixture can partially condense to subcritical liquid phase. Higher pressure, lower temperature, and higher H2O concentration can enhance the phase separation phenomenon in the systems.}
+      \field{journaltitle}{Flow, Turbulence and Combustion}
+      \field{title}{Multicomponent Effects on the Supercritical CO2 Systems: Mixture Critical Point and Phase Separation}
+      \field{volume}{109}
+      \field{year}{2022}
+      \field{pages}{515\bibrangedash 543}
+      \range{pages}{29}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s10494-022-00335-9
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s10494-022-00335-9#citeas
+      \endverb
+    \endentry
+    \entry{ZHANG2022124125}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0689de47b91663756e775e759323957a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Huidong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bc6c6f66f139beef784a50d9f1485019}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fcc6577939ad3f6b1995cd8068540f0a}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jiren},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c06a6f4a00ba45877bf71039d7f4ac90}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wenchuan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=0edca4c133f22af20234b061a046931e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Changjiang},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d96802611694cdc6d8e35a3ff00f6cdb}
+      \strng{fullhash}{5bcd5b75f5778273953ca0d308a6964e}
+      \strng{authornamehash}{d96802611694cdc6d8e35a3ff00f6cdb}
+      \strng{authorfullhash}{5bcd5b75f5778273953ca0d308a6964e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supercritical carbon dioxide (CO2) jet-assisted drilling is considered a promising technology in unconventional natural gas drilling engineering. The flow field characteristics of the supercritical CO2 jet are the critical factors that affect the erosion performance of the jet. The relation between the flow fluctuation characteristics and the jet is required further investigation to enhance its erosion performance. In this study, the fluctuation features of a supercritical CO2 jet were simulated based on a modified real gas model. Subsequently, impact force tests were conducted using an I-Scan flexible array pressure sensor to obtain peak pressures at different standoff distances. The results indicated that the flow field structure of the supercritical CO2 jet exhibits typical compressible wave-like features, which can be accurately determined by the expansion ratio. The expansion ratio was mainly affected by the inlet pressure, inlet temperature, and ambient pressure. The static pressure, temperature, and velocity distributions of a free jet could be significantly influenced by the fluctuation characteristics. Among them, the static pressure and temperature trend decrease in the expansion waves and increase in the compression waves, while the velocity shows a contrary variation trend. When the jet was under-expansion, the lengths of the wave node and jet potential core increased with increasing inlet pressure and decreased with increasing inlet temperature and ambient pressure. Moreover, the fluctuation characteristics of the flow field significantly affected the peak impact force of the supercritical CO2 jet. The peak impact force at the compression wave positions tended to be higher than that at the adjacent expansion wave positions. The maximum pressure difference of jet impact was 7.39\x{fffd}MPa in this study, which occurred when the standoff distance was 23.0 and 17.3\x{fffd}mm and accounts for 18.6\% of the impact pressure at 23.0\x{fffd}mm. A plate shock wave was observed ahead of the target when the standoff distance was larger than 23.0\x{fffd}mm, which accounted for the abrupt decrease in pressure at the stagnation region.}
+      \field{issn}{0360-5442}
+      \field{journaltitle}{Energy}
+      \field{title}{Investigation on the fluctuation characteristics and its influence on impact force of supercritical carbon dioxide jet}
+      \field{volume}{253}
+      \field{year}{2022}
+      \field{pages}{124125}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.energy.2022.124125
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0360544222010283
+      \endverb
+      \keyw{Unconventional natural gas,Jet-assisted drilling,Supercritical carbon dioxide jet,Fluctuation characteristics,Peak impact force}
     \endentry
     \entry{doi:10.1080/00102200500287613}{article}{}
       \name{author}{2}{}{%
