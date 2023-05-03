@@ -41,34 +41,42 @@ For example, consider a fluid with arbitrary volume $V$ as depicted in Figure \r
 \begin{tikzpicture}
 
 % Blob
+\path[draw, style=dashed, scale=1.5, use Hobby shortcut]
+(1,.4) .. (.8, -.425) .. (1,-1.25);
+\path[draw, style=dashed, scale=1.5, use Hobby shortcut]
+(2,.77) .. (1.7, -.365) .. (2,-1.5);
+\path[draw,scale=1.5, style=dashed, use Hobby shortcut]
+(3,1) .. (2.6, -.185) .. (3,-1.37);
+
+\path[draw, color=red, -stealth,scale=1.5, use Hobby shortcut, save Hobby path = {velocity}]
+(-.5,-.125) .. (0,0) .. (1,-.25) .. (2,-.5) .. (3,-.25) .. (4, 0) .. (4.5, -.125);
+\path[draw, color=red, yshift=1cm, -stealth,scale=1.5, use Hobby shortcut]
+(-.5,-.125) [ restore and use Hobby path={velocity}{}];
+\path[draw, color=red, yshift=-1cm, -stealth,scale=1.5, use Hobby shortcut]
+(-.5,-.125) [ restore and use Hobby path={velocity}{}];
+
 \path[draw, thick, scale=1.5, use Hobby shortcut, closed=true]
 (0,0) .. (1,.4) .. (3,1) .. (4,.3) .. (2,-1.5) .. (.5,-1);
 \path[draw,scale=1.5, use Hobby shortcut]
 (1,.4) .. (1.2, -.425) .. (1,-1.25);
-\path[draw, style=dashed, scale=1.5, use Hobby shortcut]
-(1,.4) .. (.8, -.425) .. (1,-1.25);
 \path[draw,scale=1.5, use Hobby shortcut]
 (2,.77) .. (2.3, -.365) .. (2,-1.5);
-\path[draw, style=dashed, scale=1.5, use Hobby shortcut]
-(2,.77) .. (1.7, -.365) .. (2,-1.5);
 \path[draw,scale=1.5, use Hobby shortcut]
 (3,1) .. (3.4, -.18) .. (3,-1.36);
-\path[draw,scale=1.5, style=dashed, use Hobby shortcut]
-(3,1) .. (2.6, -.185) .. (3,-1.37);
-%\path[draw, color=red, -stealth,scale=1.5, use Hobby shortcut, save Hobby path = {velocity}]
-%(-.5,-.125) .. (0,0) .. (1,-.25) .. (2,-.5) .. (3,-.25) .. (4, 0) .. (4.5, -.125);
-%\path[draw, color=red, yshift=1cm, -stealth,scale=1.5, use Hobby shortcut]
-%(-.5,-.125) [ restore and use Hobby path={velocity}{}];
-%\path[draw, color=red, yshift=-1cm, -stealth,scale=1.5, use Hobby shortcut]
-%(-.5,-.125) [ restore and use Hobby path={velocity}{}];
-%\fill (.7,-.3)  circle[radius=2pt] node[right]{A};
-%\fill (3.8, -.3) circle[radius=2pt] node[right]{B};
+
+\draw (-1.3, -.2) node[right][red]{v};
+\draw (6, -2) node[right]{n};
+
+\path[draw,scale=1.5, -stealth, use Hobby shortcut]
+(3.6,-1) .. (4,-1.4);
+
+
 \end{tikzpicture}
 \end{center}
-\caption{A fluid of arbitrary volume $V$ bounded by surface $S$ with velocity $\vec{v}(\vec{x},t)$. A differential volume and surface area is given by $dv$ and $ds$, respectively. $\vec{n}$ is the outward-pointing unit normal vector to the surface $S$.}
+\caption{A fluid of arbitrary volume $V$ bounded by surface $S$ with velocity $\vb{v}(\vb{x},t)$. A differential volume and surface area is given by $dv$ and $ds$, respectively. $\vb{n}$ is the outward-pointing unit normal vector to the surface $S$.}
 \label{cons_mass}
 \end{figure}
-For a fluid with density $\rho(\vec{x},t)$, mass within a small representative volume can be described with
+For a fluid with density $\rho(\vb{x},t)$, mass within a small representative volume can be described with
 $$ \rho \, dv$$
 Total mass in the arbitrary volume is then given by 
 $$\iiint_{V} \rho \,dv$$
@@ -78,32 +86,32 @@ $$\dfrac{d}{dt}\iiint_{V} \rho \, dv $$
 = \iiint_{V} \dfrac{\partial \rho}{\partial t}\,dv
 \end{equation}
 Simultaneously, overall change in mass throughout the volume can be described by the net mass flux through the surface $S$. Volumetric flow through a small portion of the bounding surface is given by
-$$\vec{v}\cdot \vec{n} \, ds$$
+$$\vb{v}\cdot \vb{n} \, ds$$
 Total mass flux through the entire surface is then
 \begin{equation} \label{surface_flowthrough}
-\iint_S \rho \, \vec{v}\cdot \vec{n} \, ds
+\iint_S \rho \, \vb{v}\cdot \vb{n} \, ds
 \end{equation}
 Applying the divergence theorem to Eq. \ref{surface_flowthrough} yields the following volume integral
 \begin{equation} \label{volume_equiv}
-\iiint_V \nabla \cdot \left(\rho \, \vec{v} \right) \, dv
+\iiint_V \nabla \cdot \left(\rho \, \vb{v} \right) \, dv
 \end{equation}
 Assuming there is no additional source generating or leaking mass within the control volume, we can relate Eqs. \ref{volume_mass} to \ref{volume_equiv} : 
 \begin{equation*}
 \begin{aligned}
-\iiint_{V} \dfrac{\partial \rho}{\partial t}\,dv &= - \iiint_V \nabla \cdot \left(\rho \, \vec{v} \right) \, dv \\ 
-\iiint_{V} \dfrac{\partial \rho}{\partial t}\,dv &+ \iiint_V \nabla \cdot \left(\rho \, \vec{v} \right) \, dv  = 0 
+\iiint_{V} \dfrac{\partial \rho}{\partial t}\,dv &= - \iiint_V \nabla \cdot \left(\rho \, \vb{v} \right) \, dv \\ 
+\iiint_{V} \dfrac{\partial \rho}{\partial t}\,dv &+ \iiint_V \nabla \cdot \left(\rho \, \vb{v} \right) \, dv  = 0 
 \end{aligned}
 \end{equation*}
 \begin{equation} \label{cont_int}
-\iiint_{V} \left( \dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \, \vec{v} \right) \,\right) dv  = 0
+\iiint_{V} \left( \dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \, \vb{v} \right) \,\right) dv  = 0
 \end{equation}
 Note the inclusion of the negative sign for the right side of the initial equality; in the surface integral formulation, the outward facing normal describes flux out of the volume, thus yielding a decrease in mass within the volume. Since Eq. \ref{cont_int} holds for any arbitrary volume $V$, the integrand must be identically equal to zero:
 \begin{equation} \label{conservation_mass}
-\dfrac{\partial \rho}{\partial t} +  \nabla \cdot \left(\rho \, \vec{v} \right) \,  = 0
+\dfrac{\partial \rho}{\partial t} +  \nabla \cdot \left(\rho \, \vb{v} \right) \,  = 0
 \end{equation}
-Through the continuum hypothesis and conservation of mass, we have now arrived at the continuity equation in Eq. \ref{conservation_mass}. This specific process demonstrates an even more fundamental relationship known as a \textit{conservation law}. More generally, for some integrated property $\phi$, the rate of change of $\phi$ within a control volume must be equal to the amount of $\phi$ lost or gained through the boundaries of the control volume plus what is created or consumed by any sinks or sources, $s$, within the volume (sinks having positive orientation to match the positive orientation of the outward-facing normal $\vec{n}$) \cite{}. 
+Through the continuum hypothesis and conservation of mass, we have now arrived at the continuity equation in Eq. \ref{conservation_mass}. This specific process demonstrates an even more fundamental relationship known as a \textit{conservation law}. More generally, for some integrated property $\phi$, the rate of change of $\phi$ within a control volume must be equal to the amount of $\phi$ lost or gained through the boundaries of the control volume plus what is created or consumed by any sinks or sources, $s$, within the volume (sinks having positive orientation to match the positive orientation of the outward-facing normal $\vb{n}$) \cite{}. 
 \begin{equation} \label{conservation_law}
-\dfrac{\partial \phi}{\partial t} +  \nabla \cdot \left(\phi \, \vec{v} \right) + s \,  = 0
+\dfrac{\partial \phi}{\partial t} +  \nabla \cdot \left(\phi \, \vb{v} \right) + s \,  = 0
 \end{equation}
 In addition to this concept applying to conservation of mass, as was seen in this section, the idea outlined by Eq. \ref{conservation_law} applies to conservation of momentum and energy within the fluid. Together, these expressions combine to form the basis of the Navier-Stokes Equations, as will be seen in more detail in chapter 2. The important takeaway from this section is that with the continuum hypothesis and fundamental laws of physics, one can adequately capture macroscopic flow behavior for the types of flows we are interested in within this work.  
 
@@ -128,7 +136,7 @@ This work uses the \gls{srk} as will be more thoroughly introduced in chapter 2.
 
 
 \section{Turbulence}
-In addition to the categorizing of fluid type, fluid flow can be distinguished into different types based on certain defining flow characteristics. The main two classifications of note are laminar flow and turbulent flow.
+In addition to categorizing by fluid type, fluid flow can be categorized based on flow characteristics. The main two classifications of note are laminar flow and turbulent flow.
 
 Laminar flow is denoted by fluid particles having well-defined parallel trajectories of motion, or streamlines. Streamlines do not cross, meaning adjacent layers within the fluid flow by one another with little to no mixing. From a more generalized perspective, the flow appears to be smooth. In contrast to this, turbulent flow is characterized by its unpredictable and chaotic trajectories. Streamlines do cross resulting in swirls and eddies of varying length scales which induce mixing. Turbulent flow can be qualitatively described as being rough due to this high degree of fluctuation within the velocity and pressure fields present. This generalized description is depicted in Figure \ref{lam_vs_turb}.
 
@@ -149,23 +157,140 @@ The Reynolds number is a dimensionless value that can be used to distinguish lam
 
 \noindent where $\rho$ and $\mu$ are the density and dynamic viscosity of the fluid, respectively, $u$ is the flow velocity, and $L$ is a characteristic length scale associated with the given flow scenario (e.g. pipe diameter). As is demonstrated by the ratio in Equation \ref{Reynolds_num}, the Reynolds number measures the relative effects of inertial forces compared to viscous forces within a given flow scenario. A small Reynolds number signifies the dominance of viscous forces; fluid parcels moving in tandem want to ``stick together," resulting in the sheared flow and parallel trajectories seen in laminar flow. Turbulence is then characterized by a large Reynolds number, where inertial forces take precedence. Here, deviations within the laminar flow field result in lateral mixing between shear layers. This creates eddies and random trajectories that result in the chaotic motion of turbulent flow. 
 
-This work focuses on the turbulent round jet and its associated dynamics in the context of supercritical fluids. The remainder of this section details a brief historical overview of turbulence modeling and numerical methods developed for studying turbulence in order to motivate the modeling and numerical choices made within this work.
+This work focuses on the turbulent round jet and its associated dynamics in the context of supercritical fluids. The remainder of this section details a brief overview of important turbulence concepts and numerical methods developed for studying turbulence in order to motivate the modeling and numerical choices made within this work.
 
-\subsection{Historical Perspective}
-This is a brief history of turbulence study from a mathematics perspective.
+\subsection{Mathematics of Turbulence}
+Turbulence has been recognized and investigated by scholars in some way, shape, or form for thousands of years; Lucretius being one of the earliest, describing eddy motion in his \textit{De rerum natura} \cite{Benzi:2010}. In that time, a comprehensive theory of turbulence has still not been reached. There are, however, many widely accepted hypotheses and models that at least in part explain certain aspects of turbulent flows.  
 
-\subsection{Round Jet Theory}
+Turbulent motion contains a wide range of scales. Richardson formalized this concept by describing turbulence as a compositions of eddies, each with their own characteristic size and velocity \cite{}. From this perspective, large eddies are said to be unstable and break up into smaller eddies, transferring energy down the line to smaller and smaller eddies. This energy cascade continues down to the molecular level where it is dissipated through molecular viscosity. Kolmogorov further developed this theory, noting that for sufficiently high Reynolds flow, the statistics of these smallest-scale motions are uniquely determined by the kinematic viscosity of the fluid, $\nu$, and the dissipation rate, $\varepsilon$ \cite{}. These smallest eddy length, velocity, and time scales at which dissipation occurs, known as the Kolmogorov scales, are defined as follows:
+\begin{equation}\label{Kolmogorov}
+\begin{aligned}
+\eta &\equiv \left(  \nu^3/\varepsilon \right)^{1/4}, \\
+u_{\eta} &\equiv \left(  \nu \varepsilon \right)^{1/4}, \\
+\tau_{\eta} &\equiv \left(  \nu/ \varepsilon \right)^{1/2} 
+\end{aligned}
+\end{equation}
+While the continuum description introduced in the previous section is still valid for turbulent flows, this vast scale separation and the random nature of fluctuations across these scales, including a dependence on problem-specific flow configurations and boundary conditions, make universal solutions to these types of problems unattainable. To that end, numerical simulations are invaluable in studying turbulence phenomena. 
+
+% \subsubsection{Kolmogorov Scales}
+%
+%\subsubsection{Reynolds Decomposition}
+%
+%\subsubsection{Favre Averaging}
+%
+%\subsubsection{Self-Similarity}
 
 
-\subsection{Numerical Approaches}
-These are some of the numerical approaches in use, including what we use and why we use it. 
+\subsection{Numerical Approaches to Turbulence Modeling}
+A vast array of numerical approaches have been developed to tackle the modeling challenges inherent to turbulence, with further development of these and new techniques remaining an active field of research today. We will briefly look at three families of numerical simulation methods in order to highlight the challenges associated with the large scale disparity included in turbulent flows. Methods of note include use of the Reynolds-Averaged Navier-Stokes (RANS) equations, direct numerical simulation (DNS), and large eddy simulation (LES), with scale coverage of each outlined in Figure \ref{DNSvsLESvsRANS}. 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.5]{figures/LES_grid}
+\includegraphics[scale=0.065]{figures/DNSvsLESvsRANS}
 \end{center}
-\caption{LES resolves large scale eddies (black) and models fine scale eddies (red) that are unresolved due to mesh size.}
+\caption{Depiction of the energy cascade present in turbulence along associated scales. Resolved vs. Modeled scales are mapped for \gls{dns}, \gls{les}, and \gls{rans} \cite{}.}
+\label{DNSvsLESvsRANS}
+\end{figure}
+
+At one extreme, we have \gls{dns}. The aim of \gls{dns} to resolve all scales within the turbulent flow, from the largest eddies down to the Kolmogorov scale. To do this, all components of the Navier-Stokes equations are discretized and numerically advanced. Numerical methods may include high-order finite differencing or pseudo-spectral methods depending on the type of turbulence, flow configuration, and boundary conditions at hand. While \gls{dns} can capture physics across all scales of the flow with high accuracy, this comes at a steep computational cost. Grid spacing and time stepping are highly dependent upon the Reynolds number (approximately as $Re^3$ \cite{Pope}). Thus \gls{dns} very quickly becomes limited to lower Reynolds flows, even with high computing resources. 
+
+On the other end of the spectrum, we have \gls{rans} modeling. The RANS equations make use of the Reynolds decomposition of the flow, in which a random velocity field $\vb{u}$ can be split into an ensemble average, $\langle \vb{u}\rangle$, and a fluctuating component, $\vb{u}'$, such that: 
+\begin{equation}\label{rey_decomp}
+\begin{aligned}
+\vb{u}'(\vb{x},t) & \equiv \vb{u}(\vb{x}, t) - \langle \vb{u}(\vb{x}, t)\rangle, \\
+\langle \vb{u}(\vb{x},t)\rangle & = \lim_{N \to \infty}\dfrac{1}{N} \sum\limits_{i=1}^{N} \vb{u}_i(\vb{x}, t)
+\end{aligned}
+\end{equation}   
+where $i$ is the $i-th$ realization of a flow of identical conditions with the number of realizations $N$ tending toward infinity. In practice, for numerical models with the \gls{rans} equations, this is implemented via time averaging: 
+$$\langle \vb{u}(\vb{x}, t) \rangle \approx \overbar{\vb{u}(\vb{x})} \equiv \dfrac{1}{T} \int\limits_{t_0}^{t_0+T} \vb{u}(\vb{x}, s) ds$$
+where $T$ is taken to be much larger than the time scale of the fluctuating components. By substituting $\vb{u}(\vb{x},t) = \overbar{\vb{u}(\vb{x})} + \vb{u}'(\vb{x}, t)$ particular substitution into the Navier-Stokes equations, one can get a statistical description of the average flow field for the turbulent system (note - the more general decomposition given in equation \ref{rey_decomp} can be used in the substitution as well to take into consideration a moving average within the flow field. For many of the applications in which \gls{rans} is used, it is enough to look at the steady state given by the time averaged system). Further equations are then needed to model the additional stresses that arise from the nonlinear interactions between components of the mean flow field. Overall, simulations of the \gls{rans} equations resolve the larger scale motions associated with the average motion of the field in a statistical description of the system while the influence of fluctuating fields are incorporated via modeling. While this reduces the computational cost of the numerics, more closure issues arise from the modeling requirements introduced, which present a whole new set of choices and assumptions that are highly problem specific. 
+
+Finally, we have \gls{les}, which falls between the two extremes of the methodology spectrum presented thus far. The strategy with \gls{les} is to only resolve the energy containing scales in the system and model the influence of the smaller scales, as demonstrated in Figure \ref{LES_grid}. This allows for some relaxation in computational cost compared to \gls{dns} without introducing the same degree of modeling assumptions required for \gls{rans}. While still fairly computationally expensive overall, \gls{les} can resolve more of the instantaneous flow field and capture certain physics that inherently depend on the small scale dynamics; quantities of this nature are lost or become highly model dependent in \gls{rans} which introduces more error to the simulation. 
+
+\begin{figure}[h!]
+\begin{center}
+\begin{tikzpicture}
+%% Grid
+\draw[step=1cm,black,thin] (0,0) grid (4,4);
+%% Arrows for eddy flow
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(.2,3.5) .. (.75,3.5);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(1.2,3.5) .. (1.75,3.5);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(2.2,3.5) .. (2.75,3.5);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(3.5,3.8) .. (3.5,3.25);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(3.5,2.8) .. (3.5,2.25);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(3.5,1.8) .. (3.5,1.25);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(3.8,.5) .. (3.25,.5);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(2.8,.5) .. (2.25,.5);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(1.8,.5) .. (1.25,.5);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(.5,.2) .. (.5,.75);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(.5,1.2) .. (.5,1.75);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(.5,2.2) .. (.5,2.75);
+
+%% Grid
+\draw[step=1cm,black,thin] (5,0) grid (9,4);
+%% Arrows for smaller eddy flow
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(6.5,2.2) .. (6.5,2.75);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(7.2,2.5) .. (7.75,2.5);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(7.5,1.75) .. (7.5,1.2);
+\path[draw,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(6.75,1.5) .. (6.2,1.5);
+
+%% Grid
+\draw[step=1cm,black,thin] (10,0) grid (14,4);
+%% Arrows for smaller eddy flow
+\path[draw=red,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(11.25,2.85) .. (11.75,2.85);
+\path[draw=red,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(11.85,2.75) .. (11.85,2.25);
+\path[draw=red,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(11.75,2.15) .. (11.25,2.15);
+\path[draw=red,-{Latex[scale=1.5]},use Hobby shortcut,closed=false]
+(11.15,2.25) .. (11.15,2.75);
+\end{tikzpicture}
+\end{center}
+\caption{LES resolves large scale eddies (black) and models the effects of fine scale eddies (red) that are unresolved due to mesh size.}
 \label{LES_grid}
 \end{figure}
+The procedure for \gls{les} involves decomposing random velocity field $\vb{u}$ into filtered components, $\overline{\vb{u}}$, and residual components, $\vb{u}''$, such that: 
+\begin{equation} \label{les_filtering}
+\begin{aligned}
+\vb{u}''(\vb{x},t) & \equiv \vb{u}(\vb{x}, t) - \overline{\vb{u}(\vb{x}, t)}, \\
+\overline{\vb{u}(\vb{x},t)} & =  \int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty} \vb{u}(\vb{r},s)G(\vb{x-r}, t-s) d\vb{r}ds
+\end{aligned}
+\end{equation}
+$G$ is the convolution kernel of associated filter spatial and/or temporal cutoff $\Delta$ and $\tau_c$, respectively, satisfying $\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}G(\vb{r}, s) d\vb{r}ds$. In practice, common kernels are only spatially dependent. Applying this filtering procedure to the Navier-Stokes equations yields an additional term known as the residual stress tensor that must be modeled. The filtered Navier-Stokes equations can then be discretized to numerically simulated the large eddy behavior of the system.
+
+This general \gls{les} procedure may seem similar to what was described for the \gls{rans} model, especially in terms of the decomposition of the flow field, but there are key differences to note. Conceptually, the result of a numerical simulation using \gls{rans} describes an average behavior of turbulent flow over many instances or experiments. The output of these simulations is not a snapshot of one instance of the given flow field but rather an approximation to how the flow behaves in a statistical sense. \gls{les} does approximate a single realization of the flow field, just only including the low frequency modes of the system which contain the majority of the energy. Additionally, the components of the Reynolds decomposition obey the following rules:
+\begin{equation*}
+\overbar{\overbar{\vb{u}}} = \overbar{\vb{u}}, \quad
+\overbar{\vb{u}'} = 0
+\end{equation*}
+These rules do not hold for $\overline{\vb{u}}$ and $\vb{u}''$:
+\begin{equation*}
+\overline{\overline{\vb{u}}} \neq \overline{\vb{u}}, \quad
+\overline{\vb{u}''} \neq 0
+\end{equation*}
+We use \gls{les} in this work to balance the computational cost of the simulation with the degree of resolution for physical phenomena within the flow. Many studies involving turbulent supercritical fluids utilize \gls{les}, as will be seen in the next section, with additional research having been conducted regarding appropriate choices in modeling for the residual stress tensor. Model selection and further details on filtering are discussed in Chapter 2. 
+
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=0.5]{figures/LES_grid}
+%\end{center}
+%\end{figure}
 
 \section{Supercritical Carbon Dioxide}
 As mentioned earlier, supercritical fluids have many qualities that make them desirable as working fluids in a variety of systems. We now shift our focus to one particular fluid of interest: \gls{co2}. As seen in the phase diagram of Figure \ref{phase_diagram}, the critical temperature, $T_c$, and critical pressure, $p_c$, of \gls{co2} are $304.128 $ K and $73.773$ bar. The critical temperature and pressure of \gls{co2} is fairly easy to attain, making it a strong candidate for systems with hight thermal outputs. Additionally, \gls{sco2} has a relatively low toxicity and environmental impact \cite{}, and is chemically stable, non-flammable, and readily available \cite{}. For these reasons, \gls{sco2} is a highly coveted alternative working fluid in many different applications, and is one of the most widely used supercritical fluids along with water \cite{SCF2}. 

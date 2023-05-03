@@ -263,6 +263,39 @@
       \endverb
       \keyw{Pseudoboiling,Widom-line,Vaporization,Clapeyron,Transcritical}
     \endentry
+    \entry{Benzi:2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=13e69a14ababef7cf3a70177c29acd7b}{%
+           family={Benzi},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=76728b7f7c16a5326a01d67665f94137}{%
+           family={Frisch},
+           familyi={F\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{161321fc4a3fabaf4dbca1833db5c752}
+      \strng{fullhash}{161321fc4a3fabaf4dbca1833db5c752}
+      \strng{authornamehash}{161321fc4a3fabaf4dbca1833db5c752}
+      \strng{authorfullhash}{161321fc4a3fabaf4dbca1833db5c752}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scholarpedia}
+      \field{note}{revision \#137205}
+      \field{number}{3}
+      \field{title}{{T}urbulence}
+      \field{volume}{5}
+      \field{year}{2010}
+      \field{pages}{3439}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.4249/scholarpedia.3439
+      \endverb
+    \endentry
     \entry{en13102627}{article}{}
       \name{author}{6}{}{%
         {{hash=160ffc1318e21a1f88a9b69ef23819be}{%
@@ -1724,6 +1757,31 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0896844613003239
       \endverb
       \keyw{Supercritical,LES,Mixing,3D-NSCBC}
+    \endentry
+    \entry{Pope}{book}{}
+      \name{author}{1}{}{%
+        {{hash=69cb7ba6e545bd61435081cd4d6f70d7}{%
+           family={Pope},
+           familyi={P\bibinitperiod},
+           given={Stephen\bibnamedelima B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{69cb7ba6e545bd61435081cd4d6f70d7}
+      \strng{fullhash}{69cb7ba6e545bd61435081cd4d6f70d7}
+      \strng{authornamehash}{69cb7ba6e545bd61435081cd4d6f70d7}
+      \strng{authorfullhash}{69cb7ba6e545bd61435081cd4d6f70d7}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turbulent Flows}
+      \field{year}{2000}
     \endentry
     \entry{EGScomp}{report}{}
       \name{author}{1}{}{%
