@@ -889,6 +889,86 @@
       \verb https://doi.org/10.1021/ed049p249
       \endverb
     \endentry
+    \entry{PeleC1}{article}{}
+      \name{author}{11}{}{%
+        {{hash=3e247ece1c3ac5389b3070da6d57acbb}{%
+           family={{Henry de Frahan}},
+           familyi={H\bibinitperiod},
+           given={Marc\bibnamedelima T},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=bb09a41ad1d08235962f9df346d37818}{%
+           family={Rood},
+           familyi={R\bibinitperiod},
+           given={Jon\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7e46681661c05bbbc266165457f363c3}{%
+           family={Day},
+           familyi={D\bibinitperiod},
+           given={Marc\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0f5d06d4dd4ab64a87c88cacd24f6b1a}{%
+           family={Sitaraman},
+           familyi={S\bibinitperiod},
+           given={Hariswaran},
+           giveni={H\bibinitperiod}}}%
+        {{hash=53a0760495a3356bdb5498f10653f6ae}{%
+           family={Yellapantula},
+           familyi={Y\bibinitperiod},
+           given={Shashank},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eaa151e5caf54b7e46d92495f37e08e4}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={Bruce\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=57de69032f83d3eaa149d1c7c0d86972}{%
+           family={Grout},
+           familyi={G\bibinitperiod},
+           given={Ray\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=080e429840e559bf084daa1aa50b0611}{%
+           family={Almgren},
+           familyi={A\bibinitperiod},
+           given={Ann},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1c4cd311856ef5c7eb9de4bce6d43eac}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Weiqun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6eee6ffb1633af94d7247b711fe78a60}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima B},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=3792bf8bd1e8db57d2ba04d11d98e927}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jacqueline\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cad3204d4a0e1df6c4e42d01752c3d9}
+      \strng{fullhash}{f435f2b3a021765d7b3639fe744e3135}
+      \strng{authornamehash}{1cad3204d4a0e1df6c4e42d01752c3d9}
+      \strng{authorfullhash}{f435f2b3a021765d7b3639fe744e3135}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The International Journal of High Performance Computing Applications}
+      \field{number}{0}
+      \field{title}{PeleC: An adaptive mesh refinement solver for compressible reacting flows}
+      \field{volume}{0}
+      \field{year}{2022}
+      \field{pages}{10943420221121151}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1177/10943420221121151
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/10943420221121151
+      \endverb
+    \endentry
     \entry{HUANG2019}{article}{}
       \name{author}{5}{}{%
         {{hash=b87a214caa9fb5235610af688876d830}{%
@@ -1665,17 +1745,6 @@
       \verb https://tigerprints.clemson.edu/all_dissertations/3073
       \endverb
     \endentry
-    \entry{osti_1374142}{misc}{}
-      \field{sortinit}{P}
-      \field{sortinithash}{24100cef455d7974167575052c29146e}
-      \field{labeltitlesource}{title}
-      \field{month}{5}
-      \field{title}{PELEC, Version 00}
-      \field{year}{2017}
-      \verb{url}
-      \verb https://www.osti.gov//servlets/purl/1374142
-      \endverb
-    \endentry
     \entry{commercialization}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=854f04898fce0e4b84514c28c74fafef}{%
@@ -2190,6 +2259,68 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1063/1.4972885
+      \endverb
+    \endentry
+    \entry{PeleC2}{article}{}
+      \name{author}{7}{}{%
+        {{hash=0f5d06d4dd4ab64a87c88cacd24f6b1a}{%
+           family={Sitaraman},
+           familyi={S\bibinitperiod},
+           given={Hariswaran},
+           giveni={H\bibinitperiod}}}%
+        {{hash=53a0760495a3356bdb5498f10653f6ae}{%
+           family={Yellapantula},
+           familyi={Y\bibinitperiod},
+           given={Shashank},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eaf89ba565b451e5af65ff4841e38654}{%
+           family={Frahan},
+           familyi={F\bibinitperiod},
+           given={Marc\bibnamedelimb T.\bibnamedelimi Henry},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=839de33feb8f22ca0dce2f8e3dadc522}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b2039a5f597f6b39ee996cb6b8d8d0f0}{%
+           family={Rood},
+           familyi={R\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=693d03dc40390e0b048a30974c64f3ad}{%
+           family={Grout},
+           familyi={G\bibinitperiod},
+           given={Ray},
+           giveni={R\bibinitperiod}}}%
+        {{hash=334d27a3214de66b8db14fc256b1be48}{%
+           family={Day},
+           familyi={D\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{401b6ab96472b3c8be8a0fb3a371c483}
+      \strng{fullhash}{21f0182422ba98abe518d6c79d0d088b}
+      \strng{authornamehash}{401b6ab96472b3c8be8a0fb3a371c483}
+      \strng{authorfullhash}{21f0182422ba98abe518d6c79d0d088b}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0010-2180}
+      \field{journaltitle}{Combustion and Flame}
+      \field{title}{Adaptive mesh based combustion simulations of direct fuel injection effects in a supersonic cavity flame-holder}
+      \field{volume}{232}
+      \field{year}{2021}
+      \field{pages}{111531}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.combustflame.2021.111531
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0010218021002741
       \endverb
     \endentry
     \entry{SOAVE1972}{article}{}
@@ -2883,6 +3014,7 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{osti_1374142}
 \endrefsection
 \endinput
 

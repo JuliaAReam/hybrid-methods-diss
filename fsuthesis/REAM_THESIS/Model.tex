@@ -1,39 +1,158 @@
 \chapter{Model Overview}
 \section{Introduction}
-Chapter 1 introduced the general mathematical framework needed for modeling fluid flow. 
+This section details the governing equations and numerical methods used to simulate the \gls{sco2} jet. As introduced previously, the compressible Navier-Stokes equations form the basis of the model along with the \gls{srk}. Here we also detail the filtering used in the \gls{les} and the \gls{smd} used to model the \gls{sgs} dynamics \cite{LES_Comp}. 
+
+To discretize and evolve the system of partial differential equations, including the \gls{les} \gls{sgs} terms, we use \textit{PeleC}, a compressible hydrodynamics code for reacting flows that leverages \textit{AMReX} for \gls{amr} \cite{PeleC1, PeleC2}. \textit{PeleC} is a highly scalable code for heterogeneous architectures that is being developed as part of the \gls{ecp} through the \gls{doe}. It leverages the \textit{PelePhysics} library for complex physics, including chemical reactions, non-ideal \gls{eos}, and high fidelity transport models. For spatial discretization, \textit{PeleC} contains a few variations of the general \gls{ppm} originally derived by Colella and Woodward \cite{1984JCoPPPM}. We utilize a variation that allows for extrema preservation in the presence of steep gradients \cite{MILLER200226, COLELLA20087069}. For time discretization, a second order Runge-Kutta scheme is used, and the time step is dynamically limited using a Courant number of 0.9. 
 \section{Governing Equations}
 
-We consider the three-dimensional compressible Navier-Stokes equations:
-\begin{equation} \label{NSE}
+We consider the three-dimensional compressible Navier-Stokes equations, presented here with Einstein notation:
+\begin{equation} \label{NSE_einstein}
 \begin{split}
   \frac{\partial\rho}{\partial t} + \frac{\partial }{\partial x_j} \left( \rho u_j \right) = 0,  \\
   \frac{\partial}{\partial t} \left( \rho u_i \right) + \frac{\partial}{\partial x_j} \left(\rho u_i u_j + p \delta_{ij} -\sigma_{ij} \right) = 0,  \\
   \frac{\partial}{\partial t} \left( \rho E \right) + \frac{\partial}{\partial x_j} \big(\left( \rho E+p \right) u_j + q_j - \sigma_{ij} u_i\big) = 0 
 \end{split}
 \end{equation}
-where $\rho$ is the density, $u_j$ is the velocity for the $x_j$ direction, $p$ is the pressure, $E = e + \frac{u_i u_i}{2}$ is the total energy, $e = c_v T$ is the internal energy, $T$ is the temperature, and $c_v$ is the heat capacity at constant volume. Additionally, the diffusive fluxes are
-\begin{equation}
-  \sigma_{ij} = 2\mu S_{ij} - \frac{2}{3}\mu \delta_{ij} S_{kk}\\
-  q_j = -k \frac{\partial T}{\partial x_j}
+where $\rho$ is the density, $u_j$ is the velocity for the $x_j$ direction, $p$ is the pressure, $E = e + \frac{u_i u_i}{2}$ is the total energy, $e = c_vT$ is the internal energy, and $T$ is the temperature. The diffusive fluxes are
+\begin{equation} \label{Transport}
+  \sigma_{ij} = 2\mu S_{ij} - \frac{2}{3}\mu \delta_{ij} S_{kk}, \quad \quad
+  q_j = -\lambda \frac{\partial T}{\partial x_j}
 \end{equation}
 where
-$S_{ij} = \frac{1}{2}\left(\frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right)$ is the strain-rate tensor, $\mu$ is the dynamic viscosity, and $k$ is the thermal conductivity. External forces such as gravity are not included in this study. Chung's high pressure correction for viscosity and thermal conductivity are included for the transport variables $\mu$ and $k$ \cite{chung:1988}. The system is closed using the \gls{srk} \cite{SOAVE1972} to relate pressure, density, and temperature as follows:
-\begin{align} 
-	p &= \dfrac{RT}{V_m - b} - \dfrac{a \alpha}{V_m(V_m + b)} \label{SRK eq} \\
-	a &= \dfrac{0.42747R^2T_c^2}{P_c} \label{SRKa} \\
-	b &= \dfrac{0.08664RT_c}{P_c} \label{SRKb} \\
-	\alpha &= \left( 1 + \left( 0.48508 + 1.55171 \omega - 0.15613 \omega^2 \right)\left( 1 - T_r^{0.5} \right) \right)^2 \label{SRKalpha} \\
-	T_r &= \dfrac{T}{T_c} \label{Treduced}
+$S_{ij} = \frac{1}{2}\left(\frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right)$ is the strain-rate tensor, $\mu$ is the dynamic viscosity, and $\lambda$ is the thermal conductivity. Models regarding these two components are given in more detail in the next section. $\delta_{ij}$ here is the Kronecker delta. External forces such as gravity are not included in this study. The system is closed using the \gls{srk} \cite{SOAVE1972} to relate pressure, density, and temperature as follows:
+\begin{equation} \label{SRK_eos}
+\begin{aligned} 
+	p &= \dfrac{RT}{V_m - b} - \dfrac{a \alpha}{V_m(V_m + b)}, \\
+	a &= \dfrac{0.42747R^2T_c^2}{P_c}, \\
+	b &= \dfrac{0.08664RT_c}{P_c}, \\
+	\alpha &= \left( 1 + \left( 0.48508 + 1.55171 \omega - 0.15613 \omega^2 \right)\left( 1 - T_r^{0.5} \right) \right)^2
+\end{aligned}
+\end{equation}
+where $R$ is the ideal gas constant, $T_c$ and $P_c$ are the critical temperature and pressure of the species, respectively, $T_r = T/T_c$ is the reduced temperature given by the ratio of the absolute temperature to the critical temperature, $V_m$ is the molar volume of the species, and $\omega$ is the acentric factor of the species. All cases are run with a single species, that being \gls{co2}. 
+
+\subsection{Transport Models}
+Modeling of transport coefficients is done through \textit{PelePhysics} \cite{}. There are three modeling options available in \textit{PelePhysics}; we use the \textit{Simple} model. The \textit{Simple} model approximates ideal gas transport coefficients using EGLib functions \cite{}, which have the following form:
+\begin{equation} \label{EGLib}
+\ln{(q_0)} = \sum\limits_{n=1}^{4} a_{q,n}\left( \ln{(T)}\right)^{n-1}
+\end{equation}
+where $q_0$ is the transport quantity of interest (either $\lambda$ or $\mu$) and $a$ is the appropriate pre-calculated polynomial fit coefficient (see Appendix \ref{}). Chung's high pressure correction for viscosity and thermal conductivity are included to account for real gas dynamics \cite{chung:1988}: 
+\begin{equation} \label{chung_general}
+q = q_k + q_p
+\end{equation}
+where $q_k$ is the low-pressure gas transport quantity related to the ideal gas quantity $q_0$ and $q_p$ is the high-pressure deviation. 
+
+For viscosity, these quantities are:
+\begin{equation}
+\begin{split}
+\mu_k = \mu_0 \left( \dfrac{1}{G_2} + A_6 Y \right), \\ 
+\mu_p = \left(\dfrac{\num{36.344e-6}(MT_c)^{1/2}}{V_c^{2/3}}\right)A_7Y^2G_2\exp(A_8 + \dfrac{A_9}{T^*} + \dfrac{A_{10}}{T^{*2}}) 
+\end{split}
+\end{equation}
+where $M$ is the molecular weight, $V_c$ is the critical molar volume, $T^* = T/\epsilon_k$ is a dimensionless temperature scaling using the Lennard-Jones potential well depth \cite{}, $Y = (\rho V_c)/6$, and $G_1 = (1-0.5Y)/(1-Y)^3$, and $G_2 = \left\{A_1\left[   1-\exp(-A_4Y)\right]/Y + A_2G_1\exp(A_5Y) + A_3G_1 \right\}/(A_1A_4 + A_2 + A_3)$. The constants $A_{1-10}$ are linear functions calculated as follows: 
+\begin{equation}
+A_i = a_{i0} + a_{i1} \omega + a_{i2} \mu_r^4 + a_{i3} \kappa \quad i = 1,..., 10
+\end{equation} 
+where $\mu_r$ is the reduced dipole moment of the species, $\kappa$ is the association factor of the species, and $a_{ij}$ are constants (see Appendix \ref{chung_viscosity_aij}).  
+
+Similarly, thermal conductivity components are given by: 
+\begin{equation}
+\begin{split}
+\lambda_k = \lambda_0 \left( \dfrac{1}{H_2} + B_6 Y \right), \\ 
+\lambda_p = \left(\dfrac{\num{3.039e-4}(T_c/M)^{1/2}}{V_c^{2/3}}\right)B_7Y^2H_2T_r^{1/2} 
+\end{split}
+\end{equation}
+where $H_2 = \left\{B_1\left[   1-\exp(-B_4Y)\right]/Y + B_2G_1\exp(B_5Y) + B_3G_1 \right\}/(B_1B_4 + B_2 + B_3)$ and $B_{1-7}$ are defined as: 
+\begin{equation}
+B_i = b_{i0} + b_{i1} \omega + b_{i2} \mu_r^4 + b_{i3} \kappa \quad i = 1,..., 7
+\end{equation}
+where $b_{ij}$ are constants (see Appendix \ref{chung_conductivity_bij}). All species-related constants mentioned in this section can also be found in Table \ref{}. 
+
+These high pressure corrections as derived and analyzed by Chung et al. show improved accuracy for approximating transport properties over a wide range of temperatures and pressures when compared to experimental data for a variety of species \cite{chung:1988}. For carbon dioxide in particular,  
+
+\subsection{Thermodynamics and Related Quantities}
+Modeling of thermodynamic quantities is also done through \textit{PelePhysics} \cite{}. In a similar fashion to equation \ref{chung_general}, thermodynamic properties can be broken up into an ideal gas component and a departure from ideal gas behavior:
+\begin{equation} \label{thermo_general}
+q(\phi) = q_{I}(\phi) + q_{D}(\phi)
+\end{equation}
+where $\phi$ is the appropriate combination of state variables involving temperature, specific volume, and pressure, $q_{I}$ is the ideal state component and $q_{D}$ is the departure component. These decompositions can be derived from fundamental thermodynamic relations \cite{}. For example, change in internal energy can be written as follows:
+\begin{equation} \label{thermo_example}
+de = \left( \dfrac{\partial e}{\partial T} \right)_{V} dT + \left[ T \left( \dfrac{\partial P}{\partial T} \right)_{V} - P  \right] dV
+\end{equation}
+substituting in the appropriate partial derivative using the \gls{srk} and integrating from an ideal state reference point $(v,t)$ to general point far from ideal conditions $(V,T)$ yields:
+\begin{equation}  \label{thermo_SRK_sub}
+e(V,T) - e(v,t) =  e(v,T) - e(v,t) + a \left[ \alpha - T \dfrac{\partial \alpha}{\partial T} \right] \int\limits_{v}^{V} \dfrac{1}{V_m(V_m + b)}dV'
+\end{equation}
+Simplifying the left- and right-hand side of Equation \ref{thermo_SRK_sub} and utilizing the choice of $v \to \infty$ for the ideal state volume \cite{}, we get:
+\begin{equation} \label{thermo_simplify}
+e(V,T) =  e(\infty,T) + a \left[ \alpha - T \dfrac{\partial \alpha}{\partial T} \right] \int\limits_{\infty}^{V} \dfrac{1}{V_m(V_m + b)}dV'
+\end{equation}
+Evaluating the integral in Equation \ref{thermo_simplify}, we arrive at the final expression for the internal energy of the species described by the \gls{srk}: 
+\begin{equation} \label{thermo_final}
+e(V,T) =  e_I(T) + a \left[ T \dfrac{\partial \alpha}{\partial T} - \alpha \right] \dfrac{1}{b}\ln\left( 1 + \dfrac{b}{V_m} \right)
+\end{equation}
+where $e_I(T)=c_vT$ is the ideal internal energy which is only dependent on temperature and $e_D(T,V) = a \left[ T \tfrac{\partial \alpha}{\partial T} - \alpha \right] \tfrac{1}{b}\ln\left( 1 + \tfrac{b}{V_m} \right)$ is the departure function for the internal energy. The departure function can be directly evaluated while the ideal gas portion must be approximated. 
+
+Ideal gas components such as $e_I(T)$ are approximated with NASA polynomial fits \cite{}. These polynomial fits have the following form:
+\begin{equation} \label{NASA_poly}
+\psi(T) = c_{\psi, 0} + c_{\psi, 1}T + c_{\psi, 2}T^2 + c_{\psi, 3}T^3 + c_{\psi, 4}T^4  
+\end{equation}
+where $\psi$ is either ideal internal energy $e_I$, specific heat at constant volume $c_{v_I}$, or enthalpy $h_I$ and $c_{\psi,0-4}$ are species-specific constants for each quantity's polynomial fit (see Appendix \ref{}). A similar procedure can be done to arrive at the decomposed enthalpy equation involving \gls{srk}-specific quantities:
+\begin{equation} \label{thermo_enthalpy}
+h(T,V) = h_I(T) +  a \left[ T \dfrac{\partial \alpha}{\partial T} - \alpha \right] \dfrac{1}{b}\ln\left( 1 + \dfrac{b}{V_m} \right) + \dfrac{RTb}{V_m - b} - \dfrac{a \alpha}{V_m + b}
+\end{equation}
+Equations for additional thermodynamic quantities, such as constant volume and constant pressure specific heat, and useful derivatives involving the \gls{srk} can be found in Appendix \ref{}. 
+
+\subsection{Filtered Navier-Stokes Equations}
+To perform the \gls{les}, we consider the filtered compressible Navier-Stokes equations. Here we go through the derivation along with some assumptions as outlined by Martin, Piomelli, and Candler \cite{}. First, applying the filtering operation from Equation \ref{les_filtering} to Equations \ref{NSE_einstein}, we get:
+\begin{subequations} \label{NSE_filtered}
+\begin{align}
+  \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho u_j} \right) &= 0,  \label{mass_filtered} \\
+  \frac{\partial}{\partial t} \left( \overline{\rho u_i }\right) + \frac{\partial}{\partial x_j} \left(\overline{\rho u_i u_j} + \overline{p }\delta_{ij} - \overline{\sigma_{ij}} \right) &= 0,  \label{mom_filtered} \\
+  \frac{\partial}{\partial t} \left( \overline{\rho E} \right) + \frac{\partial}{\partial x_j} \big(\left( \overline{\rho Eu_j}+\overline{p u_j} \right) + \overline{q_j} - \overline{\sigma_{ij} u_i}\big) &= 0 \label{en_filtered}
 \end{align}
-where $R$ is the ideal gas constant, $T$ is the absolute temperature, $V_m$ is the molar volume of the species, $T_c$ and $P_c$ are the critical temperature and pressure of the species, respectively, and $\omega$ is the acentric factor of the species. Additionally, $a$, $b$, and $\alpha$ are all species-specific parameters calculated via equations \ref{SRKa}, \ref{SRKb}, and \ref{SRKalpha}. All cases are run with a single species, that being \gls{co2}. 
+\end{subequations}
+In order to avoid having to model $\overline{\rho u_j} $ in the conservation of mass equation in \ref{NSE_filtered}, Favre-filtering, $\widetilde{\cdot}  = \nicefrac{\overline{\rho~\cdot}}{\overline{\rho}}$, is also applied \cite{}. Additionally, the following two sets of assumptions are made regarding transport terms \cite{}:
+\begin{subequations} \label{trans_assumptions}
+\begin{align}
+\overline{\mu(T)S_{ij}} \simeq \mu(\widetilde{T})\widetilde{S_{ij}}, \quad \quad 
+\overline{\lambda(T)\dfrac{\partial T}{\partial x_j}} \simeq \lambda(\widetilde{T})\dfrac{ \partial \widetilde{T}}{\partial x_j} \label{trans_1}\\
+\widetilde{\mu} = \mu(\widetilde{T}), \quad \quad \widetilde{\lambda} = \lambda(\widetilde{T}) \label{trans_2}
+\end{align}
+\end{subequations}
+Assumptions in Equations \ref{} is 
+so that Equations \ref{NSE_filtered} become: 
+\begin{equation} \label{NSE_favre_filtered}
+\begin{split}
+  \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho}\widetilde{ u_j} \right) = 0,  \\
+  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ u_i }\right) + \frac{\partial}{\partial x_j} \left(\overline{\rho}\widetilde{ u_i u_j} + \overline{p }\delta_{ij} - \widetilde{\sigma_{ij}} \right) = 0,  \\
+  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ E} \right) + \frac{\partial}{\partial x_j} \left(\left( \overline{\rho}\widetilde{ Eu_j}+\overline{p u_j} \right) + \widetilde{q_j} - \overline{\sigma_{ij} u_i}\right) = 0 
+\end{split}
+\end{equation}
+with filtered Equations \ref{Transport} now given by: 
+\begin{equation} \label{filtered_trans}
+  \widetilde{\sigma_{ij}} = 2\widetilde{\mu}\widetilde{ S_{ij}} - \frac{2}{3}\widetilde{\mu} \delta_{ij} \widetilde{ S_{kk}}, \quad \quad
+  \widetilde{q_j} = -\widetilde{\lambda} \frac{\partial \widetilde{T}}{\partial x_j}
+\end{equation}
 
-\subsection{High Pressure Corrections for Transport Models}
-
-\section{Numerical Methods}
-To discretize and evolve the system of partial differential equations given in \ref{NSE}, including the \gls{les} \gls{sgs} terms, we use \textit{PeleC}, a compressible hydrodynamics code for reacting flows that leverages \textit{AMReX} for \gls{amr} \cite{}. \textit{PeleC} is a highly scalable code for heterogeneous architectures that is being developed as part of the \gls{ecp} through the \gls{doe}. It leverages the \textit{PelePhysics} library for complex physics, including chemical reactions, non-ideal \gls{eos}, and high fidelity transport models. For spatial discretization, \textit{PeleC} contains a few variations of the general \gls{ppm} originally derived by Colella and Woodward \cite{1984JCoPPPM}. We utilize a variation that allows for extrema preservation in the presence of steep gradients \cite{MILLER200226, COLELLA20087069}. For time discretization, a second order Runge-Kutta scheme is used, and the time step is dynamically limited using a Courant number of 0.9. 
-
+Final simplifications to Equations \ref{NSE_favre_filtered} come from the \gls{sgs} terms. The \gls{sgs} stress $\tau_{ij}$, \gls{sgs} heat flux $\mathcal{Q}_j$, \gls{sgs} turbulent diffusion $\nicefrac{\partial \mathcal{J}_j}{\partial x_j}$, and \gls{sgs} turbulent viscous diffusion $\nicefrac{\partial \mathcal{D}_j}{\partial x_j}$ set through the following definitions \cite{}:
+\begin{equation} \label{sgs_defs}
+\begin{aligned}
+\tau_{ij} &= \overline{\rho}\left(\widetilde{u_i u_j} - \widetilde{u_i}\widetilde{u_j} \right), \\
+\mathcal{Q}_{j} &= \overline{\rho}\left(\widetilde{u_j T} - \widetilde{u_j}\widetilde{T} \right), \\
+\mathcal{J}_{j} &= \overline{\rho}\left(\widetilde{u_j u_k u_k} - \widetilde{u_j}\widetilde{u_k u_k} \right), \\
+\mathcal{D}_{j} &= \overline{\rho}\left(\widetilde{\sigma_{ij}u_i} - \widetilde{\sigma_{ij}}\widetilde{u_i} \right)
+\end{aligned}
+\end{equation} 
+After substituting the appropriate pieces of Equations \ref{sgs_defs} into the momentum and energy components of \ref{NSE_favre_filtered} and moving the \gls{sgs} terms to the right-hand side, we get the following:
+\begin{equation}
+\begin{split}
+  \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho}\widetilde{ u_j} \right) = 0,  \\
+  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ u_i }\right) + \frac{\partial}{\partial x_j} \left(\overline{\rho}\widetilde{ u_i} \widetilde{u_j} + \overline{p }\delta_{ij} - \widetilde{\sigma_{ij}} \right) = - \frac{\partial \tau_{ij}}{\partial x_j},  \\
+  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ E} \right) + \frac{\partial}{\partial x_j} \left(\left( \overline{\rho}\widetilde{ E}+\overline{p} \right)\widetilde{u_j} + \widetilde{q_j} - \widetilde{\sigma_{ij}}\widetilde{ u_i}\right) = - \frac{\partial}{\partial x_j } \left( \gamma c_v \mathcal{Q}_j + \dfrac{1}{2} \mathcal{J}_j - \mathcal{D}_j \right) 
+\end{split}
+\end{equation}
 \subsection{Subgrid-Scale Modeling for Large Eddy Simulation}
-We use the \gls{smd} \gls{les} model for compressible flow as described by Mart\'{i}n, Piomelli, and Graham \cite{LES_Comp}. In this context, the compressible Navier-Stokes equations \ref{NSE} should be interpreted in their Favre-filtered form, where, in this work, the grid provides the implicit filtering of the equations. The \gls{sgs} stress tensor, $\tau_{ij}$, is included in the diffusive fluxes and is calculated as follows:
+We use the \gls{smd} \gls{les} model for compressible flow as described by Mart\'{i}n, Piomelli, and Graham \cite{LES_Comp}. In this context, the compressible Navier-Stokes equations \ref{NSE_einstein} should be interpreted in their Favre-filtered form, where, in this work, the grid provides the implicit filtering of the equations. The \gls{sgs} stress tensor, $\tau_{ij}$, is included in the diffusive fluxes and is calculated as follows:
 \begin{equation}
 \begin{aligned}
 	\tau_{ij} - \dfrac{\delta_{ij}}{3}\tau_{kk} &= -C_s^22\overline{\Delta}^2 \overline{\rho} |\widetilde{S}| \left( \widetilde{S}_{ij} - \dfrac{\delta_{ij}}{3} \widetilde{S}_{kk} \right) = C_s^2 \alpha_{ij},  \\
@@ -62,7 +181,12 @@ For our simulations, we implement the three point box filter as described in \ci
 
 As noted previously, the choice of \gls{sgs} modeling is important in accurately capturing the turbulence statistics of the system. M\"{u}ller et al. found that while the choice in thermodynamic modeling is crucial in capturing first-order moments, the effects \gls{sgs} modeling is limited to second-order moments \cite{doi:10.1063/1.4937948}.  Therefore, our conclusions relating to the turbulence dynamics will be unaffected. That being said, \cite{doi:10.1063/1.4937948} also notes that the choice in \gls{sgs} model and numerical flux discretization had a larger than expected effect on resolved Reynolds stress profiles. Specifically, the constant Smagorinsky model yielded decaying fluctuation magnitudes during early evolution, resulting in the transition to a fully turbulent mixing zone to start from lower turbulence levels. However, this did agree with the jet break-up location inferred from mean density profiles, which were shifted slightly downstream by comparison to other \gls{sgs} models. These relationships will be taken into consideration for this study as well and noted in the discussion of Reynolds stress profiles.
 
+
+
+\section{Numerical Methods}
+Make one of those little flow chart thingys for overall algorithm procedure (minus meshing aspects).
+\subsection{Time Discretization}
 \subsection{Piecewise Parabolic Method Overview}
 \subsection{Approximate Riemann Solver Details}
-\subsection{Time Stepping with RK2}
+
 
