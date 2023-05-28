@@ -6,14 +6,14 @@ To discretize and evolve the system of partial differential equations, including
 \section{Governing Equations}
 
 We consider the three-dimensional compressible Navier-Stokes equations, presented here with Einstein notation:
-\begin{equation} \label{NSE_einstein}
-\begin{split}
-  \frac{\partial\rho}{\partial t} + \frac{\partial }{\partial x_j} \left( \rho u_j \right) = 0,  \\
-  \frac{\partial}{\partial t} \left( \rho u_i \right) + \frac{\partial}{\partial x_j} \left(\rho u_i u_j + p \delta_{ij} -\sigma_{ij} \right) = 0,  \\
-  \frac{\partial}{\partial t} \left( \rho E \right) + \frac{\partial}{\partial x_j} \big(\left( \rho E+p \right) u_j + q_j - \sigma_{ij} u_i\big) = 0 
-\end{split}
-\end{equation}
-where $\rho$ is the density, $u_j$ is the velocity for the $x_j$ direction, $p$ is the pressure, $E = e + \frac{u_i u_i}{2}$ is the total energy, $e = c_vT$ is the internal energy, and $T$ is the temperature. The diffusive fluxes are
+\begin{subequations} \label{NSE_einstein}
+\begin{align}
+  \frac{\partial\rho}{\partial t} + \frac{\partial }{\partial x_j} \left( \rho u_j \right) &= 0,  \label{NSE_mass}\\
+  \frac{\partial}{\partial t} \left( \rho u_i \right) + \frac{\partial}{\partial x_j} \left(\rho u_i u_j + p \delta_{ij} -\sigma_{ij} \right) &= 0,  \label{NSE_mom}\\
+  \frac{\partial}{\partial t} \left( \rho E \right) + \frac{\partial}{\partial x_j} \big(\left( \rho E+p \right) u_j + q_j - \sigma_{ij} u_i\big) &= 0 \label{NSE_E}
+\end{align}
+\end{subequations}
+where $\rho$ is the density, $u_j$ is the velocity for the $x_j$ direction, $p$ is the pressure, $E = e + \frac{u_i u_i}{2}$ is the total energy, $e $ is the internal energy, and $T$ is the temperature. Following the assumptions made for Newtonian fluids \cite{}, the diffusive fluxes are
 \begin{equation} \label{Transport}
   \sigma_{ij} = 2\mu S_{ij} - \frac{2}{3}\mu \delta_{ij} S_{kk}, \quad \quad
   q_j = -\lambda \frac{\partial T}{\partial x_j}
@@ -103,7 +103,7 @@ h(T,V) = h_I(T) +  a \left[ T \dfrac{\partial \alpha}{\partial T} - \alpha \righ
 Equations for additional thermodynamic quantities, such as constant volume and constant pressure specific heat, and useful derivatives involving the \gls{srk} can be found in Appendix \ref{}. 
 
 \subsection{Filtered Navier-Stokes Equations}
-To perform the \gls{les}, we consider the filtered compressible Navier-Stokes equations. Here we go through the derivation along with some assumptions as outlined by Martin, Piomelli, and Candler \cite{}. First, applying the filtering operation from Equation \ref{les_filtering} to Equations \ref{NSE_einstein}, we get:
+To perform the \gls{les}, we consider the filtered compressible Navier-Stokes equations as implemented by Mart\'{i}n, Piomelli, and Graham \cite{LES_Comp}. Here we go through a brief derivation along with the main assumptions needed. First, applying the filtering operation from Equation \ref{les_filtering} to Equations \ref{NSE_einstein}, we get:
 \begin{subequations} \label{NSE_filtered}
 \begin{align}
   \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho u_j} \right) &= 0,  \label{mass_filtered} \\
@@ -119,8 +119,7 @@ In order to avoid having to model $\overline{\rho u_j} $ in the conservation of 
 \widetilde{\mu} = \mu(\widetilde{T}), \quad \quad \widetilde{\lambda} = \lambda(\widetilde{T}) \label{trans_2}
 \end{align}
 \end{subequations}
-Assumptions in Equations \ref{} is 
-so that Equations \ref{NSE_filtered} become: 
+The assumptions in Equations \ref{trans_assumptions} are common in the literature regarding \gls{les}, even though transport terms are nonlinearly dependent on temperature \cite{}. Justification for this type of assumption can be made where if performing a \gls{les} with course enough grid, molecular transport coefficients remain small compared to turbulent transport coefficients \cite{}. Applying Equations \ref{trans_assumptions} along with the Favre filter to Equations \ref{NSE_filtered} yields the following:
 \begin{equation} \label{NSE_favre_filtered}
 \begin{split}
   \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho}\widetilde{ u_j} \right) = 0,  \\
@@ -143,29 +142,50 @@ Final simplifications to Equations \ref{NSE_favre_filtered} come from the \gls{s
 \mathcal{D}_{j} &= \overline{\rho}\left(\widetilde{\sigma_{ij}u_i} - \widetilde{\sigma_{ij}}\widetilde{u_i} \right)
 \end{aligned}
 \end{equation} 
-After substituting the appropriate pieces of Equations \ref{sgs_defs} into the momentum and energy components of \ref{NSE_favre_filtered} and moving the \gls{sgs} terms to the right-hand side, we get the following:
-\begin{equation}
-\begin{split}
-  \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho}\widetilde{ u_j} \right) = 0,  \\
-  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ u_i }\right) + \frac{\partial}{\partial x_j} \left(\overline{\rho}\widetilde{ u_i} \widetilde{u_j} + \overline{p }\delta_{ij} - \widetilde{\sigma_{ij}} \right) = - \frac{\partial \tau_{ij}}{\partial x_j},  \\
-  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ E} \right) + \frac{\partial}{\partial x_j} \left(\left( \overline{\rho}\widetilde{ E}+\overline{p} \right)\widetilde{u_j} + \widetilde{q_j} - \widetilde{\sigma_{ij}}\widetilde{ u_i}\right) = - \frac{\partial}{\partial x_j } \left( \gamma c_v \mathcal{Q}_j + \dfrac{1}{2} \mathcal{J}_j - \mathcal{D}_j \right) 
-\end{split}
-\end{equation}
+After substituting the appropriate pieces of Equations \ref{sgs_defs} into the momentum and energy components of \ref{NSE_favre_filtered} and applying a few further assumptions, we can eventually get the following:
+\begin{subequations}
+\begin{align}
+  \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho}\widetilde{ u_j} \right) = 0, \label{NSE_mass_sgs} \\
+  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ u_i }\right) + \frac{\partial}{\partial x_j} \left(\overline{\rho}\widetilde{ u_i} \widetilde{u_j} + \overline{p }\delta_{ij} - \widetilde{\sigma_{ij}} \right) = - \frac{\partial \tau_{ij}}{\partial x_j}, \label{NSE_mom_sgs}  \\
+  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ E} \right) + \frac{\partial}{\partial x_j} \left(\left( \overline{\rho}\widetilde{ E}+\overline{p} \right)\widetilde{u_j} + \widetilde{q_j} - \widetilde{\sigma_{ij}}\widetilde{ u_i}\right) = - \frac{\partial}{\partial x_j } \left( \gamma c_v \mathcal{Q}_j + \dfrac{1}{2} \mathcal{J}_j - \mathcal{D}_j \right)  \label{NSE_E_sgs}
+\end{align}
+\end{subequations}
+with $\gamma = \nicefrac{c_p}{c_v}$. The simplification above hinges upon relating enthalpy to internal energy and pressure as in the ideal gas case with $h = e ~+~ \nicefrac{p}{\rho} = c_p T$ with $c_p$ assumed to be constant. Neither of these assumptions is consistent with supercritical fluids but is chosen here for ease of splitting Equations \ref{} into simulated vs. modeled quantities. This is also standard practice in many supercritical \gls{les} studies \cite{}, though these assumptions leave room for future work on incorporating higher order \gls{eos} into the \gls{les} derivation. 
+
+Finally, it is also noted that the divergence of the \gls{sgs} heat flux and the \gls{sgs} turbulent diffusion are of comparable order of magnitude while the \gls{sgs} viscous diffusion is an order of magnitude smaller \cite{LES_Comp}. Therefore, the \gls{sgs} turbulent viscous diffusion is omitted from the system. The final set of equations to be discretized and advanced is given by:  
+\begin{subequations} \label{filtered_NSE_FINAL}
+\begin{align}
+  \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho}\widetilde{ u_j} \right) = 0, \label{NSE_mass_FINAL} \\
+  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ u_i }\right) + \frac{\partial}{\partial x_j} \left(\overline{\rho}\widetilde{ u_i} \widetilde{u_j} + \overline{p }\delta_{ij} - \widetilde{\sigma_{ij}} \right) = - \frac{\partial \tau_{ij}}{\partial x_j}, \label{NSE_mom_FINAL}  \\
+  \frac{\partial}{\partial t} \left( \overline{\rho}\widetilde{ E} \right) + \frac{\partial}{\partial x_j} \left(\left( \overline{\rho}\widetilde{ E}+\overline{p} \right)\widetilde{u_j} + \widetilde{q_j} - \widetilde{\sigma_{ij}}\widetilde{ u_i}\right) = - \frac{\partial}{\partial x_j } \left( \gamma c_v \mathcal{Q}_j + \dfrac{1}{2} \mathcal{J}_j \right)  \label{NSE_E_FINAL}
+\end{align}
+\end{subequations}
+with Equations \ref{filtered_trans} describing the filtered transport coefficients. The \gls{sgs} stress $\tau_{ij}$, \gls{sgs} heat flux $\mathcal{Q}_{j}$, and \gls{sgs} turbulent diffusion $\mathcal{J}_j$ need to be modeled in order to close the system. 
+
+
+
 \subsection{Subgrid-Scale Modeling for Large Eddy Simulation}
-We use the \gls{smd} \gls{les} model for compressible flow as described by Mart\'{i}n, Piomelli, and Graham \cite{LES_Comp}. In this context, the compressible Navier-Stokes equations \ref{NSE_einstein} should be interpreted in their Favre-filtered form, where, in this work, the grid provides the implicit filtering of the equations. The \gls{sgs} stress tensor, $\tau_{ij}$, is included in the diffusive fluxes and is calculated as follows:
+We use the \gls{smd} \gls{les} model for compressible flow as described by Mart\'{i}n, Piomelli, and Graham \cite{LES_Comp}. In this work, the grid provides the implicit filtering of the equations. The \gls{sgs} stress tensor, $\tau_{ij}$, is included in the diffusive fluxes and is calculated as follows:
 \begin{equation}
 \begin{aligned}
 	\tau_{ij} - \dfrac{\delta_{ij}}{3}\tau_{kk} &= -C_s^22\overline{\Delta}^2 \overline{\rho} |\widetilde{S}| \left( \widetilde{S}_{ij} - \dfrac{\delta_{ij}}{3} \widetilde{S}_{kk} \right) = C_s^2 \alpha_{ij},  \\
 	 \tau_{kk} &= C_I 2\overline{\rho} \overline{\Delta}^2 |\widetilde{S}|^2 = C_I \alpha
 \end{aligned}
 \end{equation}
-where $\overline{\cdot}$ denotes the filtered variables, $\widetilde{\cdot}  = \nicefrac{\overline{\rho~\cdot}}{\overline{\rho}}$ is the Favre-filter operation, with $\overline{\Delta}$ being the filter width associated with the smallest scale retained by the filtering operation ($\overline{\Delta}$ is the grid spacing for our cases). Additionally, $|\widetilde{S}| = (2\widetilde{S}_{ij}\widetilde{S}_{ij})^{1/2}$. The two model coefficients are calculated as follows:
-\begin{equation}
+with $\overline{\Delta}$ being the filter width associated with the smallest scale retained by the filtering operation ($\overline{\Delta}$ is the grid spacing for our cases). Additionally, $|\widetilde{S}| = (2\widetilde{S}_{ij}\widetilde{S}_{ij})^{1/2}$. The two model coefficients are calculated as follows:
+\begin{equation} \label{smd_coeffs}
 \begin{aligned}
 	C = C_s^2 = \dfrac{\langle \mathcal{L}_{ij} M_{ij} \rangle}{\langle M_{kl}M_{kl} \rangle}, \quad \quad C_I = \dfrac{ \langle \mathcal{L}_{kk} \rangle}{\langle \beta - \widehat{\alpha} \rangle}
 \end{aligned}
 \end{equation}
-where the Germano identity, $\mathcal{L}_{ij} = T_{ij} - \widehat{\tau}_{ij}$, is used to relate the \gls{sgs} stress tensor to the ``resolved turbulent stresses", $\mathcal{L}_{ij} = \left( \overline{\rho u_i} \widehat{ \hspace{1.5pt} \overline{\rho u_j}}/\overline{\rho} \right) - \widehat{ \overline{\rho u_i}} \hspace{1.5pt} \widehat{\overline{\rho u_j}}/\widehat{\overline{\rho}}$ ,and the subtest stresses, $T_{ij} = \widehat{\overline{\rho}} \breve{\widetilde{u_i u_j}} - \widehat{\overline{\rho}} \breve{\widetilde{u_i}} \breve{\widetilde{u_j}}$ \cite{germano}. In this relationship, a hat denotes quantities associated with a test filter $\widehat{G}$ which has a characteristic length of $\widehat{\Delta}$. The breve denotes filtered quantities using $\widehat{G}$. Additionally, we have $\beta_{ij} = -2\widehat{\Delta}^2 \widehat{\overline{\rho}} |\breve{\widetilde{S}}| \left( \breve{\widetilde{S}}_{ij} - \delta_{ij} \breve{\widetilde{S}}_{kk}/3  \right)$, $M_{ij} = \beta_{ij} - \widehat{\alpha_{ij}}$, and $\beta = 2 \widehat{\Delta}^2  \widehat{\overline{\rho}} |\breve{\widetilde{S}}|^2 $. The turbulent Prandtl number, $Pr_\text{T}$, is also calculated dynamically as noted in \cite{LES_Comp}:
+where the Germano identity, $\mathcal{L}_{ij} = T_{ij} - \widehat{\tau}_{ij}$, is used to relate the \gls{sgs} stress tensor to the ``resolved turbulent stresses", $\mathcal{L}_{ij} = \left( \overline{\rho u_i} \widehat{ \hspace{1.5pt} \overline{\rho u_j}}/\overline{\rho} \right) - \widehat{ \overline{\rho u_i}} \hspace{1.5pt} \widehat{\overline{\rho u_j}}/\widehat{\overline{\rho}}$ ,and the subtest stresses, $T_{ij} = \widehat{\overline{\rho}} \breve{\widetilde{u_i u_j}} - \widehat{\overline{\rho}} \breve{\widetilde{u_i}} \breve{\widetilde{u_j}}$ \cite{germano}. In this relationship, a hat denotes quantities associated with a test filter $\widehat{G}$ which has a characteristic length of $\widehat{\Delta}$. The breve denotes Favre-filtered quantities using $\widehat{G}$ (i.e., $\breve{\widetilde{f}} = \nicefrac{\widehat{\overline{\rho f}}}{\widehat{\overline{\rho}}}$). Additionally, $M_{ij} = \beta_{ij} - \widehat{\alpha_{ij}}$ with $\beta_{ij} = -2\widehat{\Delta}^2 \widehat{\overline{\rho}} |\breve{\widetilde{S}}| \left( \breve{\widetilde{S}}_{ij} - \delta_{ij} \breve{\widetilde{S}}_{kk}/3  \right)$ and $\beta = 2 \widehat{\Delta}^2  \widehat{\overline{\rho}} |\breve{\widetilde{S}}|^2 $. 
+
+
+The \gls{sgs} heat flux $\mathcal{Q}_j$ is also modeled dynamically as in \cite{LES_Comp}:
+\begin{equation} \label{sgs_heat_flux}
+\mathcal{Q}_j = - \dfrac{\overline{\rho}\nu_T}{Pr_T} \dfrac{\partial \widetilde{T}}{\partial x_j} = - C\dfrac{\overline{\Delta}^2 \overline{\rho}  |\widetilde{S}|}{Pr_T} \dfrac{\partial \widetilde{T}}{\partial x_j} 
+\end{equation}
+where $C$ is modeled as in Equation \ref{smd_coeffs} and the turbulent Prandtl number, $Pr_\text{T}$, is calculated dynamically as:
 \begin{equation}
 \begin{aligned}
 	Pr_\text{T} = \dfrac{C \langle T_k T_k  \rangle}{\langle \mathcal{K}_j T_j \rangle}
@@ -177,9 +197,19 @@ where
 	T_j = - \widehat{\Delta}^2  \widehat{\overline{\rho}} |\breve{\widetilde{S}}| \dfrac{\partial \breve{\widetilde{T}}}{\partial x_j} +  \overline{\Delta}^2  \overline{\rho} \widehat{|\widetilde{S}| \dfrac{\partial \widetilde{T}}{\partial x_j}}, \qquad \qquad \mathcal{K}_j = \left( \dfrac{ \widehat{\overline{\rho u_j} \overline{\rho T}}}{\overline{\rho}} \right) - \dfrac{ \widehat{\overline{\rho u_j}} \widehat{ \overline{\rho T}}}{\widehat{\overline{\rho}}}.
 \end{aligned}
 \end{equation}
-For our simulations, we implement the three point box filter as described in \cite{filter} with a filter-grid, ratio of 2, i.e.\  $\widehat{\Delta}=2\overline{\Delta}$. 
 
-As noted previously, the choice of \gls{sgs} modeling is important in accurately capturing the turbulence statistics of the system. M\"{u}ller et al. found that while the choice in thermodynamic modeling is crucial in capturing first-order moments, the effects \gls{sgs} modeling is limited to second-order moments \cite{doi:10.1063/1.4937948}.  Therefore, our conclusions relating to the turbulence dynamics will be unaffected. That being said, \cite{doi:10.1063/1.4937948} also notes that the choice in \gls{sgs} model and numerical flux discretization had a larger than expected effect on resolved Reynolds stress profiles. Specifically, the constant Smagorinsky model yielded decaying fluctuation magnitudes during early evolution, resulting in the transition to a fully turbulent mixing zone to start from lower turbulence levels. However, this did agree with the jet break-up location inferred from mean density profiles, which were shifted slightly downstream by comparison to other \gls{sgs} models. These relationships will be taken into consideration for this study as well and noted in the discussion of Reynolds stress profiles.
+Finally, the \gls{sgs} turbulent diffusion $\mathcal{J}_j$ is modeled following the strategy proposed by Knight et al. \cite{}:
+\begin{equation} \label{sgs_turb_diff}
+\mathcal{J}_j = \widetilde{u}_k \tau_{jk}
+\end{equation}
+
+For our simulations, we implement the three point box filter as described in \cite{filter} with a filter-grid ratio of 2, i.e.\  $\nicefrac{\widehat{\Delta}}{\overline{\Delta}}=2 = \epsilon$: 
+\begin{equation}
+\widehat{\phi}_i = \dfrac{1}{24} \epsilon^2 \left( \phi_{i+1} + \phi_{i-1} \right) + \dfrac{1}{12} \left(12- \epsilon^2 \right) \phi_i 
+\end{equation}
+
+
+As noted previously, the choice of \gls{sgs} modeling is important in accurately capturing the turbulence statistics of the system. M\"{u}ller et al. found that while the choice in thermodynamic modeling is crucial in capturing first-order moments, the effects \gls{sgs} modeling is limited to second-order moments \cite{doi:10.1063/1.4937948}. Therefore, our conclusions relating to the turbulence dynamics will be unaffected. That being said, \cite{doi:10.1063/1.4937948} also notes that the choice in \gls{sgs} model and numerical flux discretization had a larger than expected effect on resolved Reynolds stress profiles. Specifically, the constant Smagorinsky model yielded decaying fluctuation magnitudes during early evolution, resulting in the transition to a fully turbulent mixing zone to start from lower turbulence levels. However, this did agree with the jet break-up location inferred from mean density profiles, which were shifted slightly downstream by comparison to other \gls{sgs} models. These relationships will be taken into consideration for this study as well and noted in the discussion of Reynolds stress profiles.
 
 
 
