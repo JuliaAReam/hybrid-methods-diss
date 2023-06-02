@@ -724,6 +724,43 @@
       \verb 10.1017/S002211209400131X
       \endverb
     \endentry
+    \entry{ERN1995105}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e85a4a72db4d523e27330f9eacdfc4a7}{%
+           family={Ern},
+           familyi={E\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=378fd543850b8c7c06cf2d5b7dffbfe5}{%
+           family={Giovangigli},
+           familyi={G\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{466004ae31931a6a40c3f70dbd8206c7}
+      \strng{fullhash}{466004ae31931a6a40c3f70dbd8206c7}
+      \strng{authornamehash}{466004ae31931a6a40c3f70dbd8206c7}
+      \strng{authorfullhash}{466004ae31931a6a40c3f70dbd8206c7}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigate iterative methods for solving linear systems arising from the kinetic theory and providing transport coefficients of dilute polyatomic gas mixtures. These linear systems are obtained in their naturally constrained, singular, and symmetric form, using the formalism of Waldmann and Tr\x{fffd}benbacher. The transport coefficients associated with the systems obtained by Monchick, Yun, and Mason are also recovered, if two misprints are corrected in the work of these authors. Using the recent theory of Ern and Giovangigli, all the transport coefficients are expressed as convergent series. By truncating these series, new, accurate, approximate expressions are obtained for all the transport coefficients. Finally, the computational efficiency of the present transport algorithms in multicomponent flow applications is illustrated with several numerical experiments.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{1}
+      \field{title}{Fast and Accurate Multicomponent Transport Property Evaluation}
+      \field{volume}{120}
+      \field{year}{1995}
+      \field{pages}{105\bibrangedash 116}
+      \range{pages}{12}
+      \verb{doi}
+      \verb https://doi.org/10.1006/jcph.1995.1151
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0021999185711515
+      \endverb
+    \endentry
     \entry{SCF2}{misc}{}
       \field{sortinit}{E}
       \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
@@ -1628,6 +1665,39 @@
       \field{year}{2003}
       \field{pages}{709\bibrangedash 719}
       \range{pages}{11}
+    \endentry
+    \entry{NASAPoly}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9bbe90a27ea297cbbd1f9092a2cd1506}{%
+           family={McBride},
+           familyi={M\bibinitperiod},
+           given={Bonnie},
+           giveni={B\bibinitperiod}}}%
+        {{hash=664b08bf777ca2b860b3a988f7214564}{%
+           family={Zehe},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=528ca2ce5c7d5f1c55b0a32885507936}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Sanford},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{31e493489cfc7df1c9ffa09fe9930fba}
+      \strng{fullhash}{31e493489cfc7df1c9ffa09fe9930fba}
+      \strng{authornamehash}{31e493489cfc7df1c9ffa09fe9930fba}
+      \strng{authorfullhash}{31e493489cfc7df1c9ffa09fe9930fba}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{NASA Glenn coefficients for calculating thermodynamic properties of individual species}
+      \field{year}{2002}
+      \verb{url}
+      \verb https://ntrs.nasa.gov/api/citations/20020085330/downloads/20020085330.pdf
+      \endverb
     \endentry
     \entry{MILLER200226}{article}{}
       \name{author}{2}{}{%
