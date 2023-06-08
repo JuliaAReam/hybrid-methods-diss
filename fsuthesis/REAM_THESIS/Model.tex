@@ -90,17 +90,18 @@ Evaluating the integral in Equation \ref{thermo_simplify}, we arrive at the fina
 \begin{equation} \label{thermo_final}
 e(V,T) =  e_I(T) + a \left[ T \dfrac{\partial \alpha}{\partial T} - \alpha \right] \dfrac{1}{b}\ln\left( 1 + \dfrac{b}{V_m} \right)
 \end{equation}
-where $e_I(T)=c_vT$ is the ideal internal energy which is only dependent on temperature and $e_D(T,V) = a \left[ T \tfrac{\partial \alpha}{\partial T} - \alpha \right] \tfrac{1}{b}\ln\left( 1 + \tfrac{b}{V_m} \right)$ is the departure function for the internal energy. The departure function can be directly evaluated while the ideal gas portion must be approximated. 
-
-Ideal gas components such as $e_I(T)$ are approximated with NASA polynomial fits \cite{NASAPoly}. These polynomial fits have the following form:
-\begin{equation} \label{NASA_poly}
-\psi(T) = c_{\psi, 0} + c_{\psi, 1}T + c_{\psi, 2}T^2 + c_{\psi, 3}T^3 + c_{\psi, 4}T^4  
-\end{equation}
-where $\psi$ is either ideal internal energy $e_I$, specific heat at constant volume $c_{v_I}$, or enthalpy $h_I$ and $c_{\psi,0-4}$ are species-specific constants for each quantity's polynomial fit (see Appendix \ref{}). A similar procedure can be done to arrive at the decomposed enthalpy equation involving \gls{srk}-specific quantities:
+where $e_I(T)=c_vT$ is the ideal internal energy which is only dependent on temperature and $e_D(T,V) = a \left[ T \tfrac{\partial \alpha}{\partial T} - \alpha \right] \tfrac{1}{b}\ln\left( 1 + \tfrac{b}{V_m} \right)$ is the departure function for the internal energy. A similar procedure can be done to arrive at the decomposed enthalpy equation involving \gls{srk}-specific quantities:
 \begin{equation} \label{thermo_enthalpy}
 h(T,V) = h_I(T) +  a \left[ T \dfrac{\partial \alpha}{\partial T} - \alpha \right] \dfrac{1}{b}\ln\left( 1 + \dfrac{b}{V_m} \right) + \dfrac{RTb}{V_m - b} - \dfrac{a \alpha}{V_m + b}
 \end{equation}
-Equations for additional thermodynamic quantities, such as constant volume and constant pressure specific heat, and useful derivatives involving the \gls{srk} can be found in Appendix \ref{}. 
+The departure function can be directly evaluated while the ideal gas portion must be approximated.
+
+Ideal specific heat at constant volume scaled by the ideal gas constant $\nicefrac{c_{v_I}}{R}$ is approximated with NASA polynomial fits \cite{NASAPoly}. These polynomial fits have the following form:
+\begin{equation} \label{NASA_poly}
+\psi(T) = c_{\psi, 0} + c_{\psi, 1}T + c_{\psi, 2}T^2 + c_{\psi, 3}T^3 + c_{\psi, 4}T^4  + c_{\psi, 5}\dfrac{1}{T}
+\end{equation}
+where $c_{\psi,0-5}$ are species-specific constants for each quantity's polynomial fit (see Appendix \ref{}). Other ideal gas quantities of interest can also be calculated in this form via integration, so that $\psi$ here can be either ideal internal energy $\nicefrac{e_I}{RT}$, specific heat at constant volume $\nicefrac{c_{v_I}}{R}$, or enthalpy $\nicefrac{h_I}{RT}$. 
+The equations for additional thermodynamic quantities, such as constant volume and constant pressure specific heat, and useful derivatives involving the \gls{srk} can be found in Appendix \ref{}. 
 
 \subsection{Filtered Navier-Stokes Equations}
 To perform the \gls{les}, we consider the filtered compressible Navier-Stokes equations as implemented by Mart\'{i}n, Piomelli, and Graham \cite{LES_Comp}. Here we go through a brief derivation along with the main assumptions needed. First, applying the filtering operation from Equation \ref{les_filtering} to Equations \ref{NSE_einstein}, we get:
