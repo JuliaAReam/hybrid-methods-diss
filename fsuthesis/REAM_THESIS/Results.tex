@@ -5,7 +5,7 @@ Our first case involves the isothermal jet where both jet and ambient fluid are 
 \subsection{Flow Field Features}
 All images herein depict a slice of the 3D flow field at $z=0$. Each figure contains an instantaneous snapshot and a time-averaged snapshot of the entire slice domain, plus an additional zoomed-in image of the time-averaged quantity of interest near the inlet. All instantaneous images are taken from the final data point of the simulation.
 
-Figure \ref{330_v_features} shows the axial velocity component of the flow field. The general spreading rate and decay of the velocity field can be seen from the instantaneous snapshot in \ref{330_v_1}. The flow is mostly steady up until $\nicefrac{y}{d}=2$ before perturbations begin. The stream mostly stays together through these initial perturbations up until $\nicefrac{y}{d}=5$ where spreading then begins. The averaged axial velocity fields in \ref{330_v_3} and \ref{330_v_4} shed more light on the approximate development regions of the jet. The potential core extends up to $\nicefrac{y}{d}=5$, followed by the transition region where $5 \leq \nicefrac{y}{d} \leq 10$, thereafter the jet appears fully developed. Centerline analysis of the turbulent kinetic energy later on will provide more information for these boundaries.  
+Figure \ref{330_v_features} shows the axial velocity component of the flow field. The general spreading rate and decay of the velocity field can be seen from the instantaneous snapshot in \ref{330_v_1}. The flow is mostly steady up until $\nicefrac{y}{d}=2$ before perturbations begin. The stream mostly stays together through these initial perturbations up until $\nicefrac{y}{d}=5$ where spreading then begins. The averaged axial velocity fields in \ref{330_v_3} and \ref{330_v_4} shed more light on the approximate development regions of the jet. The potential core extends up to $\nicefrac{y}{d}=5$, followed by the transition region where $5 \leq \nicefrac{y}{d} \leq 15$, thereafter the jet appears fully developed. Centerline analysis of the turbulent kinetic energy later on will provide more information for these boundaries.  
 
 \begin{figure}[htbp!]
 \begin{subfigure}{0.25\textwidth}
@@ -128,9 +128,9 @@ Another common feature of round turbulent jets is the development of a linear re
 \end{figure}
 
 \subsection{Turbulence Dynamics}
-Figure \ref{330_reynolds_features} shows the time and radially averaged Reynolds stresses at two points downstream from the inlet. 
+Figure \ref{330_reynolds_features} shows the time and radially averaged Reynolds stresses at two points downstream from the inlet. Here, velocity components $(u,v,w)$ correspond to the $(r,y,\theta)$ directions, respectively. Each Reynolds stress component follows general trends associated with round turbulent jets \cite{Pope}, with the axial component providing the leading contribution, followed by the other two directional components closely with these two being of roughly the same magnitude, and the cross-directional component contributing the least. The cross-directional component is non-zero at the jet center; this could be due to... Note also that self-similarity is not exhibited, as each component exhibits an increase in magnitude at the center of the jet as distance downstream is increased. 
 
-\begin{figure}[H]
+\begin{figure}[hbtp!]
 \begin{center}
 \begin{subfigure}{0.45\textwidth}
 	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/same_ambient/Rey_Stress_0_15.pdf}
@@ -145,7 +145,9 @@ Figure \ref{330_reynolds_features} shows the time and radially averaged Reynolds
 \end{center}
 \end{figure}
 
-\begin{figure}[H]
+Figure \ref{330_TKE_features} shows the time average turbulent kinetic energy components along the centerline of the jet. Each component grows through the potential core region of the jet up until all components reach a peak in energy around $\nicefrac{y}{d}=6$, with the axial component's peak coming slightly ahead of the other two directions. Rapid decay is then observed up until around $\nicefrac{y}{d} = 15$ before a slower decay sets in up until a leveling off is achieved around $\nicefrac{y}{d} = 30$. This rapid decay and then further progression correspond to the transition and fully developed jet regions, respectively.   
+
+\begin{figure}[hbtp!]
 \begin{center}
 	\includegraphics[scale=.7]{figures/Plots/centerline/330_TKEuvw_centerline.pdf}
 	\caption{Average turbulent kinetic energy components along centerline.} \label{330_TKE_features}
