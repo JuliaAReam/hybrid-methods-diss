@@ -157,9 +157,306 @@ Figure \ref{330_TKE_features} shows the time average turbulent kinetic energy co
 \section{Non-Isothermal Jets}
 \subsection{Flow Field Features}
 
+\begin{figure}[H]
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/v_scaled_vert_all.pdf}
+	\caption{Instantaneous axial velocity field.} \label{all_v_1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/v_scaled_vert_avg_all.pdf}
+	\caption{Average axial velocity field.} \label{all_v_2}
+\end{subfigure}
+\vfill
+\centering
+\begin{subfigure}{0.5\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/vertical/v_scaled_vert_avg_all_zoom.pdf}
+	\caption{Average axial velocity near inlet.} \label{all_v_3}
+\end{subfigure}
+\caption{Axial velocity field comparison between 314K ambient case (left), 330K ambient case (middle), and 350K ambient case (right).}
+\label{all_v_features}
+\end{figure}
+
+\begin{figure}[H]
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/pressure_scaled_vert_all_zoom.pdf}
+	\caption{Instantaneous pressure fluctuations near inlet.} \label{all_pressure_1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/pressure_scaled_vert_avg_all_zoom.pdf}
+	\caption{Average pressure fluctuations near inlet.} \label{all_pressure_2}
+\end{subfigure}
+\caption{Pressure fluctuation field comparison between 314K ambient case (left), 330K ambient case (middle), and 350K ambient case (right).}
+\label{all_pressure_features}
+\end{figure}
+
+\begin{figure}[H]
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/magvort_scaled_vert_all.pdf}
+	\caption{Instantaneous vorticity magnitude field.} \label{all_magvort_1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/magvort_scaled_vert_avg_all.pdf}
+	\caption{Average vorticity magnitude field.} \label{all_magvort_2}
+\end{subfigure}
+\vfill
+\centering
+\begin{subfigure}{0.5\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/vertical/magvort_scaled_vert_avg_all_zoom.pdf}
+	\caption{Average vorticity magnitude near inlet.} \label{all_magvort_3}
+\end{subfigure}
+\caption{Vorticity magnitude field comparison between 314K ambient case (left), 330K ambient case (middle), and 350K ambient case (right).}
+\label{all_magvort_features}
+\end{figure}
+
+\begin{figure}[H]
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/temp_scaled_vert_noniso.pdf}
+	\caption{Instantaneous temperature field.} \label{noniso_temp_1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/cp_scaled_vert_noniso.pdf}
+	\caption{Instantaneous constant pressure specific heat.} \label{noniso_cp_1}
+\end{subfigure}
+\vfill
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/rho_scaled_vert_noniso.pdf}
+	\caption{Instantaneous density.} \label{noniso_rho_1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/Cs_scaled_vert_noniso.pdf}
+	\caption{Instantaneous sound speed.} \label{noniso_Cs_1}
+\end{subfigure}
+\vfill
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/Hi_scaled_vert_noniso.pdf}
+	\caption{Instantaneous enthalpy.} \label{noniso_Hi_1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/vertical/Z_scaled_vert_noniso.pdf}
+	\caption{Instantaneous compressibility factor} \label{noniso_Z_1}
+\end{subfigure}
+\caption{Direct comparison between 314K ambient case (left) and 350K ambient case (right) for various fluid qualities.}
+\label{noniso_various_features}
+\end{figure}
+
 \subsection{Mean Flow Properties}
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_3/314_ambient/ur_u_in_vs_r_d.pdf}
+	\caption{314 K ambient case} \label{noniso_v_vin_r_d_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_3/350_ambient/ur_u_in_vs_r_d.pdf}
+	\caption{350 K ambient case} \label{noniso_v_vin_r_d_2}
+\end{subfigure}
+\caption{Average (both in time and radially) axial velocity scaled by inlet value plotted along radial distance from centerline.}
+\label{noniso_v_vin_r_d_features}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_3/314_ambient/r_vs_v.pdf}
+	\caption{314 K ambient case} \label{noniso_near_r_vs_v_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_3/350_ambient/r_vs_v.pdf}
+	\caption{350 K ambient case} \label{noniso_near_r_vs_v_2}
+\end{subfigure}
+\caption{Normal slices of scaled near-field axial velocity, averaged in both time and the radial direction. Plotted against radial direction scaled by $r_{1/2}$.}
+\label{noniso_near_r_v_features}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/314_ambient/r_vs_v.pdf}
+	\caption{314 K ambient case} \label{noniso_far_r_vs_v_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/350_ambient/r_vs_v.pdf}
+	\caption{350 K ambient case} \label{noniso_far_r_vs_v_2}
+\end{subfigure}
+\caption{Normal slices of scaled far-field axial velocity, averaged in both time and the radial direction. Plotted against radial direction scaled by $r_{1/2}$.}
+\label{noniso_far_r_v_features}
+\end{center}
+\end{figure}
+
+%\begin{figure}[htbp!]
+%\begin{center}
+%\begin{subfigure}{0.45\textwidth}
+%	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/314_ambient/r_vs_temp.pdf}
+%	\caption{314 K ambient case} \label{noniso_r_vs_temp_1}
+%\end{subfigure}
+%\begin{subfigure}{0.45\textwidth}
+%	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/350_ambient/r_vs_temp.pdf}
+%	\caption{350 K ambient case} \label{noniso_r_vs_temp_2}
+%\end{subfigure}
+%\caption{Normal slices of scaled far-field temperature, averaged in both time and the radial direction. Plotted against radial direction scaled by $r_{1/2}$.}
+%\label{noniso_far_r_temp_features}
+%\end{center}
+%\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/314_ambient/r_vs_rho.pdf}
+	\caption{314 K ambient case} \label{noniso_r_vs_rho_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/350_ambient/r_vs_rho.pdf}
+	\caption{350 K ambient case} \label{noniso_r_vs_rho_2}
+\end{subfigure}
+\caption{Normal slices of scaled far-field density, averaged in both time and the radial direction. Plotted against radial direction scaled by $r_{1/2}$.}
+\label{noniso_far_r_rho_features}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/314_ambient/uin_u0_vs_x_d.pdf}
+	\caption{314 K ambient case} \label{noniso_uin_u0_x_c_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/350_ambient/uin_u0_vs_x_d.pdf}
+	\caption{350 K ambient case} \label{noniso_uin_u0_x_d_2}
+\end{subfigure}
+\caption{Axial inlet velocity scaled by centerline values along the axial direction. When distance downstream is scaled by jet diameter, linear decay of the centerline axial velocity is observed.}
+\label{noniso_uin_u0_x_d_features}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/temp_centerline_scaled.pdf}
+	\caption{Temperature} \label{noniso_temp_centerline_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/cp_centerline_scaled.pdf}
+	\caption{Constant-pressure specific heat} \label{noniso_cp_centerline_1}
+\end{subfigure}
+\vfill
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/rho_centerline_scaled.pdf}
+	\caption{Density} \label{noniso_rho_centerline_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/Cs_centerline_scaled.pdf}
+	\caption{Sound speed} \label{noniso_Cs_centerline_1}
+\end{subfigure}
+\vfill
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/Hi_centerline_scaled.pdf}
+	\caption{Enthalpy} \label{noniso_Hi_centerline_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/Z_centerline_scaled.pdf}
+	\caption{Compressibility Factor} \label{noniso_Z_centerline_1}
+\end{subfigure}
+
+\caption{Comparison of centerline decay for various fluid quantities.}
+\label{noniso_centerline_features}
+\end{center}
+\end{figure}
+
+
+
+
 \subsection{Turbulence Dynamics}
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/314_ambient/Rey_Stress_0_15.pdf}
+	\caption{Reynolds stresses at $y/d=15$ for 314 K ambient case} \label{314_rey_15}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/same_ambient/Rey_Stress_0_15.pdf}
+	\caption{Reynolds stresses at $y/d=15$ for 350 K ambient case} \label{350_rey_15}
+\end{subfigure}
+\vfill
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/314_ambient/Rey_Stress_0_2.pdf}
+	\caption{Reynolds stresses at $y/d=20$ for 314 K ambient case} \label{314_rey_20}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/radial/slices_5/same_ambient/Rey_Stress_0_2.pdf}
+	\caption{Reynolds stresses at $y/d=20$ for 350 K ambient case} \label{350_rey_20}
+\end{subfigure}
+\caption{Time and radially averaged Reynolds stresses for the non-isothermal jets at two locations downstream.}
+\label{noniso_reynolds_features}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/314_TKEuvw_centerline.pdf}
+	\caption{314 K ambient case} \label{314_TKEcomp_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/350_TKEuvw_centerline.pdf}
+	\caption{350 K ambient case} \label{350_TKEcomp_1}
+\end{subfigure}
+\caption{Comparison of average turbulent kinetic energy components along centerline for each non-isothermal case.}
+\label{noniso_TKE_component_features}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/TKE_centerline.pdf}
+	\caption{Resolved Turbulent Kinetic Energy} \label{TKE_centerline_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/u_fa_centerline.pdf}
+	\caption{u-directional TKE component} \label{u_fa_1}
+\end{subfigure}
+\vfill
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/TKE_centerline.pdf}
+	\caption{v-directional TKE component} \label{v_fa_1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+	\includegraphics[scale=.45]{figures/Plots/centerline/w_fa_centerline.pdf}
+	\caption{w-directional TKE component} \label{w_fa_1}
+\end{subfigure}
+\caption{Cross-case comparisons of average turbulent kinetic energy components and total resolved TKE along centerline.}
+\label{noniso_TKE_features}
+\end{center}
+\end{figure}
+
+
+
 \section{Discussion}
+
+
 
 
 

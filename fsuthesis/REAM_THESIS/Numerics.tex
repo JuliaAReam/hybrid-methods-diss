@@ -1,7 +1,14 @@
 \chapter{Algorithm Overview}
 \section{Introduction}
+To discretize and evolve the system of partial differential equations, including the \gls{les} \gls{sgs} terms, we use \textit{PeleC} \cite{PeleC1, PeleC2}. \textit{PeleC} is a highly scalable code for heterogeneous architectures that is being developed as part of the \gls{ecp} through the \gls{doe}. For spatial discretization, \textit{PeleC} contains a few variations of the general \gls{ppm} originally derived by Colella and Woodward \cite{1984JCoPPPM}. We utilize a variation that allows for extrema preservation in the presence of steep gradients \cite{MILLER200226, COLELLA20087069}. For time discretization, a second order Runge-Kutta scheme is used, and the time step is dynamically limited using a Courant number of 0.9. 
+
 Make one of those little flow chart thingys for overall algorithm procedure (minus meshing aspects).
+\section{Time Discretization}
+
+
+
 \section{Numerical Methods}
 \subsection{Piecewise Parabolic Method Overview}
+
 \subsection{Approximate Riemann Solver Details}
 \section{Error}

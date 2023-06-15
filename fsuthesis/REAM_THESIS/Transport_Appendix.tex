@@ -1,8 +1,40 @@
 \chapter{Transport Coefficients}
 \section{EGLib Low Pressure Approximation Coefficients}
+\begin{table}[!h]
+\caption{Coefficients for EGLib Polynomials \cite{ERN1995105} used to model transport quantities as described in Equation \ref{EGLib}}
+\begin{center}
+\begin{tabular}{ r || r r }
+$i$ & $a_{\mu,i}$& $a_{\lambda,i}$  \\
+\hline
+0 & $\num{-2.28110345e1}$ & $-8.74831432$  \\
+1 & $4.62954710$ & $4.79275291$  \\
+2 & $\num{-5.00689001e-1}$ & $\num{-4.18685061e-1}$  \\
+3 & $\num{2.10012969e-2}$ & $\num{1.35210242e-2}$  \\
+\end{tabular}
+\end{center}
+\end{table}
 
-\section{Chung High Pressure Correction Coefficients}
+\section{Chung High Pressure Corrections}
 Chung et al. \cite{chung:1988} details the derivation of these general transport coefficients via their regression analysis of various fluids. The coefficients for the linear approximation are printed here for convenience as they are implemented in \textit{PelePhysics} \cite{}.  
+
+\begin{table}[!h]
+\caption{Quantities used in part for Chung's High Pressure Corrections. Values gathered from EGLib approximations \cite{ERN1995105}}
+\begin{center}
+\begin{tabular}{|rr|}
+\hline
+\multicolumn{2}{|c|}{{\bf Transport constants}}     \\ \hline
+\multicolumn{1}{|r||}{$M$} & $\num{4.400995e1}$ \\ \hline
+\multicolumn{1}{|r||}{lenny-j. pot. well depth} & $\num{2.440000e2}$ \\ \hline
+\multicolumn{1}{|r||}{lenny-j. collision diam.} & $3.763$ \\ \hline
+\multicolumn{1}{|r||}{dipole moment} & $0.000$ \\ \hline
+\multicolumn{1}{|r||}{polarizability} & $2.650$ \\ \hline
+\multicolumn{1}{|r||}{rot. relax. coll. num.} & $2.100$ \\ \hline
+\multicolumn{1}{|r||}{egtransetNLIN} & $1$ \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
 %Table II. Constants Used for the Generalized Viscosity Correlation
 \begin{table} \label{chung_viscosity_aij}
 \caption{Linear Coefficients Used in Calculating High Pressure Viscosity Corrections as found by Chung et al. \cite{chung:1988}}
