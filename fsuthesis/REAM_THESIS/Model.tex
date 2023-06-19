@@ -144,7 +144,7 @@ The discrete implementation of this filtering function is described in the numer
 As noted previously, the choice of \gls{sgs} modeling is important in accurately capturing the turbulence statistics of the system. M\"{u}ller et al. found that while the choice in thermodynamic modeling is crucial in capturing first-order moments, the effects \gls{sgs} modeling is limited to second-order moments \cite{doi:10.1063/1.4937948}. Therefore, our conclusions relating to the turbulence dynamics will be unaffected. That being said, \cite{doi:10.1063/1.4937948} also notes that the choice in \gls{sgs} model and numerical flux discretization had a larger than expected effect on resolved Reynolds stress profiles. Specifically, the constant Smagorinsky model yielded decaying fluctuation magnitudes during early evolution, resulting in the transition to a fully turbulent mixing zone to start from lower turbulence levels. However, this did agree with the jet break-up location inferred from mean density profiles, which were shifted slightly downstream by comparison to other \gls{sgs} models. These relationships will be taken into consideration for this study as well and noted in the discussion of Reynolds stress profiles.
 
 
-\subsection{Transport Models}
+\section{Transport Models}
 Modeling of transport coefficients is done through \textit{PelePhysics} \cite{}. There are three modeling options available in \textit{PelePhysics}; we use the \textit{Simple} model. The \textit{Simple} model approximates ideal gas transport coefficients using EGLib functions \cite{ERN1995105}, which have the following form:
 \begin{equation} \label{EGLib}
 \ln{(q_0)} = \sum\limits_{n=1}^{4} a_{q,n}\left( \ln{(T)}\right)^{n-1}
@@ -185,7 +185,7 @@ These high pressure corrections as derived and analyzed by Chung et al. show imp
 
 Make plots to compare with NIST data.
 
-\subsection{Thermodynamics and Related Quantities}
+\section{Thermodynamics and Related Quantities}
 Modeling of thermodynamic quantities is also done through \textit{PelePhysics} \cite{}. In a similar fashion to equation \ref{chung_general}, thermodynamic properties can be broken up into an ideal gas component and a departure from ideal gas behavior:
 \begin{equation} \label{thermo_general}
 q(\phi) = q_{I}(\phi) + q_{D}(\phi)
