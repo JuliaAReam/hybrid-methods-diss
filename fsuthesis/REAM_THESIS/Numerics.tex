@@ -85,42 +85,86 @@ First, the system in Equation \ref{NSE_tensor} is recast in primitive form. In o
 \begin{equation} \label{NSE_primitive}
 \dfrac{\partial \vb{Q}}{\partial t} + \vb{A} \dfrac{\partial \vb{Q}}{\partial x} = \vb{S_Q}
 \end{equation}
-where vector $\vb{Q}$ houses the primitive variables $(\rho, u, p, \rho e )$, $A$ is the matrix given by $\nicefrac{\partial \vb{F}}{\partial \vb{Q}}$, and $\vb{S_Q}$ is the diffusive terms recast in primitive form. Internal energy is now carried in $\vb{Q}$ to save on the number of calls made to the \gls{eos} during the Riemann solver. In one dimension, $\vb{A}$ is given by: 
-\begin{equation} \label{A_1D}
-\vb{A} =
- \begin{pmatrix} 
-u & \rho & 0 & 0\\
-0 & u & \tfrac{1}{\rho} & 0\\
-0 & \rho c^2 & u & 0\\
-0 & \rho e + p & 0 & u
-\end{pmatrix}
+where vector $\vb{Q}$ houses the primitive variables $(\rho, u, p, \rho e )$, $A$ is the matrix given by $\nicefrac{\partial \vb{F}}{\partial \vb{Q}}$, and $\vb{S_Q}$ is the diffusive terms recast in primitive form. Internal energy is now carried in $\vb{Q}$ to save on the number of calls made to the \gls{eos} during the Riemann solver. 
+%In one dimension, $\vb{A}$ is given by: 
+%\begin{equation} \label{A_1D}
+%\vb{A} =
+% \begin{pmatrix} 
+%u & \rho & 0 & 0\\
+%0 & u & \tfrac{1}{\rho} & 0\\
+%0 & \rho c^2 & u & 0\\
+%0 & \rho e + p & 0 & u
+%\end{pmatrix}
+%\end{equation}
+%with eigenvalues:
+%\begin{equation} \label{A_eigenvalues}
+%\Lambda(\vb{A}) = \{u-c, u, u, u+c\}
+%\end{equation}
+%and left row and right column eigenvectors given by: 
+%\begin{equation} \label{A_eigenvectors}
+%\vb{l} = 
+% \begin{pmatrix} 
+%0 & - \tfrac{\rho}{2c} & \tfrac{1}{2c^2} & 0\\
+%1 & 0 & -\tfrac{1}{c^2} & 0\\
+%0 & 0 & -\tfrac{h}{c^2} & 0\\
+%0 & \tfrac{\rho}{2c} & \tfrac{\rho}{2c^2} & 0
+%\end{pmatrix} \quad
+%\vb{r} = 
+% \begin{pmatrix} 
+%1 & 1 & 0 & 1\\
+%-\tfrac{c}{\rho} & 0 & 0 & \tfrac{c}{\rho} \\
+%c^2 & 0 & 0 & c^2\\
+%h & 0 & 1 & h
+%\end{pmatrix} 
+%\end{equation}
+%where $h$ is the enthalpy and $c$ is the sound speed. 
+
+The first step in interpolating primitive values to cell edges is to take the average cross-cell difference as follows:
+\begin{equation}
+\delta q_i = \dfrac{1}{2}\left( q_{i+1} - q_{i-1} \right)
 \end{equation}
-with eigenvalues:
-\begin{equation} \label{A_eigenvalues}
-\Lambda(\vb{A}) = \{u-c, u, u, u+c\}
+Monotonicity is enforced with van Leer limiting \cite{}, with limited values denoted $\delta q_i^*$. Using these limited values, primitive variables can then be interpolated to cell edges:
+\begin{equation}
+q_{i+1/2} = q_i + \dfrac{1}{2} \left( q_{i+1} - q_i \right) - \dfrac{1}{6} \left( \delta q_{i+1}^* - \delta q_i^* \right)
 \end{equation}
-and left row and right column eigenvectors given by: 
-\begin{equation} \label{A_eigenvectors}
-\vb{l} = 
- \begin{pmatrix} 
-0 & - \tfrac{\rho}{2c} & \tfrac{1}{2c^2} & 0\\
-1 & 0 & -\tfrac{1}{c^2} & 0\\
-0 & 0 & -\tfrac{h}{c^2} & 0\\
-0 & \tfrac{\rho}{2c} & \tfrac{\rho}{2c^2} & 0
-\end{pmatrix} \quad
-\vb{r} = 
- \begin{pmatrix} 
-1 & 1 & 0 & 1\\
--\tfrac{c}{\rho} & 0 & 0 & \tfrac{c}{\rho} \\
-c^2 & 0 & 0 & c^2\\
-h & 0 & 1 & h
-\end{pmatrix} 
+An additional constraint is imposed to ensure $q_{i+1/2}$ falls between adjacent cell averages. 
+
+Next, edge state values $q_{L, i+1/2}$ and $q_{R, i-1/2}$ can be set from $q_{i+1/2}$ and $q_{i-1/2}$, respectively. An additional flattening limiter that utilizes local pressure in its construction is applied here as well. Monotonicity is also enforced again, this time across $q_{L, i+1/2}$, $q_i$, and $q_{R, i-1/2}$ within a single cell. 
+
+Now, limited piecewise parabolic reconstruction can be achieved by computing average values swept out by parabolic profiles across each face, with the assumption that it moves at the speed of a characteristic wave $\lambda_k$. These averages have the following form:
+\begin{equation} \label{ppm_avg}
+\begin{split}
+\mathcal{I}_+^{(k)}(q_i) &= \dfrac{1}{\sigma_k \Delta x} \int\limits_{((i+1/2 )-\sigma_k)\Delta x}^{(i+1/2)\Delta x} q_i^I(x) dx, \\
+\mathcal{I}_-^{(k)}(q_i) &= \dfrac{1}{\sigma_k \Delta x} \int\limits^{((i-1/2 )+\sigma_k)\Delta x}_{(i-1/2)\Delta x} q_i^I(x) dx
+\end{split}
 \end{equation}
-where $h$ is the enthalpy and $c$ is the sound speed. 
+with $\sigma_k = |\lambda_k |\Delta t/\Delta x$, where $\lambda_k = \{u-c, u, u, u+c\}$ and $\Delta t$ and $\Delta x$ are the discretization step size in time and space, respectively. With the parabolic profile $q_i^I(x)$ given by:
+\begin{equation}
+\begin{split}
+q_i^I(x) &= q_{R,i-1/2} + \xi(x) \left[ q_{L, i+1/2} - q_{R, i-1/2} + q_{i,6}\left( 1 - \xi(x) \right) \right] \\
+q_{i,6} &= 6q_i - 3 \left( q_{R, i-1/2} + q_{L,i+1/2}\right) \\
+\xi(x) &= \dfrac{x - x_{i-1/2}}{\Delta x}, \quad x_{i-1/2} \leq x \leq x_{i+1/2}
+\end{split}
+\end{equation}
+the integrals in Equation \ref{ppm_avg} can be explicitly written as follows:
+\begin{equation}
+\begin{split}
+\mathcal{I}_+^{(k)}(q_i) &= q_{L, i+1/2} - \dfrac{\sigma_k}{2} \left[ q_{L,i+1/2} - q_{R,i-1/2} - \left( 1 - \dfrac{2}{3}\sigma_k \right)q_{i,6} \right], \\
+\mathcal{I}_-^{(k)}(q_i) &= q_{R, i-1/2} + \dfrac{\sigma_k}{2} \left[ q_{L,i+1/2} - q_{R,i-1/2} + \left( 1 - \dfrac{2}{3}\sigma_k \right)q_{i,6} \right] 
+\end{split}
+\end{equation}
+
+Finally, these averages can now be used to perform a characteristic tracing to get the time-centered left and right edge states, $q_{L, i+1/2}^{n+1/2}$ and $q_{R, i-1/2}^{n+1/2}$. Full expressions for these edge states can be found in \cite{}, along with the appropriate eigenvalue and eigenvectors needed for this procedure. With the edge states approximated, the advective fluxes can then be calculated via an approximate Riemann solver.
+
 
 \subsection{Approximate Riemann Solver}
-\section{Discrete \gls{les} Test Filter}
-\section{Error}
+\textit{PeleC} uses the approximate Riemann solver developed by Colella and Glaz \cite{}. This Riemann solver features two iterative scheme options for calculating the classical post-discontinuity state values $\vb{u}^*$ and $p^*$: a Secant method and a Newton iteration. Full details for these implementations can be found in \cite{}. The key feature of this solver that is beneficial to this problem is the treatment of the \gls{eos} terms. Special consideration is given in formulation of this method to reduce the number of calls to the \gls{eos} within these iterative loops in order to make the method computationally tractable. This is of particular importance for cubic or higher order \gls{eos}. 
 
+\section{Discrete \gls{les} Test Filter}
+A discretized form of Equation \ref{} is needed for the test filter in calculating the \gls{smd} model coefficients given by Equations \ref{}. \textit{PeleC} contains a variety of filtering options. As mentioned in Chapter \ref{}, we use the three point box filter as described in \cite{filter}. In one dimension, this discretization results in the following implementation:
+\begin{equation}
+\overline{\phi}_i = \dfrac{1}{24}\epsilon^2\left(\phi_{i+1} + \phi_{i-1} \right) + \dfrac{1}{12}\left( 12 - \epsilon^2\right)\phi_i
+\end{equation}
+where $\epsilon$ is the grid filter ratio, which in our case is equal to two. 
 
 
