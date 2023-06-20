@@ -1056,3 +1056,130 @@ year={1992},
 pages={325?336}
 }
 
+% Colella & Glaz Approximate Riemann solver from PeleC
+@article{COLELLA1985264,
+title = {Efficient solution algorithms for the Riemann problem for real gases},
+journal = {Journal of Computational Physics},
+volume = {59},
+number = {2},
+pages = {264-289},
+year = {1985},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/0021-9991(85)90146-9},
+url = {https://www.sciencedirect.com/science/article/pii/0021999185901469},
+author = {Phillip Colella and Harland M Glaz},
+abstract = {A procedure for constructing solutions to the Riemann problem for gas dynamics with a general convex equation of state is given. Approximate procedures, involving a local parametrization of the equation of state, are introduced in order to calculate numerical fluxes in conservative finite difference schemes. This leads to difference schemes which are as accurate and almost as fast as the analogous schemes for polytropic gases. Numerical results in one and two space variables are presented.}
+}
+
+% PPM Paper that reference OG PPM but also include WENO hybrid formulation
+@article{PPM_WENO,
+author = {Emmanuel Motheau and John Wakefield},
+title = {{Investigation of finite-volume methods to capture shocks and turbulence spectra in compressible flows}},
+volume = {15},
+journal = {Communications in Applied Mathematics and Computational Science},
+number = {1},
+publisher = {MSP},
+pages = {1 -- 36},
+keywords = {compressible turbulent flows, computational fluid dynamics, Godunov, high-order numerical methods, homogeneous isotropic turbulence, PPM, WENO},
+year = {2020},
+doi = {10.2140/camcos.2020.15.1_},
+URL = {https://doi.org/10.2140/camcos.2020.15.1_}
+}
+
+% SDC Method in general
+@article{MISDC_general,
+author = { A.   Nonaka  and  J. B.   Bell  and  M. S.   Day  and  C.   Gilet  and  A. S.   Almgren  and  M. L.   Minion },
+title = {A deferred correction coupling strategy for low Mach number flow with complex chemistry},
+journal = {Combustion Theory and Modelling},
+volume = {16},
+number = {6},
+pages = {1053-1088},
+year  = {2012},
+publisher = {Taylor & Francis},
+doi = {10.1080/13647830.2012.701019},
+
+URL = { 
+    
+        https://doi.org/10.1080/13647830.2012.701019
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1080/13647830.2012.701019
+    
+    
+
+}
+
+}
+
+% MISDC as implemented in PeleC
+@article{SDC_PeleC,
+author = {Andrew Nonaka and Marcus S. Day and John B. Bell},
+title = {A conservative, thermodynamically consistent numerical approach for low Mach number combustion. Part I: Single-level integration},
+journal = {Combustion Theory and Modelling},
+volume = {22},
+number = {1},
+pages = {156-184},
+year  = {2018},
+publisher = {Taylor & Francis},
+doi = {10.1080/13647830.2017.1390610},
+URL = { https://doi.org/10.1080/13647830.2017.1390610},
+eprint = { https://doi.org/10.1080/13647830.2017.1390610}
+}
+
+% AMReX Citations as referenced in PeleC1
+@INPROCEEDINGS{amrex3,
+  author={Katz, Max P. and Almgren, Ann and Sazo, Maria Barrios and Eiden, Kiran and Gott, Kevin and Harpole, Alice and Sexton, Jean M. and Willcox, Don E. and Zhang, Weiqun and Zingale, Michael},
+  booktitle={SC20: International Conference for High Performance Computing, Networking, Storage and Analysis}, 
+  title={Preparing Nuclear Astrophysics for Exascale}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-12},
+  doi={10.1109/SC41405.2020.00095}}
+  
+@article{amrex2, doi = {10.21105/joss.01370}, url = {https://doi.org/10.21105/joss.01370}, year = {2019}, publisher = {The Open Journal}, volume = {4}, number = {37}, pages = {1370}, author = {Weiqun Zhang and Ann Almgren and Vince Beckner and John Bell and Johannes Blaschke and Cy Chan and Marcus Day and Brian Friesen and Kevin Gott and Daniel Graves and Max P. Katz and Andrew Myers and Tan Nguyen and Andrew Nonaka and Michele Rosso and Samuel Williams and Michael Zingale}, title = {AMReX: a framework for block-structured adaptive mesh refinement}, journal = {Journal of Open Source Software} }
+
+
+@article{amrex1,
+author = {Weiqun Zhang and Andrew Myers and Kevin Gott and Ann Almgren and John Bell},
+title ={AMReX: Block-structured adaptive mesh refinement for multiphysics applications},
+journal = {The International Journal of High Performance Computing Applications},
+volume = {35},
+number = {6},
+pages = {508-526},
+year = {2021},
+doi = {10.1177/10943420211022811},
+
+URL = { 
+        https://doi.org/10.1177/10943420211022811
+    
+},
+eprint = { 
+        https://doi.org/10.1177/10943420211022811
+    
+}
+,
+    abstract = { Block-structured adaptive mesh refinement (AMR) provides the basis for the temporal and spatial discretization strategy for a number of Exascale Computing Project applications in the areas of accelerator design, additive manufacturing, astrophysics, combustion, cosmology, multiphase flow, and wind plant modeling. AMReX is a software framework that provides a unified infrastructure with the functionality needed for these and other AMR applications to be able to effectively and efficiently utilize machines from laptops to exascale architectures. AMR reduces the computational cost and memory footprint compared to a uniform mesh while preserving accurate descriptions of different physical processes in complex multiphysics algorithms. AMReX supports algorithms that solve systems of partial differential equations in simple or complex geometries and those that use particles and/or particle?mesh operations to represent component physical processes. In this article, we will discuss the core elements of the AMReX framework such as data containers and iterators as well as several specialized operations to meet the needs of the application projects. In addition, we will highlight the strategy that the AMReX team is pursuing to achieve highly performant code across a range of accelerator-based architectures for a variety of different applications. }
+}
+
+% van Leer Limiter for PPM
+@article{VANLEER1979101,
+title = {Towards the ultimate conservative difference scheme. V. A second-order sequel to Godunov's method},
+journal = {Journal of Computational Physics},
+volume = {32},
+number = {1},
+pages = {101-136},
+year = {1979},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/0021-9991(79)90145-1},
+url = {https://www.sciencedirect.com/science/article/pii/0021999179901451},
+author = {Bram {van Leer}},
+abstract = {A method of second-order accuracy is described for integrating the equations of ideal compressible flow. The method is based on the integral conservation laws and is dissipative, so that it can be used across shocks. The heart of the method is a one-dimensional Lagrangean scheme that may be regarded as a second-order sequel to Godunov's method. The second-order accuracy is achieved by taking the distributions of the state quantities inside a gas slab to be linear, rather than uniform as in Godunov's method. The Lagrangean results are remapped with least-squares accuracy onto the desired Euler grid in a separate step. Several monotonicity algorithms are applied to ensure positivity, monotonicity and nonlinear stability. Higher dimensions are covered through time splitting. Numerical results for one-dimensional and two-dimensional flows are presented, demonstrating the efficiency of the method. The paper concludes with a summary of the results of the whole series ?Towards the Ultimate Conservative Difference Scheme.?}
+}
+
+
+

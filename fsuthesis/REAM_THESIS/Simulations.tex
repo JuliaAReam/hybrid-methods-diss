@@ -2,7 +2,7 @@
 
 
 \section{Computational Domain}
-\subsection{AMReX and Discretization}
+\subsection{AMR and Discretization}
 Our target simulation is a 3D LES with a grid size that is 100 times the smallest scale of the turbulent flow. In our setup, the domain length in each direction is: $x = 25d$, $y = 62.5d$, and $z = 25d$, where the jet diameter $d=\SI{.01}{cm}$ and the $y$-axis is the axial direction of the jet. This smallest scale of these turbulent flows, known as the Kolmogorov scale \cite{kolmogorov}, can be approximated:
 \begin{equation} \label{Kolmogorov}
 	\eta = \left( \dfrac{\nu^3}{\varepsilon} \right)
@@ -61,10 +61,51 @@ Our inlet consists of an opening centered in the $xz$-plane with diameter $d=\SI
 We implement zero gradient boundary conditions for all boundaries not involving the jet inflow. Additionally, \gls{amr} is halted at a distance of $2.5d$ from the boundary in the $x$ and $z$ directions, and that of $5d$ in the axial direction in order to ensure that all waves are dissipated, thus avoiding spurious reflections from the boundaries. 
 
 \section{Case Descriptions}
-\subsection{Parameter Choices}
+Three cases are investigated in this study. The first case pertains to an isothermal jet, in which the jet conditions match that of the ambient fluid for all quantities aside from velocity. The other two cases consider non-isothermal jets, in which the ambient fluid is adjusted to no longer match the temperature of the jet inflow. All three cases consider the same inflow conditions, while ambient fluid conditions are what varies between them. Temperatures for the ambient fluid in the non-isothermal cases are chosen such that the ambient fluid is supercritical but the temperature for each case falls on either side of the peak in specific heat seen near the critical point. This peak is associated with the pseudo-boiling phenomenon seen in supercritical fluids, where upon crossing the Widom line, the supercritical fluid experiences a shift from being more gas-like to more liquid-like in nature, although distinct phase separation between the two is not present. A summary of the conditions for each case can be seen in Table \ref{Case-Params}.
+\begin{table}[H]
+\caption{Summary of Jet Parameters for each case.}
+\label{Case-Params}
+\begin{center}
+\begin{tabular}{ r || r r r  }
+Parameter &Case 1 & Case 2 & Case 3 \\
+\hline
+$p_{in}$ MPa& 10.1325 &10.1325 & 10.1325 \\
+$p_{\infty}$ g/cm$^3$& 10.1325 & 10.1325 & 10.1325 \\
+$T_{in}$ K& 330 & 330 & 330 \\
+$T_{\infty}$ K& 330& 350 & 314  \\
+$v_{in}$ (cm/s)& 1800 & 1800 & 1800  \\
+$\rho_{in}$ g/cm$^3$& 10.1325 & 10.1325 & 10.1325 \\
+$R_{in}$ & 22911 & 22911 & 22911  \\
+$M_{in}$ & 0.08 & 0.08 & 0.08  \\
+\end{tabular}
+\end{center}
+\end{table}
+
+The goal in choosing the ambient temperature in this way is to investigate the impact of large thermodynamic changes on the flow field of the supercritical jet. An example of this can be seen with the sharp peak in constant pressure specific heat in Figure \ref{cp_vs_case}. This choice differs from similar studies, which typically involve transcritical injection. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{figures/cp_cases.png}
+\end{center}
+\caption{Extreme thermodynamic variation seen near critical point with ambient temperatures plotted for reference to see regime coverage of each case. Red is the jet temperature for all cases and isothermal temperature for the ambient case. Blue is the $350 K$ ambient case. Green is the $314 K$ ambient case. }
+\label{cp_vs_case}
+\end{figure}
+
 \section{Compute Time and Hardware Specifications}
+Simulations were run on the \gls{nrel} Eagle supercomputer using the Intel suite of compilers. Simulations utilized 576 MPI ranks in total, with 36 ranks spread across 16 nodes. Roughly 17,000 cells were handled per MPI rank. Dynamic load balancing of AMR levels allowed for maximum utilization of the system. In total, over 100 TB of data were stored from the original 3D simulations run over the course of the 10 flow-throughs of the domain needed for averaging procedures. To help manage data storage issues, slicing procedures were implemented to reduce full 3D simulation data down to 2D slice data, where averaging procedures were then performed as outlined in the next section. 
 \section{Post-Processing Procedures}
+Post-processing procedures were written in Python and primarily leveraged the following libraries: yt, pandas, numpy, and, matplotlib. Original 3D data at each plotfile was sliced in three different ways using yt: along the centerline to create 1D data, normal to the jet axis at various points down stream to create 2D data, and along the axial direction at $z=0$ to create 2D data. 
 
+For time averaging, a basic discrete averaging procedure was implemented over $i$ saved plot files from the final 2 flow-throughs of the simulation, with 100 plots saved per flow-through:
+\begin{equation} \label{discrete_time_avg}
+\phi_{avg, slice} = \dfrac{1}{200} \sum\limits_{i=1}^{200} \phi_{i, slice}
+\end{equation}
 
+Radial averages were approximated with $r = 0$ lying in the center of the $xz-$plane with $r = \sqrt{x^2 + z^2}$. The $N$ points nearest to each fixed $r$ distance away from the center were then averaged together:
+\begin{equation} \label{discrete_time_avg}
+\phi_{avg, r} = \dfrac{1}{N} \sum\limits_{i=1}^{N} \phi_{i, r}
+\end{equation}
+
+For quantities that were averaged in both time and radially, temporal averaging was performed first, with the radial average then taken of the time averaged slice data. 
 
 

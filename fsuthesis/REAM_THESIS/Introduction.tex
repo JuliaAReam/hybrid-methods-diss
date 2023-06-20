@@ -2,15 +2,15 @@
 
 Fluids are a vital part of everyday life - two of the most common ones being the air we breath and the water we drink. Less obvious are all the ways even these common fluids function behind the scenes in our day to day activities. Water, for example, serves an important role in various industrial settings, proving useful in areas ranging from thermal management to energy production; steam turbines alone accounted for 45\% of electricity generation in the United States in 2021 \cite{US_elec_gen_stat}. Improvements to these types of systems impact technologies across a variety of fields and are thus an important area of research. One strategy toward this end, and the primary motivator of the work presented here, is the use of supercritical fluids as the working fluid of these systems. 
 
-\section{What is a Fluid?} 
+%\section{What is a Fluid?} 
 
 In order to discuss supercritical fluids further, we must first go into more detail about general fluids. A \textit{fluid} is a large collection of mutually interacting particles (e.g., molecules, atoms, etc.) in a state of constant and chaotic motion. This results in the continuous deformation of the substance under the effects of a shearing stress. The two categories of fluids that most people are familiar with are gases and liquids. \textit{Liquids} are (mostly) incompressible and have definite volume for a set temperature and pressure. \textit{Gases} are compressible and do not have definite volume. A simplified distinction between the two is that both gases and liquids will conform to the shape of whatever container they are in, but gases will further spread to fill all available space present. 
 
-\subsection{Important Definitions}
-
-\subsection{Density and Temperature and Pressure, Oh My!}
-
-\subsection{Supercritical Fluids}
+%\subsection{Important Definitions}
+%
+%\subsection{Density and Temperature and Pressure, Oh My!}
+%
+%\subsection{Supercritical Fluids}
 
 A \textit{supercritical fluid} is a fluid that is held above a critical temperature and pressure, at which point the distinction between a gas and liquid phase no longer exists \cite{SCF2, SCF1}. Supercritical fluids have qualities associated with both gases and liquids yet simultaneously have features that exclude them from fully being categorized as one or the other. For example, while they have viscosities akin to gases, they have solvent capabilities associated with liquids \cite{}. Similarly, while they have densities in line with liquids, they lack surface tension \cite{}. One benefit of this duality is that supercritical fluids can be fine tuned to be more gas-like or more liquid-like depending on the application at hand. This also results in ambiguity on how to actually classify them, with some sources considering them highly compressed gases \cite{Gordon}, expanded liquids \cite{Aggarwal}, or even as their own distinctly separate phase \cite{BANUTI201512}. The distinction usually lies on the specifics of the regime and the application at hand. 
 
@@ -338,7 +338,7 @@ Many of the numerical investigations sited thus far consider cryogenic nitrogen 
 
 While much of the literature thus far has explored the impact of different numerical methods on modeling supercritical fluid flows and has aimed to strengthen the validity of these simulations in spite of the lack of experimental data available in the current landscape, a general consensus has still not been reached on how the supercritical nature of these fluids impacts the turbulence physics of these models. Thus, there remain open questions for understanding the fundamental flow behavior of turbulent jets in a supercritical environment, especially near the supercritical point, where both experimental and numerical investigations are still a challenge.
 
-Our objective is to use \gls{les} to investigate the turbulence physics of \gls{sco2} near the critical point in order to capture the effects of widely varying thermal properties of supercritical fluids. Using the compressible Navier-Stokes equation solver, \textit{PeleC} \cite{osti_1374142}, closed with the \gls{srk}, we consider three cases in order to examine various quantities of interest associated with classical turbulence mechanics. These three cases are chosen to capture different areas around a peak in specific heat that is associated with the pseudo-critical region. The rest of this dissertation is outlined as follows. Chapter 2 details the model used for this study and gives an overview of the numerical methods implemented through \textit{PeleC}. Chapter 3 outlines the simulation setup with parameter choices and validation. Results for cross-case comparisons and comparisons with external work are then presented in Chapter 4, with a summary and future work detailed in Chapter 5. 
+Our objective is to use \gls{les} to investigate the turbulence physics of \gls{sco2} near the critical point in order to capture the effects of widely varying thermal properties of supercritical fluids. Using the compressible Navier-Stokes equation solver, \textit{PeleC} \cite{PeleC1, PeleC2}, closed with the \gls{srk}, we consider three cases in order to examine various quantities of interest associated with classical turbulence mechanics. These three cases are chosen to capture different areas around a peak in specific heat that is associated with the pseudo-critical region. The rest of this dissertation is outlined as follows. Chapter 2 details the model used for this study. Chapter 3 gives an overview of the numerical methods implemented through \textit{PeleC}. Chapter 4 outlines the simulation setup with parameter choices and validation. Results for cross-case comparisons and comparisons with external work are then presented in Chapter 5, with a summary and future work detailed in Chapter 6. 
 
 
 

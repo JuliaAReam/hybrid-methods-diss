@@ -1,7 +1,8 @@
 \chapter{Transport Coefficients}
-\section{EGLib Low Pressure Approximation Coefficients}
+\section{EGLib Low Pressure Approximation Coefficients} 
 \begin{table}[!h]
 \caption{Coefficients for EGLib Polynomials \cite{ERN1995105} used to model transport quantities as described in Equation \ref{EGLib}}
+\label{EGLibCoeffs}
 \begin{center}
 \begin{tabular}{ r || r r }
 $i$ & $a_{\mu,i}$& $a_{\lambda,i}$  \\
@@ -19,6 +20,7 @@ Chung et al. \cite{chung:1988} details the derivation of these general transport
 
 \begin{table}[!h]
 \caption{Quantities used in part for Chung's High Pressure Corrections. Values gathered from EGLib approximations \cite{ERN1995105}}
+\label{transport-coeffs-other}
 \begin{center}
 \begin{tabular}{|rr|}
 \hline
@@ -36,8 +38,9 @@ Chung et al. \cite{chung:1988} details the derivation of these general transport
 
 
 %Table II. Constants Used for the Generalized Viscosity Correlation
-\begin{table} \label{chung_viscosity_aij}
+\begin{table} 
 \caption{Linear Coefficients Used in Calculating High Pressure Viscosity Corrections as found by Chung et al. \cite{chung:1988}}
+\label{chung-aij}
 \begin{center}
 \begin{tabular}{ r || r r r r }
 $i$ & $a_{i0}$ & $a_{i1}$ & $a_{i2}$ & $a_{i3}$ \\
@@ -58,6 +61,7 @@ $i$ & $a_{i0}$ & $a_{i1}$ & $a_{i2}$ & $a_{i3}$ \\
 % Table IV. Constants Used for the Generalized Correlation for Thermal Conductivity
 \begin{table} \label{chung_conductivity_bij}
 \caption{Linear Coefficients Used in Calculating High Pressure Thermal Conductivity Corrections as found by Chung et al. \cite{chung:1988}}
+\label{chung-bij}
 \begin{center}
 \begin{tabular}{ r || r r r r }
 $i$ & $b_{i0}$ & $b_{i1}$ & $b_{i2}$ & $b_{i3}$ \\

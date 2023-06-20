@@ -479,6 +479,43 @@
       \endverb
       \keyw{Fluid Mechanics and Heat Transfer}
     \endentry
+    \entry{COLELLA1985264}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c41785440d0a194370dd86cca9827c37}{%
+           family={Colella},
+           familyi={C\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d4614cade82d16e93fa89854a7a7db3c}{%
+           family={Glaz},
+           familyi={G\bibinitperiod},
+           given={Harland\bibnamedelima M},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f91b027f431e65993254c51132491275}
+      \strng{fullhash}{f91b027f431e65993254c51132491275}
+      \strng{authornamehash}{f91b027f431e65993254c51132491275}
+      \strng{authorfullhash}{f91b027f431e65993254c51132491275}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A procedure for constructing solutions to the Riemann problem for gas dynamics with a general convex equation of state is given. Approximate procedures, involving a local parametrization of the equation of state, are introduced in order to calculate numerical fluxes in conservative finite difference schemes. This leads to difference schemes which are as accurate and almost as fast as the analogous schemes for polytropic gases. Numerical results in one and two space variables are presented.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{2}
+      \field{title}{Efficient solution algorithms for the Riemann problem for real gases}
+      \field{volume}{59}
+      \field{year}{1985}
+      \field{pages}{264\bibrangedash 289}
+      \range{pages}{26}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0021-9991(85)90146-9
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0021999185901469
+      \endverb
+    \endentry
     \entry{COLELLA20087069}{article}{}
       \name{author}{2}{}{%
         {{hash=c41785440d0a194370dd86cca9827c37}{%
@@ -1152,6 +1189,76 @@
       \endverb
       \keyw{Continuum concept,Coordinate systems,Harmonic motion,Vectors,Tensors,Stress,Viscosity}
     \endentry
+    \entry{amrex3}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{hash=65d5b855d58026c6c8c0668e3b630dd1}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Max\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=080e429840e559bf084daa1aa50b0611}{%
+           family={Almgren},
+           familyi={A\bibinitperiod},
+           given={Ann},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2b2b3bdef60f3835284cb7e17866a692}{%
+           family={Sazo},
+           familyi={S\bibinitperiod},
+           given={Maria\bibnamedelima Barrios},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=234a4869c89c4b7e1d940edb91b66a9a}{%
+           family={Eiden},
+           familyi={E\bibinitperiod},
+           given={Kiran},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ebd9e422b5cd5ecac3854514771a07eb}{%
+           family={Gott},
+           familyi={G\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8d7b5f0c68ea6b6a2b612c2bd2cc4577}{%
+           family={Harpole},
+           familyi={H\bibinitperiod},
+           given={Alice},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40953386596398b7b0b470114ded7636}{%
+           family={Sexton},
+           familyi={S\bibinitperiod},
+           given={Jean\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0e84350bc08008710613aa2580ca5faa}{%
+           family={Willcox},
+           familyi={W\bibinitperiod},
+           given={Don\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=1c4cd311856ef5c7eb9de4bce6d43eac}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Weiqun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=60171c0602ae49629c307014fa44c670}{%
+           family={Zingale},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c36a85fe5baecdb0cc99958ed7a71a46}
+      \strng{fullhash}{d03ef094487cc88ee70d971c9b303d0d}
+      \strng{authornamehash}{c36a85fe5baecdb0cc99958ed7a71a46}
+      \strng{authorfullhash}{d03ef094487cc88ee70d971c9b303d0d}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{SC20: International Conference for High Performance Computing, Networking, Storage and Analysis}
+      \field{title}{Preparing Nuclear Astrophysics for Exascale}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/SC41405.2020.00095
+      \endverb
+    \endentry
     \entry{freejet}{thesis}{}
       \name{author}{1}{}{%
         {{hash=f8144452db5b91619169abdb26778307}{%
@@ -1736,6 +1843,45 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0021999102971585
       \endverb
     \endentry
+    \entry{PPM_WENO}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5a868cf334bff4535c3ed571dbdfb335}{%
+           family={Motheau},
+           familyi={M\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c1e0e12082c2fb2856a695759577b09e}{%
+           family={Wakefield},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MSP}%
+      }
+      \strng{namehash}{12b84cd1d623536f1ef63ccc0bd97e86}
+      \strng{fullhash}{12b84cd1d623536f1ef63ccc0bd97e86}
+      \strng{authornamehash}{12b84cd1d623536f1ef63ccc0bd97e86}
+      \strng{authorfullhash}{12b84cd1d623536f1ef63ccc0bd97e86}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Applied Mathematics and Computational Science}
+      \field{number}{1}
+      \field{title}{{Investigation of finite-volume methods to capture shocks and turbulence spectra in compressible flows}}
+      \field{volume}{15}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 36}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.2140/camcos.2020.15.1_
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2140/camcos.2020.15.1_
+      \endverb
+      \keyw{compressible turbulent flows,computational fluid dynamics,Godunov,high-order numerical methods,homogeneous isotropic turbulence,PPM,WENO}
+    \endentry
     \entry{doi:10.1063/1.4937948}{article}{}
       \name{author}{5}{}{%
         {{hash=31c6dc5f54538327c9d20502881cd17f}{%
@@ -1787,6 +1933,113 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1063/1.4937948
+      \endverb
+    \endentry
+    \entry{SDC_PeleC}{article}{}
+      \name{author}{3}{}{%
+        {{hash=154c72b2250f07c54960934e402d578d}{%
+           family={Nonaka},
+           familyi={N\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=92f4136e7fc5710670587758e1b95b95}{%
+           family={Day},
+           familyi={D\bibinitperiod},
+           given={Marcus\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c912f0fcdf0ea4f2c3792346da951652}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{ef3b09bd4534eb548e3783dbaa8c79f6}
+      \strng{fullhash}{ef3b09bd4534eb548e3783dbaa8c79f6}
+      \strng{authornamehash}{ef3b09bd4534eb548e3783dbaa8c79f6}
+      \strng{authorfullhash}{ef3b09bd4534eb548e3783dbaa8c79f6}
+      \field{sortinit}{N}
+      \field{sortinithash}{1163c28585427c673ad5a010cbf82f52}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Combustion Theory and Modelling}
+      \field{number}{1}
+      \field{title}{A conservative, thermodynamically consistent numerical approach for low Mach number combustion. Part I: Single-level integration}
+      \field{volume}{22}
+      \field{year}{2018}
+      \field{pages}{156\bibrangedash 184}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1080/13647830.2017.1390610
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/13647830.2017.1390610
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/13647830.2017.1390610
+      \endverb
+    \endentry
+    \entry{MISDC_general}{article}{}
+      \name{author}{6}{}{%
+        {{hash=0346dd9e9ecc011e69b83d989f759228}{%
+           family={Nonaka},
+           familyi={N\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=81e00a406f6b402f2b1a02e7fce9fa41}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=44312b41a9c3bc89daf6ca0d6bb25e54}{%
+           family={Day},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=77b76c6fb1c99cd84f4455586e86de4f}{%
+           family={Gilet},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c29f8d39ec1aaa867fe63616aab3e04c}{%
+           family={Almgren},
+           familyi={A\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=96611066a0313b976e5ec865cb253a5a}{%
+           family={Minion},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{7704dc8037549b17c57f163fe6f4a1a4}
+      \strng{fullhash}{5ab13efe057f4d3d74b0a5814079e168}
+      \strng{authornamehash}{7704dc8037549b17c57f163fe6f4a1a4}
+      \strng{authorfullhash}{5ab13efe057f4d3d74b0a5814079e168}
+      \field{sortinit}{N}
+      \field{sortinithash}{1163c28585427c673ad5a010cbf82f52}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Combustion Theory and Modelling}
+      \field{number}{6}
+      \field{title}{A deferred correction coupling strategy for low Mach number flow with complex chemistry}
+      \field{volume}{16}
+      \field{year}{2012}
+      \field{pages}{1053\bibrangedash 1088}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1080/13647830.2012.701019
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/13647830.2012.701019
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/13647830.2012.701019
       \endverb
     \endentry
     \entry{OVAIS2022}{thesis}{}
@@ -2474,6 +2727,38 @@
       \endverb
       \keyw{SUPERCRITICAL fluidsCRITICAL temperatureCARBON dioxideMETHANEFLUIDS}
     \endentry
+    \entry{VANLEER1979101}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e4dbb5548ee6595814e0cda1047eb983}{%
+           family={{van Leer}},
+           familyi={v\bibinitperiod},
+           given={Bram},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4dbb5548ee6595814e0cda1047eb983}
+      \strng{fullhash}{e4dbb5548ee6595814e0cda1047eb983}
+      \strng{authornamehash}{e4dbb5548ee6595814e0cda1047eb983}
+      \strng{authorfullhash}{e4dbb5548ee6595814e0cda1047eb983}
+      \field{sortinit}{v}
+      \field{sortinithash}{555737dafdcf1396ebfeae5822e5bde2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A method of second-order accuracy is described for integrating the equations of ideal compressible flow. The method is based on the integral conservation laws and is dissipative, so that it can be used across shocks. The heart of the method is a one-dimensional Lagrangean scheme that may be regarded as a second-order sequel to Godunov's method. The second-order accuracy is achieved by taking the distributions of the state quantities inside a gas slab to be linear, rather than uniform as in Godunov's method. The Lagrangean results are remapped with least-squares accuracy onto the desired Euler grid in a separate step. Several monotonicity algorithms are applied to ensure positivity, monotonicity and nonlinear stability. Higher dimensions are covered through time splitting. Numerical results for one-dimensional and two-dimensional flows are presented, demonstrating the efficiency of the method. The paper concludes with a summary of the results of the whole series ?Towards the Ultimate Conservative Difference Scheme.?}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{1}
+      \field{title}{Towards the ultimate conservative difference scheme. V. A second-order sequel to Godunov's method}
+      \field{volume}{32}
+      \field{year}{1979}
+      \field{pages}{101\bibrangedash 136}
+      \range{pages}{36}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0021-9991(79)90145-1
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0021999179901451
+      \endverb
+    \endentry
     \entry{WANG201977}{article}{}
       \name{author}{8}{}{%
         {{hash=df5a6014aac272e7ee560327486a1111}{%
@@ -2994,6 +3279,173 @@
       \endverb
       \keyw{Unconventional natural gas,Jet-assisted drilling,Supercritical carbon dioxide jet,Fluctuation characteristics,Peak impact force}
     \endentry
+    \entry{amrex2}{article}{}
+      \name{author}{17}{}{%
+        {{hash=1c4cd311856ef5c7eb9de4bce6d43eac}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Weiqun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=080e429840e559bf084daa1aa50b0611}{%
+           family={Almgren},
+           familyi={A\bibinitperiod},
+           given={Ann},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5cd4f5ea8fcbcbc0f446fac3823ed8c8}{%
+           family={Beckner},
+           familyi={B\bibinitperiod},
+           given={Vince},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5301389a61dcb0afa9bddf182c3bc69d}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=668df0fd0ab1ea5968502ab0a1966b4d}{%
+           family={Blaschke},
+           familyi={B\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=43ded4459886e2f7a51439a38380451a}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Cy},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cbca0197541e5925456789132974fc10}{%
+           family={Day},
+           familyi={D\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b50b734accb8dfc2723f43b974af3400}{%
+           family={Friesen},
+           familyi={F\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ebd9e422b5cd5ecac3854514771a07eb}{%
+           family={Gott},
+           familyi={G\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c47c6185a19b770381ed810365f15131}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=65d5b855d58026c6c8c0668e3b630dd1}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Max\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=664c7b8b22444f33c36ce2f8cd7c0643}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1ca28f2043ed463e4eed8136298f39fe}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Tan},
+           giveni={T\bibinitperiod}}}%
+        {{hash=154c72b2250f07c54960934e402d578d}{%
+           family={Nonaka},
+           familyi={N\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7813a4c1fb7248000eada4ea9fc017c9}{%
+           family={Rosso},
+           familyi={R\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4fb8fbc5c4bfbbc94f80321c3336b71b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=60171c0602ae49629c307014fa44c670}{%
+           family={Zingale},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Open Journal}%
+      }
+      \strng{namehash}{a3617a225b6e395ada1d64fab0ce07de}
+      \strng{fullhash}{bb05edbf3397e6a1db6f43d20aa6f04f}
+      \strng{authornamehash}{a3617a225b6e395ada1d64fab0ce07de}
+      \strng{authorfullhash}{bb05edbf3397e6a1db6f43d20aa6f04f}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Open Source Software}
+      \field{number}{37}
+      \field{title}{AMReX: a framework for block-structured adaptive mesh refinement}
+      \field{volume}{4}
+      \field{year}{2019}
+      \field{pages}{1370}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.21105/joss.01370
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.21105/joss.01370
+      \endverb
+    \endentry
+    \entry{amrex1}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1c4cd311856ef5c7eb9de4bce6d43eac}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Weiqun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=664c7b8b22444f33c36ce2f8cd7c0643}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ebd9e422b5cd5ecac3854514771a07eb}{%
+           family={Gott},
+           familyi={G\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=080e429840e559bf084daa1aa50b0611}{%
+           family={Almgren},
+           familyi={A\bibinitperiod},
+           given={Ann},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5301389a61dcb0afa9bddf182c3bc69d}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3617a225b6e395ada1d64fab0ce07de}
+      \strng{fullhash}{51f82219f7373e558b1ad51cfc37f792}
+      \strng{authornamehash}{a3617a225b6e395ada1d64fab0ce07de}
+      \strng{authorfullhash}{51f82219f7373e558b1ad51cfc37f792}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Block-structured adaptive mesh refinement (AMR) provides the basis for the temporal and spatial discretization strategy for a number of Exascale Computing Project applications in the areas of accelerator design, additive manufacturing, astrophysics, combustion, cosmology, multiphase flow, and wind plant modeling. AMReX is a software framework that provides a unified infrastructure with the functionality needed for these and other AMR applications to be able to effectively and efficiently utilize machines from laptops to exascale architectures. AMR reduces the computational cost and memory footprint compared to a uniform mesh while preserving accurate descriptions of different physical processes in complex multiphysics algorithms. AMReX supports algorithms that solve systems of partial differential equations in simple or complex geometries and those that use particles and/or particle?mesh operations to represent component physical processes. In this article, we will discuss the core elements of the AMReX framework such as data containers and iterators as well as several specialized operations to meet the needs of the application projects. In addition, we will highlight the strategy that the AMReX team is pursuing to achieve highly performant code across a range of accelerator-based architectures for a variety of different applications.}
+      \field{journaltitle}{The International Journal of High Performance Computing Applications}
+      \field{number}{6}
+      \field{title}{AMReX: Block-structured adaptive mesh refinement for multiphysics applications}
+      \field{volume}{35}
+      \field{year}{2021}
+      \field{pages}{508\bibrangedash 526}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1177/10943420211022811
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1177/10943420211022811
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/10943420211022811
+      \endverb
+    \endentry
     \entry{doi:10.1080/00102200500287613}{article}{}
       \name{author}{2}{}{%
         {{hash=9b56840ac19ad4ff12dc9cf88239df0d}{%
@@ -3084,8 +3536,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{osti_1374142}
-  \missing{NASA_poly}
 \endrefsection
 \endinput
 
