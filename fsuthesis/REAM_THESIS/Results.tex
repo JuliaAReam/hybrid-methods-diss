@@ -1,17 +1,22 @@
 \chapter{Results}
+Here, we present the results of the three cases as outlined in Chapter 4. In addition to visualizing qualitative visuals of jet slices along the axial direction, a variety of quantities of interest are analyzed. Quantities of interest we consider include axial velocity decay (in both the radial and axial directions), centerline velocity decay, resolved Reynolds stresses, and resolved \gls{tke}, among others. These quantities are commonly explored in turbulent jet investigations and have been chosen to highlight the differences in flow field structure between our three cases. In the graphs presented throughout this chapter, all quantities are averaged over time unless specifically denoted otherwise. Additionally, for graphs plotted in the radial direction away from the centerline, quantities have been radially-averaged. 
+
+These results are organized as follows: first, the isothermal jet case is presented and quantities of interest are related to those of comparable subcritical turbulent jets studies from relevant literature \cite{}. This establishes a baseline for comparison with the non-isothermal jet cases and is used to validate that the numerical jet setup is behaving in a reasonable manner. The two non-isothermal cases are then presented together, with the $350 K$ ambient case compared against the isothermal case. Variations between these two cases are related to similar non-isothermal turbulent jets from the subcritical regime. Our main case of interest is the $314 K$ ambient case as it contains the transition over the pseudo-boiling point. We then compare this case the $350 K$ ambient case, which is additionally related to similar supercritical investigations regarding the work of Mayer et al., where transcritical injection involves a phase change \cite{}. Through the comparisons of our $314 K$  cases, we specifically investigate the impact of the transition through the pseudo-boiling point on the supercritical flow field. 
+
 
 \section{Isothermal Jet}
-Our first case involves the isothermal jet where both jet and ambient fluid are at $330 K$. Quantities of interest for this case are compared against incompressible round jet statistics as outlined in Pope \cite{Pope} and isothermal compressible jet turbulence features \cite{}. This case serves as a baseline for comparison with the other two cases involving non-isothermal jets. 
-\subsection{Flow Field Features}
-All images herein depict a slice of the 3D flow field at $z=0$. Each figure contains an instantaneous snapshot and a time-averaged snapshot of the entire slice domain, plus an additional zoomed-in image of the time-averaged quantity of interest near the inlet. All instantaneous images are taken from the final data point of the simulation.
+Our first case involves the isothermal jet where both jet and ambient fluid are at $330 K$. Quantities of interest for this case are compared against incompressible round turbulent jet \cite{Pope} and apt compressible jet cases from literature \cite{iso_comp_1, iso_comp_1_ref_1, iso_comp_2}. This case serves as a baseline for comparison with the other two cases involving non-isothermal jets. 
 
-Figure \ref{330_v_features} shows the axial velocity component of the flow field. The general spreading rate and decay of the velocity field can be seen from the instantaneous snapshot in \ref{330_v_1}. The flow is mostly steady up until $\nicefrac{y}{d}=2$ before perturbations begin. The stream mostly stays together through these initial perturbations up until $\nicefrac{y}{d}=5$ where spreading then begins. The averaged axial velocity fields in \ref{330_v_3} and \ref{330_v_4} shed more light on the approximate development regions of the jet. The potential core extends up to $\nicefrac{y}{d}=5$, followed by the transition region where $5 \leq \nicefrac{y}{d} \leq 15$, thereafter the jet appears fully developed. Centerline analysis of the turbulent kinetic energy later on will provide more information for these boundaries.  
+\subsection{Flow Field Features}
+All images here depict a 2D slice of the 3D flow field at $z=0$. Each figure contains an instantaneous snapshot and a time-averaged snapshot of the entire slice domain, plus an additional zoomed-in image of the time-averaged quantity of interest near the inlet. All instantaneous images are taken from the final data point of the simulation.
+
+Figure \ref{330_v_features} shows the axial velocity component of the flow field. The general spreading rate and decay of the velocity field can be seen from the instantaneous snapshot in \ref{330_v_1}. From these images, the flow field can be distinguished into three main regions, as noted in \cite{iso_comp_1_ref_1}: the potential core region, the transition region, and the fully developed region. The flow is laminar up until about $\nicefrac{y}{d}=2$ before perturbations begin. The stream mostly stays together through these initial perturbations up until $\nicefrac{y}{d}=5$ where spreading then begins, marking the end of the potential core region. The averaged axial velocity fields in \ref{330_v_3} and \ref{330_v_4} shed more light on the development of the jet. The transition region occurs from $5 \leq \nicefrac{y}{d} \leq 15$, where the laminar state evolves into the turbulent state as flow structures begin to interact with one another. Thereafter the jet appears fully developed and nonlinear interactions give way to eddies across a range of large and small scales. Centerline analysis of the turbulent kinetic energy later on will provide more information for these boundaries.  
 
 \begin{figure}[htbp!]
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/v_scaled_vert_330.pdf}
-	\caption{Scaled instantaneous axial velocity} \label{330_v_1}
+	\caption{Instantaneous axial velocity} \label{330_v_1}
 \end{subfigure}
 \hfill
 % \begin{subfigure}{0.3\textwidth}
@@ -21,25 +26,25 @@ Figure \ref{330_v_features} shows the axial velocity component of the flow field
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/v_scaled_vert_avg_330.pdf}
-	\caption{Scaled average axial velocity} \label{330_v_3}
+	\caption{Average axial velocity} \label{330_v_3}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/v_scaled_vert_avg_330_zoom.pdf}
-	\caption{Close up of scaled average axial velocity near inlet} \label{330_v_4}
+	\caption{Close up of average axial velocity near inlet} \label{330_v_4}
 \end{subfigure}
 \caption{Axial velocity features of the isothermal jet}
 \label{330_v_features}
 \end{figure}
 
-Figure \ref{330_pressure_features} shows minor pressure fluctuations in the flow, scaled against the maximum pressure achieved above the ambient pressure. \ref{330_pressure_1} shows minor pressure oscillations mirrored on each side of the jet edge in the same zone as the initial velocity fluctuations see in \ref{330_v_1}. Thereafter, the oscillations become off-kilter, correlating to the beginning of the jet disintegration as seen in the velocity field. Pressure fluctuations are concentrated near the inlet and die down past the transition zone. This can be seen more clearly in \ref{330_pressure_3}. On average, pressure fluctuations yield a minor increase within the potential core and decrease on the jet perimeter, as can be seen in \ref{330_pressure_4}. Fluctuations also lead to a minor pressure drop on average in the transition region.  
+Figure \ref{330_pressure_features} shows minor pressure fluctuations in the flow, scaled against the maximum pressure achieved above the ambient pressure. \ref{330_pressure_1} shows minor pressure oscillations mirrored on each side of the jet edge in the same zone as the initial velocity fluctuations see in \ref{330_v_1}. Thereafter, the oscillations become asymmetrical, correlating to the beginning of the jet disintegration as seen in the velocity field. Pressure fluctuations are concentrated near the inlet and decrease in amplitude past the transition zone. This can be seen more clearly in \ref{330_pressure_3}. On average, pressure fluctuations yield a minor increase within the potential core and decrease on the jet perimeter, as can be seen in \ref{330_pressure_4}. Fluctuations also lead to a minor pressure drop on average in the transition region.  
 
 \begin{figure}[htbp!]
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/pressure_scaled_vert_330.pdf}
-	\caption{Scaled instantaneous pressure fluctuations} \label{330_pressure_1}
+	\caption{Instantaneous pressure fluctuations} \label{330_pressure_1}
 \end{subfigure}
 \hfill
 % \begin{subfigure}{0.25\textwidth}
@@ -49,25 +54,25 @@ Figure \ref{330_pressure_features} shows minor pressure fluctuations in the flow
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/pressure_scaled_vert_avg_330.pdf}
-	\caption{Scaled average pressure fluctuations} \label{330_pressure_3}
+	\caption{Average pressure fluctuations} \label{330_pressure_3}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/pressure_scaled_vert_avg_330_zoom.pdf}
-	\caption{Close up of scaled average pressure fluctuations near inlet} \label{330_pressure_4}
+	\caption{Close up of average pressure fluctuations near inlet} \label{330_pressure_4}
 \end{subfigure}
 \caption{Pressure features of the isothermal jet}
 \label{330_pressure_features}
 \end{figure}
 
-Figure \ref{330_magvort_features} shows magnitude of the vorticity scaled between the maximal and minimal values. \ref{330_magvort_1} shows the strongest vorticity occurring at the jet interface with the ambient fluid near the inlet. Past this initial stage, vortex shedding occurs and vorticity dissipates as the jet spreads. The averages in \ref{330_magvort_3} and \ref{330_magvort_4} both show again that the most intense vorticity occurs at the inlet along the outer edge of the jet. This high intensity remains constant until about $\nicefrac{y}{d}=1$ before more mixing with the ambient fluid occurs as the jet spreads and the vorticity lessens in intensity. Vortices are still restricted to the jet edge until around $\nicefrac{y}{d} = 5$ where the transition to fully developed turbulence enables vortical motions to extend across the fully spread of the jet. 
+Figure \ref{330_magvort_features} shows magnitude of the vorticity scaled between the maximal and minimal values. \ref{330_magvort_1} shows the strongest vorticity occurring at the jet interface with the ambient fluid near the inlet. Past this initial stage, a Kelvin-Helmholtz instability causes a rollup at the outer edge of the jet around $\nicefrac{y}{d} = 2$, forming small but coherent vortical structures. These structures then become unstable and lead to more complex vortices beginning around $\nicefrac{y}{d}= 5$, marking the beginning of the transition region of the jet. The averages in \ref{330_magvort_3} and \ref{330_magvort_4} both show again that the most intense vorticity occurs at the inlet along the outer edge of the jet. This high intensity remains constant until about $\nicefrac{y}{d}=1$ before more mixing with the ambient fluid occurs as the jet spreads and the vorticity lessens in intensity. Vortices are still restricted to the jet edge until around $\nicefrac{y}{d} = 5$ where the transition to fully developed turbulence enables vortical motions to extend across the fully spread of the jet. Generally, vorticity then dissipates as the jet spreads further downstream.
 
 \begin{figure}[htbp!]
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/magvort_scaled_vert_330.pdf}
-	\caption{Scaled instantaneous vorticity magnitude} \label{330_magvort_1}
+	\caption{Instantaneous vorticity magnitude} \label{330_magvort_1}
 \end{subfigure}
 \hfill
 % \begin{subfigure}{0.25\textwidth}
@@ -77,20 +82,20 @@ Figure \ref{330_magvort_features} shows magnitude of the vorticity scaled betwee
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/magvort_scaled_vert_avg_330.pdf}
-	\caption{Scaled average vorticity magnitude} \label{330_magvort_3}
+	\caption{Average vorticity magnitude} \label{330_magvort_3}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.25\textwidth}
 	\centering
 	\includegraphics[scale=.65]{figures/Plots/vertical/330/magvort_scaled_vert_avg_330_zoom.pdf}
-	\caption{Close up of scaled average vorticity magnitude near inlet} \label{330_magvort_4}
+	\caption{Close up of average vorticity magnitude near inlet} \label{330_magvort_4}
 \end{subfigure}
 \caption{Vorticity magnitude features of the isothermal jet}
 \label{330_magvort_features}
 \end{figure}
 
 \subsection{Mean Flow Properties}
-Figure \ref{330_centerline_decay} depicts the time and radially averaged scaled axial velocity component plotted against radial distance from the centerline at multiple normal slices downstream from the inlet. The velocity is scaled by the average axially velocity value at the inflow while the radial direction is scaled by the jet diameter. These plots demonstrate the axially velocity decay as the flow progresses further downstream. As velocity value along the centerline decreases, the overall velocity profile also widens and flattens out. Typically, for the round turbulent jet, this expansion would occur in such a way that upon specially selected scaling, these profiles would collapse into one profile after a certain point. This potential is explored further in the next figure. Here though this decay is a common feature of how the axial velocity of the jet develops as it leaves the inlet. 
+Figure \ref{330_centerline_decay} depicts the time and radially averaged scaled axial velocity component plotted against radial distance from the centerline at multiple normal slices downstream from the inlet. The velocity is scaled by the average axially velocity value at the inflow while the radial direction is scaled by the jet diameter. These plots demonstrate the axial velocity decay as the flow progresses further downstream. As the velocity value along the centerline decreases, the \gls{hmhw} increases, both flattening and widening the velocity profile. Typically, for the round turbulent jet, this expansion would occur in such a way that upon specially selected scaling, these profiles would collapse into one profile after a certain point. This potential is explored further in the next figure. This decay is a common feature of how the axial velocity of the jet develops as it leaves the inlet \cite{Pope}. 
 
 \begin{figure}[htbp!]
 \begin{center}
@@ -99,9 +104,9 @@ Figure \ref{330_centerline_decay} depicts the time and radially averaged scaled 
 \end{center}
 \end{figure}
 
-Figure \ref{330_r_v_features} depicts time and radially averaged scaled axial velocity components plotted against the radial distance from the centerline. Each curve is made at a slice normal to the axial flow direction at different points downstream. Figure \ref{330_r_vs_v_1} depicts velocity curves every $3d$ downstream from the inlet near where the transition region begins while Figure \ref{330_r_vs_v_2} contains plots taken every $5d$. The axial velocity is scaled by the centerline value $v_c$ while the radial distance is scaled by the half width half mean (HWHM), where the velocity component is equal to half the value on the centerline $v(r_{1/2}) = \nicefrac{v_c}{2}$.
+Figure \ref{330_r_v_features} depicts time and radially averaged scaled axial velocity components plotted against the radial distance from the centerline. Each curve is made at a slice normal to the axial flow direction at different points downstream. Figure \ref{330_r_vs_v_1} depicts velocity curves every $3d$ downstream from the inlet near where the transition region begins while Figure \ref{330_r_vs_v_2} contains plots taken every $5d$. The axial velocity is scaled by the centerline value $v_c$ while the radial distance is scaled by the \gls{hmhw}, where the velocity component is equal to half the value on the centerline $v(r_{1/2}) = \nicefrac{v_c}{2}$.
 
-Figure \ref{330_r_vs_v_1} shows the near-field axial velocity profiles. They already exhibit self-similarity collapse into one profile which is most likely the result of the inflow condition \cite{}. In the far-field slices of \ref{330_r_vs_v_2}, self-similarity is fairly well maintained with minor fluctuations in the center and edge of the jet. These fluctuations are most likely the result of low resolution in the time averaging of available data. 
+Figure \ref{330_r_vs_v_1} shows axial velocity profiles in the transition region of the jet. They exhibit self-similarity collapse into one profile which, is a common feature of round turbulent jets \cite{Pope, iso_comp_1, iso_comp_2}. Further downstream as depicted in Figure \ref{330_r_vs_v_2}, self-similarity is fairly well maintained with minor fluctuations in the center and edge of the jet. These fluctuations are most likely the result of low resolution in the time averaging of available data. Overall though, this general collapse is in agreement to that which is seen in comparable low Mach isothermal round jet simulations and experiments, as are summarized in \cite{iso_comp_1}. 
 
 \begin{figure}[htbp!]
 \begin{center}
@@ -118,17 +123,34 @@ Figure \ref{330_r_vs_v_1} shows the near-field axial velocity profiles. They alr
 \end{center}
 \end{figure}
 
-Another common feature of round turbulent jets is the development of a linear relationship between the jet centerline value and the distance downstream. This comparison is depicted in Figure \ref{330_centerline_scaling}. Here, the centerline value of the axial velocity $v_0$ is inversely linearly proportional to the distance downstream. The dip at $\nicefrac{y}{d}=30$ may be attributed to again lack of convergence due to low sample size in time averaging. 
+Another common feature of round turbulent jets is the development of a linear relationship between the jet centerline value and the distance downstream. This comparison is depicted in Figure \ref{330_centerline_scaling}. Here, the centerline value of the axial velocity $v_0$ is inversely linearly proportional to the distance downstream. The decay rate can be characterized by the following relationship \cite{iso_comp_1}:
+\begin{equation} \label{decay_rate}
+\dfrac{v_{in}}{v_0} = \dfrac{1}{B_v}\left[ \dfrac{y}{d} - \dfrac{y_0}{d} \right]
+\end{equation}
+where $y_0$ is the virtual origin of the jet \cite{Pope} and $B_v$ is the decay rate. For this case, the decay rate is given by $B_v = 3.51$.  The decay rate here is smaller than those of comparable low Mach jets in the subcritical regime, as summarized in \cite{iso_comp_1_ref_1}. 
+
+The spreading rate of the jet can also be characterized by linear development downstream in a similar fashion \cite{iso_comp_1_ref_1}:
+\begin{equation} \label{spread_rate}
+\dfrac{r_{1/2}}{d} = C_v\left[ \dfrac{y}{d} - \dfrac{y_0}{d} \right]
+\end{equation}
+where $C_v$ is the spreading rate of the jet. The spreading rate here is given by $C_v=0.135$. The spreading rate here is larger than those of comparable low Mach jets in the subcritical regime, as summarized in \cite{iso_comp_1_ref_1}. 
 
 \begin{figure}[H]
 \begin{center}
-	\includegraphics[scale=.7]{figures/Plots/radial/slices_5/same_ambient/uin_u0_vs_x_d.pdf}
+	\includegraphics[scale=.7]{figures/Plots/radial/slices_3/same_ambient/uin_u0_vs_x_d.pdf}
 	\caption{Axial inlet velocity scaled by centerline values along the axial direction. When distance downstream is scaled by jet diameter, linear decay of the centerline axial velocity is observed.} \label{330_centerline_scaling}
 \end{center}
 \end{figure}
 
+\begin{figure}[htbp!]
+\begin{center}
+	\includegraphics[scale=.7]{figures/Plots/radial/slices_3/same_ambient/r12_d_vs_x_d.pdf}
+	\caption{\gls{hmhw} of axial velocity along the axial direction. When distance downstream is scaled by jet diameter, linear growth of the axial velocity \gls{hmhw} is observed.} \label{330_hwhm_scaling}
+\end{center}
+\end{figure}
+
 \subsection{Turbulence Dynamics}
-Figure \ref{330_reynolds_features} shows the time and radially averaged Reynolds stresses at two points downstream from the inlet. Here, velocity components $(u,v,w)$ correspond to the $(r,y,\theta)$ directions, respectively. Each Reynolds stress component follows general trends associated with round turbulent jets \cite{Pope}, with the axial component providing the leading contribution, followed by the other two directional components closely with these two being of roughly the same magnitude, and the cross-directional component contributing the least. The cross-directional component is non-zero at the jet center; this could be due to... Note also that self-similarity is not exhibited, as each component exhibits an increase in magnitude at the center of the jet as distance downstream is increased. 
+Figure \ref{330_reynolds_features} shows the time and radially averaged resolved Reynolds stresses at two points downstream from the inlet. Here, velocity components $(u,v,w)$ correspond to the $(r,y,\theta)$ directions, respectively. Each Reynolds stress component follows general trends associated with round turbulent jets \cite{Pope, iso_comp_1_ref_1}, with the axial component providing the leading contribution, followed by the other two directional components closely with these two being of roughly the same magnitude, and the cross-directional component contributing the least. Centerline values are slightly higher than the typical values seen in other works as is summarized in \cite{iso_comp_1_ref_1}, but are of the same order of magnitude. This discrepancy could be due to error induced by the \gls{sgs} model accuracy for second order moments as noted in \cite{doi:10.1063/1.4937948}. Note also that self-similarity is not exhibited, as each component exhibits an increase in magnitude at the center of the jet as distance downstream is increased. 
 
 \begin{figure}[hbtp!]
 \begin{center}
@@ -145,14 +167,17 @@ Figure \ref{330_reynolds_features} shows the time and radially averaged Reynolds
 \end{center}
 \end{figure}
 
-Figure \ref{330_TKE_features} shows the time average turbulent kinetic energy components along the centerline of the jet. Each component grows through the potential core region of the jet up until all components reach a peak in energy around $\nicefrac{y}{d}=6$, with the axial component's peak coming slightly ahead of the other two directions. Rapid decay is then observed up until around $\nicefrac{y}{d} = 15$ before a slower decay sets in up until a leveling off is achieved around $\nicefrac{y}{d} = 30$. This rapid decay and then further progression correspond to the transition and fully developed jet regions, respectively.   
+Figure \ref{330_TKE_features} shows the time average turbulent kinetic energy components along the centerline of the jet. Each component grows through the potential core region of the jet up until all components reach a peak in energy around $\nicefrac{y}{d}=6$, with the axial component's peak coming slightly ahead of the other two directions. Rapid decay is then observed up until around $\nicefrac{y}{d} = 15$ before a slower decay sets in up until a leveling off is achieved around $\nicefrac{y}{d} = 30$. This rapid decay and then further progression correspond to the transition and fully developed jet regions, respectively. Compared to similar \gls{tke} analysis regarding compressible turbulent jet flows, this case displays anisotropic separation more akin to higher mach flows \cite{iso_comp_2}.
 
 \begin{figure}[hbtp!]
 \begin{center}
 	\includegraphics[scale=.7]{figures/Plots/centerline/330_TKEuvw_centerline.pdf}
-	\caption{Average turbulent kinetic energy components along centerline.} \label{330_TKE_features}
+	\caption{Average resolved turbulent kinetic energy components along centerline. Note: averaging as described in Chapter 4 occurs prior to square rooting in the given quantity description.} \label{330_TKE_features}
 \end{center}
 \end{figure}
+
+\subsection{Discussion}
+Overall, the isothermal \gls{sco2} jet appears to behave in a similar fashion to low Mach compressible and incompressible jets within similar parameter regimes \cite{iso_comp_1, iso_comp_1_ref_1, iso_comp_2, Pope}. Qualitative features such as discernible regions of development and self-similarity are in agreement with ranges provided in the literature for subcritical jets. Decay rate and spreading rate are slightly below and above the typical ranges seen for similar subcritical cases, respectively. The supercritical isothermal jet appears to persist and spread more than its subcritical comparable counterpart, at least in the transition region. Resolved \gls{tke} components also exhibit slight anisotropy between the axial and span-wise components. 
 
 \section{Non-Isothermal Jets}
 The two non-isothermal jet cases as described in Chapter 4 are presented here. Some features are compared to the isothermal jet case while others are used for direct comparison between the two non-isothermal cases. Again, the $350 K$ ambient case depicts a jet entering a warmer ambient fluid, moving further away from the supercritical point while the $314 K$ ambient case depicts a jet entering a cooler ambient fluid with a transition over the pseudo-boiling point. It is anticipated that the $314 K$ ambient case will then vary much more prominently from the other two cases across various quantities of interest examined. 

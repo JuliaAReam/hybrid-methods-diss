@@ -1181,5 +1181,75 @@ author = {Bram {van Leer}},
 abstract = {A method of second-order accuracy is described for integrating the equations of ideal compressible flow. The method is based on the integral conservation laws and is dissipative, so that it can be used across shocks. The heart of the method is a one-dimensional Lagrangean scheme that may be regarded as a second-order sequel to Godunov's method. The second-order accuracy is achieved by taking the distributions of the state quantities inside a gas slab to be linear, rather than uniform as in Godunov's method. The Lagrangean results are remapped with least-squares accuracy onto the desired Euler grid in a separate step. Several monotonicity algorithms are applied to ensure positivity, monotonicity and nonlinear stability. Higher dimensions are covered through time splitting. Numerical results for one-dimensional and two-dimensional flows are presented, demonstrating the efficiency of the method. The paper concludes with a summary of the results of the whole series ?Towards the Ultimate Conservative Difference Scheme.?}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%    RESULTS COMPARISON PAPERS
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{iso_comp_1,
+title = {Large eddy simulations of the all-speed turbulent jet flow using 3-D CFD code GASFLOW-MPI},
+journal = {Nuclear Engineering and Design},
+volume = {328},
+pages = {134-144},
+year = {2018},
+issn = {0029-5493},
+doi = {https://doi.org/10.1016/j.nucengdes.2017.12.032},
+url = {https://www.sciencedirect.com/science/article/pii/S0029549317306234},
+author = {Han Zhang and Yabing Li and Jianjun Xiao and Thomas Jordan},
+keywords = {Large eddy simulation, all-speed flow CFD solver, GASFLOW-MPI code, CFD modeling, Hydrogen safety},
+abstract = {Turbulent flow at a wide range of Mach numbers may occur during design based accidents (DBA) or severe accidents in nuclear power plants (NPPs), for instinct, incompressible gas mixing flow (subsonic), gas mixture critical flow (transonic) or detonation (supersonic). All of them need to be simulated in safety analysis of NPP containments, therefore we need the computer code to have the capability to simulate all-speed flow. GASFLOW-MPI is a well-developed parallel all-speed CFD software used to predict gas turbulent mixing, chemical combustion and other related thermal-hydraulic phenomena in containments of NPPs. In order to validate the all-speed turbulent flow capability of GASFLOW-MPI, four turbulent jet cases over a broad range of Mach number have been performed in this paper. The large eddy simulation (LES) turbulent model is employed to capture more details of turbulence and flow features in this study. The standard Smagorinsky sub-grid scale model is utilized to model the unresolved turbulent behaviors at sub-grid scale. Both the instantaneous and time-averaged flow fields are analyzed as well as turbulent statistics to compare with the experimental data sets. The simulation results are in good agreement with the experimental data sets available in the literature. The shear layer instability is observed in the instantaneous flow field which leads to the end of the potential core and then the centerline velocity begins to decay. The size of the potential core and the decay rate of the centerline velocity are consistent well with the experiments. The turbulence intensity in the fully developed region agree well with the experimental data and the velocity power spectrum reveals the -5/3 law. Simulation results show that the compressibility has a significant effect on a free shear layer growing rate which is consistent with the experiments. The complex shock wave structure is also captured exactly by the second-order total variation diminishing (TVD) scheme. GASFLOW-MPI code has been successfully validated using the experimental data of turbulent jet flow at the wide regime of Mach numbers.}
+}
+
+@article{iso_comp_1_ref_1,
+    author = {Gohil, Trushar B. and Saha, Arun K. and Muralidhar, K.},
+    title = "{Large Eddy Simulation of a Free Circular Jet}",
+    journal = {Journal of Fluids Engineering},
+    volume = {136},
+    number = {5},
+    year = {2014},
+    month = {03},
+    issn = {0098-2202},
+    doi = {10.1115/1.4026563},
+    url = {https://doi.org/10.1115/1.4026563},
+    note = {051205},
+    eprint = {https://asmedigitalcollection.asme.org/fluidsengineering/article-pdf/136/5/051205/6190780/fe\_136\_05\_051205.pdf},
+}
+
+
+
+@article{iso_comp_2,
+	Abstract = {The aim of this work is the investigation of Mach and Reynolds numbers effects on the behaviour of turbulent gas jets in order to gain new insights into the fluid dynamic process of turbulent jet mixing and spreading. An in-house solver (Flow-Large Eddy and Direct Simulation, FLEDS) of the Favre-filtered Navier Stokes equations has been used. Compressibility has been analyzed by considering gas jets with Mach number equal to 0.8, 1.4, 2.0 and 2.6, and Re equal to 10,000. As concerns the influence of Re on gas jets, four cases have been investigated, i.e. {\$}{\$}{$\backslash$}mathrm{\{}Re{\}} = 2500{\$}{\$}, 5000, 10,000 and 20,000, with Mach number equal to 1.4. The results show that, in accordance with previous experimental and numerical studies, the potential core length increases with Mach number. As regards the velocity decay and the spreading rate downstream of the potential core, compressibility effects are not relevant except for the jet with Mach number of 2.6. The normalized turbulent kinetic energy along the centerline as a function of the normalized streamwise distance shows a similar peak at the end of the potential core for all jets, except for the case with Mach number of 2.6. By increasing Re, the length of the potential core decreases up to the same value for all Re higher than 10,000. In the region downstream of the potential core, the velocity decay decreases as Re number increases from 10,000 to 20,000, whereas, for lower values of Re, the influence is almost negligible.},
+	Author = {Bonelli, Francesco and Viggiano, Annarita and Magi, Vinicio},
+	Da = {2021/09/01},
+	Date-Added = {2023-06-26 06:10:29 +0000},
+	Date-Modified = {2023-06-26 06:10:29 +0000},
+	Doi = {10.1007/s10494-021-00242-5},
+	Id = {Bonelli2021},
+	Isbn = {1573-1987},
+	Journal = {Flow, Turbulence and Combustion},
+	Number = {3},
+	Pages = {519--550},
+	Title = {High-speed turbulent gas jets: an LES investigation of Mach and Reynolds number effects on the velocity decay and spreading rate},
+	Ty = {JOUR},
+	Url = {https://doi.org/10.1007/s10494-021-00242-5},
+	Volume = {107},
+	Year = {2021},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s10494-021-00242-5},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1007/s10494-021-00242-5}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

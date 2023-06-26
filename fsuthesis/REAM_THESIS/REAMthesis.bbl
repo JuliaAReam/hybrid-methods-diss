@@ -296,6 +296,48 @@
       \verb 10.4249/scholarpedia.3439
       \endverb
     \endentry
+    \entry{iso_comp_2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=303cc8c9fc3a0171ea4a682f2fca19b6}{%
+           family={Bonelli},
+           familyi={B\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5bf1726ec8959de37b04e6649c83cfdb}{%
+           family={Viggiano},
+           familyi={V\bibinitperiod},
+           given={Annarita},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6338aa15b54266ac7252b0fa4be55061}{%
+           family={Magi},
+           familyi={M\bibinitperiod},
+           given={Vinicio},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4606cbece3a08e71bdaf8382da2ed84a}
+      \strng{fullhash}{4606cbece3a08e71bdaf8382da2ed84a}
+      \strng{authornamehash}{4606cbece3a08e71bdaf8382da2ed84a}
+      \strng{authorfullhash}{4606cbece3a08e71bdaf8382da2ed84a}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The aim of this work is the investigation of Mach and Reynolds numbers effects on the behaviour of turbulent gas jets in order to gain new insights into the fluid dynamic process of turbulent jet mixing and spreading. An in-house solver (Flow-Large Eddy and Direct Simulation, FLEDS) of the Favre-filtered Navier Stokes equations has been used. Compressibility has been analyzed by considering gas jets with Mach number equal to 0.8, 1.4, 2.0 and 2.6, and Re equal to 10,000. As concerns the influence of Re on gas jets, four cases have been investigated, i.e. {\$}{\$}{$\backslash$}mathrm{\{}Re{\}} = 2500{\$}{\$}, 5000, 10,000 and 20,000, with Mach number equal to 1.4. The results show that, in accordance with previous experimental and numerical studies, the potential core length increases with Mach number. As regards the velocity decay and the spreading rate downstream of the potential core, compressibility effects are not relevant except for the jet with Mach number of 2.6. The normalized turbulent kinetic energy along the centerline as a function of the normalized streamwise distance shows a similar peak at the end of the potential core for all jets, except for the case with Mach number of 2.6. By increasing Re, the length of the potential core decreases up to the same value for all Re higher than 10,000. In the region downstream of the potential core, the velocity decay decreases as Re number increases from 10,000 to 20,000, whereas, for lower values of Re, the influence is almost negligible.}
+      \field{isbn}{1573-1987}
+      \field{journaltitle}{Flow, Turbulence and Combustion}
+      \field{number}{3}
+      \field{title}{High-speed turbulent gas jets: an LES investigation of Mach and Reynolds number effects on the velocity decay and spreading rate}
+      \field{volume}{107}
+      \field{year}{2021}
+      \field{pages}{519\bibrangedash 550}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1007/s10494-021-00242-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10494-021-00242-5
+      \endverb
+    \endentry
     \entry{en13102627}{article}{}
       \name{author}{6}{}{%
         {{hash=160ffc1318e21a1f88a9b69ef23819be}{%
@@ -929,6 +971,50 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0011227516303538
       \endverb
       \keyw{Equation of state,Modification,Soave-Redlich-Kwong,Peng and Robinson,Subcritical,Supercritical}
+    \endentry
+    \entry{iso_comp_1_ref_1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b090045ad5ae3371b42650d53d430b14}{%
+           family={Gohil},
+           familyi={G\bibinitperiod},
+           given={Trushar\bibnamedelima B.},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=28cba1e10aca773292ed22243ec74a5a}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Arun\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=ed0de364e5df8fba8b55150e56f3a023}{%
+           family={Muralidhar},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{47bf65fe5c26c097a5edd029e790996e}
+      \strng{fullhash}{47bf65fe5c26c097a5edd029e790996e}
+      \strng{authornamehash}{47bf65fe5c26c097a5edd029e790996e}
+      \strng{authorfullhash}{47bf65fe5c26c097a5edd029e790996e}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0098-2202}
+      \field{journaltitle}{Journal of Fluids Engineering}
+      \field{month}{03}
+      \field{note}{051205}
+      \field{number}{5}
+      \field{title}{{Large Eddy Simulation of a Free Circular Jet}}
+      \field{volume}{136}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1115/1.4026563
+      \endverb
+      \verb{eprint}
+      \verb https://asmedigitalcollection.asme.org/fluidsengineering/article-pdf/136/5/051205/6190780/fe\_136\_05\_051205.pdf
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1115/1.4026563
+      \endverb
     \endentry
     \entry{Gordon}{article}{}
       \name{author}{1}{}{%
@@ -3186,6 +3272,53 @@
       \verb{url}
       \verb https://doi.org/10.1146/annurev-fluid-120710-101234
       \endverb
+    \endentry
+    \entry{iso_comp_1}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e29e2cdbaa50d58d413b689667ace7db}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+        {{hash=82cf95fb859efaceb14721b9c9b3df58}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yabing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1b9f92bd441b6ad03e472b55b105a29c}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Jianjun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b68f875afed54396874a116dbae2e67a}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{435720fb71fff6bd0bc5be7059a41b43}
+      \strng{fullhash}{4484f1dc1a6a5f7732f8f856f992ad9f}
+      \strng{authornamehash}{435720fb71fff6bd0bc5be7059a41b43}
+      \strng{authorfullhash}{4484f1dc1a6a5f7732f8f856f992ad9f}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Turbulent flow at a wide range of Mach numbers may occur during design based accidents (DBA) or severe accidents in nuclear power plants (NPPs), for instinct, incompressible gas mixing flow (subsonic), gas mixture critical flow (transonic) or detonation (supersonic). All of them need to be simulated in safety analysis of NPP containments, therefore we need the computer code to have the capability to simulate all-speed flow. GASFLOW-MPI is a well-developed parallel all-speed CFD software used to predict gas turbulent mixing, chemical combustion and other related thermal-hydraulic phenomena in containments of NPPs. In order to validate the all-speed turbulent flow capability of GASFLOW-MPI, four turbulent jet cases over a broad range of Mach number have been performed in this paper. The large eddy simulation (LES) turbulent model is employed to capture more details of turbulence and flow features in this study. The standard Smagorinsky sub-grid scale model is utilized to model the unresolved turbulent behaviors at sub-grid scale. Both the instantaneous and time-averaged flow fields are analyzed as well as turbulent statistics to compare with the experimental data sets. The simulation results are in good agreement with the experimental data sets available in the literature. The shear layer instability is observed in the instantaneous flow field which leads to the end of the potential core and then the centerline velocity begins to decay. The size of the potential core and the decay rate of the centerline velocity are consistent well with the experiments. The turbulence intensity in the fully developed region agree well with the experimental data and the velocity power spectrum reveals the -5/3 law. Simulation results show that the compressibility has a significant effect on a free shear layer growing rate which is consistent with the experiments. The complex shock wave structure is also captured exactly by the second-order total variation diminishing (TVD) scheme. GASFLOW-MPI code has been successfully validated using the experimental data of turbulent jet flow at the wide regime of Mach numbers.}
+      \field{issn}{0029-5493}
+      \field{journaltitle}{Nuclear Engineering and Design}
+      \field{title}{Large eddy simulations of the all-speed turbulent jet flow using 3-D CFD code GASFLOW-MPI}
+      \field{volume}{328}
+      \field{year}{2018}
+      \field{pages}{134\bibrangedash 144}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.nucengdes.2017.12.032
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0029549317306234
+      \endverb
+      \keyw{Large eddy simulation,all-speed flow CFD solver,GASFLOW-MPI code,CFD modeling,Hydrogen safety}
     \endentry
     \entry{ZHANG2022}{article}{}
       \name{author}{3}{}{%
