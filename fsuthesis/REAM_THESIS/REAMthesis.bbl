@@ -434,7 +434,7 @@
       \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The Allam cycle is a promising oxy-fuel combustion power cycle with high electrical efficiency and near-zero carbon dioxide emissions. In this paper, the thermodynamic and exergoeconomic analyses are performed for a novel combined power and cooling oxy-fuel power cycle, which combines the Allam cycle with liquefied natural gas regasification process. Parametric study is conducted to investigate the effects of key cycle variables on the electrical and exergy efficiencies and total product unit cost of the proposed cycle. Multi-objective optimization is carried out to maximize the exergy efficiency and minimize the total product unit cost. The results show that Condenser 2 has the highest exergy destruction of 22.81\x{fffd}MW, followed by the combustor (22.72\x{fffd}MW). The combustor, Condenser 2 and gas turbine are the three most important components from exergoeconomic aspects. The introduction of adiabatic compression heat of the bypass stream has a positive impact on the system performance, especially when the outlet temperature of the combustor is low. The optimization results indicate that the exergy efficiency and the total product unit cost cannot reach the optimal values at the same time. The highest exergy efficiency of 50.31\% and the lowest total product unit cost of 16.654 \$/GJ are obtained respectively with different sets of cycle variables. In addition, the electrical efficiency of the optimized proposed cycle is up to around 65.7\%, about 11 percentage points higher than that of the Allam cycle.}
+      \field{abstract}{The Allam cycle is a promising oxy-fuel combustion power cycle with high electrical efficiency and near-zero carbon dioxide emissions. In this paper, the thermodynamic and exergoeconomic analyses are performed for a novel combined power and cooling oxy-fuel power cycle, which combines the Allam cycle with liquefied natural gas regasification process. Parametric study is conducted to investigate the effects of key cycle variables on the electrical and exergy efficiencies and total product unit cost of the proposed cycle. Multi-objective optimization is carried out to maximize the exergy efficiency and minimize the total product unit cost. The results show that Condenser 2 has the highest exergy destruction of 22.81�MW, followed by the combustor (22.72�MW). The combustor, Condenser 2 and gas turbine are the three most important components from exergoeconomic aspects. The introduction of adiabatic compression heat of the bypass stream has a positive impact on the system performance, especially when the outlet temperature of the combustor is low. The optimization results indicate that the exergy efficiency and the total product unit cost cannot reach the optimal values at the same time. The highest exergy efficiency of 50.31\% and the lowest total product unit cost of 16.654 \$/GJ are obtained respectively with different sets of cycle variables. In addition, the electrical efficiency of the optimized proposed cycle is up to around 65.7\%, about 11 percentage points higher than that of the Allam cycle.}
       \field{issn}{0196-8904}
       \field{journaltitle}{Energy Conversion and Management}
       \field{title}{Exergoeconomic analysis and optimization of the Allam cycle with liquefied natural gas cold exergy utilization}
@@ -579,7 +579,7 @@
       \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We present a new limiter for the PPM method of Colella and Woodward [P. Colella, P.R. Woodward, The Piecewise Parabolic Method (PPM) for gas-dynamical simulations, Journal of Computational Physics 54 (1984) 174\x{fffd}\x{fffd}\x{fffd}201] that preserves accuracy at smooth extrema. It is based on constraining the interpolated values at extrema (and only at extrema) using non-linear combinations of various difference approximations of the second derivatives. Otherwise, we use a standard geometric limiter to preserve monotonicity away from extrema. This leads to a method that has the same accuracy for smooth initial data as the underlying PPM method without limiting, while providing sharp, non-oscillatory representations of discontinuities.}
+      \field{abstract}{We present a new limiter for the PPM method of Colella and Woodward [P. Colella, P.R. Woodward, The Piecewise Parabolic Method (PPM) for gas-dynamical simulations, Journal of Computational Physics 54 (1984) 174–201] that preserves accuracy at smooth extrema. It is based on constraining the interpolated values at extrema (and only at extrema) using non-linear combinations of various difference approximations of the second derivatives. Otherwise, we use a standard geometric limiter to preserve monotonicity away from extrema. This leads to a method that has the same accuracy for smooth initial data as the underlying PPM method without limiting, while providing sharp, non-oscillatory representations of discontinuities.}
       \field{issn}{0021-9991}
       \field{journaltitle}{Journal of Computational Physics}
       \field{number}{15}
@@ -609,20 +609,20 @@
            given={Giacomo},
            giveni={G\bibinitperiod}}}%
         {{hash=29bf70e2644edaa8bd15f172082bc09a}{%
-           family={S\'{a}nchez},
+           family={Sánchez},
            familyi={S\bibinitperiod},
            given={David},
            giveni={D\bibinitperiod}}}%
-        {{hash=754ba7139eae05c6f583287166206904}{%
-           family={Mart\x{fffd}\x{fffd}nez},
+        {{hash=30558a1ee986d1591ba8d5b77261617a}{%
+           family={Martínez},
            familyi={M\bibinitperiod},
            given={Gonzalo\bibnamedelima S.},
            giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
       \strng{namehash}{4b0b87b8d42b8350d624318871543509}
-      \strng{fullhash}{84a7d84673652d2613854fd51bf02e73}
+      \strng{fullhash}{8196c4ec061733881a77e938f26551eb}
       \strng{authornamehash}{4b0b87b8d42b8350d624318871543509}
-      \strng{authorfullhash}{84a7d84673652d2613854fd51bf02e73}
+      \strng{authorfullhash}{8196c4ec061733881a77e938f26551eb}
       \field{sortinit}{C}
       \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
       \field{labelnamesource}{author}
@@ -824,7 +824,7 @@
       \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We investigate iterative methods for solving linear systems arising from the kinetic theory and providing transport coefficients of dilute polyatomic gas mixtures. These linear systems are obtained in their naturally constrained, singular, and symmetric form, using the formalism of Waldmann and Tr\x{fffd}benbacher. The transport coefficients associated with the systems obtained by Monchick, Yun, and Mason are also recovered, if two misprints are corrected in the work of these authors. Using the recent theory of Ern and Giovangigli, all the transport coefficients are expressed as convergent series. By truncating these series, new, accurate, approximate expressions are obtained for all the transport coefficients. Finally, the computational efficiency of the present transport algorithms in multicomponent flow applications is illustrated with several numerical experiments.}
+      \field{abstract}{We investigate iterative methods for solving linear systems arising from the kinetic theory and providing transport coefficients of dilute polyatomic gas mixtures. These linear systems are obtained in their naturally constrained, singular, and symmetric form, using the formalism of Waldmann and Tr�benbacher. The transport coefficients associated with the systems obtained by Monchick, Yun, and Mason are also recovered, if two misprints are corrected in the work of these authors. Using the recent theory of Ern and Giovangigli, all the transport coefficients are expressed as convergent series. By truncating these series, new, accurate, approximate expressions are obtained for all the transport coefficients. Finally, the computational efficiency of the present transport algorithms in multicomponent flow applications is illustrated with several numerical experiments.}
       \field{issn}{0021-9991}
       \field{journaltitle}{Journal of Computational Physics}
       \field{number}{1}
@@ -1392,6 +1392,62 @@
       \field{pages}{301\bibrangedash 305}
       \range{pages}{5}
     \endentry
+    \entry{10.1063/1.5054797}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1b1d6e7e0bfc1740d47d11e506f32299}{%
+           family={Lagarza-Cortés},
+           familyi={L\bibinithyphendelim C\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0cb5134d20c9534e3966e89eee6e2a60}{%
+           family={Ramírez-Cruz},
+           familyi={R\bibinithyphendelim C\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=70f55849485912f4ae4a37e53a93003b}{%
+           family={Salinas-Vázquez},
+           familyi={S\bibinithyphendelim V\bibinitperiod},
+           given={Martín},
+           giveni={M\bibinitperiod}}}%
+        {{hash=117970b9acb798bd5919c862040cda59}{%
+           family={Vicente-Rodríguez},
+           familyi={V\bibinithyphendelim R\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=2e06d715127d5f15d0c6ecb173a0e3da}{%
+           family={Cubos-Ramírez},
+           familyi={C\bibinithyphendelim R\bibinitperiod},
+           given={José\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8635e5bce75d693ec385a34459176a4}
+      \strng{fullhash}{0b772a900f81169ffcdda13b8b879bb4}
+      \strng{authornamehash}{d8635e5bce75d693ec385a34459176a4}
+      \strng{authorfullhash}{0b772a900f81169ffcdda13b8b879bb4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{The study and understanding of transcritical and supercritical jet flow are critical in liquid rockets, gas turbines, and diesel engines, as high-pressure atmospheres in these devices? mixing chambers drastically modify the morphology of their jets. In the transcritical jet, new elongated entities called finger-like structures appear and characterize the fluid flow phenomenon. This study examines these entities by simulating two classical cases based on Mayer?s experiments. The turbulence is described by the Large-eddy simulation technique with a sub-grid scale model known as the selective structures-function model. Real-gas behavior is evaluated by the Soave-Redlich-Kwong equation, and the transport properties are estimated by Chung?s methods. From the results, a longitudinal modulation which triggers an azimuthal modulation is observed. Then, bulges are formed on the jet surface. Cross-sectional views reveal pairs of streamwise vortices with inverted rotational directions, which are located on either side of the bulges (on the outer edge of the dense core). These transversal, turbulent movements seem to be engaged with the elongation of the bulges and the subsequent formation of finger-like structures. The existence of the counter-rotating vortices is related with the baroclinic vorticity. Then, since one may refer to the Rayleigh-Taylor instability when it is baroclinically generated, this instability could give an explanation of the origin of the finger-like structures. Transcritical parcels emitted at the end of the dense core are bounded by a thermal-shield. Finger-like structures are not observed in the supercritical case. The thermal-shield is absent from the supercritical parcels.}}
+      \field{issn}{1070-6631}
+      \field{journaltitle}{Physics of Fluids}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{{Large-eddy simulation of transcritical and supercritical jets immersed in a quiescent environment}}
+      \field{volume}{31}
+      \field{year}{2019}
+      \field{pages}{025104}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.5054797
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.aip.org/aip/pof/article-pdf/doi/10.1063/1.5054797/14935394/025104\_1\_online.pdf
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.5054797
+      \endverb
+    \endentry
     \entry{pulse_jet}{article}{}
       \name{author}{2}{}{%
         {{hash=9c897d170d58c120bbe1bc2ed53e80c2}{%
@@ -1569,7 +1625,7 @@
       \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Supercritical carbon dioxide (SC?CO2) shows many advantages in the exploitation of shale gas and geothermal energy. This condition\x{fffd}is\x{fffd}mainly because\x{fffd}pressure synergizes with temperature in rock-breaking. A computational model was established on the basis of an experimental setup and validated with experimental data to study the energy transformation and dissipation mechanism. The jet fields of water, SC-CO2 and nitrogen were studied. Result shows that the jet center pressure and temperature difference are in the following descending order: SC-CO2\x{fffd}>\x{fffd}nitrogen\x{fffd}>\x{fffd}water, indicating that SC-CO2 jet can produce the maximum broken volume. The SC-CO2 and nitrogen temperature drops are induced by endothermic expansion, and the water temperature increment is caused by viscous heating. The total pressure underestimates the energy of SC-CO2 and nitrogen flows, which is harmful to safety risk control. The dissipation rate of flow energy is in the following ascending order: SC-CO2\x{fffd}<\x{fffd}nitrogen\x{fffd}<\x{fffd}water. This condition is because less large eddy energy transfer is produced in SC-CO2 and nitrogen jets than water jet, and shock wave leads to more energy loss of nitrogen than SC-CO2. The temperature drop in jets shows that SC-CO2 and nitrogen have the potential for enhanced heat transfer. The findings provide a deeper understanding of efficient control and the use of SC-CO2 flow energy.}
+      \field{abstract}{Supercritical carbon dioxide (SC?CO2) shows many advantages in the exploitation of shale gas and geothermal energy. This condition�is�mainly because�pressure synergizes with temperature in rock-breaking. A computational model was established on the basis of an experimental setup and validated with experimental data to study the energy transformation and dissipation mechanism. The jet fields of water, SC-CO2 and nitrogen were studied. Result shows that the jet center pressure and temperature difference are in the following descending order: SC-CO2�>�nitrogen�>�water, indicating that SC-CO2 jet can produce the maximum broken volume. The SC-CO2 and nitrogen temperature drops are induced by endothermic expansion, and the water temperature increment is caused by viscous heating. The total pressure underestimates the energy of SC-CO2 and nitrogen flows, which is harmful to safety risk control. The dissipation rate of flow energy is in the following ascending order: SC-CO2�<�nitrogen�<�water. This condition is because less large eddy energy transfer is produced in SC-CO2 and nitrogen jets than water jet, and shock wave leads to more energy loss of nitrogen than SC-CO2. The temperature drop in jets shows that SC-CO2 and nitrogen have the potential for enhanced heat transfer. The findings provide a deeper understanding of efficient control and the use of SC-CO2 flow energy.}
       \field{issn}{1875-5100}
       \field{journaltitle}{Journal of Natural Gas Science and Engineering}
       \field{title}{Flow energy transformation and dissipation mechanisms of carbon dioxide, nitrogen, and water jets}
@@ -1659,7 +1715,7 @@
       \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{{With limitations of traditional power cycles on their operating temperature ranges and max efficiencies, the research community has shifted the attention to usage of supercritical fluids as the main working fluid of power cycles. Among the supercritical fluids, supercritical carbon dioxide (sCO2) is considered as the most promising candidate for its relatively low critical point, low cost, and availability. The main merit of using sCO2 is its high density near the fluid\x{fffd}\x{fffd}\x{fffd}s critical point, which reduces the required compression power. This leads to decrease in the volume of turbomachinery and increase in the overall cycle efficiency. However, non-linear property variations and mixing of different supercritical regimes in close proximity to the critical point pose great risks for cycles taking the full advantage of these benefits. The non-linear property variations close to the critical point provide a challenge in developing a multiphysics model, which can serve as a backbone for simulating more advanced geometries of sCO2 power cycle processes.To understand the physical phenomena of property variations and mixing of supercritical fluids at differing conditions, a classical shear layer experiment is performed in a high-pressure test chamber with supporting closed-loop cycle facilities. Experiments are conducted under various fluid density and velocity ratios at multiple isobars to understand if classical mixing theories and hydrodynamics follow the same trend in supercritical conditions. Specifically, turbulent flow characteristics and the growth parameters are captured through density gradients between two channels using Schlieren visualization. The qualitative results show that the mixing interfacial features follow the classical mixing growth rate theories despite nonlinear fluid property variations. Dissipative nature of the supercritical fluids contributes to resemblance of gas-gas mixing and presents decrease in mixing intensity as inlet conditions deviate away from the critical point.}}
+      \field{abstract}{{With limitations of traditional power cycles on their operating temperature ranges and max efficiencies, the research community has shifted the attention to usage of supercritical fluids as the main working fluid of power cycles. Among the supercritical fluids, supercritical carbon dioxide (sCO2) is considered as the most promising candidate for its relatively low critical point, low cost, and availability. The main merit of using sCO2 is its high density near the fluid’s critical point, which reduces the required compression power. This leads to decrease in the volume of turbomachinery and increase in the overall cycle efficiency. However, non-linear property variations and mixing of different supercritical regimes in close proximity to the critical point pose great risks for cycles taking the full advantage of these benefits. The non-linear property variations close to the critical point provide a challenge in developing a multiphysics model, which can serve as a backbone for simulating more advanced geometries of sCO2 power cycle processes.To understand the physical phenomena of property variations and mixing of supercritical fluids at differing conditions, a classical shear layer experiment is performed in a high-pressure test chamber with supporting closed-loop cycle facilities. Experiments are conducted under various fluid density and velocity ratios at multiple isobars to understand if classical mixing theories and hydrodynamics follow the same trend in supercritical conditions. Specifically, turbulent flow characteristics and the growth parameters are captured through density gradients between two channels using Schlieren visualization. The qualitative results show that the mixing interfacial features follow the classical mixing growth rate theories despite nonlinear fluid property variations. Dissipative nature of the supercritical fluids contributes to resemblance of gas-gas mixing and presents decrease in mixing intensity as inlet conditions deviate away from the critical point.}}
       \field{month}{08}
       \field{note}{V002T04A010}
       \field{series}{Fluids Engineering Division Summer Meeting}
@@ -1781,7 +1837,7 @@
     \entry{LES_Comp}{article}{}
       \name{author}{3}{}{%
         {{hash=dd2b035e898e0d9994c96e0c1493d60e}{%
-           family={Mart\'{\i}n},
+           family={Martín},
            familyi={M\bibinitperiod},
            given={M.},
            giveni={M\bibinitperiod}}}%
@@ -1913,7 +1969,7 @@
       \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{A new method is presented for the explicit Eulerian finite difference computation of shock capturing problems involving multiple resolved material phases in three dimensions. We solve separately for each phase the equations of fluid dynamics or solid mechanics, using as interface boundary conditions artificially extended representations of the individual phases. For fluids we use a new 3D spatially unsplit implementation of the piecewise parabolic (PPM) method of Colella and Woodward. For solids we use the 3D spatially unsplit Eulerian solid mechanics method of Miller and Colella. Vacuum and perfectly incompressible obstacles may also be employed as phases. A separate problem is the time evolution of material interfaces, which are represented by planar segments constructed with a volume-of-fluid method. The volume fractions are advanced in time using a second-order 3D spatially unsplit advection routine with a velocity field determined by solution of interface-normal two-phase Riemann problems. From the Riemann problem solutions we also determine cross-interface momentum and energy fluxes. The volume fractions in mixed cells may be arbitrarily small, which would ordinarily make the Courant\x{fffd}\x{fffd}\x{fffd}Friedrichs\x{fffd}\x{fffd}\x{fffd}Lewy time step stability limit arbitrarily small as well. We overcome this limitation using the mass-redistribution formalism to conservatively redistribute generalized mass in the neighborhood of the split cells. We present an application of this method to an explosion contained in a metal can: a reactive fluid (approximating PBX 9404) is encased within an elastic-plastic solid (approximating copper) surrounded by vacuum. Our implementation is in parallel, and with adaptive mesh refinement.}
+      \field{abstract}{A new method is presented for the explicit Eulerian finite difference computation of shock capturing problems involving multiple resolved material phases in three dimensions. We solve separately for each phase the equations of fluid dynamics or solid mechanics, using as interface boundary conditions artificially extended representations of the individual phases. For fluids we use a new 3D spatially unsplit implementation of the piecewise parabolic (PPM) method of Colella and Woodward. For solids we use the 3D spatially unsplit Eulerian solid mechanics method of Miller and Colella. Vacuum and perfectly incompressible obstacles may also be employed as phases. A separate problem is the time evolution of material interfaces, which are represented by planar segments constructed with a volume-of-fluid method. The volume fractions are advanced in time using a second-order 3D spatially unsplit advection routine with a velocity field determined by solution of interface-normal two-phase Riemann problems. From the Riemann problem solutions we also determine cross-interface momentum and energy fluxes. The volume fractions in mixed cells may be arbitrarily small, which would ordinarily make the Courant–Friedrichs–Lewy time step stability limit arbitrarily small as well. We overcome this limitation using the mass-redistribution formalism to conservatively redistribute generalized mass in the neighborhood of the split cells. We present an application of this method to an explosion contained in a metal can: a reactive fluid (approximating PBX 9404) is encased within an elastic-plastic solid (approximating copper) surrounded by vacuum. Our implementation is in parallel, and with adaptive mesh refinement.}
       \field{issn}{0021-9991}
       \field{journaltitle}{Journal of Computational Physics}
       \field{number}{1}
@@ -1971,7 +2027,7 @@
     \entry{doi:10.1063/1.4937948}{article}{}
       \name{author}{5}{}{%
         {{hash=31c6dc5f54538327c9d20502881cd17f}{%
-           family={M\"{u}ller},
+           family={Müller},
            familyi={M\bibinitperiod},
            given={Hagen},
            giveni={H\bibinitperiod}}}%
@@ -2220,7 +2276,7 @@
       \field{sortinithash}{24100cef455d7974167575052c29146e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Mixing is a key point for thrust and efficiency of combustion systems. It becomes crucial in the case Liquid Rocket Engines as large investments are involved. Besides, the pressure in liquid rocket combustion chamber often exceeding the critical point of loaded propellants, mixing becomes an important scientific issue as fluid properties differ from classical ideal gas assumption. In this study, two configurations are studied to evaluate the impact of subgrid models on mixing. Firstly, Mayer's experiments of trans- and super-critical nitrogen jet injection into a warm nitrogen atmosphere have been numerically investigated with a structured numerical code called SiTCom-B. SiTCom-B solves Direct Numerical Simulations and Large Eddy Simulations equations for perfect or real gas equation of states. In this study, Soave\x{fffd}\x{fffd}\x{fffd}Redlich\x{fffd}\x{fffd}\x{fffd}Kwong (SRK) and Peng\x{fffd}\x{fffd}\x{fffd}Robinson equation of state are used with appropriated thermodynamics relations and validated against NIST data. Three-dimensional LES are conducted for two cases (cases 3 and 4 in Mayer et al.'s reference [1]) with real-gas NSCBC treatment. Several sub-grid scale models are tested and the results are compared to experimental data for density on jet axis: a very good agreement is obtained on a light mesh (11.6 million of points) with the SRK equation of state and standard Smagorinsky model. Flow structures are evidenced with Schlieren snapshots. Secondly, the Mascotte test-bench from ONERA is simulated with SiTCom-B based on Soave\x{fffd}\x{fffd}\x{fffd}Redlich\x{fffd}\x{fffd}\x{fffd}Kwong equation of state and Smagorinsky models. The simulated non-reacting case is characterized by a very short liquid oxygen dense core because of the strong density and velocity gradients boosting mixing efficiency.}
+      \field{abstract}{Mixing is a key point for thrust and efficiency of combustion systems. It becomes crucial in the case Liquid Rocket Engines as large investments are involved. Besides, the pressure in liquid rocket combustion chamber often exceeding the critical point of loaded propellants, mixing becomes an important scientific issue as fluid properties differ from classical ideal gas assumption. In this study, two configurations are studied to evaluate the impact of subgrid models on mixing. Firstly, Mayer's experiments of trans- and super-critical nitrogen jet injection into a warm nitrogen atmosphere have been numerically investigated with a structured numerical code called SiTCom-B. SiTCom-B solves Direct Numerical Simulations and Large Eddy Simulations equations for perfect or real gas equation of states. In this study, Soave–Redlich–Kwong (SRK) and Peng–Robinson equation of state are used with appropriated thermodynamics relations and validated against NIST data. Three-dimensional LES are conducted for two cases (cases 3 and 4 in Mayer et al.'s reference [1]) with real-gas NSCBC treatment. Several sub-grid scale models are tested and the results are compared to experimental data for density on jet axis: a very good agreement is obtained on a light mesh (11.6 million of points) with the SRK equation of state and standard Smagorinsky model. Flow structures are evidenced with Schlieren snapshots. Secondly, the Mascotte test-bench from ONERA is simulated with SiTCom-B based on Soave–Redlich–Kwong equation of state and Smagorinsky models. The simulated non-reacting case is characterized by a very short liquid oxygen dense core because of the strong density and velocity gradients boosting mixing efficiency.}
       \field{issn}{0896-8446}
       \field{journaltitle}{The Journal of Supercritical Fluids}
       \field{title}{Large-eddy simulation of supercritical fluid injection}
@@ -2468,10 +2524,10 @@
            familyi={O\bibinitperiod},
            given={Joseph},
            giveni={J\bibinitperiod}}}%
-        {{hash=790154beda861a303ba87e2b77a5127f}{%
+        {{hash=31a18fd7598ef12207b2bdf3c7c54575}{%
            family={Mari},
            familyi={M\bibinitperiod},
-           given={Raphae\x{fffd}\x{fffd}l},
+           given={Raphaël},
            giveni={R\bibinitperiod}}}%
         {{hash=3b9de869b7b2444ae4e22644fb47e228}{%
            family={Benedicte},
@@ -2490,9 +2546,9 @@
            giveni={T\bibinitperiod}}}%
       }
       \strng{namehash}{ba5bf0720b8c757cf828fdb9b7c336bb}
-      \strng{fullhash}{9a6dd9bd6180d815944dd7a28d84eec2}
+      \strng{fullhash}{3e2152a933077e5c3369d4ffe5043661}
       \strng{authornamehash}{ba5bf0720b8c757cf828fdb9b7c336bb}
-      \strng{authorfullhash}{9a6dd9bd6180d815944dd7a28d84eec2}
+      \strng{authorfullhash}{3e2152a933077e5c3369d4ffe5043661}
       \field{sortinit}{R}
       \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
       \field{labelnamesource}{author}
@@ -2527,7 +2583,7 @@
       \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Abstract This paper summarizes several results relative to discrete filters for subgrid-scale (SGS) models based on a multi-level filtering procedure. First, a theoretical study of discrete filters in physical space is performed. The analysis is done in the uniform one-dimensional case, and is then extended to the general multi-dimensional case for arbitrary structured and unstructured meshes. Some equivalence classes for the discrete filters are defined, based either on a differential approximation or the associated transfer function. Methods for the definition of discrete filters are proposed in the general case, including the approximation of continuous convolution filters. Second, the sensitivity of several SGS models with respect to the test filter is investigated. The selected models are: the dynamic Smagorinsky model, the mixed scale model (MSM), the selective MSM and the Liu\x{fffd}\x{fffd}\x{fffd}Meneveau\x{fffd}\x{fffd}\x{fffd}Katz (LMK) similarity model. Improved versions, which explicitly account for the spectral width of the test filter of the MSM and the LMK similarity model are proposed. The analysis, which reveals a significant influence of the test filter, is done through a priori testing on a 1283 field issued from the large eddy simulation (LES) of freely decaying homogeneous isotropic turbulence. Copyright \x{fffd}\x{fffd} 1999 John Wiley \& Sons, Ltd.}
+      \field{abstract}{Abstract This paper summarizes several results relative to discrete filters for subgrid-scale (SGS) models based on a multi-level filtering procedure. First, a theoretical study of discrete filters in physical space is performed. The analysis is done in the uniform one-dimensional case, and is then extended to the general multi-dimensional case for arbitrary structured and unstructured meshes. Some equivalence classes for the discrete filters are defined, based either on a differential approximation or the associated transfer function. Methods for the definition of discrete filters are proposed in the general case, including the approximation of continuous convolution filters. Second, the sensitivity of several SGS models with respect to the test filter is investigated. The selected models are: the dynamic Smagorinsky model, the mixed scale model (MSM), the selective MSM and the Liu–Meneveau–Katz (LMK) similarity model. Improved versions, which explicitly account for the spectral width of the test filter of the MSM and the LMK similarity model are proposed. The analysis, which reveals a significant influence of the test filter, is done through a priori testing on a 1283 field issued from the large eddy simulation (LES) of freely decaying homogeneous isotropic turbulence. Copyright © 1999 John Wiley \& Sons, Ltd.}
       \field{journaltitle}{International Journal for Numerical Methods in Fluids}
       \field{number}{8}
       \field{title}{Discrete filters for large eddy simulation}
@@ -2557,16 +2613,16 @@
            familyi={R\bibinitperiod},
            given={Anthony},
            giveni={A\bibinitperiod}}}%
-        {{hash=68509213ad1b0c87b90c7160fe9137de}{%
+        {{hash=e9d0fec3a4c4860beb1cc6f9fddb95a5}{%
            family={Cuenot},
            familyi={C\bibinitperiod},
-           given={B\x{fffd}\x{fffd}n\x{fffd}\x{fffd}dicte},
+           given={Bénédicte},
            giveni={B\bibinitperiod}}}%
       }
       \strng{namehash}{70f3c679ba807ee71f0e422be0606f3e}
-      \strng{fullhash}{9261599aebf4e43697f8d39679b5aa7e}
+      \strng{fullhash}{32535427aadb0ba4ac51014cd978a283}
       \strng{authornamehash}{70f3c679ba807ee71f0e422be0606f3e}
-      \strng{authorfullhash}{9261599aebf4e43697f8d39679b5aa7e}
+      \strng{authorfullhash}{32535427aadb0ba4ac51014cd978a283}
       \field{sortinit}{S}
       \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
       \field{labelnamesource}{author}
@@ -2896,7 +2952,7 @@
       \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Pipeline transportation is considered as the most economical and efficient method for transporting large amounts of CO2. The potential for pipeline leakage, possibly resulting in catastrophic accidents, makes it vitally crucial to predict and assess the consequences of accidental CO2 pipeline releases. To investigate the dispersion behavior of high pressure CO2 leaked from a pipeline, a new laboratory scale experimental setup with a total length of 14.85\x{fffd}\x{fffd}\x{fffd}m and an internal diameter of 15\x{fffd}\x{fffd}\x{fffd}mm was constructed. Upward releases of supercritical, liquid and gaseous CO2 containing 2\%, 4\%, 6\% mol nitrogen were carried out through an orifice of 1\x{fffd}\x{fffd}\x{fffd}mm. Evolutions of temperature and movement of dry ice particles in the far-field were studied. An improved dispersion model was proposed to analyze the abnormal low-temperature area found in pure CO2 leakage. Furthermore, the effects of N2 concentration, initial inner pressure and temperature on the temperature characteristics in the far-field were studied. The results show that the addition of N2 has different effects on the temperature characteristics for CO2 leakage with different initial phase states. The experimental results can be used to determine safety distances and verify outflow and dispersion models.}
+      \field{abstract}{Pipeline transportation is considered as the most economical and efficient method for transporting large amounts of CO2. The potential for pipeline leakage, possibly resulting in catastrophic accidents, makes it vitally crucial to predict and assess the consequences of accidental CO2 pipeline releases. To investigate the dispersion behavior of high pressure CO2 leaked from a pipeline, a new laboratory scale experimental setup with a total length of 14.85 m and an internal diameter of 15 mm was constructed. Upward releases of supercritical, liquid and gaseous CO2 containing 2\%, 4\%, 6\% mol nitrogen were carried out through an orifice of 1 mm. Evolutions of temperature and movement of dry ice particles in the far-field were studied. An improved dispersion model was proposed to analyze the abnormal low-temperature area found in pure CO2 leakage. Furthermore, the effects of N2 concentration, initial inner pressure and temperature on the temperature characteristics in the far-field were studied. The results show that the addition of N2 has different effects on the temperature characteristics for CO2 leakage with different initial phase states. The experimental results can be used to determine safety distances and verify outflow and dispersion models.}
       \field{issn}{0894-1777}
       \field{journaltitle}{Experimental Thermal and Fluid Science}
       \field{title}{Experimental study on dispersion behavior during the leakage of high pressure CO2 pipelines}
@@ -3016,6 +3072,52 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1021/acs.iecr.1c02478
+      \endverb
+    \endentry
+    \entry{10.1063/5.0072291}{article}{}
+      \name{author}{3}{}{%
+        {{hash=eee76cfeb38ffcbfa80110cc16b3e413}{%
+           family={Wanstall},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi Taber},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=fefd62461288aea80377a2eaddedaa2d}{%
+           family={Bittle},
+           familyi={B\bibinitperiod},
+           given={Joshua\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6799ad84a0c895034ddcf7550fb5ff3e}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Ajay\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{8614cb3989dbbb2f47c709d9c4a11894}
+      \strng{fullhash}{8614cb3989dbbb2f47c709d9c4a11894}
+      \strng{authornamehash}{8614cb3989dbbb2f47c709d9c4a11894}
+      \strng{authorfullhash}{8614cb3989dbbb2f47c709d9c4a11894}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{Transient, near-field mixing of a supercritical fluid injected into supercritical and subcritical environments is investigated experimentally. Fuel (propane) from a 100??m diameter Bosch diesel injector is injected into a high-pressure test rig with a steady flow of heated, low-velocity nitrogen to control the ambient pressure and temperature. The fuel supply pressure is approximately 190 bar, allowing short injections lasting 3?4 ms to be performed in quick succession to acquire statistically significant datasets to represent the unsteady fuel?air mixing. Two test cases with the same ambient density and injector inlet pressure and temperature were chosen in an attempt to isolate effects of mixture phase behavior. Microscopic rainbow Schlieren deflectometry (RSD) is used for visualization and quantitative data acquisition. In the case of the supercritical ambient, the injector inlet and exit and ambient conditions are all supercritical. The RSD analysis reveals a mixing process similar to the single phase fluid mixing, though condensation is also observed locally, and can be explained by the adiabatic mixing theory presented in the paper. For the subcritical ambient case, the injector inlet is supercritical, but the injector exit and ambient conditions are both subcritical. The results show a rapid expansion in the near-field promoting mixing between propane and nitrogen. At downstream locations, significant condensation is also observed as predicted by the adiabatic mixing theory. The supercritical ambient case exhibited longer and narrower jet penetration compared to the subcritical ambient case.}}
+      \field{issn}{1070-6631}
+      \field{journaltitle}{Physics of Fluids}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{{Transient mixing behavior of a supercritical fluid injected into supercritical and subcritical environments}}
+      \field{volume}{34}
+      \field{year}{2022}
+      \field{pages}{023104}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0072291
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.aip.org/aip/pof/article-pdf/doi/10.1063/5.0072291/16638858/023104\_1\_online.pdf
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/5.0072291
       \endverb
     \endentry
     \entry{Same_LES}{article}{}
@@ -3396,7 +3498,7 @@
       \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Supercritical carbon dioxide (CO2) jet-assisted drilling is considered a promising technology in unconventional natural gas drilling engineering. The flow field characteristics of the supercritical CO2 jet are the critical factors that affect the erosion performance of the jet. The relation between the flow fluctuation characteristics and the jet is required further investigation to enhance its erosion performance. In this study, the fluctuation features of a supercritical CO2 jet were simulated based on a modified real gas model. Subsequently, impact force tests were conducted using an I-Scan flexible array pressure sensor to obtain peak pressures at different standoff distances. The results indicated that the flow field structure of the supercritical CO2 jet exhibits typical compressible wave-like features, which can be accurately determined by the expansion ratio. The expansion ratio was mainly affected by the inlet pressure, inlet temperature, and ambient pressure. The static pressure, temperature, and velocity distributions of a free jet could be significantly influenced by the fluctuation characteristics. Among them, the static pressure and temperature trend decrease in the expansion waves and increase in the compression waves, while the velocity shows a contrary variation trend. When the jet was under-expansion, the lengths of the wave node and jet potential core increased with increasing inlet pressure and decreased with increasing inlet temperature and ambient pressure. Moreover, the fluctuation characteristics of the flow field significantly affected the peak impact force of the supercritical CO2 jet. The peak impact force at the compression wave positions tended to be higher than that at the adjacent expansion wave positions. The maximum pressure difference of jet impact was 7.39\x{fffd}MPa in this study, which occurred when the standoff distance was 23.0 and 17.3\x{fffd}mm and accounts for 18.6\% of the impact pressure at 23.0\x{fffd}mm. A plate shock wave was observed ahead of the target when the standoff distance was larger than 23.0\x{fffd}mm, which accounted for the abrupt decrease in pressure at the stagnation region.}
+      \field{abstract}{Supercritical carbon dioxide (CO2) jet-assisted drilling is considered a promising technology in unconventional natural gas drilling engineering. The flow field characteristics of the supercritical CO2 jet are the critical factors that affect the erosion performance of the jet. The relation between the flow fluctuation characteristics and the jet is required further investigation to enhance its erosion performance. In this study, the fluctuation features of a supercritical CO2 jet were simulated based on a modified real gas model. Subsequently, impact force tests were conducted using an I-Scan flexible array pressure sensor to obtain peak pressures at different standoff distances. The results indicated that the flow field structure of the supercritical CO2 jet exhibits typical compressible wave-like features, which can be accurately determined by the expansion ratio. The expansion ratio was mainly affected by the inlet pressure, inlet temperature, and ambient pressure. The static pressure, temperature, and velocity distributions of a free jet could be significantly influenced by the fluctuation characteristics. Among them, the static pressure and temperature trend decrease in the expansion waves and increase in the compression waves, while the velocity shows a contrary variation trend. When the jet was under-expansion, the lengths of the wave node and jet potential core increased with increasing inlet pressure and decreased with increasing inlet temperature and ambient pressure. Moreover, the fluctuation characteristics of the flow field significantly affected the peak impact force of the supercritical CO2 jet. The peak impact force at the compression wave positions tended to be higher than that at the adjacent expansion wave positions. The maximum pressure difference of jet impact was 7.39�MPa in this study, which occurred when the standoff distance was 23.0 and 17.3�mm and accounts for 18.6\% of the impact pressure at 23.0�mm. A plate shock wave was observed ahead of the target when the standoff distance was larger than 23.0�mm, which accounted for the abrupt decrease in pressure at the stagnation region.}
       \field{issn}{0360-5442}
       \field{journaltitle}{Energy}
       \field{title}{Investigation on the fluctuation characteristics and its influence on impact force of supercritical carbon dioxide jet}
