@@ -158,7 +158,7 @@ and Wang, Ruihe",
 title="Influences of Supercritical Carbon Dioxide Jets on Damage Mechanisms of Rock",
 journal="Arabian Journal for Science and Engineering",
 year="2018",
-month="May",
+month="05",
 day="01",
 volume="43",
 number="5",
@@ -214,7 +214,7 @@ abstract = {Thermal-power cycles operating with supercritical carbon dioxide (sC
   title={System and method for high efficiency power generation using a carbon dioxide circulating working fluid},
   author={Allam, Rodney John and Palmer, Miles and Brown, Glenn William and others},
   year={2013},
-  month=dec # "~3",
+  month={12},
   publisher={Google Patents},
   note={US Patent 8,596,075}
 }
@@ -348,7 +348,7 @@ year = {2003}
 	doi = {10.1088/1757-899x/52/7/072011},
 	url = {ttps://doi.org/10.1088\%2F1757-899x\%2F52\%2F7\%2F072011},
 	year = 2013,
-	month = {dec},
+	month = {12},
 	publisher = {{IOP} Publishing},
 	volume = {52},
 	number = {7},
@@ -732,7 +732,7 @@ and Yang, Vigor",
 title="A numerical study of fluid injection and mixing under near-critical conditions",
 journal="Acta Mechanica Sinica",
 year="2012",
-month="Jun",
+month="06",
 day="01",
 volume="28",
 number="3",
@@ -864,6 +864,9 @@ keywords = {Continuum concept, Coordinate systems, Harmonic motion, Vectors, Ten
 abstract = {Chapter 1 deals with basic concepts of mechanics and analysis that are needed for the description of environmental flows. Some basic properties of fluids are reviewed and discussed in the context of free-surface flow. Reductionism is introduced as the underlying philosophy for the differential models of fluid flow. Newton's laws of motion and gravitation are reviewed. Asymptotic approximation and the Taylor series expansion are used for prediction in time and space. Simple harmonic motion is described and connected to wave motion and the Fourier transform. A review of spectral analysis is presented, and basic concepts of Cartesian vectors are outlined. Flux and the scalar product are defined in the context of fluid mechanics. An introduction to tensor analysis is given with emphasis to stress in fluids. Uniform shear flow is examined, and Newton's law of viscosity is derived. The no-slip condition on solid boundaries is described and the conditions of its applicability are discussed. A generalization to other flux-gradient methods links viscous fluid flow to heat conduction and similar macroscopic laws of physics.}
 }
 
+%Newtonian Fluid Assumptions
+@book{batchelor_2000, place={Cambridge}, series={Cambridge Mathematical Library}, title={An Introduction to Fluid Dynamics}, DOI={10.1017/CBO9780511800955}, publisher={Cambridge University Press}, author={Batchelor, G. K.}, year={2000}, collection={Cambridge Mathematical Library}}
+
 % EoS Choice (general example)
 @article{GHANBARI201713,
 title = {A comparison between Peng-Robinson and Soave-Redlich-Kwong cubic equations of state from modification perspective},
@@ -928,6 +931,21 @@ title = {NASA Glenn coefficients for calculating thermodynamic properties of ind
 url={https://ntrs.nasa.gov/api/citations/20020085330/downloads/20020085330.pdf}
 }
 
+@incollection{PIOMELLI202183,
+title = {Chapter Three - Large-eddy simulations},
+editor = {Paul Durbin},
+booktitle = {Advanced Approaches in Turbulence},
+publisher = {Elsevier},
+pages = {83-131},
+year = {2021},
+isbn = {978-0-12-820774-1},
+doi = {https://doi.org/10.1016/B978-0-12-820774-1.00009-4},
+url = {https://www.sciencedirect.com/science/article/pii/B9780128207741000094},
+author = {Ugo Piomelli},
+keywords = {turbulence simulations, large-eddy simulations, subfilter models},
+abstract = {The large-eddy-simulation technique is introduced. The mathematical formulation is presented, and several examples are discussed. Some issues related to the resolution of the wall layer are reviewed. Challenges and possible future developments are addressed.}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
@@ -960,6 +978,35 @@ url={https://ntrs.nasa.gov/api/citations/20020085330/downloads/20020085330.pdf}
   url = {https://www.sciencedirect.com/science/article/pii/S0010218021002741},
 }
 
+ %PeleC Documentation
+@misc{PeleC_doc, 
+howpublished={\url{https://amrex-combustion.github.io/PeleC/}}, 
+journal={PeleC - PeleC 0.1 documentation}
+} 
+
+% PeleC Github
+@misc{PeleC_Github,
+  author = {AMReX-Combustion},
+  title = {PeleC},
+  year = {2022},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/AMReX-Combustion/PeleC}},
+  %commit ={}
+}
+
+% PelePhysics Github
+@misc{PelePhysics,
+  author = {AMReX-Combustion},
+  title = {PelePhysics},
+  year = {2022},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/AMReX-Combustion/PelePhysics}},
+  %commit ={}
+}
+
+
 % LES for Compressible Flows as implemented in PeleC
 @article{LES_Comp,
 author = {Mart\'{i}n, M. and Piomelli, Ugo and Candler, Graham},
@@ -971,6 +1018,34 @@ volume = {13},
 journal = {Theoretical and Computational Fluid Dynamics}
 }
 
+% Knight SGS Modeling
+@inbook{knight,
+author = {Doyle Knight and Gang Zhou and Nora Okong'o and Vijay Shukla},
+title = {Compressible large eddy simulation using unstructured grids},
+booktitle = {36th AIAA Aerospace Sciences Meeting and Exhibit},
+chapter = {},
+pages = {},
+doi = {10.2514/6.1998-535},
+URL = {https://arc.aiaa.org/doi/abs/10.2514/6.1998-535},
+eprint = {https://arc.aiaa.org/doi/pdf/10.2514/6.1998-535}
+}
+
+% Favre filtering
+@article{favre,
+    author = {Favre, Alexandre},
+    title = "{Turbulence: Space?time statistical properties and behavior in supersonic flows}",
+    journal = {The Physics of Fluids},
+    volume = {26},
+    number = {10},
+    pages = {2851-2863},
+    year = {1983},
+    month = {10},
+    abstract = "{Following a scientific cooperation beginning in 1954 with L. S. G. Kovasznay, and in his memory, in this paper is presented a survey of two of the main areas of research to which he contributed: (1) turbulence properties deduced through statistical conditional sampling and space?time measurements of correlations and contingencies; these include celerities, optimum correlations, memories, and coherent structures; and (2) the study of turbulence in supersonic flows initiated by Kovasznay; this include the use of mass?weighted averages, decrease of turbulence in expansion, increase in compression, strong Reynolds analogy extension, and temperature?velocity correlation conservation.}",
+    issn = {0031-9171},
+    doi = {10.1063/1.864049},
+    url = {https://doi.org/10.1063/1.864049},
+    eprint = {https://pubs.aip.org/aip/pfl/article-pdf/26/10/2851/12495774/2851\_1\_online.pdf},
+}
 
 % Colella & Woodward for general PPM
 @ARTICLE{1984JCoPPPM,
@@ -979,7 +1054,7 @@ journal = {Theoretical and Computational Fluid Dynamics}
       journal = {Journal of Computational Physics},
      keywords = {Fluid Mechanics and Heat Transfer},
          year = 1984,
-        month = sep,
+        month = 09,
        volume = {54},
         pages = {174-201},
           doi = {10.1016/0021-9991(84)90143-8},
@@ -1052,7 +1127,7 @@ year = {1999}
         title = "{The Local Structure of Turbulence in Incompressible Viscous Fluid for Very Large Reynolds' Numbers}",
       journal = {Akademiia Nauk SSSR Doklady},
          year = 1941,
-        month = jan,
+        month = 01,
        volume = {30},
         pages = {301-305},
        adsurl = {https://ui.adsabs.harvard.edu/abs/1941DoSSR..30..301K},

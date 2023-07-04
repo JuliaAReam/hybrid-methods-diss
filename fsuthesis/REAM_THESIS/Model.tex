@@ -13,7 +13,7 @@ We consider the three-dimensional compressible Navier-Stokes equations, presente
   \frac{\partial}{\partial t} \left( \rho E \right) + \frac{\partial}{\partial x_j} \big(\left( \rho E+p \right) u_j + q_j - \sigma_{ij} u_i\big) &= 0 \label{NSE_E}
 \end{align}
 \end{subequations}
-where $\rho$ is the density, $u_j$ is the velocity for the $x_j$ direction, $p$ is the pressure, $E = e + \frac{u_i u_i}{2}$ is the total energy, $e $ is the internal energy, and $T$ is the temperature. Following the assumptions made for Newtonian fluids \cite{}, the diffusive fluxes are
+where $\rho$ is the density, $u_j$ is the velocity for the $x_j$ direction, $p$ is the pressure, $E = e + \frac{u_i u_i}{2}$ is the total energy, $e $ is the internal energy, and $T$ is the temperature. Following the assumptions made for Newtonian fluids \cite{batchelor_2000}, the diffusive fluxes are
 \begin{equation} \label{Transport}
   \sigma_{ij} = 2\mu S_{ij} - \frac{2}{3}\mu \delta_{ij} S_{kk}, \quad \quad
   q_j = -\lambda \frac{\partial T}{\partial x_j}
@@ -39,7 +39,7 @@ To perform the \gls{les}, we consider the filtered compressible Navier-Stokes eq
   \frac{\partial}{\partial t} \left( \overline{\rho E} \right) + \frac{\partial}{\partial x_j} \big(\left( \overline{\rho Eu_j}+\overline{p u_j} \right) + \overline{q_j} - \overline{\sigma_{ij} u_i}\big) &= 0 \label{en_filtered}
 \end{align}
 \end{subequations}
-In order to avoid having to model $\overline{\rho u_j} $ in the conservation of mass equation in \ref{NSE_filtered}, Favre-filtering, $\widetilde{\cdot}  = \nicefrac{\overline{\rho~\cdot}}{\overline{\rho}}$, is also applied \cite{}. Additionally, the following two sets of assumptions are made regarding transport terms \cite{}:
+In order to avoid having to model $\overline{\rho u_j} $ in the conservation of mass equation in \ref{NSE_filtered}, Favre-filtering, $\widetilde{\cdot}  = \nicefrac{\overline{\rho~\cdot}}{\overline{\rho}}$, is also applied \cite{favre}. Additionally, the following two sets of assumptions are made regarding transport terms \cite{PIOMELLI202183}:
 \begin{subequations} \label{trans_assumptions}
 \begin{align}
 \overline{\mu(T)S_{ij}} \simeq \mu(\widetilde{T})\widetilde{S_{ij}}, \quad \quad 
@@ -47,7 +47,7 @@ In order to avoid having to model $\overline{\rho u_j} $ in the conservation of 
 \widetilde{\mu} = \mu(\widetilde{T}), \quad \quad \widetilde{\lambda} = \lambda(\widetilde{T}) \label{trans_2}
 \end{align}
 \end{subequations}
-The assumptions in Equations \ref{trans_assumptions} are common in the literature regarding \gls{les}, even though transport terms are nonlinearly dependent on temperature \cite{}. Justification for this type of assumption can be made where if performing a \gls{les} with course enough grid, molecular transport coefficients remain small compared to turbulent transport coefficients \cite{}. Applying Equations \ref{trans_assumptions} along with the Favre filter to Equations \ref{NSE_filtered} yields the following:
+The assumptions in Equations \ref{trans_assumptions} are common in the literature regarding \gls{les}, even though transport terms are nonlinearly dependent on temperature \cite{PIOMELLI202183}. Justification for this type of assumption can be made where if performing a \gls{les} with coarse enough grid, molecular transport coefficients remain small compared to turbulent transport coefficients \cite{}. Applying Equations \ref{trans_assumptions} along with the Favre filter to Equations \ref{NSE_filtered} yields the following:
 \begin{equation} \label{NSE_favre_filtered}
 \begin{split}
   \frac{\partial\overline{\rho}}{\partial t} + \frac{\partial }{\partial x_j} \left( \overline{\rho}\widetilde{ u_j} \right) = 0,  \\
@@ -61,7 +61,7 @@ with filtered Equations \ref{Transport} now given by:
   \widetilde{q_j} = -\widetilde{\lambda} \frac{\partial \widetilde{T}}{\partial x_j}
 \end{equation}
 
-Final simplifications to Equations \ref{NSE_favre_filtered} come from the \gls{sgs} terms. The \gls{sgs} stress $\tau_{ij}$, \gls{sgs} heat flux $\mathcal{Q}_j$, \gls{sgs} turbulent diffusion $\nicefrac{\partial \mathcal{J}_j}{\partial x_j}$, and \gls{sgs} turbulent viscous diffusion $\nicefrac{\partial \mathcal{D}_j}{\partial x_j}$ set through the following definitions \cite{}:
+Final simplifications to Equations \ref{NSE_favre_filtered} come from the \gls{sgs} terms. The \gls{sgs} stress $\tau_{ij}$, \gls{sgs} heat flux $\mathcal{Q}_j$, \gls{sgs} turbulent diffusion $\nicefrac{\partial \mathcal{J}_j}{\partial x_j}$, and \gls{sgs} turbulent viscous diffusion $\nicefrac{\partial \mathcal{D}_j}{\partial x_j}$ set through the following definitions \cite{LES_Comp}:
 \begin{equation} \label{sgs_defs}
 \begin{aligned}
 \tau_{ij} &= \overline{\rho}\left(\widetilde{u_i u_j} - \widetilde{u_i}\widetilde{u_j} \right), \\
@@ -90,6 +90,7 @@ Finally, it is also noted that the divergence of the \gls{sgs} heat flux and the
 \end{subequations}
 with Equations \ref{filtered_trans} describing the filtered transport coefficients. The \gls{sgs} stress $\tau_{ij}$, \gls{sgs} heat flux $\mathcal{Q}_{j}$, and \gls{sgs} turbulent diffusion $\mathcal{J}_j$ need to be modeled in order to close the system. 
 
+While Equations \ref{filtered_NSE_FINAL} are the equations discretized within \textit{PeleC}, in practice, we evolve these filtered quantities without explicitly filtering the solution. Here, the grid serves as the main filter for the \gls{les} while the specific box filter described in the next section is used to determine model coefficients. 
 
 
 \subsection{Subgrid-Scale Modeling for Large Eddy Simulation}
@@ -126,7 +127,7 @@ where
 \end{aligned}
 \end{equation}
 
-Finally, the \gls{sgs} turbulent diffusion $\mathcal{J}_j$ is modeled following the strategy proposed by Knight et al. \cite{}:
+Finally, the \gls{sgs} turbulent diffusion $\mathcal{J}_j$ is modeled following the strategy proposed by Knight et al. \cite{knight}:
 \begin{equation} \label{sgs_turb_diff}
 \mathcal{J}_j = \widetilde{u}_k \tau_{jk}
 \end{equation}
@@ -145,7 +146,7 @@ As noted previously, the choice of \gls{sgs} modeling is important in accurately
 
 
 \section{Transport Models}
-Modeling of transport coefficients is done through \textit{PelePhysics} \cite{}. There are three modeling options available in \textit{PelePhysics}; we use the \textit{Simple} model. The \textit{Simple} model approximates ideal gas transport coefficients using EGLib functions \cite{ERN1995105}, which have the following form:
+Modeling of transport coefficients is done through \textit{PelePhysics} \cite{PelePhysics}. There are three modeling options available in \textit{PelePhysics}; we use the \textit{Simple} model. The \textit{Simple} model approximates ideal gas transport coefficients using EGLib functions \cite{ERN1995105}, which have the following form:
 \begin{equation} \label{EGLib}
 \ln{(q_0)} = \sum\limits_{n=1}^{4} a_{q,n}\left( \ln{(T)}\right)^{n-1}
 \end{equation}
@@ -183,10 +184,8 @@ where $b_{ij}$ are constants (see Table \ref{chung-bij}). All species-related co
 
 These high pressure corrections as derived and analyzed by Chung et al. show improved accuracy for approximating transport properties over a wide range of temperatures and pressures when compared to experimental data for a variety of species \cite{chung:1988}. 
 
-Make plots to compare with NIST data.
-
 \section{Thermodynamics and Related Quantities}
-Modeling of thermodynamic quantities is also done through \textit{PelePhysics} \cite{}. In a similar fashion to equation \ref{chung_general}, thermodynamic properties can be broken up into an ideal gas component and a departure from ideal gas behavior:
+Modeling of thermodynamic quantities is also done through \textit{PelePhysics} \cite{PelePhysics}. In a similar fashion to equation \ref{chung_general}, thermodynamic properties can be broken up into an ideal gas component and a departure from ideal gas behavior:
 \begin{equation} \label{thermo_general}
 q(\phi) = q_{I}(\phi) + q_{D}(\phi)
 \end{equation}
@@ -219,7 +218,51 @@ Ideal specific heat at constant volume scaled by the ideal gas constant $\nicefr
 where $c_{\psi,0-5}$ are species-specific constants for each quantity's polynomial fit (see Table \ref{NASA-Coeffs}). Other ideal gas quantities of interest can also be calculated in this form via integration, so that $\psi$ here can be either ideal internal energy $\nicefrac{e_I}{RT}$, specific heat at constant volume $\nicefrac{c_{v_I}}{R}$, or enthalpy $\nicefrac{h_I}{RT}$. 
 The equations for additional thermodynamic quantities, such as constant volume and constant pressure specific heat, and useful derivatives involving the \gls{srk} can be found in Appendix \ref{SRK-Derives}. 
 
+\section{Model Validation}
+Here we compare some thermodynamic and transport quantities with highly accurate data from the NIST WebBook \cite{NIST} in order to quantify the error present in our model within the regime of interest. Figure \ref{NIST_quantities_compare} depicts constant-pressure specific heat, density, shear viscosity, and thermal conductivity across the parameter regime explored by the three cases noted in this work. Overall, quantities of interest depicted here follow the same general trends as the NIST data, but with larger discrepancies between the two noted near the pseudo-boiling region denoted by the peak in specific heat. Most of the largest error values can be found in the $314-330K$ range, which means modeling errors will have the largest impact on the pseudo-boiling case presented here. Table \ref{max_error} contains the largest percent errors for each quantity along with the temperature value of that peak error location. Future studies will explore methods of achieving higher accuracy in thermodynamic and transport modeling in this challenging parameter regime. Since general trends are still followed by the models, results from this study should still provide insight into this region.
+\begin{figure}[H]
+\begin{subfigure}{0.45\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/NIST/cp_NIST_comp.pdf}
+	\caption{Constant-Pressure Specific Heat across the temperature range of interest} \label{cp_NIST_comp}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/NIST/rho_NIST_comp.pdf}
+	\caption{Density across the temperature range of interest} \label{rho_NIST_comp}
+\end{subfigure}
+\vfill
+\begin{subfigure}{0.45\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/NIST/mu_NIST_comp.pdf}
+	\caption{Viscosity across the temperature range of interest} \label{mu_NIST_comp}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+	\centering
+	\includegraphics[scale=.45]{figures/Plots/NIST/lam_NIST_comp.pdf}
+	\caption{Thermal Conductivity across the temperature range of interest} \label{lam_NIST_comp}
+\end{subfigure}
+\caption{Here we compare NIST WebBook values \cite{NIST} with output values from the thermodynamic and transport models described here as implemented in \textit{PelePhysics}. Challenges of capturing the fluid properties near the critical point can be seen in the increased error near the pseudo-boiling point near $318 K$.}
+\label{NIST_quantities_compare}
+\end{figure}
 
+\begin{table}[H]
+\caption{Maximum percent error between NIST WebBook Data and Simulation Models for Constant-Pressure Specific Heat, Density, Viscosity, and Thermal Conductivity}
+\label{max_error}
+\begin{center}
+\begin{tabular}{ r || r r }
+Parameter & Percent Error & Temperature (K)  \\
+\hline
+$c_p$ & 18.11 & 320.25  \\
+$\rho$ & 17.41 & 314  \\
+$\mu$ & 12.62 & 314  \\
+$\lambda$ & 17.81 & 319.88  \\
+
+\end{tabular}
+\end{center}
+\end{table}
 
 
 

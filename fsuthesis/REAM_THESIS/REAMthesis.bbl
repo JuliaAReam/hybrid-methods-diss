@@ -19,6 +19,12 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{PeleC_doc}{misc}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{howpublished}{\url{https://amrex-combustion.github.io/PeleC/}}
+      \field{journaltitle}{PeleC - PeleC 0.1 documentation}
+    \endentry
     \entry{Aggarwal}{article}{}
       \name{author}{2}{}{%
         {{hash=778a5b235aff8d3748f5978206ae5cb0}{%
@@ -148,7 +154,7 @@
       \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{12~3}
+      \field{month}{12}
       \field{note}{US Patent 8,596,075}
       \field{title}{System and method for high efficiency power generation using a carbon dioxide circulating working fluid}
       \field{year}{2013}
@@ -231,6 +237,50 @@
       \endverb
       \keyw{natural gas,coal,Allam Cycle,carbon,capture,supercritical,update,demonstration,8 Rivers,Heatric,Toshiba,NET Power,CO,sCO}
     \endentry
+    \entry{PeleC_Github}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ef258a5a4dbc0922daa73f4b63f85c75}{%
+           family={AMReX-Combustion},
+           familyi={A\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{ef258a5a4dbc0922daa73f4b63f85c75}
+      \strng{fullhash}{ef258a5a4dbc0922daa73f4b63f85c75}
+      \strng{authornamehash}{ef258a5a4dbc0922daa73f4b63f85c75}
+      \strng{authorfullhash}{ef258a5a4dbc0922daa73f4b63f85c75}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/AMReX-Combustion/PeleC}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{PeleC}
+      \field{year}{2022}
+    \endentry
+    \entry{PelePhysics}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ef258a5a4dbc0922daa73f4b63f85c75}{%
+           family={AMReX-Combustion},
+           familyi={A\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{ef258a5a4dbc0922daa73f4b63f85c75}
+      \strng{fullhash}{ef258a5a4dbc0922daa73f4b63f85c75}
+      \strng{authornamehash}{ef258a5a4dbc0922daa73f4b63f85c75}
+      \strng{authorfullhash}{ef258a5a4dbc0922daa73f4b63f85c75}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/AMReX-Combustion/PelePhysics}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{PelePhysics}
+      \field{year}{2022}
+    \endentry
     \entry{BANUTI201512}{article}{}
       \name{author}{1}{}{%
         {{hash=e69f598abfcc0e06f4fb0d1d26cc61b0}{%
@@ -262,6 +312,32 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0896844614004306
       \endverb
       \keyw{Pseudoboiling,Widom-line,Vaporization,Clapeyron,Transcritical}
+    \endentry
+    \entry{batchelor_2000}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d2a74f8d42e4b74a75a555960587df49}{%
+           family={Batchelor},
+           familyi={B\bibinitperiod},
+           given={G.\bibnamedelimi K.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{d2a74f8d42e4b74a75a555960587df49}
+      \strng{fullhash}{d2a74f8d42e4b74a75a555960587df49}
+      \strng{authornamehash}{d2a74f8d42e4b74a75a555960587df49}
+      \strng{authorfullhash}{d2a74f8d42e4b74a75a555960587df49}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Cambridge Mathematical Library}
+      \field{title}{An Introduction to Fluid Dynamics}
+      \field{year}{2000}
+      \verb{doi}
+      \verb 10.1017/CBO9780511800955
+      \endverb
     \endentry
     \entry{Benzi:2010}{article}{}
       \name{author}{2}{}{%
@@ -510,7 +586,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
-      \field{month}{9}
+      \field{month}{09}
       \field{title}{{The Piecewise Parabolic Method (PPM) for Gas-Dynamical Simulations}}
       \field{volume}{54}
       \field{year}{1984}
@@ -848,6 +924,42 @@
       \field{note}{Accessed: 2019-08-08}
       \field{title}{Explore, use, make the most of supercritical fluids}
       \field{year}{2009}
+    \endentry
+    \entry{favre}{article}{}
+      \name{author}{1}{}{%
+        {{hash=affddbea92952e3d8f3017d4c10c63fd}{%
+           family={Favre},
+           familyi={F\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{affddbea92952e3d8f3017d4c10c63fd}
+      \strng{fullhash}{affddbea92952e3d8f3017d4c10c63fd}
+      \strng{authornamehash}{affddbea92952e3d8f3017d4c10c63fd}
+      \strng{authorfullhash}{affddbea92952e3d8f3017d4c10c63fd}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{Following a scientific cooperation beginning in 1954 with L. S. G. Kovasznay, and in his memory, in this paper is presented a survey of two of the main areas of research to which he contributed: (1) turbulence properties deduced through statistical conditional sampling and space?time measurements of correlations and contingencies; these include celerities, optimum correlations, memories, and coherent structures; and (2) the study of turbulence in supersonic flows initiated by Kovasznay; this include the use of mass?weighted averages, decrease of turbulence in expansion, increase in compression, strong Reynolds analogy extension, and temperature?velocity correlation conservation.}}
+      \field{issn}{0031-9171}
+      \field{journaltitle}{The Physics of Fluids}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{{Turbulence: Space?time statistical properties and behavior in supersonic flows}}
+      \field{volume}{26}
+      \field{year}{1983}
+      \field{pages}{2851\bibrangedash 2863}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1063/1.864049
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.aip.org/aip/pfl/article-pdf/26/10/2851/12495774/2851\_1\_online.pdf
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.864049
+      \endverb
     \endentry
     \entry{cleantechnol1010022}{article}{}
       \name{author}{5}{}{%
@@ -1368,6 +1480,49 @@
       \field{type}{phdthesis}
       \field{year}{2003}
     \endentry
+    \entry{knight}{inbook}{}
+      \name{author}{4}{}{%
+        {{hash=2fe30945b26646309949f34d2db0fc89}{%
+           family={Knight},
+           familyi={K\bibinitperiod},
+           given={Doyle},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f2b599ed73f17444e61354d4abd9f26b}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5a792092e0df3c968c977fa2de6d6e4e}{%
+           family={Okong'o},
+           familyi={O\bibinitperiod},
+           given={Nora},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d2134ffca18b8557762d31940dce805a}{%
+           family={Shukla},
+           familyi={S\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c06ce1a8c694eb73845c933b6df79a3}
+      \strng{fullhash}{c1eec69c0a8d07d2f61b09df304c1517}
+      \strng{authornamehash}{9c06ce1a8c694eb73845c933b6df79a3}
+      \strng{authorfullhash}{c1eec69c0a8d07d2f61b09df304c1517}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{36th AIAA Aerospace Sciences Meeting and Exhibit}
+      \field{title}{Compressible large eddy simulation using unstructured grids}
+      \verb{doi}
+      \verb 10.2514/6.1998-535
+      \endverb
+      \verb{eprint}
+      \verb https://arc.aiaa.org/doi/pdf/10.2514/6.1998-535
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/abs/10.2514/6.1998-535
+      \endverb
+    \endentry
     \entry{kolmogorov}{article}{}
       \name{author}{1}{}{%
         {{hash=7cdd956af512898d48015dc4db5cd94c}{%
@@ -1385,7 +1540,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Akademiia Nauk SSSR Doklady}
-      \field{month}{1}
+      \field{month}{01}
       \field{title}{{The Local Structure of Turbulence in Incompressible Viscous Fluid for Very Large Reynolds' Numbers}}
       \field{volume}{30}
       \field{year}{1941}
@@ -1485,6 +1640,61 @@
       \verb https://doi.org/10.1134/S1990793116080145
       \endverb
     \endentry
+    \entry{NIST}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=90930675f3168ba1916fc964ccb4e76e}{%
+           family={Lemmon},
+           familyi={L\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ddfb550490b6a86e205f18e2ea1c5f22}{%
+           family={McLinden},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima O.},
+           giveni={M\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=43785e901c3c3cda36a680472d954e57}{%
+           family={Friend},
+           familyi={F\bibinitperiod},
+           given={Daniel\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=c23c45e1c3a9d245281d75357f8cbeba}{%
+           family={Linstrom},
+           familyi={L\bibinitperiod},
+           given={P.J.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=74085e1116e2751aa55f45afbda59ad4}{%
+           family={Mallard},
+           familyi={M\bibinitperiod},
+           given={W.G.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Gaithersburg MD, 20899}%
+      }
+      \list{publisher}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{eb5791ca9e172828590552395080533c}
+      \strng{fullhash}{eb5791ca9e172828590552395080533c}
+      \strng{authornamehash}{eb5791ca9e172828590552395080533c}
+      \strng{authorfullhash}{eb5791ca9e172828590552395080533c}
+      \strng{editornamehash}{767933088c759db70e29fca9dd360de8}
+      \strng{editorfullhash}{767933088c759db70e29fca9dd360de8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Thermophysical Properties of Fluid Systems}
+      \field{note}{Accessed: 2020-03-10}
+      \field{title}{NIST Chemistry WebBook, NIST Standard Reference Database Number 69}
+      \field{year}{2018}
+      \verb{doi}
+      \verb https://doi.org/10.18434/T4D303
+      \endverb
+    \endentry
     \entry{Li2012}{article}{}
       \name{author}{3}{}{%
         {{hash=f6108882a14a8f69264c202bdc4ee246}{%
@@ -1514,7 +1724,7 @@
       \field{abstract}{Nitrogen injection under conditions close vicinity of the liquid-gas critical point is studied numerically. The fluid thermodynamic and transport properties vary drastically and exhibit anomalies in the near-critical regime. These anomalies can cause distinctive effects on heat-transfer and fluid-flow characteristics. To focus on the influence of thermodynamics on the flow field, a relatively low injection Reynolds number of 1 750 is adopted. For comparisons, a reference case with the same configuration and Reynolds number is simulated in the ideal gas regime. The model accommodates full conservation laws, real-fluid thermodynamic and transport phenomena. Results reveal that the flow features of the near-critical fluid jet are significantly different from their counterpart. The near-critical fluid jet spreads faster and mixes more efficiently with the ambient fluid along with a more rapidly development of the vortex pairing process. Detailed analysis at different streamwise locations including both the flat shear-layer region and fully developed vortex region reveals the important effect of volume dilatation and baroclinic torque in the near-critical fluid case. The former disturbs the shear layer and makes it more unstable. The volume dilatation and baroclinic effects strengthen the vorticity and stimulate the vortex rolling up and pairing process.}
       \field{issn}{1614-3116}
       \field{journaltitle}{Acta Mechanica Sinica}
-      \field{month}{6}
+      \field{month}{06}
       \field{number}{3}
       \field{title}{A numerical study of fluid injection and mixing under near-critical conditions}
       \field{volume}{28}
@@ -1675,7 +1885,7 @@
       \field{abstract}{The supercritical carbon dioxide (SC-{\$}{\$}{\backslash}hbox {\{}CO{\}}{\_}{\{}2{\}}{\$}{\$}CO2) jet is potentially a new type of rock-breaking method that effectively combines pressure impact and thermal shock. Current studies show that carbon dioxide jets produce a larger damaged area and require a lower threshold pressure of breaking rocks compared with that of water jets; however, the generation mechanism of these types of jets has not been clearly explained. This study developed a fluid--solid heat coupling model using ANSYS. The simulation and experimental results show a good agreement, clearly explaining the relationships between the damage shape and thermal stress. The results of the experiment conducted indoors at ambient temperatures were first explained by simulating the stress of the rock. When the thermal effect was considered, both the maximum stress and the area wherein the stress was high increased. The increase in the elastic modulus, Poisson's ratio, and thermal expansion of the rock transformed its damage shape from bowl to linear. The increase in the injection pressure difference increased the broken depth of the rock, while the damage area on the surface of the rock remained the same. The possible damage shapes of the rock at formation temperature were analyzed. The temperature field of the jet increased both the shear stress acting on the surface of the rock and the tensile and shear stresses inside the rock; hence, the rock developed deeper and broader volumes of breaking in the well drilling process.}
       \field{issn}{2191-4281}
       \field{journaltitle}{Arabian Journal for Science and Engineering}
-      \field{month}{5}
+      \field{month}{05}
       \field{number}{5}
       \field{title}{Influences of Supercritical Carbon Dioxide Jets on Damage Mechanisms of Rock}
       \field{volume}{43}
@@ -2291,6 +2501,49 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0896844613003239
       \endverb
       \keyw{Supercritical,LES,Mixing,3D-NSCBC}
+    \endentry
+    \entry{PIOMELLI202183}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=c4c50c441e9fd2e9d3cae24eeaa3bcc5}{%
+           family={Piomelli},
+           familyi={P\bibinitperiod},
+           given={Ugo},
+           giveni={U\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=6b7f1943b124ea3fe0f7d405b0444a88}{%
+           family={Durbin},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c4c50c441e9fd2e9d3cae24eeaa3bcc5}
+      \strng{fullhash}{c4c50c441e9fd2e9d3cae24eeaa3bcc5}
+      \strng{authornamehash}{c4c50c441e9fd2e9d3cae24eeaa3bcc5}
+      \strng{authorfullhash}{c4c50c441e9fd2e9d3cae24eeaa3bcc5}
+      \strng{editornamehash}{6b7f1943b124ea3fe0f7d405b0444a88}
+      \strng{editorfullhash}{6b7f1943b124ea3fe0f7d405b0444a88}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The large-eddy-simulation technique is introduced. The mathematical formulation is presented, and several examples are discussed. Some issues related to the resolution of the wall layer are reviewed. Challenges and possible future developments are addressed.}
+      \field{booktitle}{Advanced Approaches in Turbulence}
+      \field{isbn}{978-0-12-820774-1}
+      \field{title}{Chapter Three - Large-eddy simulations}
+      \field{year}{2021}
+      \field{pages}{83\bibrangedash 131}
+      \range{pages}{49}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-12-820774-1.00009-4
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780128207741000094
+      \endverb
+      \keyw{turbulence simulations,large-eddy simulations,subfilter models}
     \endentry
     \entry{Pope}{book}{}
       \name{author}{1}{}{%
