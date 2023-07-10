@@ -1,7 +1,7 @@
 \chapter{Additional Thermodynamic Quantities}
 
 
-\section{Ideal Gas NASA Polynomial Fits Coefficients}
+\section*{Ideal Gas NASA Polynomial Fits Coefficients}
 
 \begin{table}[!h]
 \caption{Coefficients for NASA polynomials \cite{NASAPoly} used in modeling ideal thermodynamic quantities as described in Equation \ref{NASA_poly}}
@@ -18,10 +18,10 @@ $i$ & $c_{e_I,i}$ & $c_{v_I,i}$ & $c_{h_I,i}$ \\
 \end{tabular}
 \end{center}
 \end{table}
-\section{SRK-Related Derivatives} \label{SRK-Derives}
+\section*{SRK-Related Derivatives} \label{SRK-Derives}
 Here are a few additional derivatives involving quantities related to the \gls{srk} that are used at various points for the computations within \textit{PelePhysics} \cite{}:
 
-\subsection{Constant-Pressure Specific Heat}
+\subsection*{Constant-Pressure Specific Heat}
 \begin{equation}
 \begin{split}
 c_p &= \biggl(\dfrac{\partial h_m}{\partial T}\biggr)_{p} \\
@@ -42,12 +42,12 @@ where
 \frac{\partial h_m}{\partial T}=c_{p}^{id}+T\frac{\partial^2 a_m}{\partial T^2}\frac{1}{b_m}\ln(1+\frac{b_m}{\tau})-\frac{\partial a_m}{\partial T}\frac{1}{\tau +b_m}+\frac{Rb_m}{\tau-b_m}
 \end{equation}
 
-\subsection{Sound Speed}
+\subsection*{Sound Speed}
 \begin{equation}
 a^2=-\frac{c_p}{c_v}\tau^2\frac{\partial p}{\partial \tau}
 \end{equation}
 
-\subsection{Primitive Derivatives Needed for Riemann Solver}
+\subsection*{Primitive Derivatives Needed for Riemann Solver}
 \begin{equation}
 \frac{\partial p}{\partial \rho}\bigg|_{p,Y}=-\tau^2\biggl(\frac{\partial p}{\partial \tau}-\dfrac{\frac{\partial e}{\partial \tau}}{\frac{\partial e}{\partial T}}\frac{\partial p}{\partial T}\biggr)
 \end{equation}
