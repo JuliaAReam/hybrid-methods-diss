@@ -19,6 +19,19 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{Emissions_2023}{misc}{}
+      \list{publisher}{1}{%
+        {Environmental Protection Agency}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{journaltitle}{Greenhouse Gas Emissions}
+      \field{month}{4}
+      \field{year}{2023}
+      \verb{url}
+      \verb https://www.epa.gov/ghgemissions/overview-greenhouse-gases
+      \endverb
+    \endentry
     \entry{PeleC_doc}{misc}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
@@ -1942,6 +1955,33 @@
       \verb https://doi.org/10.1115/FEDSM2022-87029
       \endverb
     \endentry
+    \entry{Lindsey_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d60846d0db4450158a0668e03b373209}{%
+           family={Lindsey},
+           familyi={L\bibinitperiod},
+           given={Rebecca},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {NOAA}%
+      }
+      \strng{namehash}{d60846d0db4450158a0668e03b373209}
+      \strng{fullhash}{d60846d0db4450158a0668e03b373209}
+      \strng{authornamehash}{d60846d0db4450158a0668e03b373209}
+      \strng{authorfullhash}{d60846d0db4450158a0668e03b373209}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Climate.gov}
+      \field{month}{5}
+      \field{title}{Climate change: Atmospheric carbon dioxide}
+      \field{year}{2023}
+      \verb{url}
+      \verb https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide#:~:text=Without%5C%20carbon%5C%20dioxide%5C%2C%5C%20Earth%5C%27s%5C%20natural,causing%5C%20global%5C%20temperature%5C%20to%5C%20rise.
+      \endverb
+    \endentry
     \entry{LIU2021108422}{article}{}
       \name{author}{4}{}{%
         {{hash=bc6c6f66f139beef784a50d9f1485019}{%
@@ -3070,38 +3110,6 @@
       \endverb
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/pii/0009250972800964
-      \endverb
-    \endentry
-    \entry{US_elec_gen_stat}{online}{}
-      \name{author}{2}{}{%
-        {{hash=65bc8104a47796b4803c7040c086427d}{%
-           family={statistics},
-           familyi={s\bibinitperiod},
-           given={U.S.\bibnamedelimi Energy\bibnamedelimb Information\bibnamedelimb Administration\bibnamedelimb -\bibnamedelimb EIA\bibnamedelima -},
-           giveni={U\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim \bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim \bibinitperiod},
-           prefix={independent},
-           prefixi={i\bibinitperiod}}}%
-        {{hash=3b671c883959a8ef434b85a104c293d4}{%
-           family={analysis},
-           familyi={a\bibinitperiod}}}%
-      }
-      \strng{namehash}{9f1b889616ead24ecc2b822f8c2ec658}
-      \strng{fullhash}{9f1b889616ead24ecc2b822f8c2ec658}
-      \strng{authornamehash}{9f1b889616ead24ecc2b822f8c2ec658}
-      \strng{authorfullhash}{9f1b889616ead24ecc2b822f8c2ec658}
-      \field{sortinit}{s}
-      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{11}
-      \field{title}{Electricity Explained: How electricity is generated}
-      \field{urlday}{19}
-      \field{urlmonth}{2}
-      \field{urlyear}{2023}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb https://www.eia.gov/energyexplained/electricity/how-electricity-is-generated.php
       \endverb
     \endentry
     \entry{SCF1}{article}{}
