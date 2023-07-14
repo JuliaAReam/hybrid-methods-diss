@@ -5,7 +5,7 @@
 \subsection{AMR and Discretization}
 Our target simulation is a 3D LES with a grid size that is 100 times larger than the smallest scale of the turbulent flow. This smallest scale of these turbulent flows, known as the Kolmogorov scale \cite{kolmogorov}, can be approximated as:
 \begin{equation} \label{Kolmogorov}
-	\eta = \left( \dfrac{\nu^3}{\varepsilon} \right)
+	\eta = \left( \dfrac{\nu^3}{\varepsilon} \right)^{1/4}
 \end{equation}
 where $\nu = \nicefrac{\mu}{\rho}$ is the kinematic viscosity and $\varepsilon = \nicefrac{v_{in}^3}{d}$ is used to approximate the average rate of dissipation of turbulence kinetic energy per unit mass, where $v_{in}$ is the reference inflow velocity in the axial direction $y$ and $d=\SI{.01}{cm}$ is the jet diameter. For these turbulent jets, $\eta = \SI{5.37e-6}{cm}$. In our setup, the domain length in each direction is $x = 25d$, $y = 62.5d$, and $z = 25d$. To keep the calculation tractable \cite{} and achieve an adequate \gls{les} grid size, we implement four levels of refinement, with a refinement ratio of 2, leading to 80, 200, and 80 cells on the coarsest level in the $x$, $y$, and $z$ directions, respectively. This results in an initial mesh size of $\Delta x_{0}=\Delta y_{0}=\Delta z_{0}=0.3125$, leading to $\Delta x_{3}=\Delta y_{3}=\Delta z_{3}=\SI{3.9062e-4}{}$, where the subscript denotes the \gls{amr} level. The full four levels of refinement are implemented in a box around the inlet of lengths $x=z=4d$ and $y=2d$ to ensure high refinement at the inflow. These four levels are then adaptively refined based on the given refinement criterion in the region outward from the jet inlet up to a distance of $20d$ in the $x$ and $z$ direction and $60d$ in the $y$ direction, as can be seen in Figure \ref{fig:domain}. The refinement criterion is given by the vorticity, specifically with $\omega \geq 5000^{2l}$, where $\omega$ is the magnitude of the vorticity and $l$ is the \gls{amr} level. For the first ten flow throughs of the simulation, mesh refinement only occurs up to one level within the refinement region to establish the flow pattern. Thereafter, the simulation proceeds with the four levels of mesh refinement for ten more flow-throughs. After that, statistics are collected over the next two flow-throughs for analysis, where a steady state is assumed to have been reached.
 \begin{figure}[h!]
@@ -133,4 +133,29 @@ These perturbations can then be used to calculate average resolved Reynolds stre
 \langle TKE \rangle = \dfrac{1}{2} \left( \langle u' u' \rangle + \langle v' v' \rangle + \langle w' w' \rangle  \right)
 \end{equation}
 In Chapter 5, when these quantities are introduced, they are presented without angle brackets for the sake of streamlining bulky notation, but note that all of the results presented from here on are averaged either temporally or temporally and radially as was presented in this section, unless explicitly stated otherwise. 
+
+\section{Challenges and Lessons Learned}
+Early challenges in this project were related to the inflow and outflow boundary conditions. We initially compared a few different jet inflow strategies, namely one involving parabolic pipe flow, a \gls{dns} interpolation scheme with added synthetic perturbation \cite{}, and a hyperbolic tangent profile with the same added synthetic perturbation. The interpolation scheme was ultimately selected as it was based on a realistic, pre-developed turbulent pipe flow \cite{} as opposed to being modeled as in the other two cases. This inflow also achieved a fully developed turbulent flow faster than the other two again due to the fact that it was initialized from a pre-developed turbulent flow. Outflow boundary conditions were more complicated. Initially, no \gls{amr} cutoff was implemented at the boundary. After many test runs of varying length (some taking as long as 3 days) where \gls{nscbc} were implemented \cite{} with various mesh sizes, we were still getting non-negligible back flow at the outlet of the domain due to remaining high vorticity levels. Comparisons of mesh size effect on the outflow back flow then led to the buffer zone implementation idea. Various buffer sizes were tested to ensure adequate damping of any spurious outflow feedback. This process alone was a considerable portion of the ten week internship that started this project, before any \gls{les} were even performed. To summarize, during this time, I directly contributed to and tested a variety of Fortran-based inflow and outflow boundary conditions. This process is what led to the boundary condition choices outlined in the above section.
+
+It then took an additional semester's worth of time to troubleshoot \gls{les}-related issues involving \gls{sgs} models, remote access to \gls{nrel}'s Eagle supercomputer, and memory issues. Tests were run to see how distribution of cores per node affected memory, with runs done using 16 cores distributed evenly across 1, 2, and 4 nodes. More nodes also meant longer queue times in the Slurm workload manager, so number of nodes selected ultimately had to strike a balance between best memory distribution for job wait time and execution. It is hard to say exactly how long in total the three simulations took. An error in the root finding routine for the \gls{eos} initially slowed things down for a few months (note: simulations were not continually running during this three month period). After that was corrected, but before switching to the Intel suite of compilers, as of March 29, 2020, the three cases were at the following status: the $330 K$ ambient case still needed 176 hours to reach the final target time for 10 flow throughs, while the $350 K$ and $314 K$ ambient cases needed approximately 696 hours and 3,896 hours, respectively. 
+
+PP on yt slicing issues + resolution
+
+PP on data loss due to downscaling + resolution
+
+
+\section{Contributions Made to \textit{PelePhysics}}
+For direct use in this simulation, I helped create the pure \gls{co2} model folder containing all of the appropriate thermodynamic, transport, and chemical information in the CHEMKIN file format \cite{}. Tangentially related to this project, I also heavily contributed to the the implementation of \gls{qssa} within \textit{PelePhysics}. The library I helped create 
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -2460,6 +2460,65 @@
       \verb https://tigerprints.clemson.edu/all_dissertations/3073
       \endverb
     \endentry
+    \entry{PAINE19941-1}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=9b8a0cc696ee387051d36b626bc80ade}{%
+           family={Paine},
+           familyi={P\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f08216d76ea9ab021268f1d9b89bea6a}{%
+           family={Beards},
+           familyi={B\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f17c87d13cefec76162dd1d267d694bb}{%
+           family={Tucker},
+           familyi={T\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c602befa76ace8049cfe48d25fa7dcb4}{%
+           family={Bacon},
+           familyi={B\bibinitperiod},
+           given={Dennis\bibnamedelima H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=e3ce9e4b46c971a4dd4d132273532223}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Edward\bibnamedelima H.},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Butterworth-Heinemann}%
+      }
+      \strng{namehash}{27edca373b0d89779866060e35027c23}
+      \strng{fullhash}{37b040a102c2145a980e94027b052505}
+      \strng{authornamehash}{27edca373b0d89779866060e35027c23}
+      \strng{authorfullhash}{37b040a102c2145a980e94027b052505}
+      \strng{editornamehash}{e3ce9e4b46c971a4dd4d132273532223}
+      \strng{editorfullhash}{e3ce9e4b46c971a4dd4d132273532223}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Publisher Summary This chapter discusses the mechanical engineering principles of materials. The study of mechanics may be divided into two distinct areas. These are static, which involves the study of bodies at rest, and dynamic, which is the study of bodies in motion. When a set of forces act on a body they give rise to a resultant force or moment or a combination of both. The situation may be determined by considering three mutually perpendicular directions on the ?free body diagram? and resolving the forces and moment in these directions. When using analysis, the moment of each element of weight within the body, about a fixed axis, is equal to the moment of the complete weight about that axis. Circular motion is a special case of curvilinear motion in which the radius of rotation remains constant. In this case, there is acceleration toward the center of ?2r. This gives rise to a force toward the center known as the ?centripetal force.? This force is reacted to by the centrifugal reaction. The principle of balancing is that by the addition of extra masses to the system the out-of-balance forces may be reduced or eliminated.}
+      \field{booktitle}{Mechanical Engineer's Reference Book (Twelfth Edition)}
+      \field{edition}{Twelfth Edition}
+      \field{isbn}{978-0-7506-1195-4}
+      \field{title}{1 - Mechanical engineering principles}
+      \field{year}{1994}
+      \field{pages}{1-1-1-48}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-7506-1195-4.50005-1
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780750611954500051
+      \endverb
+      \warn{\item Range field 'pages' in entry 'PAINE19941-1' is malformed, falling back to literal}
+    \endentry
     \entry{commercialization}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=854f04898fce0e4b84514c28c74fafef}{%
