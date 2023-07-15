@@ -6,7 +6,7 @@
 
 The applications used to motivate this research are all concerned with supercritical Carbon Dioxide (sCO2), in particular. \gls{sco2} has many beneficial features that are important to a wide variety of industrial applications, as we will detail further later on in this chapter. Many of these applications of interest include injection technologies that involve a round turbulent jet configuration within the system. Much research has gone into supercritical jet turbulence, however, due to extreme thermodynamic variation around the supercritical point (a region known as the pseudo-critical zone), slight changes in parameter regime result in significant changes in flow dynamics \cite{}. Thus there is much research needed still in order to fully understand the fundamental flow physics within this area of interest. 
 
-The goal of this work is to further explore the pseudo-boiling region of the pseudo-critical zone and analyze the influence of extreme thermodynamic fluctuations on turbulence statistics and flow dynamics within the flow field. To that end, the rest of this chapter continues as follows: first, we cover important definitions relating to fluids in order to establish what a supercritical fluid even is. Then, the mathematical framework for modeling compressible Newtonian fluids is provided to form the basis of the modeling done in this dissertation. Further consideration is then given to turbulence modeling and the numerical methods developed for studying turbulence to provide insight into the quantities of interest analyzed within this dissertation and the choices of numerical methods used herein. Important applications of supercritical carbon dioxide in particular are provided to motivate the problem presented in this dissertation. Existing numerical studies on supercritical fluids are reviewed to demonstrate how this dissertation fits into the current landscape of research and to emphasize the contribution the results of this work make to the field. This chapter concludes with an outline of the dissertation, the goals of the dissertation, and the main contributions made through this work. 
+The goal of this work is to further explore the pseudo-boiling region of the pseudo-critical zone and analyze the influence of extreme thermodynamic fluctuations on turbulence statistics and flow dynamics within the flow field. To that end, the rest of this chapter continues as follows: first, we cover important definitions relating to fluids in order to establish what a supercritical fluid even is. Then, the mathematical framework for modeling compressible Newtonian fluids is provided to form the basis of the modeling done in this dissertation. Further consideration is then given to turbulence modeling and the numerical methods developed for studying turbulence to provide insight into the quantities of interest analyzed within this dissertation and the choices of numerical methods used herein. Important applications of supercritical carbon dioxide in particular are provided to motivate the problem presented in this dissertation. Existing numerical studies on supercritical fluids are reviewed to demonstrate how this dissertation fits into the current landscape of research and to emphasize the contributions this work make to the field. This chapter concludes with an outline of the dissertation, the goals of the dissertation, and the main contributions made through this work. 
 
 \section{What is a Fluid?} 
 
@@ -53,9 +53,9 @@ Scale is one of the key factors to consider when developing a mathematical descr
 
 From a kinetics perspective, particle motion within a fluid can be broken up into two phases: particle interaction and free flight. Average time spent in free flight, $<t_f>$, is typically much greater than collision time for a given interaction, $t_c$. The average length traveled between collisions is known as the mean free path, $\ell$.  Since free flight time dominates particle interaction time, this phase determines the length scale of the kinetic description of motion. In addition to this inherent physical scale, there is also a scale associated with the resolution of the problem itself, $L$. These two scales are important, as the mathematical description of your model depends on how these two scales compare to one another. This comparison is related through the non-dimensional Knudsen number: 
 \begin{equation}\label{Knudsen}
-Kn = \dfrac{\ell}{L}
+Kn = \dfrac{\ell}{L}.
 \end{equation} 
-Flows with large Knudsen number ($Kn \gg 10$) require modeling from the kinetic or microscopic perspective as particle interactions become sparse enough compared to the scope of the problem to require a statistical mechanics framework. On the other hand, small Knudsen number flows ($Kn \ll 0.01$) have a problem scale that far exceeds the particle-level interactions present, giving way to an average overall motion within the fluid. This scale dichotomy is demonstrated with the graphic in Figure \ref{Knudsen}. For small Knudsen flows, a continuum description of the fluid is appropriate for capturing this macroscopic behavior. 
+Flows with large Knudsen number ($Kn \gg 10$) require modeling from the kinetic or microscopic perspective as particle interactions become sparse enough compared to the scope of the problem to require a statistical mechanics framework. On the other hand, small Knudsen number flows ($Kn \ll 0.01$) have a problem scale that far exceeds the particle-level interactions present, giving way to an average overall motion within the fluid. This scale dichotomy is demonstrated in Figure \ref{Knudsen}. For small Knudsen flows, a continuum description of the fluid is appropriate for capturing this macroscopic behavior. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -114,23 +114,23 @@ For example, consider a fluid with arbitrary volume $V$ as depicted in Figure \r
 \label{cons_mass}
 \end{figure}
 For a fluid with density $\rho(\vb{x},t)$, mass within a small representative volume can be described with
-$$ \rho \, dv$$
+$$ \rho \, dv.$$
 Total mass in the arbitrary volume is then given by 
-$$\iiint_{V} \rho \,dv$$
+$$\iiint_{V} \rho \,dv.$$
 The rate of change of mass through the volume is now 
 $$\dfrac{d}{dt}\iiint_{V} \rho \, dv $$
 \begin{equation} \label{volume_mass}
-= \iiint_{V} \dfrac{\partial \rho}{\partial t}\,dv
+= \iiint_{V} \dfrac{\partial \rho}{\partial t}\,dv.
 \end{equation}
 Simultaneously, overall change in mass throughout the volume can be described by the net mass flux through the surface $S$. Volumetric flow through a small portion of the bounding surface is given by
-$$\vb{v}\cdot \vb{n} \, ds$$
+$$\vb{v}\cdot \vb{n} \, ds.$$
 Total mass flux through the entire surface is then
 \begin{equation} \label{surface_flowthrough}
-\iint_S \rho \, \vb{v}\cdot \vb{n} \, ds
+\iint_S \rho \, \vb{v}\cdot \vb{n} \, ds.
 \end{equation}
 Applying the divergence theorem to Equation \eqref{surface_flowthrough} yields the following volume integral
 \begin{equation} \label{volume_equiv}
-\iiint_V \nabla \cdot \left(\rho \, \vb{v} \right) \, dv
+\iiint_V \nabla \cdot \left(\rho \, \vb{v} \right) \, dv.
 \end{equation}
 Assuming there is no additional source generating or leaking mass within the control volume, we can relate Equations \eqref{volume_mass} to \eqref{volume_equiv} : 
 \begin{equation*}
@@ -140,20 +140,20 @@ Assuming there is no additional source generating or leaking mass within the con
 \end{aligned}
 \end{equation*}
 \begin{equation} \label{cont_int}
-\iiint_{V} \left( \dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \, \vb{v} \right) \,\right) dv  = 0
+\iiint_{V} \left( \dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \, \vb{v} \right) \,\right) dv  = 0.
 \end{equation}
 Note the inclusion of the negative sign for the right side of the initial equality; in the surface integral formulation, the outward facing normal describes flux out of the volume, thus yielding a decrease in mass within the volume. Since Equation \eqref{cont_int} holds for any arbitrary volume $V$, the integrand must be identically equal to zero:
 \begin{equation} \label{conservation_mass}
-\dfrac{\partial \rho}{\partial t} +  \nabla \cdot \left(\rho \, \vb{v} \right) \,  = 0
+\dfrac{\partial \rho}{\partial t} +  \nabla \cdot \left(\rho \, \vb{v} \right) \,  = 0.
 \end{equation}
-Through the continuum hypothesis and conservation of mass, we have now arrived at the continuity equation in Equation \eqref{conservation_mass}. This specific process demonstrates an even more fundamental relationship known as a \textit{conservation law}. More generally, for some integrated property $\phi$, the rate of change of $\phi$ within a control volume must be equal to the amount of $\phi$ lost or gained through the boundaries of the control volume plus what is created or consumed by any sinks or sources, $s$, within the volume (sinks having positive orientation to match the positive orientation of the outward-facing normal $\vb{n}$) \cite{}. 
+Through the continuum hypothesis and conservation of mass, we have now arrived at the continuity equation in Equation \eqref{conservation_mass}. This specific process demonstrates an even more fundamental relationship known as a \textit{conservation law}. More generally, for some integrated property $\phi$, the rate of change of $\phi$ within a control volume must equal the amount of $\phi$ lost or gained through the boundaries of the control volume plus what is created or consumed by any sinks or sources, $s$, within the volume (sinks having positive orientation to match the positive orientation of the outward-facing normal $\vb{n}$) \cite{}: 
 \begin{equation} \label{conservation_law}
-\dfrac{\partial \phi}{\partial t} +  \nabla \cdot \left(\phi \, \vb{v} \right) + s \,  = 0
+\dfrac{\partial \phi}{\partial t} +  \nabla \cdot \left(\phi \, \vb{v} \right) + s \,  = 0.
 \end{equation}
-In addition to this concept applying to conservation of mass, as was seen in this section, the idea outlined by Equation \eqref{conservation_law} applies to conservation of momentum and energy within the fluid. Together, these expressions combine to form the basis of the Navier-Stokes Equations, as will be seen in more detail in chapter 2. The important takeaway from this section is that with the continuum hypothesis and fundamental laws of physics, one can adequately capture macroscopic flow behavior for the types of flows we are interested in within this work.  
+In addition to this concept applying to conservation of mass, as was seen in this section, the idea outlined by Equation \eqref{conservation_law} applies to conservation of momentum and energy within the fluid. Together, these expressions combine to form the basis of the Navier-Stokes Equations, as will be seen in more detail in Chapter 2. The important takeaway from this section is that with the continuum hypothesis and fundamental laws of physics, one can adequately capture macroscopic flow behavior for the types of flows we are interested in within this work.  
 
 \subsection{Equation of State}
-Conservation of mass, momentum, and energy gives us five equations to describe our fluid system. For compressible flows, this is not enough information to solve for all the unknowns within the system of coupled partial differential equations. A sixth equation, known as the \gls{eos}, must be chosen in order to close the system. The \gls{eos} relates three of the six unknowns: pressure, temperature, and density. Here we will briefly discuss some \gls{eos} options and their distinguishing characteristics in order to motivate the choice made for this work. 
+Conservation of mass, momentum, and energy gives us five equations to describe our fluid system. For compressible flows, this is not enough information to solve for all the unknowns within the system of coupled partial differential equations. A sixth equation, known as the \gls{eos}, must be chosen in order to close the system. The \gls{eos} relates three of the six unknowns: pressure, temperature, and density. Here we briefly discuss some \gls{eos} options and their distinguishing characteristics in order to motivate the choice made for this work. 
 
 The simplest option available is the ideal gas \gls{eos}, which comes from the ideal gas law. This \gls{eos} relates density, pressure, and temperature in the following manner: 
 \begin{equation} \label{ideal_gas}
@@ -161,15 +161,15 @@ p = \dfrac{RT}{V_m}
 \end{equation}
 where $p$ is pressure, $R$ is the universal gas constant, $T$ is temperature, and $V_m = \tfrac{V}{n}$ is the molar volume of the fluid (it is common to express density in terms of molar volume for sake of simplicity in writing the \gls{eos} with $V$ being volume and $n$ being the number of moles). The ideal gas \gls{eos} is fairly accurate for liquids and gases at moderate temperatures and low pressures. It fails at low temperatures and high pressures, especially near the transition region from gas to liquid. The inaccuracy noted in this region means this \gls{eos} would not be suitable for the area of interest within this study. 
 
-Cubic \gls{eos} generally provide more accuracy than the ideal gas \gls{eos}. The first cubic \gls{eos} was developed by van der Waal in 1873, modifying the ideal gas \gls{eos} to take into consideration the finite size of molecules and interactions between molecules (the ideal gas \gls{eos} only accounts for interactions with the container and treats molecules as point particles). Other cubic \gls{eos} can be thought of as modifications from this base form: 
+Cubic \gls{eos} generally provide more accuracy than the ideal gas \gls{eos}. The first cubic \gls{eos} was developed by van der Waal in 1873 \cite{}, modifying the ideal gas \gls{eos} to take into consideration the finite size of molecules and interactions between molecules (the ideal gas \gls{eos} only accounts for interactions with the container and treats molecules as point particles). Other cubic \gls{eos} can be thought of as modifications from this base form: 
 \begin{equation} \label{vanderwaal}
-p = \dfrac{RT}{V_m - b} - \dfrac{a}{V_m^2}
+p = \dfrac{RT}{V_m - b} - \dfrac{a}{V_m^2},
 \end{equation}
 where $a$ and $b$ are constants related to the pressure and temperature at the critical point, $p_c$ and $T_c$ respectively: 
-$$a = \dfrac{27(RT_c)^2}{64p_c}\,, \quad b = \dfrac{RT_c}{8p_c}$$
-One of the main benefits of using a cubic \gls{eos} is that they can have comparable and sometimes even better accuracy compared to their higher order counterparts, thus reducing computational costs. However, it is important to take into consideration the regime of interest in addition to the fluid of interest when choosing an \gls{eos}, as each one has its own pros and cons. For example, molecule polarity and density are two factors that can have a high impact in selection between the \gls{srk} and \gls{pr} alone \cite{GHANBARI201713}. 
+$$a = \dfrac{27(RT_c)^2}{64p_c}\,, \quad b = \dfrac{RT_c}{8p_c}.$$
+One of the main benefits of using a cubic \gls{eos} is that they can have comparable and sometimes even better accuracy compared to their higher-order counterparts, thus reducing computational costs. However, it is important to take into consideration the regime of interest in addition to the fluid of interest when choosing an \gls{eos}, as each one has its own pros and cons. For example, molecule polarity and density are two factors that can have a high impact in selection between the \gls{srk} and \gls{pr} alone \cite{GHANBARI201713}. 
 
-This work uses the \gls{srk} as will be more thoroughly introduced in chapter 2. It has been shown that this equation of state is fairly accurate for the parameter regime under careful consideration in this work \cite{}. This accuracy is detailed further in chapter 3 through comparisons with data from \gls{nist}. Overall, when adequately considered, the \gls{eos} is the key avenue to incorporating specific fluid properties into the mathematical model.
+This work uses the \gls{srk} as will be more thoroughly introduced in Chapter 2. It has been shown that this equation of state is fairly accurate for the parameter regime under careful consideration in this work \cite{}. This accuracy is detailed further in Chapter 3 through comparisons with data from \gls{nist}. Overall, when adequately considered, the \gls{eos} is the key avenue to incorporating specific fluid properties into the mathematical model.
 
 
 \section{Turbulence}
@@ -192,7 +192,7 @@ The Reynolds number is a dimensionless value that can be used to distinguish lam
 \text{Re} = \frac{\rho u L}{\mu}
 \end{equation}
 
-\noindent where $\rho$ and $\mu$ are the density and dynamic viscosity of the fluid, respectively, $u$ is the flow velocity, and $L$ is a characteristic length scale associated with the given flow scenario (e.g., pipe diameter). As is demonstrated by the ratio in Equation \eqref{Reynolds_num}, the Reynolds number measures the relative effects of inertial forces compared to viscous forces within a given flow scenario. A small Reynolds number signifies the dominance of viscous forces; fluid parcels moving in tandem want to ``stick together," resulting in the sheared flow and parallel trajectories seen in laminar flow. Turbulence is then characterized by a large Reynolds number, where inertial forces take precedence. Here, deviations within the laminar flow field result in lateral mixing between shear layers. This creates eddies and random trajectories that result in the chaotic motion of turbulent flow. 
+\noindent where $\rho$ and $\mu$ are the density and dynamic viscosity of the fluid, respectively, $u$ is the characteristic flow velocity, and $L$ is a characteristic length scale associated with the given flow scenario (e.g., pipe diameter). As is demonstrated by the ratio in Equation \eqref{Reynolds_num}, the Reynolds number measures the relative effects of inertial forces compared to viscous forces within a given flow scenario. A small Reynolds number signifies the dominance of viscous forces; fluid parcels moving in tandem want to ``stick together," resulting in the sheared flow and parallel trajectories seen in laminar flow. Turbulence is then characterized by a large Reynolds number, where inertial forces take precedence. Here, deviations within the laminar flow field result in lateral mixing between shear layers. This creates eddies and random trajectories that result in the chaotic motion of turbulent flow. 
 
 This work focuses on the turbulent round jet and its associated dynamics in the context of supercritical fluids. The remainder of this section details a brief overview of important turbulence concepts and numerical methods developed for studying turbulence in order to motivate the modeling and numerical choices made within this work.
 
@@ -204,7 +204,7 @@ Turbulent motion contains a wide range of scales. Richardson formalized this con
 \begin{aligned}
 \eta &\equiv \left(  \nu^3/\varepsilon \right)^{1/4}, \\
 u_{\eta} &\equiv \left(  \nu \varepsilon \right)^{1/4}, \\
-\tau_{\eta} &\equiv \left(  \nu/ \varepsilon \right)^{1/2} 
+\tau_{\eta} &\equiv \left(  \nu/ \varepsilon \right)^{1/2}. 
 \end{aligned}
 \end{equation}
 While the continuum description introduced in the previous section is still valid for turbulent flows, this vast scale separation and the random nature of fluctuations across these scales, including a dependence on problem-specific flow configurations and boundary conditions, make universal solutions to these types of problems unattainable. To that end, numerical simulations are invaluable in studying turbulence phenomena. 
