@@ -1,7 +1,7 @@
 \chapter{Transport Coefficients}
 \section*{EGLib Low Pressure Approximation Coefficients} 
 \begin{table}[!h]
-\caption{Coefficients for EGLib Polynomials \cite{ERN1995105} used to model transport quantities as described in Equation \ref{EGLib}}
+\caption{Coefficients for EGLib Polynomials \cite{ERN1995105} used to model transport quantities as described in Equation \eqref{EGLib}}
 \label{EGLibCoeffs}
 \begin{center}
 \begin{tabular}{ r || r r }
@@ -16,25 +16,37 @@ $i$ & $a_{\mu,i}$& $a_{\lambda,i}$  \\
 \end{table}
 
 \section*{Chung High Pressure Corrections}
-Chung et al. \cite{chung:1988} details the derivation of these general transport coefficients via their regression analysis of various fluids. The coefficients for the linear approximation are printed here for convenience as they are implemented in \textit{PelePhysics} \cite{}.  
+Chung et al. \cite{chung:1988} details the derivation of these general transport coefficients via their regression analysis of various fluids. The coefficients for the linear approximation are printed here for convenience as they are implemented in \textit{PelePhysics} \cite{PelePhysics}.  
 
 \begin{table}[!h]
 \caption{Quantities used in part for Chung's High Pressure Corrections. Values gathered from EGLib approximations \cite{ERN1995105}}
 \label{transport-coeffs-other}
 \begin{center}
-\begin{tabular}{|rr|}
+\begin{tabular}{ r || r }
+Transport Quantity, Symbol (Units)& Value  \\
 \hline
-\multicolumn{2}{|c|}{{\bf Transport constants}}     \\ \hline
-\multicolumn{1}{|r||}{$M$} & $\num{4.400995e1}$ \\ \hline
-\multicolumn{1}{|r||}{lenny-j. pot. well depth} & $\num{2.440000e2}$ \\ \hline
-\multicolumn{1}{|r||}{lenny-j. collision diam.} & $3.763$ \\ \hline
-\multicolumn{1}{|r||}{dipole moment} & $0.000$ \\ \hline
-\multicolumn{1}{|r||}{polarizability} & $2.650$ \\ \hline
-\multicolumn{1}{|r||}{rot. relax. coll. num.} & $2.100$ \\ \hline
-\multicolumn{1}{|r||}{egtransetNLIN} & $1$ \\ \hline
+Molar Mass, $M$ (g/mol) & $\num{4.400995e1}$  \\
+Lennard Jones Potential Well Depth, $\epsilon_k$ (K)& $\num{2.440000e2}$  \\
+Lennard Jones Collision Diameter, $\sigma$ (\AA) & $3.763$  \\
+Reduced Diple Moment, $\mu_r$ (D) & $0.0$  \\
+Association Factor, $\kappa$ & $0.0$
 \end{tabular}
 \end{center}
 \end{table}
+%\begin{center}
+%\begin{tabular}{|rr|}
+%\hline
+%\multicolumn{2}{|c|}{{\bf Transport constants}}     \\ \hline
+%\multicolumn{1}{|r||}{$M$} & $\num{4.400995e1}$ \\ \hline
+%\multicolumn{1}{|r||}{lenny-j. pot. well depth} & $\num{2.440000e2}$ \\ \hline
+%\multicolumn{1}{|r||}{lenny-j. collision diam.} & $3.763$ \\ \hline
+%\multicolumn{1}{|r||}{dipole moment} & $0.000$ \\ \hline
+%\multicolumn{1}{|r||}{polarizability} & $2.650$ \\ \hline
+%\multicolumn{1}{|r||}{rot. relax. coll. num.} & $2.100$ \\ \hline
+%\multicolumn{1}{|r||}{egtransetNLIN} & $1$ \\ \hline
+%\end{tabular}
+%\end{center}
+%\end{table}
 
 
 %Table II. Constants Used for the Generalized Viscosity Correlation

@@ -19,25 +19,6 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
-    \entry{Emissions_2023}{misc}{}
-      \list{publisher}{1}{%
-        {Environmental Protection Agency}%
-      }
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
-      \field{journaltitle}{Greenhouse Gas Emissions}
-      \field{month}{4}
-      \field{year}{2023}
-      \verb{url}
-      \verb https://www.epa.gov/ghgemissions/overview-greenhouse-gases
-      \endverb
-    \endentry
-    \entry{PeleC_doc}{misc}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{howpublished}{\url{https://amrex-combustion.github.io/PeleC/}}
-      \field{journaltitle}{PeleC - PeleC 0.1 documentation}
-    \endentry
     \entry{Aggarwal}{article}{}
       \name{author}{2}{}{%
         {{hash=778a5b235aff8d3748f5978206ae5cb0}{%
@@ -67,36 +48,6 @@
       \range{pages}{16}
       \verb{url}
       \verb https://journalsonline.org/american-journal-of-engineering-science-and-technology/pdfs/volume-10/4.pdf
-      \endverb
-    \endentry
-    \entry{ROGALEV2020}{proceedings}{}
-      \name{author}{1}{}{%
-        {{hash=676295328a94994907899f848ee1bbe3}{%
-           family={al},
-           familyi={a\bibinitperiod},
-           given={A\bibnamedelima N\bibnamedelima Rogalev},
-           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim R\bibinitperiod},
-           prefix={et},
-           prefixi={e\bibinitperiod}}}%
-      }
-      \strng{namehash}{676295328a94994907899f848ee1bbe3}
-      \strng{fullhash}{676295328a94994907899f848ee1bbe3}
-      \strng{authornamehash}{676295328a94994907899f848ee1bbe3}
-      \strng{authorfullhash}{676295328a94994907899f848ee1bbe3}
-      \field{sortinit}{a}
-      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This paper discloses computer simulation results of thermos-hydraulic processes in cooling channels of carbon dioxide turbines used in oxy-fuel power production facilities. Stream cooling systems may be modified by the installation of shadowing ribs on the pressure and suction sides of a hollow blade and this intensifies heat transfer and reduces the cooling agent flow. The heat transfer maximal intensity is obtained at the distance between deflector orifice and shadowing fin of 0.25 orifice diameter. Change of the shadowing fin cross-section shape from oval to circular causes increases of the channel hydraulic resistance for 20?28\% and the mean Nusselt number for 8?25\%.}
-      \field{series}{Journal of Physics: Conference Series}
-      \field{title}{Numerical research of the influence of the geometric parameters of shadowing fins on the intensity of jet cooling by supercritical carbon dioxide}
-      \field{volume}{1683}
-      \field{year}{2020}
-      \verb{doi}
-      \verb doi:10.1088/1742-6596/1683/2/022050
-      \endverb
-      \verb{url}
-      \verb https://iopscience.iop.org/article/10.1088/1742-6596/1683/2/022050/pdf
       \endverb
     \endentry
     \entry{ALKANDARI2022122949}{article}{}
@@ -294,6 +245,81 @@
       \field{title}{PelePhysics}
       \field{year}{2022}
     \endentry
+    \entry{anekwe2023carbon}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4421727368ef19be1e8bcf4c67899bc2}{%
+           family={Anekwe},
+           familyi={A\bibinitperiod},
+           given={Ifeanyi\bibnamedelimb Michael\bibnamedelima Smarte},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=61f6626fd0915c07128b5c59395449ef}{%
+           family={Tetteh},
+           familyi={T\bibinitperiod},
+           given={Emmanuel\bibnamedelima Kweinor},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=e6456e78842015d7132026665ba9b7f8}{%
+           family={Akpasi},
+           familyi={A\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=718e92c528575dcdca65d1656bc588a5}{%
+           family={Atuman},
+           familyi={A\bibinitperiod},
+           given={Samaila\bibnamedelima Joel},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9ea1984b891265eeede7926de0009ecc}{%
+           family={Armah},
+           familyi={A\bibinitperiod},
+           given={Edward\bibnamedelima Kwaku},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=a093892c4cd65b861d33a7f3ed8e5cdb}{%
+           family={Isa},
+           familyi={I\bibinitperiod},
+           given={Yusuf\bibnamedelima Makarfi},
+           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c84e688aa3a466f43559b2b5a67ba8e2}
+      \strng{fullhash}{b4ac8d762419878d3b7bbdab6bac3af1}
+      \strng{authornamehash}{c84e688aa3a466f43559b2b5a67ba8e2}
+      \strng{authorfullhash}{b4ac8d762419878d3b7bbdab6bac3af1}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Green Sustainable Process for Chemical and Environmental Engineering and Science}
+      \field{title}{Carbon dioxide capture and sequestration technologies--current perspective, challenges and prospects}
+      \field{year}{2023}
+      \field{pages}{481\bibrangedash 516}
+      \range{pages}{36}
+    \endentry
+    \entry{lesvsransvsdns_pic}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=96aaf31ac26e7dbefeb2baf7bcc41056}{%
+           family={Bakker},
+           familyi={B\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {www.bakker.org}%
+      }
+      \strng{namehash}{96aaf31ac26e7dbefeb2baf7bcc41056}
+      \strng{fullhash}{96aaf31ac26e7dbefeb2baf7bcc41056}
+      \strng{authornamehash}{96aaf31ac26e7dbefeb2baf7bcc41056}
+      \strng{authorfullhash}{96aaf31ac26e7dbefeb2baf7bcc41056}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lectures on Applied Computational Fluid Dynamics}
+      \field{year}{2008}
+      \verb{url}
+      \verb https://www.bakker.org/Lectures-Applied-CFD.pdf
+      \endverb
+    \endentry
     \entry{BANUTI201512}{article}{}
       \name{author}{1}{}{%
         {{hash=e69f598abfcc0e06f4fb0d1d26cc61b0}{%
@@ -384,6 +410,87 @@
       \verb{doi}
       \verb 10.4249/scholarpedia.3439
       \endverb
+    \endentry
+    \entry{benzi_2011}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=97d47459f718c959cf99db90e6b2e02e}{%
+           family={Benzi},
+           familyi={B\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=2cf0eba2610102ca79a3fc978b52355c}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Peter\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=60b51a2b7b186bd43750ca4dee2f06b0}{%
+           family={Kaneda},
+           familyi={K\bibinitperiod},
+           given={Yukio},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=85f3c7c3a46a43c0d897c8c7627a8385}{%
+           family={Moffatt},
+           familyi={M\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2f03e549d16b5892d53eafc72c584137}{%
+           family={Sreenivasan},
+           familyi={S\bibinitperiod},
+           given={Katepalli\bibnamedelima R.Editors},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{97d47459f718c959cf99db90e6b2e02e}
+      \strng{fullhash}{97d47459f718c959cf99db90e6b2e02e}
+      \strng{authornamehash}{97d47459f718c959cf99db90e6b2e02e}
+      \strng{authorfullhash}{97d47459f718c959cf99db90e6b2e02e}
+      \strng{editornamehash}{0acf479f9d5787acc9811117b6e4067d}
+      \strng{editorfullhash}{2ec0903ea33041bbf520bca75c50272b}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{A Voyage Through Turbulence}
+      \field{title}{Lewis Fry Richardson}
+      \field{year}{2011}
+      \field{pages}{187?208}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/CBO9781139018241.006
+      \endverb
+    \endentry
+    \entry{boersma1999large}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f3628bbafb7e62bde50799edd63cc79b}{%
+           family={Boersma},
+           familyi={B\bibinitperiod},
+           given={BJ},
+           giveni={B\bibinitperiod}}}%
+        {{hash=77a55ce76869a67bc1a1d7139438875c}{%
+           family={Lele},
+           familyi={L\bibinitperiod},
+           given={SK},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{bc24e88d62956ebceab1b604691c5bd8}
+      \strng{fullhash}{bc24e88d62956ebceab1b604691c5bd8}
+      \strng{authornamehash}{bc24e88d62956ebceab1b604691c5bd8}
+      \strng{authorfullhash}{bc24e88d62956ebceab1b604691c5bd8}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Center for Turbulence Research, Annual Research Briefs}
+      \field{number}{365-377}
+      \field{title}{Large eddy simulation of compressible turbulent jets}
+      \field{year}{1999}
     \endentry
     \entry{iso_comp_2}{article}{}
       \name{author}{3}{}{%
@@ -538,6 +645,43 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0196890421001485
       \endverb
       \keyw{Oxy-fuel combustion,Allam cycle,LNG,Carbon capture,Exergoeconomic,Multi-objective optimization}
+    \endentry
+    \entry{chehroudi2002cryogenic}{article}{}
+      \name{author}{3}{}{%
+        {{hash=52a8f8f77f34766eaefeb287ba65262d}{%
+           family={Chehroudi},
+           familyi={C\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a518b9ed21e2f28ff9ba97c6fd4366ea}{%
+           family={Cohn},
+           familyi={C\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=81c6ee95d257b5d717669e222cb9d84f}{%
+           family={Talley},
+           familyi={T\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{895c8bdd8cca1ddabe3c2b6c4ff85889}
+      \strng{fullhash}{895c8bdd8cca1ddabe3c2b6c4ff85889}
+      \strng{authornamehash}{895c8bdd8cca1ddabe3c2b6c4ff85889}
+      \strng{authorfullhash}{895c8bdd8cca1ddabe3c2b6c4ff85889}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Heat and Fluid Flow}
+      \field{number}{5}
+      \field{title}{Cryogenic shear layers: experiments and phenomenological modeling of the initial growth rate under subcritical and supercritical conditions}
+      \field{volume}{23}
+      \field{year}{2002}
+      \field{pages}{554\bibrangedash 563}
+      \range{pages}{10}
     \endentry
     \entry{chung:1988}{article}{}
       \name{author}{4}{}{%
@@ -731,6 +875,53 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0306261917301915
       \endverb
       \keyw{Supercritical,Carbon dioxide,sCO,Efficiency,Stand-alone,Combined cycle}
+    \endentry
+    \entry{dindi2022policy}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c1a472e0eb2257e8b1e674ed8f9f4199}{%
+           family={Dindi},
+           familyi={D\bibinitperiod},
+           given={Abdallah},
+           giveni={A\bibinitperiod}}}%
+        {{hash=956dbd72d802e0ac2167df0708122955}{%
+           family={Coddington},
+           familyi={C\bibinitperiod},
+           given={Kipp},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f303cd79dc9ba41bb05f4210e56a70ed}{%
+           family={Garofalo},
+           familyi={G\bibinitperiod},
+           given={Jada\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=3514051ddeb5111e7539f063f3891bda}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Wanying},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d6884f7054064181a06e591196884c03}{%
+           family={Zhai},
+           familyi={Z\bibinitperiod},
+           given={Haibo},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{01d36e912f2558465271c507c0e57148}
+      \strng{fullhash}{3549b6964da0b6b4a39ccd346e18fbfa}
+      \strng{authornamehash}{01d36e912f2558465271c507c0e57148}
+      \strng{authorfullhash}{3549b6964da0b6b4a39ccd346e18fbfa}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Science \& Technology}
+      \field{number}{14}
+      \field{title}{Policy-driven potential for deploying carbon capture and sequestration in a fossil-rich power sector}
+      \field{volume}{56}
+      \field{year}{2022}
+      \field{pages}{9872\bibrangedash 9881}
+      \range{pages}{10}
     \endentry
     \entry{Dodge}{misc}{}
       \name{author}{1}{}{%
@@ -937,6 +1128,50 @@
       \field{note}{Accessed: 2019-08-08}
       \field{title}{Explore, use, make the most of supercritical fluids}
       \field{year}{2009}
+    \endentry
+    \entry{finite_volume_ref}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=fd541e738566091fb5652a5d456e6af2}{%
+           family={Eymard},
+           familyi={E\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f95c256b1fd0dc9363e718d8db829deb}{%
+           family={Gallouët},
+           familyi={G\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c37c6d7e5cc990999acf92e244a7abf5}{%
+           family={Herbin},
+           familyi={H\bibinitperiod},
+           given={Raphaèle},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e26f2cae69bdf6061d64e69cde69f8f8}
+      \strng{fullhash}{e26f2cae69bdf6061d64e69cde69f8f8}
+      \strng{authornamehash}{e26f2cae69bdf6061d64e69cde69f8f8}
+      \strng{authorfullhash}{e26f2cae69bdf6061d64e69cde69f8f8}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Solution of Equation in Rn (Part 3), Techniques of Scientific Computing (Part 3)}
+      \field{issn}{1570-8659}
+      \field{series}{Handbook of Numerical Analysis}
+      \field{title}{Finite volume methods}
+      \field{volume}{7}
+      \field{year}{2000}
+      \field{pages}{713\bibrangedash 1018}
+      \range{pages}{306}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S1570-8659(00)07005-8
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1570865900070058
+      \endverb
     \endentry
     \entry{favre}{article}{}
       \name{author}{1}{}{%
@@ -1470,6 +1705,39 @@
       \verb 10.1109/SC41405.2020.00095
       \endverb
     \endentry
+    \entry{kee1989chemkin}{report}{}
+      \name{author}{3}{}{%
+        {{hash=d5d959e05a965cb864452133cf1d4bd5}{%
+           family={Kee},
+           familyi={K\bibinitperiod},
+           given={Robert\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c96693326125dec1a328668fd600a641}{%
+           family={Rupley},
+           familyi={R\bibinitperiod},
+           given={Fran\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e54cf9789f9a62844d61bc87a6326f96}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Sandia National Lab.(SNL-CA), Livermore, CA (United States)}%
+      }
+      \strng{namehash}{f11f8c49cf1e36c9ce6f7f25abdfeb39}
+      \strng{fullhash}{f11f8c49cf1e36c9ce6f7f25abdfeb39}
+      \strng{authornamehash}{f11f8c49cf1e36c9ce6f7f25abdfeb39}
+      \strng{authorfullhash}{f11f8c49cf1e36c9ce6f7f25abdfeb39}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chemkin-II: A Fortran chemical kinetics package for the analysis of gas-phase chemical kinetics}
+      \field{type}{techreport}
+      \field{year}{1989}
+    \endentry
     \entry{freejet}{thesis}{}
       \name{author}{1}{}{%
         {{hash=f8144452db5b91619169abdb26778307}{%
@@ -1559,6 +1827,41 @@
       \field{year}{1941}
       \field{pages}{301\bibrangedash 305}
       \range{pages}{5}
+    \endentry
+    \entry{kolmogorov_scales}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6dd5ad82ab13b9c19c378468ccf47d80}{%
+           family={Kolmogorov},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{6dd5ad82ab13b9c19c378468ccf47d80}
+      \strng{fullhash}{6dd5ad82ab13b9c19c378468ccf47d80}
+      \strng{authornamehash}{6dd5ad82ab13b9c19c378468ccf47d80}
+      \strng{authorfullhash}{6dd5ad82ab13b9c19c378468ccf47d80}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09628444}
+      \field{journaltitle}{Proceedings: Mathematical and Physical Sciences}
+      \field{number}{1890}
+      \field{title}{The Local Structure of Turbulence in Incompressible Viscous Fluid for Very Large Reynolds Numbers}
+      \field{urlday}{15}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
+      \field{volume}{434}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{9\bibrangedash 13}
+      \range{pages}{5}
+      \verb{url}
+      \verb http://www.jstor.org/stable/51980
+      \endverb
     \endentry
     \entry{10.1063/1.5054797}{article}{}
       \name{author}{5}{}{%
@@ -1706,6 +2009,39 @@
       \field{year}{2018}
       \verb{doi}
       \verb https://doi.org/10.18434/T4D303
+      \endverb
+    \endentry
+    \entry{LennardJones_1931}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e5b73c1380cf961e0c1d8c4a48c69981}{%
+           family={Lennard-Jones},
+           familyi={L\bibinithyphendelim J\bibinitperiod},
+           given={J\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{0}{%
+      }
+      \strng{namehash}{e5b73c1380cf961e0c1d8c4a48c69981}
+      \strng{fullhash}{e5b73c1380cf961e0c1d8c4a48c69981}
+      \strng{authornamehash}{e5b73c1380cf961e0c1d8c4a48c69981}
+      \strng{authorfullhash}{e5b73c1380cf961e0c1d8c4a48c69981}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Physical Society}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{Cohesion}
+      \field{volume}{43}
+      \field{year}{1931}
+      \field{pages}{461}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0959-5309/43/5/301
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/0959-5309/43/5/301
       \endverb
     \endentry
     \entry{Li2012}{article}{}
@@ -2460,6 +2796,21 @@
       \verb https://tigerprints.clemson.edu/all_dissertations/3073
       \endverb
     \endentry
+    \entry{Emissions_2023}{misc}{}
+      \list{publisher}{1}{%
+        {Environmental Protection Agency}%
+      }
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Greenhouse Gas Emissions}
+      \field{month}{4}
+      \field{title}{Overview of Greenhouse Gases}
+      \field{year}{2023}
+      \verb{url}
+      \verb https://www.epa.gov/ghgemissions/overview-greenhouse-gases
+      \endverb
+    \endentry
     \entry{PAINE19941-1}{incollection}{}
       \name{author}{4}{}{%
         {{hash=9b8a0cc696ee387051d36b626bc80ade}{%
@@ -2518,6 +2869,14 @@
       \verb https://www.sciencedirect.com/science/article/pii/B9780750611954500051
       \endverb
       \warn{\item Range field 'pages' in entry 'PAINE19941-1' is malformed, falling back to literal}
+    \endentry
+    \entry{PeleC_doc}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://amrex-combustion.github.io/PeleC/}}
+      \field{journaltitle}{PeleC - PeleC 0.1 documentation}
+      \field{title}{PeleC - PeleC 0.1 documentation}
     \endentry
     \entry{commercialization}{inproceedings}{}
       \name{author}{4}{}{%
@@ -2643,6 +3002,70 @@
       \verb https://www.sciencedirect.com/science/article/pii/B9780128207741000094
       \endverb
       \keyw{turbulence simulations,large-eddy simulations,subfilter models}
+    \endentry
+    \entry{poinsot1992boundary}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4c73c14a3e053ddf7bdc5a3ef774cb6e}{%
+           family={Poinsot},
+           familyi={P\bibinitperiod},
+           given={T\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=77a55ce76869a67bc1a1d7139438875c}{%
+           family={Lele},
+           familyi={L\bibinitperiod},
+           given={SK},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a38fd931599f57249df097de18d7a21d}
+      \strng{fullhash}{a38fd931599f57249df097de18d7a21d}
+      \strng{authornamehash}{a38fd931599f57249df097de18d7a21d}
+      \strng{authorfullhash}{a38fd931599f57249df097de18d7a21d}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of computational physics}
+      \field{number}{1}
+      \field{title}{Boundary conditions for direct simulations of compressible viscous flows}
+      \field{volume}{101}
+      \field{year}{1992}
+      \field{pages}{104\bibrangedash 129}
+      \range{pages}{26}
+    \endentry
+    \entry{poling2001properties}{book}{}
+      \name{author}{3}{}{%
+        {{hash=a05d7573d6924e69ef1b7025eaddd20e}{%
+           family={Poling},
+           familyi={P\bibinitperiod},
+           given={Bruce\bibnamedelima E},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=d41529b518bbf1364b6597875915a122}{%
+           family={Prausnitz},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a8afd2d8e1023eee74e7ea164b30d910}{%
+           family={O'Connell},
+           familyi={O\bibinitperiod},
+           given={John\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{16c5ec56bd5b2fbefede7440b48af524}
+      \strng{fullhash}{16c5ec56bd5b2fbefede7440b48af524}
+      \strng{authornamehash}{16c5ec56bd5b2fbefede7440b48af524}
+      \strng{authorfullhash}{16c5ec56bd5b2fbefede7440b48af524}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Properties of gases and liquids}
+      \field{year}{2001}
     \endentry
     \entry{Pope}{book}{}
       \name{author}{1}{}{%
@@ -2789,6 +3212,78 @@
       \endverb
       \keyw{supercritical carbon dioxide,mixing characteristics,jet,phase}
     \endentry
+    \entry{RASMUSSEN2021105141}{article}{}
+      \name{author}{3}{}{%
+        {{hash=12cad2849a904e40a48c7aa3ce9ba397}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod}}}%
+        {{hash=53a0760495a3356bdb5498f10653f6ae}{%
+           family={Yellapantula},
+           familyi={Y\bibinitperiod},
+           given={Shashank},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4649ae9d61ecdd74a57d8767f4cd835a}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima James},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d9bcbe31524ff6872f07191f2d99c81}
+      \strng{fullhash}{0d9bcbe31524ff6872f07191f2d99c81}
+      \strng{authornamehash}{0d9bcbe31524ff6872f07191f2d99c81}
+      \strng{authorfullhash}{0d9bcbe31524ff6872f07191f2d99c81}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Increasing application of supercritical fluids leads to increased use of numerical simulations to guide designs. However, the impact of Equations of State (EoS) selection on computational cost and accuracy is not well understood. Laminar flow around a heated cylinder is used as a test case. A robust matrix of 99-simulations is used to analyze the flow of carbon dioxide just above the critical point at the isobaric condition of 8�MPa and temperatures between 305 and 390�K. Four EoS were studied: Ideal Gas Law, cubic EoS?s Peng-Robinson and Soave-Redlich-Kwong, and the Span-Wagner EoS. Results were identical for isothermal cases, but for heated or cooled cases, the high-fidelity Span-Wagner EoS simulations presented drastically different wake structures. Compared to the high-fidelity SW EoS, cEoS?s underestimated Nu values by up to 38\% and cEoS?s underestimated CD values by 18?42\%. The Span-Wagner EoS required only 17\% more computation time then the cubic EoS simulations, making the Span-Wagner EoS recommended for engineering design.}
+      \field{issn}{0896-8446}
+      \field{journaltitle}{The Journal of Supercritical Fluids}
+      \field{title}{How equation of state selection impacts accuracy near the critical point: Forced convection supercritical CO2 flow over a cylinder}
+      \field{volume}{171}
+      \field{year}{2021}
+      \field{pages}{105141}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.supflu.2020.105141
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0896844620303922
+      \endverb
+      \keyw{Supercritical Phase,Carbon dioxide,Equation of state,Numerical analysis,Heat transfer}
+    \endentry
+    \entry{ries2021supercritical}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2cf7b30d16e4031fff4abd4fa71021e4}{%
+           family={Ries},
+           familyi={R\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4148dd57f76889d2fd13632512a0e5c3}{%
+           family={Sadiki},
+           familyi={S\bibinitperiod},
+           given={Amsini},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Begel House Inc.}%
+      }
+      \strng{namehash}{a0963b6a803597698f83230f8bb5cd70}
+      \strng{fullhash}{a0963b6a803597698f83230f8bb5cd70}
+      \strng{authornamehash}{a0963b6a803597698f83230f8bb5cd70}
+      \strng{authorfullhash}{a0963b6a803597698f83230f8bb5cd70}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Atomization and Sprays}
+      \field{number}{5}
+      \field{title}{Supercritical and transcritical turbulent injection processes: Consistency of numerical modeling}
+      \field{volume}{31}
+      \field{year}{2021}
+    \endentry
     \entry{DNS_N}{article}{}
       \name{author}{5}{}{%
         {{hash=2cf7b30d16e4031fff4abd4fa71021e4}{%
@@ -2858,6 +3353,36 @@
       \verb https://8rivers.com/portfolio/the-allam-fetvedt-cycle-and-net-power/
       \endverb
       \warn{\item Entry '8Rivers' (myrefs.bib): Invalid format '2023-18-04' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{roberts2002turbulent}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=9378785cfa76df7e585997085730d8d0}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Philip\bibnamedelima JW},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=020403f7e3c55ee3d5208342b02454e2}{%
+           family={Webster},
+           familyi={W\bibinitperiod},
+           given={Donald\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ASCE Press, Reston, Virginia}%
+      }
+      \strng{namehash}{0d2e79602e9d9db7ad6d43cff40ab4e6}
+      \strng{fullhash}{0d2e79602e9d9db7ad6d43cff40ab4e6}
+      \strng{authornamehash}{0d2e79602e9d9db7ad6d43cff40ab4e6}
+      \strng{authorfullhash}{0d2e79602e9d9db7ad6d43cff40ab4e6}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Fluid Mechanics-Theories and Application}
+      \field{title}{Turbulent diffusion}
+      \field{year}{2002}
+      \field{pages}{7\bibrangedash 47}
+      \range{pages}{41}
     \endentry
     \entry{article}{article}{}
       \name{author}{7}{}{%
@@ -3189,6 +3714,33 @@
       \endverb
       \keyw{SUPERCRITICAL fluidsCRITICAL temperatureCARBON dioxideMETHANEFLUIDS}
     \endentry
+    \entry{tarjan1972depth}{article}{}
+      \name{author}{1}{}{%
+        {{hash=554d334d2af10fcbf6d59d1194d9191b}{%
+           family={Tarjan},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{fullhash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{authornamehash}{554d334d2af10fcbf6d59d1194d9191b}
+      \strng{authorfullhash}{554d334d2af10fcbf6d59d1194d9191b}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM journal on computing}
+      \field{number}{2}
+      \field{title}{Depth-first search and linear graph algorithms}
+      \field{volume}{1}
+      \field{year}{1972}
+      \field{pages}{146\bibrangedash 160}
+      \range{pages}{15}
+    \endentry
     \entry{VANLEER1979101}{article}{}
       \name{author}{1}{}{%
         {{hash=e4dbb5548ee6595814e0cda1047eb983}{%
@@ -3220,6 +3772,31 @@
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/0021999179901451
       \endverb
+    \endentry
+    \entry{vanderwaal}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=55d5914bc6eb364945aba02e96c89390}{%
+           family={Waals},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Leiden}%
+      }
+      \strng{namehash}{55d5914bc6eb364945aba02e96c89390}
+      \strng{fullhash}{55d5914bc6eb364945aba02e96c89390}
+      \strng{authornamehash}{55d5914bc6eb364945aba02e96c89390}
+      \strng{authorfullhash}{55d5914bc6eb364945aba02e96c89390}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{on the continuity of the gaseous and liquid states}
+      \field{type}{phdthesis}
+      \field{year}{1873}
     \endentry
     \entry{WANG201977}{article}{}
       \name{author}{8}{}{%
@@ -3487,6 +4064,38 @@
       \verb https://doi.org/10.1080/10407782.2016.1214485
       \endverb
     \endentry
+    \entry{weibel2003overview}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0e2193f627bc690ec664c17e608090c9}{%
+           family={Weibel},
+           familyi={W\bibinitperiod},
+           given={Gina\bibnamedelima L},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=6cdccacaa3c8474f6c40ae912454d460}{%
+           family={Ober},
+           familyi={O\bibinitperiod},
+           given={Christopher\bibnamedelima K},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1ab866b82b4a4d22730e51a080e9ad4a}
+      \strng{fullhash}{1ab866b82b4a4d22730e51a080e9ad4a}
+      \strng{authornamehash}{1ab866b82b4a4d22730e51a080e9ad4a}
+      \strng{authorfullhash}{1ab866b82b4a4d22730e51a080e9ad4a}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microelectronic Engineering}
+      \field{number}{1-2}
+      \field{title}{An overview of supercritical CO2 applications in microelectronics processing}
+      \field{volume}{65}
+      \field{year}{2003}
+      \field{pages}{145\bibrangedash 152}
+      \range{pages}{8}
+    \endentry
     \entry{WEILAND2017293}{incollection}{}
       \name{author}{5}{}{%
         {{hash=e8ea5d9fc6d2643d96376247d91a8b27}{%
@@ -3610,6 +4219,37 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1359431120339235
       \endverb
       \keyw{Supercritical carbon dioxide,sCO,Power generation,Turbomachinery,Heat exchangers,Control systems,Applications}
+    \endentry
+    \entry{yadav2022review}{article}{}
+      \name{author}{2}{}{%
+        {{hash=619b2b58a4a52df336d82a05784739bb}{%
+           family={Yadav},
+           familyi={Y\bibinitperiod},
+           given={Sujeet},
+           giveni={S\bibinitperiod}}}%
+        {{hash=252169df54ebd0dfc23edfffb187d23b}{%
+           family={Mondal},
+           familyi={M\bibinitperiod},
+           given={SS},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{57dff1e665b0d698fb29c9141571b23b}
+      \strng{fullhash}{57dff1e665b0d698fb29c9141571b23b}
+      \strng{authornamehash}{57dff1e665b0d698fb29c9141571b23b}
+      \strng{authorfullhash}{57dff1e665b0d698fb29c9141571b23b}
+      \field{sortinit}{Y}
+      \field{sortinithash}{f86c10978eb0c0879609ce6a4f43da7b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fuel}
+      \field{title}{A review on the progress and prospects of oxy-fuel carbon capture and sequestration (CCS) technology}
+      \field{volume}{308}
+      \field{year}{2022}
+      \field{pages}{122057}
+      \range{pages}{1}
     \endentry
     \entry{en14010106}{article}{}
       \name{author}{5}{}{%
@@ -4003,24 +4643,24 @@
     \endentry
     \entry{doi:10.1080/00102200500287613}{article}{}
       \name{author}{2}{}{%
-        {{hash=9b56840ac19ad4ff12dc9cf88239df0d}{%
-           family={ZONG},
+        {{hash=edd6be06716f3e14b7477dbce9ed9246}{%
+           family={Zong},
            familyi={Z\bibinitperiod},
-           given={NAN},
+           given={Nan},
            giveni={N\bibinitperiod}}}%
-        {{hash=ed619ecddfe0551ccd035019f0a444a1}{%
-           family={YANG*},
+        {{hash=ae758e6e612fa2f47bd01a540617212d}{%
+           family={Yang*},
            familyi={Y\bibinitperiod},
-           given={VIGOR},
+           given={Vigor},
            giveni={V\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Taylor & Francis}%
       }
-      \strng{namehash}{fb5b516b9b38905a5bfb3d97564f1b49}
-      \strng{fullhash}{fb5b516b9b38905a5bfb3d97564f1b49}
-      \strng{authornamehash}{fb5b516b9b38905a5bfb3d97564f1b49}
-      \strng{authorfullhash}{fb5b516b9b38905a5bfb3d97564f1b49}
+      \strng{namehash}{6e9dec05f856d8c74f7602a2043591cf}
+      \strng{fullhash}{6e9dec05f856d8c74f7602a2043591cf}
+      \strng{authornamehash}{6e9dec05f856d8c74f7602a2043591cf}
+      \strng{authorfullhash}{6e9dec05f856d8c74f7602a2043591cf}
       \field{sortinit}{Z}
       \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
       \field{labelnamesource}{author}

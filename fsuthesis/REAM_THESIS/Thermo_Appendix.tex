@@ -4,7 +4,7 @@
 \section*{Ideal Gas NASA Polynomial Fits Coefficients}
 
 \begin{table}[!h]
-\caption{Coefficients for NASA polynomials \cite{NASAPoly} used in modeling ideal thermodynamic quantities as described in Equation \ref{NASA_poly}}
+\caption{Coefficients for NASA polynomials \cite{NASAPoly} used in modeling ideal thermodynamic quantities as described in Equation \eqref{NASA_poly}}
 \label{NASA-Coeffs}
 \begin{center}
 \begin{tabular}{ r || r r r r }
@@ -19,43 +19,43 @@ $i$ & $c_{e_I,i}$ & $c_{v_I,i}$ & $c_{h_I,i}$ \\
 \end{center}
 \end{table}
 \section*{SRK-Related Derivatives} \label{SRK-Derives}
-Here are a few additional derivatives involving quantities related to the \gls{srk} that are used at various points for the computations within \textit{PelePhysics} \cite{}:
+Here are a few additional derivatives involving quantities related to the \gls{srk} that are used at various points for the computations within \textit{PelePhysics} \cite{PelePhysics}:
 
 \subsection*{Constant-Pressure Specific Heat}
 \begin{equation}
 \begin{split}
-c_p &= \biggl(\dfrac{\partial h_m}{\partial T}\biggr)_{p} \\
-&= \dfrac{\partial h_m}{\partial T} - \dfrac{\tfrac{\partial h}{\partial \tau}}{\tfrac{\partial p}{\partial \tau}}\dfrac{\partial p}{\partial T}
+c_p &= \biggl(\dfrac{\partial h}{\partial T}\biggr)_{p} \\
+&= \dfrac{\partial h}{\partial T} - \dfrac{\tfrac{\partial h}{\partial V_m}}{\tfrac{\partial p}{\partial V_m}}\dfrac{\partial p}{\partial T}
 \end{split}
 \end{equation}
 where
 \begin{equation}
-\frac{\partial p}{\partial T}=\frac{R}{\tau-b_m}-\frac{\partial a_m}{\partial T}\frac{1}{\tau(\tau+b_m)}
+\frac{\partial p}{\partial T}=\frac{R}{V_m-b}-\frac{\partial a}{\partial T}\frac{1}{V_m(V_m+b)}
 \end{equation}
 \begin{equation}
-\frac{\partial p}{\partial \tau}=-\frac{RT}{(\tau-b_m)^2}+\frac{a_m(2\tau+b_m)}{[\tau(\tau+b_m)]^2}
+\frac{\partial p}{\partial V_m}=-\frac{RT}{(V_m-b)^2}+\frac{a(2V_m+b)}{[V_m(V_m+b)]^2}
 \end{equation}
 \begin{equation}
-\frac{\partial h_m}{\partial \tau}=-\biggl(T\frac{\partial a_m}{\partial T}-a_m\biggr)\frac{1}{\tau(\tau+b_m)}+\frac{a_m}{(\tau+b_m)^2}-\frac{RTb_m}{(\tau-b_m)^2}
+\frac{\partial h}{\partial V_m}=-\biggl(T\frac{\partial a}{\partial T}-a\biggr)\frac{1}{V_m(V_m+b)}+\frac{a}{(V_m+b)^2}-\frac{RTb}{(V_m-b)^2}
 \end{equation}
 \begin{equation}
-\frac{\partial h_m}{\partial T}=c_{p}^{id}+T\frac{\partial^2 a_m}{\partial T^2}\frac{1}{b_m}\ln(1+\frac{b_m}{\tau})-\frac{\partial a_m}{\partial T}\frac{1}{\tau +b_m}+\frac{Rb_m}{\tau-b_m}
+\frac{\partial h}{\partial T}=c_{p}^{id}+T\frac{\partial^2 a}{\partial T^2}\frac{1}{b}\ln(1+\frac{b}{V_m})-\frac{\partial a}{\partial T}\frac{1}{V_m +b}+\frac{Rb}{V_m-b}
 \end{equation}
 
 \subsection*{Sound Speed}
 \begin{equation}
-a^2=-\frac{c_p}{c_v}\tau^2\frac{\partial p}{\partial \tau}
+c_s^2=-\frac{c_p}{c_v}V_m^2\frac{\partial p}{\partial V_m}
 \end{equation}
 
 \subsection*{Primitive Derivatives Needed for Riemann Solver}
 \begin{equation}
-\frac{\partial p}{\partial \rho}\bigg|_{p,Y}=-\tau^2\biggl(\frac{\partial p}{\partial \tau}-\dfrac{\frac{\partial e}{\partial \tau}}{\frac{\partial e}{\partial T}}\frac{\partial p}{\partial T}\biggr)
+\frac{\partial p}{\partial \rho}\bigg|_{p}=-V_m^2\biggl(\frac{\partial p}{\partial V_m}-\dfrac{\frac{\partial e}{\partial V_m}}{\frac{\partial e}{\partial T}}\frac{\partial p}{\partial T}\biggr)
 \end{equation}
 \begin{equation}
-\frac{\partial p}{\partial e}\bigg|_{\rho,Y}=\frac{1}{c_v}\frac{\partial p}{\partial T}
+\frac{\partial p}{\partial e}\bigg|_{\rho}=\frac{1}{c_v}\frac{\partial p}{\partial T}
 \end{equation}
 \begin{equation}
-\frac{\partial e}{\partial \tau}=\frac{1}{\tau(\tau+b_m)}\biggl(a_m-T\frac{\partial a_m}{\partial T}\biggr)
+\frac{\partial e}{\partial V_m}=\frac{1}{V_m(V_m+b)}\biggl(a-T\frac{\partial a}{\partial T}\biggr)
 \end{equation}
 
 
