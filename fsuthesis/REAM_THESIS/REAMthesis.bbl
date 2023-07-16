@@ -457,8 +457,8 @@
       \field{booktitle}{A Voyage Through Turbulence}
       \field{title}{Lewis Fry Richardson}
       \field{year}{2011}
-      \field{pages}{187?208}
-      \range{pages}{-1}
+      \field{pages}{187\bibrangedash 208}
+      \range{pages}{22}
       \verb{doi}
       \verb 10.1017/CBO9781139018241.006
       \endverb
@@ -720,6 +720,33 @@
       \field{year}{1988}
       \field{pages}{671\bibrangedash 679}
       \range{pages}{9}
+    \endentry
+    \entry{SCF1}{book}{}
+      \name{author}{2}{}{%
+        {{hash=b03ecad2e9bd98e0b891f86d6bad2284}{%
+           family={Clifford},
+           familyi={C\bibinitperiod},
+           given={Anthony\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2da140c2a8717a7b3dce1e999be9973c}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{92dbe9c0a98c13316a65903cbcc9b445}
+      \strng{fullhash}{92dbe9c0a98c13316a65903cbcc9b445}
+      \strng{authornamehash}{92dbe9c0a98c13316a65903cbcc9b445}
+      \strng{authorfullhash}{92dbe9c0a98c13316a65903cbcc9b445}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to supercritical fluids and their applications}
+      \field{year}{2000}
     \endentry
     \entry{1984JCoPPPM}{article}{}
       \name{author}{2}{}{%
@@ -1077,8 +1104,8 @@
       \field{title}{Fully developed turbulent pipe flow: a comparison between direct numerical simulation and experiment}
       \field{volume}{268}
       \field{year}{1994}
-      \field{pages}{175?210}
-      \range{pages}{-1}
+      \field{pages}{175\bibrangedash 210}
+      \range{pages}{36}
       \verb{doi}
       \verb 10.1017/S002211209400131X
       \endverb
@@ -1194,7 +1221,7 @@
       \field{journaltitle}{The Physics of Fluids}
       \field{month}{10}
       \field{number}{10}
-      \field{title}{{Turbulence: Space?time statistical properties and behavior in supersonic flows}}
+      \field{title}{{Turbulence: Space-time statistical properties and behavior in supersonic flows}}
       \field{volume}{26}
       \field{year}{1983}
       \field{pages}{2851\bibrangedash 2863}
@@ -1284,8 +1311,8 @@
       \field{title}{Turbulence: the filtering approach}
       \field{volume}{238}
       \field{year}{1992}
-      \field{pages}{325?336}
-      \range{pages}{-1}
+      \field{pages}{325\bibrangedash 336}
+      \range{pages}{12}
       \verb{doi}
       \verb 10.1017/S0022112092001733
       \endverb
@@ -3696,24 +3723,6 @@
       \verb http://www.sciencedirect.com/science/article/pii/0009250972800964
       \endverb
     \endentry
-    \entry{SCF1}{article}{}
-      \field{sortinit}{S}
-      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The article offers information on supercritical fluids (SCF). It mentions that a SCF is any substance at a temperature and pressure above its critical point, where distinct liquid and gas phases do not exist. It also mentions critical properties of various solvents including carbon dioxide, water and methane.}
-      \field{issn}{09703136}
-      \field{journaltitle}{Chemical Business}
-      \field{number}{6}
-      \field{title}{Supercritical fluid}
-      \field{volume}{28}
-      \field{year}{2014}
-      \field{pages}{39\bibrangedash 44}
-      \range{pages}{6}
-      \verb{url}
-      \verb https://login.proxy.lib.fsu.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=f5h&AN=97302089&site=eds-live&scope=site
-      \endverb
-      \keyw{SUPERCRITICAL fluidsCRITICAL temperatureCARBON dioxideMETHANEFLUIDS}
-    \endentry
     \entry{tarjan1972depth}{article}{}
       \name{author}{1}{}{%
         {{hash=554d334d2af10fcbf6d59d1194d9191b}{%
@@ -4154,7 +4163,7 @@
       \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Fundamentals and Applications of Supercritical Carbon Dioxide (sCO?) Based Power Cycles}
+      \field{booktitle}{Fundamentals and Applications of Supercritical Carbon Dioxide (sCO2) Based Power Cycles}
       \field{isbn}{978-0-08-100804-1}
       \field{title}{12 - Fossil energy}
       \field{year}{2017}
